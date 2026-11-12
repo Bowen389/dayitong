@@ -3,6 +3,7 @@ from collections import defaultdict
 from concurrent.futures import ThreadPoolExecutor
 from datetime import date, datetime, timedelta
 from math import isfinite
+from decimal import Decimal, ROUND_HALF_UP
 import re
 import json
 from pathlib import Path
@@ -154,8 +155,11 @@ def top5_factors(day, code):
             score = (2 * (volume / avg_volume >= 2.5) + (10 <= turnover < 15)
                      + (position is not None and .60 <= position < .85)
                      + (.25 <= amplitude < .35))
-            return dict(score=score, amount=amount, close=close)
-        except (OSError, ValueError, KeyError, TypeError, IndexError) as exc:
+            reference = Decimal(current[2]) - Decimal(current[9])
+            upper_limit = (reference * Decimal("1.10")).quantize(Decimal(".01"), rounding=ROUND_HALF_UP)
+            return dict(score=score, amount=amount, close=close,
+                        closed_at_limit=Decimal(current[2]) >= upper_limit)
+        except (OSError, ValueError, KeyError, TypeError, IndexError, ArithmeticError) as exc:
             error = str(exc)
     raise ValueError(error)
 
@@ -181,7 +185,8 @@ def build_top5(day, candidates, fetch=top5_factors):
                 rows.append(row)
     rows.sort(key=lambda item: (-item["votes"], -item["score"], -item["amount"], item["code"]))
     return dict(status="incomplete" if missing else "ready",
-                candidates=rows[:5] if not missing else [], missing=missing)
+                candidates=rows[:5] if not missing else [], missing=missing,
+                pool=rows)
 
 
 def build(day):
@@ -311,7 +316,42 @@ def build(day):
         candidates.append(dict(code=code, name=signals[0]["name"], votes=len(families),
                                families=families, signals=signals))
     candidates.sort(key=lambda item: (-item["votes"], item["code"]))
-    return dict(date=day, sources=health, candidates=candidates, etfs=etfs, systems=rank_systems(candidates), top5=build_top5(day, candidates))
+    return dict(date=day, sources=health, candidates=candidates, etfs=etfs, systems=rank_systems(candidates), top5=build_top5(day, candidates), h1=zonghe.get("H1", {}))
+
+
+def execution_plan(report):
+    top5 = report["top5"]
+    h1 = report["h1"]
+    lines = ["", "## 次日开盘执行 · B → A → H1 → Top5", "",
+             "9:25 竞价结束后按实际开盘价与当日参考昨收计算缺口。"
+             "依次补剩余名额，同股只买一次，每天最多两只。"
+             "跳过停牌、开在涨跌停价及预算内买不到一手的股票。", "",
+             "1. **B 多信号共振** · 至少两个有效家族，信号日收盘未涨停，开盘缺口 ≤ +2%。"
+             "先按家族数降序，再按缺口升序，最后按代码升序。",
+             "2. **A 深低开** · 至少一个有效家族，开盘缺口 ≤ −5%。"
+             "按缺口升序，同缺口按代码升序。",
+             "3. **H1** · 沿用源策略的门控与路线。BF 先按原顺序确认，"
+             "BF 无可成交票才检查 FB，源策略合计最多一只。",
+             "4. **Top5** · 从盘后已锁定的五只里，按开盘缺口由低到高"
+             "补入缺口严格低于 −1% 的股票。同缺口沿用盘后顺序。", "",
+             "每笔含买入费约 1 万元，按 100 股向下取整。开盘买入后下一交易日收盘退出，"
+             "停牌或收盘跌停则顺延。", ""]
+    if top5["missing"]:
+        lines.extend(["**行情待补齐，A/B 候选和 Top5 暂未核定。**", ""])
+    else:
+        for label, rows in (("B 盘后候选", [r for r in top5["pool"]
+                                             if r["votes"] >= 2 and not r["closed_at_limit"]]),
+                            ("A 盘后观察池", top5["pool"]),
+                            ("Top5 盘后候选", top5["candidates"])):
+            names = "、".join(f"{r['code']} {r['name']}" for r in rows) or "暂无"
+            lines.append(f"- **{label}** · {names}")
+    if h1.get("status") == "待开盘":
+        lines.append("- **H1 源策略** · " + h1["note"])
+        for r in h1["candidates"]:
+            lines.append(f"  - {r['code']} {r['name']} · {r['route']}")
+    else:
+        lines.append(f"- **H1 源策略** · {h1.get('status') or '数据待核验'}")
+    return lines
 
 
 def markdown(report):
@@ -362,6 +402,7 @@ def markdown(report):
     for key, section in report["etfs"].items():
         codes = ", ".join(map(str, section.get("target_codes") or [])) or "—"
         lines.append(f"- {key} · 目标 {codes} · 进攻门控 {section.get('gate_on')}")
+    lines.extend(execution_plan(report))
     return "\n".join(lines) + "\n"
 
 
