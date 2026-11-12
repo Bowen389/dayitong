@@ -3,6 +3,7 @@ from collections import defaultdict
 from concurrent.futures import ThreadPoolExecutor
 from datetime import date, datetime, timedelta
 from math import isfinite
+from time import sleep
 from decimal import Decimal, ROUND_HALF_UP
 import re
 import json
@@ -128,7 +129,7 @@ def top5_factors(day, code):
         end=day.replace("-", ""), fields1="f1,f2,f3,f4,f5,f6",
         fields2="f51,f52,f53,f54,f55,f56,f57,f58,f59,f60,f61",
     ))
-    for _ in range(2):
+    for attempt in range(3):
         try:
             request = Request(f"https://push2his.eastmoney.com/api/qt/stock/kline/get?{params}",
                               headers={"User-Agent": "Mozilla/5.0"})
@@ -161,6 +162,8 @@ def top5_factors(day, code):
                         closed_at_limit=Decimal(current[2]) >= upper_limit)
         except (OSError, ValueError, KeyError, TypeError, IndexError, ArithmeticError) as exc:
             error = str(exc)
+            if attempt < 2:
+                sleep(attempt + 1)
     raise ValueError(error)
 
 
@@ -177,7 +180,7 @@ def build_top5(day, candidates, fetch=top5_factors):
             return None, str(exc)
 
     rows, missing = [], {}
-    with ThreadPoolExecutor(max_workers=8) as executor:
+    with ThreadPoolExecutor(max_workers=4) as executor:
         for item, (row, error) in zip(pool, executor.map(load, pool)):
             if error is not None:
                 missing[item["code"]] = error
