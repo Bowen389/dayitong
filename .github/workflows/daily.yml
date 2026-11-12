@@ -1,0 +1,54 @@
+name: 大一统盘后预案
+on:
+  schedule:
+    - cron: '0 10 * * 1-5'
+    - cron: '35 10 * * 1-5'
+  workflow_dispatch:
+    inputs:
+      date:
+        description: 已收盘交易日 YYYY-MM-DD
+        required: false
+        type: string
+  push:
+    branches: [main]
+    paths: ['daily.py', '.github/workflows/daily.yml']
+
+permissions:
+  contents: write
+concurrency:
+  group: dayitong-report
+  cancel-in-progress: false
+
+jobs:
+  report:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - run: git pull --ff-only origin main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install 'exchange-calendars>=4.11,<5'
+      - name: 生成预案
+        env:
+          REPORT_DATE: ${{ inputs.date }}
+          TRIGGER: ${{ github.event_name }}
+        run: |
+          if [[ -n "$REPORT_DATE" ]]; then
+            python daily.py --date "$REPORT_DATE"
+          elif [[ "$TRIGGER" == push ]] && [[ $(TZ=Asia/Shanghai date +%H) -lt 15 ]]; then
+            report_day=$(python -c 'from datetime import datetime,timedelta; from zoneinfo import ZoneInfo; from exchange_calendars import get_calendar; print(get_calendar("XSHG").date_to_session((datetime.now(ZoneInfo("Asia/Shanghai")).date()-timedelta(days=1)).isoformat(), direction="previous").date())')
+            python daily.py --date "$report_day"
+          else
+            python daily.py
+          fi
+      - name: 发布 Markdown 和 JSON
+        run: |
+          if [[ ! -d reports ]]; then exit 0; fi
+          git add reports/
+          if git diff --cached --quiet; then exit 0; fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit -m 'Publish dayitong report'
+          git push origin HEAD:main
