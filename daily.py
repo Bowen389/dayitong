@@ -10,6 +10,95 @@ from zoneinfo import ZoneInfo
 from exchange_calendars import get_calendar
 
 
+# Bounds are percentage points, with endpoint inclusion recorded explicitly.
+def entry_windows(signal):
+    route = signal["route"]
+    detail = signal["detail"]
+    arm = str(detail.get("arm") or detail.get("route") or detail.get("category") or "")
+    if route == "top/BF" or (route == "zonghe/H1" and arm.startswith("BF")):
+        return [(-10, 8, False, True)]
+    if route == "zonghe/P2":
+        return [(-5, -2, False, True)]
+    if route.startswith("2j3/"):
+        return [(2, 5, True, True)]
+    if route == "主力捉妖":
+        return [(-2, -1, True, False), (0, 3, True, False)]
+    if route in {"top/FB", "ceshi/FB_DUAL_K4", "zonghe/H1"}:
+        if arm.startswith("C2"):
+            return [(-2.5, 5, True, True)]
+        if arm.startswith("C1"):
+            return [(-5, -2, True, True)]
+    if route == "top/V3" or route.startswith("zonghe/S2_"):
+        return [(-5, 6, True, True)]
+    if route == "top/S2":
+        return [(-10, 9.85, False, False)]
+    if route == "top/LH":
+        return [(-10, 10, False, False)]
+    return []
+
+
+def overlap(left, right):
+    low = max(left[0], right[0])
+    high = min(left[1], right[1])
+    include_low = all(window[0] != low or window[2] for window in (left, right))
+    include_high = all(window[1] != high or window[3] for window in (left, right))
+    if low < high or (low == high and include_low and include_high):
+        return (low, high, include_low, include_high)
+    return None
+
+
+def shortlist(candidates):
+    # Compare entry theses first. Correlated price signals can confirm,
+    # but an institutional disclosure supplies a different type of evidence.
+    priority = {"top/BF": 0, "zonghe/H1": 1, "top/FB": 2,
+                "ceshi/FB_DUAL_K4": 2, "zonghe/P2": 3, "2j3": 4,
+                "top/V3": 5, "zonghe/S2": 5, "top/S2": 6, "主力捉妖": 7}
+    plans = []
+    for candidate in candidates:
+        code = candidate["code"]
+        if not code.startswith(("000", "001", "002", "003", "600", "601", "603", "605")):
+            continue
+        if "ST" in candidate["name"].upper().replace(" ", ""):
+            continue
+        available = [signal for signal in candidate["signals"] if not signal["reason"]]
+        best = None
+        for anchor in available:
+            route = anchor["route"]
+            key = "2j3" if route.startswith("2j3/") else "zonghe/S2" if route.startswith("zonghe/S2_") else route
+            if key not in priority:
+                continue
+            for evidence in available:
+                if evidence["family"] == anchor["family"]:
+                    continue
+                windows = [joint for left in entry_windows(anchor)
+                           for right in entry_windows(evidence)
+                           if (joint := overlap(left, right)) is not None]
+                if not windows:
+                    continue
+                detail = anchor["detail"]
+                tier = detail.get("category") or str(detail.get("route", "")).removeprefix("BF ")
+                grade = {"A": 0, "B": 1}.get(tier, 0)
+                institutional = evidence["route"] == "top/LH"
+                quality = (-int(institutional), priority[key], grade,
+                           -float(detail.get("S") or 0), anchor["rank"], code)
+                if best is None or quality < best[0]:
+                    best = (quality, dict(code=code, name=candidate["name"],
+                                          anchor=anchor, evidence=evidence, windows=windows))
+        if best is not None:
+            plans.append(best)
+    chosen = []
+    used_families = set()
+    for _, plan in sorted(plans, key=lambda pair: pair[0]):
+        family = plan["anchor"]["family"]
+        if family in used_families:
+            continue
+        chosen.append(plan)
+        used_families.add(family)
+        if len(chosen) == 3:
+            break
+    return chosen
+
+
 def build(day):
     rows = defaultdict(list)
     health = {}
@@ -130,7 +219,7 @@ def build(day):
         candidates.append(dict(code=code, name=signals[0]["name"], votes=len(families),
                                families=families, signals=signals))
     candidates.sort(key=lambda item: (-item["votes"], item["code"]))
-    return dict(date=day, sources=health, candidates=candidates, etfs=etfs)
+    return dict(date=day, sources=health, candidates=candidates, etfs=etfs, shortlist=shortlist(candidates))
 
 
 def markdown(report):
@@ -138,6 +227,16 @@ def markdown(report):
              "票数为盘后预估。每个信号家族最多一票，所有开盘条件仍待核对。", "",
              "## 数据来源", ""]
     lines.extend(f"- {key} · {status}" for key, status in report["sources"].items())
+    lines.extend(["", "## 次日选股预案（最多3只）", ""])
+    if not report["shortlist"]:
+        lines.append("暂无满足跨家族确认且开盘区间相交的候选。")
+    for plan in report["shortlist"]:
+        windows = " 或 ".join(f"{'[' if a else '('}{lo:+g}%, {hi:+g}%{']' if b else ')'}"
+                              for lo, hi, a, b in plan["windows"])
+        anchor = plan["anchor"]
+        evidence = plan["evidence"]
+        lines.append(f"- **{plan['code']} {plan['name']}** · 主买点 {anchor['route']} · 辅证 {evidence['route']} · 共同缺口 {windows}")
+        lines.append(f"  - 仍需复核主路线最终排名、停牌与涨跌停、整手及现金。退出按主路线。")
     for title, check in (("两类及以上预计信号", lambda n: n >= 2),
                          ("单类预计信号", lambda n: n == 1),
                          ("仅观察与排除", lambda n: n == 0)):
