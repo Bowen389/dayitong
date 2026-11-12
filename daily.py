@@ -1,10 +1,14 @@
 import argparse
 from collections import defaultdict
-from datetime import datetime
+from concurrent.futures import ThreadPoolExecutor
+from datetime import date, datetime, timedelta
+from math import isfinite
+import re
 import json
 from pathlib import Path
 from urllib.error import HTTPError, URLError
-from urllib.request import urlopen
+from urllib.parse import urlencode
+from urllib.request import Request, urlopen
 from zoneinfo import ZoneInfo
 
 from exchange_calendars import get_calendar
@@ -111,6 +115,73 @@ def rank_systems(candidates):
     order = lambda item: (-item["score"], item["code"])
     return {"factor": sorted(factor_board, key=order)[:3],
             "confirmation": sorted(confirmation_board, key=order)[:3]}
+
+
+MAIN_BOARD = re.compile(r"(?:600|601|603|605|000|001|002|003)\d{3}")
+
+
+def top5_factors(day, code):
+    params = urlencode(dict(
+        secid=f"{int(code.startswith('6'))}.{code}", klt=101, fqt=0,
+        beg=(date.fromisoformat(day) - timedelta(days=100)).strftime("%Y%m%d"),
+        end=day.replace("-", ""), fields1="f1,f2,f3,f4,f5,f6",
+        fields2="f51,f52,f53,f54,f55,f56,f57,f58,f59,f60,f61",
+    ))
+    for _ in range(2):
+        try:
+            request = Request(f"https://push2his.eastmoney.com/api/qt/stock/kline/get?{params}",
+                              headers={"User-Agent": "Mozilla/5.0"})
+            with urlopen(request, timeout=8) as response:
+                data = json.load(response)["data"]
+            bars = [line.split(",") for line in data["klines"]]
+            dates = [bar[0] for bar in bars]
+            if len(bars) < 21 or dates[-1] != day or dates != sorted(set(dates)):
+                raise ValueError("日线不足、日期不符或存在重复")
+            current = bars[-1]
+            if re.search(r"ST|退", data["name"], re.I):
+                return None
+            close, volume, amount, turnover = (float(current[i]) for i in (2, 5, 6, 10))
+            avg_volume = sum(float(bar[5]) for bar in bars[-6:-1]) / 5
+            low20 = min(float(bar[4]) for bar in bars[-21:-1])
+            high20 = max(float(bar[3]) for bar in bars[-21:-1])
+            low10 = min(float(bar[4]) for bar in bars[-11:-1])
+            high10 = max(float(bar[3]) for bar in bars[-11:-1])
+            values = (close, volume, amount, turnover, avg_volume, low20, high20, low10, high10)
+            if not all(isfinite(v) for v in values) or min(close, volume, amount, avg_volume, low20, low10) <= 0:
+                raise ValueError("行情字段无效")
+            position = (close - low20) / (high20 - low20) if high20 > low20 else None
+            amplitude = high10 / low10 - 1
+            score = (2 * (volume / avg_volume >= 2.5) + (10 <= turnover < 15)
+                     + (position is not None and .60 <= position < .85)
+                     + (.25 <= amplitude < .35))
+            return dict(score=score, amount=amount, close=close)
+        except (OSError, ValueError, KeyError, TypeError, IndexError) as exc:
+            error = str(exc)
+    raise ValueError(error)
+
+
+def build_top5(day, candidates, fetch=top5_factors):
+    pool = [item for item in candidates if item["votes"] > 0
+            and MAIN_BOARD.fullmatch(item["code"])
+            and not re.search(r"ST|退", item["name"], re.I)]
+    def load(item):
+        try:
+            factors = fetch(day, item["code"])
+            return ({**{key: item[key] for key in ("code", "name", "votes")}, **factors}
+                    if factors is not None else None), None
+        except ValueError as exc:
+            return None, str(exc)
+
+    rows, missing = [], {}
+    with ThreadPoolExecutor(max_workers=8) as executor:
+        for item, (row, error) in zip(pool, executor.map(load, pool)):
+            if error is not None:
+                missing[item["code"]] = error
+            elif row is not None:
+                rows.append(row)
+    rows.sort(key=lambda item: (-item["votes"], -item["score"], -item["amount"], item["code"]))
+    return dict(status="incomplete" if missing else "ready",
+                candidates=rows[:5] if not missing else [], missing=missing)
 
 
 def build(day):
@@ -240,7 +311,7 @@ def build(day):
         candidates.append(dict(code=code, name=signals[0]["name"], votes=len(families),
                                families=families, signals=signals))
     candidates.sort(key=lambda item: (-item["votes"], item["code"]))
-    return dict(date=day, sources=health, candidates=candidates, etfs=etfs, systems=rank_systems(candidates))
+    return dict(date=day, sources=health, candidates=candidates, etfs=etfs, systems=rank_systems(candidates), top5=build_top5(day, candidates))
 
 
 def markdown(report):
@@ -248,6 +319,19 @@ def markdown(report):
              "两套系统仅用盘后信息定榜，不使用次日开盘缺口。下方各来源的原始条件仅供对照。", "",
              "## 数据来源", ""]
     lines.extend(f"- {key} · {status}" for key, status in report["sources"].items())
+    top5 = report["top5"]
+    lines.extend(["", "## H1 补位用盘后 Top5", ""])
+    if top5["status"] == "incomplete":
+        lines.append("行情待补齐，暂未锁榜。缺失代码：" + "、".join(top5["missing"]))
+    elif not top5["candidates"]:
+        lines.append("暂无合格候选。")
+    else:
+        lines.extend(["| 排名 | 股票 | 有效家族数 | 量价分 | 当日成交额 | 收盘价 |",
+                      "| --- | --- | ---: | ---: | ---: | ---: |"])
+        for rank, item in enumerate(top5["candidates"], 1):
+            lines.append(f"| {rank} | {item['code']} {item['name']} | {item['votes']} | "
+                         f"{item['score']} | {item['amount']/1e8:.2f} 亿 | {item['close']:.2f} |")
+        lines.append("\n次日仅从这张榜单中选缺口严格低于 −1% 的可成交股票，按缺口从低到高补 H1 剩余名额。")
     for key, title in (("factor", "方案一 · 因子选股"),
                        ("confirmation", "方案二 · 多信号重评分")):
         lines.extend(["", f"## {title}", ""])
