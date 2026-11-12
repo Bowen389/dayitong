@@ -5944,15 +5944,20 @@
     ]
   },
   "top5": {
-    "status": "ready",
-    "candidates": [
+    "status": "incomplete",
+    "candidates": [],
+    "missing": {
+      "605169": "Remote end closed connection without response"
+    },
+    "pool": [
       {
         "code": "601566",
         "name": "九牧王",
         "votes": 2,
         "score": 1,
         "amount": 881530529.0,
-        "close": 12.47
+        "close": 12.47,
+        "closed_at_limit": true
       },
       {
         "code": "600857",
@@ -5960,7 +5965,8 @@
         "votes": 2,
         "score": 1,
         "amount": 99725484.0,
-        "close": 15.0
+        "close": 15.0,
+        "closed_at_limit": true
       },
       {
         "code": "601606",
@@ -5968,7 +5974,8 @@
         "votes": 1,
         "score": 3,
         "amount": 2157328294.0,
-        "close": 32.62
+        "close": 32.62,
+        "closed_at_limit": true
       },
       {
         "code": "600558",
@@ -5976,7 +5983,8 @@
         "votes": 1,
         "score": 3,
         "amount": 1009116280.0,
-        "close": 5.96
+        "close": 5.96,
+        "closed_at_limit": true
       },
       {
         "code": "002693",
@@ -5984,9 +5992,241 @@
         "votes": 1,
         "score": 3,
         "amount": 415896459.0,
-        "close": 8.73
+        "close": 8.73,
+        "closed_at_limit": true
+      },
+      {
+        "code": "605222",
+        "name": "起帆电缆",
+        "votes": 1,
+        "score": 3,
+        "amount": 232447598.0,
+        "close": 20.55,
+        "closed_at_limit": true
+      },
+      {
+        "code": "603366",
+        "name": "日出东方",
+        "votes": 1,
+        "score": 2,
+        "amount": 2104521385.0,
+        "close": 13.17,
+        "closed_at_limit": true
+      },
+      {
+        "code": "002696",
+        "name": "百洋股份",
+        "votes": 1,
+        "score": 2,
+        "amount": 1412431435.92,
+        "close": 11.68,
+        "closed_at_limit": true
+      },
+      {
+        "code": "603696",
+        "name": "安记食品",
+        "votes": 1,
+        "score": 2,
+        "amount": 432563517.0,
+        "close": 14.24,
+        "closed_at_limit": false
+      },
+      {
+        "code": "600467",
+        "name": "好当家",
+        "votes": 1,
+        "score": 2,
+        "amount": 325056693.0,
+        "close": 2.48,
+        "closed_at_limit": true
+      },
+      {
+        "code": "001358",
+        "name": "兴欣新材",
+        "votes": 1,
+        "score": 2,
+        "amount": 68576938.3,
+        "close": 24.22,
+        "closed_at_limit": true
+      },
+      {
+        "code": "002172",
+        "name": "澳洋健康",
+        "votes": 1,
+        "score": 1,
+        "amount": 1461034681.2,
+        "close": 6.66,
+        "closed_at_limit": true
+      },
+      {
+        "code": "002119",
+        "name": "康强电子",
+        "votes": 1,
+        "score": 1,
+        "amount": 757658623.61,
+        "close": 19.28,
+        "closed_at_limit": false
+      },
+      {
+        "code": "600853",
+        "name": "龙建股份",
+        "votes": 1,
+        "score": 1,
+        "amount": 406689902.0,
+        "close": 4.21,
+        "closed_at_limit": true
+      },
+      {
+        "code": "600569",
+        "name": "安阳钢铁",
+        "votes": 1,
+        "score": 1,
+        "amount": 249681120.0,
+        "close": 2.0,
+        "closed_at_limit": true
+      },
+      {
+        "code": "601188",
+        "name": "龙江交通",
+        "votes": 1,
+        "score": 0,
+        "amount": 1554108410.0,
+        "close": 4.72,
+        "closed_at_limit": true
+      },
+      {
+        "code": "000995",
+        "name": "皇台酒业",
+        "votes": 1,
+        "score": 0,
+        "amount": 1168199550.76,
+        "close": 18.32,
+        "closed_at_limit": true
+      },
+      {
+        "code": "603175",
+        "name": "超颖电子",
+        "votes": 1,
+        "score": 0,
+        "amount": 300989403.0,
+        "close": 99.54,
+        "closed_at_limit": true
+      },
+      {
+        "code": "002021",
+        "name": "中捷资源",
+        "votes": 1,
+        "score": 0,
+        "amount": 257359174.87,
+        "close": 2.63,
+        "closed_at_limit": true
+      },
+      {
+        "code": "002187",
+        "name": "广百股份",
+        "votes": 1,
+        "score": 0,
+        "amount": 191914395.04,
+        "close": 6.34,
+        "closed_at_limit": true
+      },
+      {
+        "code": "603958",
+        "name": "哈森股份",
+        "votes": 1,
+        "score": 0,
+        "amount": 176905114.0,
+        "close": 18.38,
+        "closed_at_limit": true
+      },
+      {
+        "code": "002205",
+        "name": "国统股份",
+        "votes": 1,
+        "score": 0,
+        "amount": 141710718.67,
+        "close": 11.75,
+        "closed_at_limit": true
+      },
+      {
+        "code": "002628",
+        "name": "成都路桥",
+        "votes": 1,
+        "score": 0,
+        "amount": 108481733.86,
+        "close": 4.74,
+        "closed_at_limit": true
       }
-    ],
-    "missing": {}
+    ]
+  },
+  "h1": {
+    "title": "H1 BF主线 / FB补位",
+    "status": "待开盘",
+    "note": "BF门控通过，FB门控通过。BF先按档位和20日均额，开盘缺口 (−10.1%, +8%]。BF无可执行票才看C2 [−2.5%, +5%]、C1 [−5%, −2%]，同类按缺口升序，合计只取1只。FB盘后按代码展示，次日才定最终名次。",
+    "candidates": [
+      {
+        "code": "002172",
+        "name": "澳洋健康",
+        "route": "BF A",
+        "close": 6.66,
+        "score": 3.0
+      },
+      {
+        "code": "002205",
+        "name": "国统股份",
+        "route": "FB C1",
+        "close": 11.75,
+        "score": null
+      },
+      {
+        "code": "002628",
+        "name": "成都路桥",
+        "route": "FB C1",
+        "close": 4.74,
+        "score": null
+      },
+      {
+        "code": "002693",
+        "name": "双成药业",
+        "route": "FB C1",
+        "close": 8.73,
+        "score": null
+      },
+      {
+        "code": "601606",
+        "name": "长城军工",
+        "route": "FB C1",
+        "close": 32.62,
+        "score": null
+      },
+      {
+        "code": "603175",
+        "name": "超颖电子",
+        "route": "FB C1",
+        "close": 99.54,
+        "score": null
+      },
+      {
+        "code": "603958",
+        "name": "哈森股份",
+        "route": "FB C1",
+        "close": 18.38,
+        "score": null
+      },
+      {
+        "code": "605169",
+        "name": "洪通燃气",
+        "route": "FB C1",
+        "close": 13.55,
+        "score": null
+      },
+      {
+        "code": "605222",
+        "name": "起帆电缆",
+        "route": "FB C1",
+        "close": 20.55,
+        "score": null
+      }
+    ]
   }
 }
