@@ -5729,108 +5729,298 @@
       ]
     }
   },
-  "shortlist": [
-    {
-      "code": "603040",
-      "name": "新坐标",
-      "anchor": {
-        "name": "新坐标",
-        "family": "首板",
-        "route": "zonghe/P2",
-        "rule": "展示顺序为成交额参考。E开盘确认 −5% < 缺口 ≤ −2%，缺口最深优先，同缺口按代码，正式只取1只。",
-        "reason": "",
-        "rank": 1,
-        "detail": {
-          "code": "603040",
-          "name": "新坐标",
-          "route": "待缺口",
-          "close": 43.97,
-          "score": null
+  "systems": {
+    "factor": [
+      {
+        "code": "603920",
+        "name": "世运电路",
+        "anchor": {
+          "name": "世运电路",
+          "family": "机构",
+          "route": "top/LH",
+          "rule": "开盘避开涨跌停及停牌",
+          "reason": "",
+          "rank": 1,
+          "detail": {
+            "date": "2026-11-11",
+            "code": "603920",
+            "name": "世运电路",
+            "close": 39.42,
+            "gain_pct": 8.386,
+            "trade_id": "100443128",
+            "disclosure_reason": "非S证券连续三个交易日内收盘价格涨幅偏离值累计达到20%的证券",
+            "qualifying_amount_yuan": 160882876.77,
+            "reason": "institution_buy_sum_gt20m",
+            "n3_tag": "涨幅位于[7%, 9%)",
+            "volume_tag": "符合量价",
+            "volume_ratio_20": 1.5481086868177452,
+            "low_multiple_120": 1.3277197709666557
+          }
+        },
+        "score": 52.88,
+        "parts": {
+          "机构买入": 25.0,
+          "量能适度": 14.519,
+          "位置克制": 13.361
         }
       },
-      "evidence": {
-        "name": "新坐标",
-        "family": "机构",
-        "route": "top/LH",
-        "rule": "开盘避开涨跌停及停牌",
-        "reason": "",
-        "rank": 2,
-        "detail": {
-          "date": "2026-11-11",
-          "code": "603040",
-          "name": "新坐标",
-          "close": 43.97,
-          "gain_pct": 10.0075,
-          "trade_id": "100443129",
-          "disclosure_reason": "非S证券连续三个交易日内收盘价格涨幅偏离值累计达到20%的证券",
-          "qualifying_amount_yuan": 30268595.56,
-          "reason": "institution_buy_sum_gt20m",
-          "n3_tag": "换手率未超过10%",
-          "volume_tag": "符合量价",
-          "volume_ratio_20": 2.352411455772346,
-          "low_multiple_120": 1.3243975903614464
-        }
-      },
-      "windows": [
-        [
-          -5,
-          -2,
-          false,
-          true
-        ]
-      ]
-    },
-    {
-      "code": "002463",
-      "name": "沪电股份",
-      "anchor": {
+      {
+        "code": "002463",
         "name": "沪电股份",
-        "family": "反包",
-        "route": "top/BF",
-        "rule": "A优先，同档按20日均额降序，开盘缺口至多+8%",
-        "reason": "",
-        "rank": 1,
-        "detail": {
-          "code": "002463",
+        "anchor": {
           "name": "沪电股份",
-          "close": 89.43,
-          "status": "raw",
-          "S": 5973484997.856001,
-          "prior_limits": 1,
-          "score_bits": [
-            1,
-            1,
-            1
-          ],
-          "score": 3,
-          "category": "A",
-          "previous_broken_limit": false,
-          "bf_static_ok": true
+          "family": "反包",
+          "route": "top/BF",
+          "rule": "A优先，同档按20日均额降序，开盘缺口至多+8%",
+          "reason": "",
+          "rank": 1,
+          "detail": {
+            "code": "002463",
+            "name": "沪电股份",
+            "close": 89.43,
+            "status": "raw",
+            "S": 5973484997.856001,
+            "prior_limits": 1,
+            "score_bits": [
+              1,
+              1,
+              1
+            ],
+            "score": 3,
+            "category": "A",
+            "previous_broken_limit": false,
+            "bf_static_ok": true
+          }
+        },
+        "score": 35.0,
+        "parts": {
+          "反包结构": 20.0,
+          "流动性": 15.0
         }
       },
-      "evidence": {
+      {
+        "code": "002913",
+        "name": "奥士康",
+        "anchor": {
+          "name": "奥士康",
+          "family": "反包",
+          "route": "top/BF",
+          "rule": "A优先，同档按20日均额降序，开盘缺口至多+8%",
+          "reason": "",
+          "rank": 3,
+          "detail": {
+            "code": "002913",
+            "name": "奥士康",
+            "close": 65.26,
+            "status": "raw",
+            "S": 919503703.3280001,
+            "prior_limits": 1,
+            "score_bits": [
+              1,
+              1,
+              1
+            ],
+            "score": 3,
+            "category": "A",
+            "previous_broken_limit": false,
+            "bf_static_ok": true
+          }
+        },
+        "score": 35.0,
+        "parts": {
+          "反包结构": 20.0,
+          "流动性": 15.0
+        }
+      }
+    ],
+    "confirmation": [
+      {
+        "code": "603040",
+        "name": "新坐标",
+        "anchor": {
+          "name": "新坐标",
+          "family": "首板",
+          "route": "zonghe/P2",
+          "rule": "展示顺序为成交额参考。E开盘确认 −5% < 缺口 ≤ −2%，缺口最深优先，同缺口按代码，正式只取1只。",
+          "reason": "",
+          "rank": 1,
+          "detail": {
+            "code": "603040",
+            "name": "新坐标",
+            "route": "待缺口",
+            "close": 43.97,
+            "score": null
+          }
+        },
+        "evidence": {
+          "name": "新坐标",
+          "family": "机构",
+          "route": "top/LH",
+          "rule": "开盘避开涨跌停及停牌",
+          "reason": "",
+          "rank": 2,
+          "detail": {
+            "date": "2026-11-11",
+            "code": "603040",
+            "name": "新坐标",
+            "close": 43.97,
+            "gain_pct": 10.0075,
+            "trade_id": "100443129",
+            "disclosure_reason": "非S证券连续三个交易日内收盘价格涨幅偏离值累计达到20%的证券",
+            "qualifying_amount_yuan": 30268595.56,
+            "reason": "institution_buy_sum_gt20m",
+            "n3_tag": "换手率未超过10%",
+            "volume_tag": "符合量价",
+            "volume_ratio_20": 2.352411455772346,
+            "low_multiple_120": 1.3243975903614464
+          }
+        },
+        "families": [
+          "机构",
+          "首板"
+        ],
+        "windows": [
+          [
+            -5,
+            -2,
+            false,
+            true
+          ]
+        ],
+        "parts": {
+          "主买点": 16,
+          "辅证": 20,
+          "开盘兼容": 15,
+          "因子分": 9.597
+        },
+        "score": 60.597
+      },
+      {
+        "code": "002463",
         "name": "沪电股份",
-        "family": "首板",
-        "route": "zonghe/P2",
-        "rule": "展示顺序为成交额参考。E开盘确认 −5% < 缺口 ≤ −2%，缺口最深优先，同缺口按代码，正式只取1只。",
-        "reason": "",
-        "rank": 1,
-        "detail": {
-          "code": "002463",
+        "anchor": {
           "name": "沪电股份",
-          "route": "待缺口",
-          "close": 89.43,
-          "score": null
-        }
+          "family": "反包",
+          "route": "top/BF",
+          "rule": "A优先，同档按20日均额降序，开盘缺口至多+8%",
+          "reason": "",
+          "rank": 1,
+          "detail": {
+            "code": "002463",
+            "name": "沪电股份",
+            "close": 89.43,
+            "status": "raw",
+            "S": 5973484997.856001,
+            "prior_limits": 1,
+            "score_bits": [
+              1,
+              1,
+              1
+            ],
+            "score": 3,
+            "category": "A",
+            "previous_broken_limit": false,
+            "bf_static_ok": true
+          }
+        },
+        "evidence": {
+          "name": "沪电股份",
+          "family": "首板",
+          "route": "zonghe/P2",
+          "rule": "展示顺序为成交额参考。E开盘确认 −5% < 缺口 ≤ −2%，缺口最深优先，同缺口按代码，正式只取1只。",
+          "reason": "",
+          "rank": 1,
+          "detail": {
+            "code": "002463",
+            "name": "沪电股份",
+            "route": "待缺口",
+            "close": 89.43,
+            "score": null
+          }
+        },
+        "families": [
+          "反包",
+          "首板"
+        ],
+        "windows": [
+          [
+            -5,
+            -2,
+            false,
+            true
+          ]
+        ],
+        "parts": {
+          "主买点": 20,
+          "辅证": 10,
+          "开盘兼容": 15,
+          "因子分": 12.25
+        },
+        "score": 57.25
       },
-      "windows": [
-        [
-          -5,
-          -2,
-          false,
-          true
-        ]
-      ]
-    }
-  ]
+      {
+        "code": "002980",
+        "name": "华盛昌",
+        "anchor": {
+          "name": "华盛昌",
+          "family": "反包",
+          "route": "top/BF",
+          "rule": "A优先，同档按20日均额降序，开盘缺口至多+8%",
+          "reason": "",
+          "rank": 2,
+          "detail": {
+            "code": "002980",
+            "name": "华盛昌",
+            "close": 75.82,
+            "status": "raw",
+            "S": 983329228.6459999,
+            "prior_limits": 1,
+            "score_bits": [
+              1,
+              1,
+              1
+            ],
+            "score": 3,
+            "category": "A",
+            "previous_broken_limit": false,
+            "bf_static_ok": true
+          }
+        },
+        "evidence": {
+          "name": "华盛昌",
+          "family": "首板",
+          "route": "zonghe/P2",
+          "rule": "展示顺序为成交额参考。E开盘确认 −5% < 缺口 ≤ −2%，缺口最深优先，同缺口按代码，正式只取1只。",
+          "reason": "",
+          "rank": 1,
+          "detail": {
+            "code": "002980",
+            "name": "华盛昌",
+            "route": "待缺口",
+            "close": 75.82,
+            "score": null
+          }
+        },
+        "families": [
+          "反包",
+          "首板"
+        ],
+        "windows": [
+          [
+            -5,
+            -2,
+            false,
+            true
+          ]
+        ],
+        "parts": {
+          "主买点": 19,
+          "辅证": 10,
+          "开盘兼容": 15,
+          "因子分": 12.25
+        },
+        "score": 56.25
+      }
+    ]
+  }
 }
