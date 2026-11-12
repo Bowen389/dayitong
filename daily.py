@@ -10,43 +10,6 @@ from zoneinfo import ZoneInfo
 from exchange_calendars import get_calendar
 
 
-# Bounds are percentage points, with endpoint inclusion recorded explicitly.
-def entry_windows(signal):
-    route = signal["route"]
-    detail = signal["detail"]
-    arm = str(detail.get("arm") or detail.get("route") or detail.get("category") or "")
-    if route == "top/BF" or (route == "zonghe/H1" and arm.startswith("BF")):
-        return [(-10, 8, False, True)]
-    if route == "zonghe/P2":
-        return [(-5, -2, False, True)]
-    if route.startswith("2j3/"):
-        return [(2, 5, True, True)]
-    if route == "主力捉妖":
-        return [(-2, -1, True, False), (0, 3, True, False)]
-    if route in {"top/FB", "ceshi/FB_DUAL_K4", "zonghe/H1"}:
-        if arm.startswith("C2"):
-            return [(-2.5, 5, True, True)]
-        if arm.startswith("C1"):
-            return [(-5, -2, True, True)]
-    if route == "top/V3" or route.startswith("zonghe/S2_"):
-        return [(-5, 6, True, True)]
-    if route == "top/S2":
-        return [(-10, 9.85, False, False)]
-    if route == "top/LH":
-        return [(-10, 10, False, False)]
-    return []
-
-
-def overlap(left, right):
-    low = max(left[0], right[0])
-    high = min(left[1], right[1])
-    include_low = all(window[0] != low or window[2] for window in (left, right))
-    include_high = all(window[1] != high or window[3] for window in (left, right))
-    if low < high or (low == high and include_low and include_high):
-        return (low, high, include_low, include_high)
-    return None
-
-
 def bounded(value):
     return max(0.0, min(1.0, value))
 
@@ -112,7 +75,7 @@ def rank_systems(candidates):
         if name.upper().replace(" ", "").startswith(("ST", "*ST", "SST", "S*ST")):
             continue
         eligible = [signal for signal in candidate["signals"] if not signal["reason"]]
-        anchors = [signal for signal in eligible if entry_windows(signal)]
+        anchors = eligible
         if not anchors:
             continue
         anchor = max(anchors, key=setup_quality)
@@ -129,10 +92,6 @@ def rank_systems(candidates):
             continue
         pairs = [(setup, evidence) for setup in anchors for evidence in eligible
                  if setup["family"] != evidence["family"]]
-        def joint_windows(setup, evidence):
-            return [joint for left in entry_windows(setup) for right in entry_windows(evidence)
-                    if (joint := overlap(left, right)) is not None]
-
         def evidence_score(evidence):
             if evidence["route"] == "top/LH":
                 return 20
@@ -140,26 +99,18 @@ def rank_systems(candidates):
                 return 13
             return 10
 
-        def pair_score(pair):
-            setup, evidence = pair
-            if joint_windows(setup, evidence):
-                compatibility = 15
-            else:
-                compatibility = -15 if entry_windows(evidence) else 0
-            return setup_quality(setup) + evidence_score(evidence) + compatibility
-
-        setup, evidence = max(pairs, key=pair_score)
-        windows = joint_windows(setup, evidence)
-        parts = dict(主买点=setup_quality(setup), 辅证=evidence_score(evidence),
-                     开盘兼容=15 if windows else -15 if entry_windows(evidence) else 0,
+        setup, evidence = max(
+            pairs, key=lambda pair: setup_quality(pair[0]) + evidence_score(pair[1])
+        )
+        parts = dict(主信号=setup_quality(setup), 辅证=evidence_score(evidence),
                      因子分=round(factor_score * .35, 3))
         confirmation_board.append(dict(base, anchor=setup, evidence=evidence,
-                                       families=families, windows=windows, parts=parts,
+                                       families=families, parts=parts,
                                        score=round(sum(parts.values()), 3)))
 
     order = lambda item: (-item["score"], item["code"])
     return {"factor": sorted(factor_board, key=order)[:3],
-            "confirmation": sorted(confirmation_board, key=lambda item: (not item["windows"], *order(item)))[:3]}
+            "confirmation": sorted(confirmation_board, key=order)[:3]}
 
 
 def build(day):
@@ -287,25 +238,19 @@ def build(day):
 
 def markdown(report):
     lines = [f"# {report['date']} 大一统盘后预案", "",
-             "票数为盘后预估。每个信号家族最多一票，所有开盘条件仍待核对。", "",
+             "两套系统仅用盘后信息定榜，不使用次日开盘缺口。下方各来源的原始条件仅供对照。", "",
              "## 数据来源", ""]
     lines.extend(f"- {key} · {status}" for key, status in report["sources"].items())
     for key, title in (("factor", "方案一 · 因子选股"),
                        ("confirmation", "方案二 · 多信号重评分")):
         lines.extend(["", f"## {title}", ""])
         for rank, item in enumerate(report["systems"][key], 1):
-            role = ("Top1 待开盘核验" if rank == 1 else f"观察第 {rank} 名")
-            if key == "confirmation" and not item["windows"]:
-                role = f"观察第 {rank} 名（共同区间未确认）"
+            role = "盘后Top1" if rank == 1 else f"观察第 {rank} 名"
             parts = "、".join(f"{name} {value:+g}" for name, value in item["parts"].items())
             lines.append(f"- **{item['code']} {item['name']}** · {role} · {item['score']:g} 分")
-            lines.append(f"  - {parts}。主买点 {item['anchor']['route']} · {item['anchor']['rule']}")
+            lines.append(f"  - {parts}。主信号 {item['anchor']['route']}")
             if key == "confirmation":
-                evidence = item["evidence"]
-                lines.append(f"  - 辅证 {evidence['route']} · {evidence['rule']}")
-                windows = " 或 ".join(f"{'[' if a else '('}{lo:+g}%, {hi:+g}%{']' if b else ')'}"
-                                      for lo, hi, a, b in item["windows"])
-                lines.append(f"  - 共同缺口 {windows or '未核实共同区间，仅观察'}")
+                lines.append(f"  - 辅证 {item['evidence']['route']}")
         if not report["systems"][key]:
             lines.append("暂无合格候选。")
     for title, check in (("两类及以上预计信号", lambda n: n >= 2),
