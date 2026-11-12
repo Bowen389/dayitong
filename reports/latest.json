@@ -5944,11 +5944,55 @@
     ]
   },
   "top5": {
-    "status": "incomplete",
-    "candidates": [],
-    "missing": {
-      "605169": "Remote end closed connection without response"
-    },
+    "status": "ready",
+    "candidates": [
+      {
+        "code": "601566",
+        "name": "九牧王",
+        "votes": 2,
+        "score": 1,
+        "amount": 881530529.0,
+        "close": 12.47,
+        "closed_at_limit": true
+      },
+      {
+        "code": "600857",
+        "name": "宁波中百",
+        "votes": 2,
+        "score": 1,
+        "amount": 99725484.0,
+        "close": 15.0,
+        "closed_at_limit": true
+      },
+      {
+        "code": "601606",
+        "name": "长城军工",
+        "votes": 1,
+        "score": 3,
+        "amount": 2157328294.0,
+        "close": 32.62,
+        "closed_at_limit": true
+      },
+      {
+        "code": "600558",
+        "name": "大西洋",
+        "votes": 1,
+        "score": 3,
+        "amount": 1009116280.0,
+        "close": 5.96,
+        "closed_at_limit": true
+      },
+      {
+        "code": "002693",
+        "name": "双成药业",
+        "votes": 1,
+        "score": 3,
+        "amount": 415896459.0,
+        "close": 8.73,
+        "closed_at_limit": true
+      }
+    ],
+    "missing": {},
     "pool": [
       {
         "code": "601566",
@@ -6146,6 +6190,15 @@
         "score": 0,
         "amount": 141710718.67,
         "close": 11.75,
+        "closed_at_limit": true
+      },
+      {
+        "code": "605169",
+        "name": "洪通燃气",
+        "votes": 1,
+        "score": 0,
+        "amount": 119277660.0,
+        "close": 13.55,
         "closed_at_limit": true
       },
       {
