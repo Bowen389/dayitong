@@ -5942,5 +5942,51 @@
         "score": 26.719
       }
     ]
+  },
+  "top5": {
+    "status": "ready",
+    "candidates": [
+      {
+        "code": "601566",
+        "name": "九牧王",
+        "votes": 2,
+        "score": 1,
+        "amount": 881530529.0,
+        "close": 12.47
+      },
+      {
+        "code": "600857",
+        "name": "宁波中百",
+        "votes": 2,
+        "score": 1,
+        "amount": 99725484.0,
+        "close": 15.0
+      },
+      {
+        "code": "601606",
+        "name": "长城军工",
+        "votes": 1,
+        "score": 3,
+        "amount": 2157328294.0,
+        "close": 32.62
+      },
+      {
+        "code": "600558",
+        "name": "大西洋",
+        "votes": 1,
+        "score": 3,
+        "amount": 1009116280.0,
+        "close": 5.96
+      },
+      {
+        "code": "002693",
+        "name": "双成药业",
+        "votes": 1,
+        "score": 3,
+        "amount": 415896459.0,
+        "close": 8.73
+      }
+    ],
+    "missing": {}
   }
 }
