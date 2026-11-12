@@ -170,6 +170,13 @@ def build(day):
         if gate and meta.get(gate) is not True:
             reason = reason or "市场门控未通过或待核验"
         items = section.get("candidates") or []
+        if key == "v3" and reason:
+            if meta.get("gate_allow") is False and not section.get("error") and not section.get("provisional"):
+                reason = "仅观察：沪深300未站上MA20"
+            raw = meta.get("raw_candidates") or []
+            seen = {item.get("code") for item in items}
+            items = items + [item for item in raw if item.get("code") not in seen]
+            health["top/V3"] = f"{reason}，展示 {len(items)} 只"
         if key == "bf":
             items = items + [
                 item for item in meta.get("raw_candidates", [])
