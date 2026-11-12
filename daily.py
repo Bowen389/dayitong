@@ -47,56 +47,119 @@ def overlap(left, right):
     return None
 
 
-def shortlist(candidates):
-    # Compare entry theses first. Correlated price signals can confirm,
-    # but an institutional disclosure supplies a different type of evidence.
-    priority = {"top/BF": 0, "zonghe/H1": 1, "top/FB": 2,
-                "ceshi/FB_DUAL_K4": 2, "zonghe/P2": 3, "2j3": 4,
-                "top/V3": 5, "zonghe/S2": 5, "top/S2": 6, "主力捉妖": 7}
-    plans = []
+def bounded(value):
+    return max(0.0, min(1.0, value))
+
+
+def stock_factors(signals):
+    factors = {}
+    for signal in signals:
+        detail = signal["detail"]
+        route = signal["route"]
+        if route == "top/LH":
+            amount = detail.get("qualifying_amount_yuan")
+            ratio = detail.get("volume_ratio_20")
+            position = detail.get("low_multiple_120")
+            if isinstance(amount, (int, float)):
+                factors["机构买入"] = bounded(amount / 100_000_000)
+            if isinstance(ratio, (int, float)) and ratio > 0:
+                factors["量能适度"] = bounded(1 - abs(ratio - 1.5) / 1.5)
+            if isinstance(position, (int, float)) and position >= 1:
+                factors["位置克制"] = bounded((4 - position) / 3)
+        if route == "top/BF":
+            bits = detail.get("score_bits")
+            if isinstance(bits, list) and len(bits) == 3:
+                factors["反包结构"] = (float(bits[0]) + float(bits[2])) / 2
+        amount = detail.get("S") or detail.get("mean")
+        if isinstance(amount, (int, float)) and amount > 0:
+            factors["流动性"] = max(factors.get("流动性", 0),
+                                  bounded(amount / 500_000_000))
+        if route.startswith("2j3/") or route == "主力捉妖":
+            try:
+                turnover = float(detail.get("turnover_pct", detail.get("turnover")))
+            except (TypeError, ValueError):
+                continue
+            factors["换手适度"] = bounded(1 - abs(turnover - 8) / 8)
+    return factors
+
+
+FACTOR_WEIGHTS = {"机构买入": 25, "量能适度": 15, "位置克制": 15,
+                  "反包结构": 20, "流动性": 15, "换手适度": 10}
+SETUP_QUALITY = {"top/BF": 20, "zonghe/H1": 18, "top/FB": 17,
+                 "ceshi/FB_DUAL_K4": 17, "zonghe/P2": 16, "2j3": 15,
+                 "top/V3": 15, "zonghe/S2": 14, "top/S2": 13,
+                 "主力捉妖": 13, "top/LH": 11}
+
+
+def setup_quality(signal):
+    route = signal["route"]
+    key = route.split("/")[0] if route.startswith("2j3/") else (
+        "zonghe/S2" if route.startswith("zonghe/S2_") else route)
+    score = SETUP_QUALITY.get(key, 0)
+    if signal["detail"].get("category") == "B":
+        score -= 3
+    return max(0, score - min(signal["rank"] - 1, 4))
+
+
+def rank_systems(candidates):
+    factor_board = []
+    confirmation_board = []
     for candidate in candidates:
         code = candidate["code"]
+        name = candidate["name"]
         if not code.startswith(("000", "001", "002", "003", "600", "601", "603", "605")):
             continue
-        if "ST" in candidate["name"].upper().replace(" ", ""):
+        if name.upper().replace(" ", "").startswith(("ST", "*ST", "SST", "S*ST")):
             continue
-        available = [signal for signal in candidate["signals"] if not signal["reason"]]
-        best = None
-        for anchor in available:
-            route = anchor["route"]
-            key = "2j3" if route.startswith("2j3/") else "zonghe/S2" if route.startswith("zonghe/S2_") else route
-            if key not in priority:
-                continue
-            for evidence in available:
-                if evidence["family"] == anchor["family"]:
-                    continue
-                windows = [joint for left in entry_windows(anchor)
-                           for right in entry_windows(evidence)
-                           if (joint := overlap(left, right)) is not None]
-                if not windows:
-                    continue
-                detail = anchor["detail"]
-                tier = detail.get("category") or str(detail.get("route", "")).removeprefix("BF ")
-                grade = {"A": 0, "B": 1}.get(tier, 0)
-                institutional = evidence["route"] == "top/LH"
-                quality = (-int(institutional), priority[key], grade,
-                           -float(detail.get("S") or 0), anchor["rank"], code)
-                if best is None or quality < best[0]:
-                    best = (quality, dict(code=code, name=candidate["name"],
-                                          anchor=anchor, evidence=evidence, windows=windows))
-        if best is not None:
-            plans.append(best)
-    chosen = []
-    used_families = set()
-    for _, plan in sorted(plans, key=lambda pair: pair[0]):
-        family = plan["anchor"]["family"]
-        if family in used_families:
+        eligible = [signal for signal in candidate["signals"] if not signal["reason"]]
+        anchors = [signal for signal in eligible if entry_windows(signal)]
+        if not anchors:
             continue
-        chosen.append(plan)
-        used_families.add(family)
-        if len(chosen) == 3:
-            break
-    return chosen
+        anchor = max(anchors, key=setup_quality)
+        factors = stock_factors(eligible)
+        contributions = {key: round(FACTOR_WEIGHTS[key] * value, 3)
+                         for key, value in factors.items()}
+        factor_score = round(sum(contributions.values()), 3)
+        base = dict(code=code, name=name, anchor=anchor)
+        if len(factors) >= 2:
+            factor_board.append(dict(base, score=factor_score, parts=contributions))
+
+        families = sorted({signal["family"] for signal in eligible})
+        if len(families) < 2:
+            continue
+        pairs = [(setup, evidence) for setup in anchors for evidence in eligible
+                 if setup["family"] != evidence["family"]]
+        def joint_windows(setup, evidence):
+            return [joint for left in entry_windows(setup) for right in entry_windows(evidence)
+                    if (joint := overlap(left, right)) is not None]
+
+        def evidence_score(evidence):
+            if evidence["route"] == "top/LH":
+                return 20
+            if evidence["family"] == "量价转强":
+                return 13
+            return 10
+
+        def pair_score(pair):
+            setup, evidence = pair
+            if joint_windows(setup, evidence):
+                compatibility = 15
+            else:
+                compatibility = -15 if entry_windows(evidence) else 0
+            return setup_quality(setup) + evidence_score(evidence) + compatibility
+
+        setup, evidence = max(pairs, key=pair_score)
+        windows = joint_windows(setup, evidence)
+        parts = dict(主买点=setup_quality(setup), 辅证=evidence_score(evidence),
+                     开盘兼容=15 if windows else -15 if entry_windows(evidence) else 0,
+                     因子分=round(factor_score * .35, 3))
+        confirmation_board.append(dict(base, anchor=setup, evidence=evidence,
+                                       families=families, windows=windows, parts=parts,
+                                       score=round(sum(parts.values()), 3)))
+
+    order = lambda item: (-item["score"], item["code"])
+    return {"factor": sorted(factor_board, key=order)[:3],
+            "confirmation": sorted(confirmation_board, key=lambda item: (not item["windows"], *order(item)))[:3]}
 
 
 def build(day):
@@ -219,7 +282,7 @@ def build(day):
         candidates.append(dict(code=code, name=signals[0]["name"], votes=len(families),
                                families=families, signals=signals))
     candidates.sort(key=lambda item: (-item["votes"], item["code"]))
-    return dict(date=day, sources=health, candidates=candidates, etfs=etfs, shortlist=shortlist(candidates))
+    return dict(date=day, sources=health, candidates=candidates, etfs=etfs, systems=rank_systems(candidates))
 
 
 def markdown(report):
@@ -227,16 +290,24 @@ def markdown(report):
              "票数为盘后预估。每个信号家族最多一票，所有开盘条件仍待核对。", "",
              "## 数据来源", ""]
     lines.extend(f"- {key} · {status}" for key, status in report["sources"].items())
-    lines.extend(["", "## 次日选股预案（最多3只）", ""])
-    if not report["shortlist"]:
-        lines.append("暂无满足跨家族确认且开盘区间相交的候选。")
-    for plan in report["shortlist"]:
-        windows = " 或 ".join(f"{'[' if a else '('}{lo:+g}%, {hi:+g}%{']' if b else ')'}"
-                              for lo, hi, a, b in plan["windows"])
-        anchor = plan["anchor"]
-        evidence = plan["evidence"]
-        lines.append(f"- **{plan['code']} {plan['name']}** · 主买点 {anchor['route']} · 辅证 {evidence['route']} · 共同缺口 {windows}")
-        lines.append(f"  - 仍需复核主路线最终排名、停牌与涨跌停、整手及现金。退出按主路线。")
+    for key, title in (("factor", "方案一 · 因子选股"),
+                       ("confirmation", "方案二 · 多信号重评分")):
+        lines.extend(["", f"## {title}", ""])
+        for rank, item in enumerate(report["systems"][key], 1):
+            role = ("Top1 待开盘核验" if rank == 1 else f"观察第 {rank} 名")
+            if key == "confirmation" and not item["windows"]:
+                role = f"观察第 {rank} 名（共同区间未确认）"
+            parts = "、".join(f"{name} {value:+g}" for name, value in item["parts"].items())
+            lines.append(f"- **{item['code']} {item['name']}** · {role} · {item['score']:g} 分")
+            lines.append(f"  - {parts}。主买点 {item['anchor']['route']} · {item['anchor']['rule']}")
+            if key == "confirmation":
+                evidence = item["evidence"]
+                lines.append(f"  - 辅证 {evidence['route']} · {evidence['rule']}")
+                windows = " 或 ".join(f"{'[' if a else '('}{lo:+g}%, {hi:+g}%{']' if b else ')'}"
+                                      for lo, hi, a, b in item["windows"])
+                lines.append(f"  - 共同缺口 {windows or '未核实共同区间，仅观察'}")
+        if not report["systems"][key]:
+            lines.append("暂无合格候选。")
     for title, check in (("两类及以上预计信号", lambda n: n >= 2),
                          ("单类预计信号", lambda n: n == 1),
                          ("仅观察与排除", lambda n: n == 0)):
