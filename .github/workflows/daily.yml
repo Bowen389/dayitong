@@ -33,15 +33,12 @@ jobs:
       - name: 生成预案
         env:
           REPORT_DATE: ${{ inputs.date }}
-          TRIGGER: ${{ github.event_name }}
         run: |
           if [[ -n "$REPORT_DATE" ]]; then
             python daily.py --date "$REPORT_DATE"
-          elif [[ "$TRIGGER" == push ]] && [[ $(TZ=Asia/Shanghai date +%H) -lt 15 ]]; then
-            report_day=$(python -c 'from datetime import datetime,timedelta; from zoneinfo import ZoneInfo; from exchange_calendars import get_calendar; print(get_calendar("XSHG").date_to_session((datetime.now(ZoneInfo("Asia/Shanghai")).date()-timedelta(days=1)).isoformat(), direction="previous").date())')
-            python daily.py --date "$report_day"
           else
-            python daily.py
+            report_day=$(python -c 'from datetime import datetime, timedelta; from zoneinfo import ZoneInfo; from exchange_calendars import get_calendar; now = datetime.now(ZoneInfo("Asia/Shanghai")); cutoff = now.date() - timedelta(days=int(now.hour < 15)); print(get_calendar("XSHG").date_to_session(cutoff.isoformat(), direction="previous").date())')
+            python daily.py --date "$report_day"
           fi
       - name: 发布 Markdown 和 JSON
         run: |
