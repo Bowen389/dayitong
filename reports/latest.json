@@ -7,8 +7,8 @@
     "zonghe": "已读取",
     "ceshi": "已读取",
     "s9-duoyinzi": "已读取",
-    "zhulizhuoyao": "待补齐（HTTP Error 404: Not Found）",
-    "2j3": "待补齐（HTTP Error 404: Not Found）",
+    "zhulizhuoyao": "已读取",
+    "2j3": "已读取",
     "首板最低缺口Top1": "缺少独立同日信号源，尚未接入扫描"
   },
   "candidates": [
@@ -255,6 +255,20 @@
             "arm": "U4b",
             "mean": 291433676.3705
           }
+        },
+        {
+          "name": "凯撒文化",
+          "family": "首板",
+          "route": "2j3/ma10_up_index_below",
+          "rule": "缺口[+2%, +5%]，高开幅度降序",
+          "reason": "",
+          "rank": 3,
+          "detail": {
+            "code": "002425",
+            "name": "凯撒文化",
+            "market": "sz",
+            "close": "3.96"
+          }
         }
       ]
     },
@@ -467,6 +481,20 @@
             "close": 4.58,
             "score": null
           }
+        },
+        {
+          "name": "湖北广电",
+          "family": "首板",
+          "route": "2j3/ma10_up_index_below",
+          "rule": "缺口[+2%, +5%]，高开幅度降序",
+          "reason": "",
+          "rank": 1,
+          "detail": {
+            "code": "000665",
+            "name": "湖北广电",
+            "market": "sz",
+            "close": "4.58"
+          }
         }
       ]
     },
@@ -609,6 +637,20 @@
             "pos": 0.8867924528301889,
             "amount": 460664084.76
           }
+        },
+        {
+          "name": "华孚时尚",
+          "family": "首板",
+          "route": "2j3/ma10_up_index_below",
+          "rule": "缺口[+2%, +5%]，高开幅度降序",
+          "reason": "",
+          "rank": 2,
+          "detail": {
+            "code": "002042",
+            "name": "华孚时尚",
+            "market": "sz",
+            "close": "3.62"
+          }
         }
       ]
     },
@@ -649,6 +691,31 @@
             "arm": "C1",
             "pos": 0.9633027522935779,
             "amount": 787236302.33
+          }
+        }
+      ]
+    },
+    {
+      "code": "002474",
+      "name": "榕基软件",
+      "votes": 1,
+      "families": [
+        "量价转强"
+      ],
+      "signals": [
+        {
+          "name": "榕基软件",
+          "family": "量价转强",
+          "route": "主力捉妖",
+          "rule": "优先[-2%, -1%)，其次[0%, +3%)",
+          "reason": "",
+          "rank": 1,
+          "detail": {
+            "code": "002474",
+            "name": "榕基软件",
+            "turnover": 5.71,
+            "volume_lots": 306838.0,
+            "float_cap": 2982400875.6567426
           }
         }
       ]
@@ -766,6 +833,20 @@
             "pos": 0.8832487309644664,
             "amount": 136818300.38
           }
+        },
+        {
+          "name": "金新农",
+          "family": "首板",
+          "route": "2j3/ma10_up_index_below",
+          "rule": "缺口[+2%, +5%]，高开幅度降序",
+          "reason": "",
+          "rank": 4,
+          "detail": {
+            "code": "002548",
+            "name": "金新农",
+            "market": "sz",
+            "close": "3.83"
+          }
         }
       ]
     },
@@ -790,6 +871,31 @@
             "route": "待缺口",
             "close": 5.54,
             "score": null
+          }
+        }
+      ]
+    },
+    {
+      "code": "002693",
+      "name": "双成药业",
+      "votes": 1,
+      "families": [
+        "量价转强"
+      ],
+      "signals": [
+        {
+          "name": "双成药业",
+          "family": "量价转强",
+          "route": "主力捉妖",
+          "rule": "优先[-2%, -1%)，其次[0%, +3%)",
+          "reason": "",
+          "rank": 2,
+          "detail": {
+            "code": "002693",
+            "name": "双成药业",
+            "turnover": 13.45,
+            "volume_lots": 552772.0,
+            "float_cap": 3513903791.8215623
           }
         }
       ]
@@ -1309,6 +1415,20 @@
             "route": "仅观察",
             "close": 3.4,
             "score": 0.020068
+          }
+        },
+        {
+          "name": "文投控股",
+          "family": "首板",
+          "route": "2j3/ma10_up_index_below",
+          "rule": "缺口[+2%, +5%]，高开幅度降序",
+          "reason": "",
+          "rank": 5,
+          "detail": {
+            "code": "600715",
+            "name": "文投控股",
+            "market": "sh",
+            "close": "3.40"
           }
         }
       ]
@@ -6524,11 +6644,55 @@
     ]
   },
   "top5": {
-    "status": "incomplete",
-    "candidates": [],
-    "missing": {
-      "600715": "Remote end closed connection without response"
-    },
+    "status": "ready",
+    "candidates": [
+      {
+        "code": "002425",
+        "name": "凯撒文化",
+        "votes": 2,
+        "score": 2,
+        "amount": 484826715.48,
+        "close": 3.96,
+        "closed_at_limit": true
+      },
+      {
+        "code": "603286",
+        "name": "日盈电子",
+        "votes": 2,
+        "score": 1,
+        "amount": 670562302.0,
+        "close": 64.91,
+        "closed_at_limit": true
+      },
+      {
+        "code": "001393",
+        "name": "维通利",
+        "votes": 2,
+        "score": 0,
+        "amount": 397028425.34,
+        "close": 43.14,
+        "closed_at_limit": true
+      },
+      {
+        "code": "603767",
+        "name": "中马传动",
+        "votes": 2,
+        "score": 0,
+        "amount": 377697714.0,
+        "close": 17.74,
+        "closed_at_limit": true
+      },
+      {
+        "code": "000819",
+        "name": "岳阳兴长",
+        "votes": 2,
+        "score": 0,
+        "amount": 332943838.73,
+        "close": 12.82,
+        "closed_at_limit": true
+      }
+    ],
+    "missing": {},
     "pool": [
       {
         "code": "002425",
@@ -6601,6 +6765,15 @@
         "amount": 618358375.8,
         "close": 5.54,
         "closed_at_limit": true
+      },
+      {
+        "code": "002693",
+        "name": "双成药业",
+        "votes": 1,
+        "score": 3,
+        "amount": 488883560.0,
+        "close": 8.55,
+        "closed_at_limit": false
       },
       {
         "code": "605318",
@@ -6693,6 +6866,15 @@
         "closed_at_limit": true
       },
       {
+        "code": "600715",
+        "name": "文投控股",
+        "votes": 1,
+        "score": 1,
+        "amount": 1044631824.0,
+        "close": 3.4,
+        "closed_at_limit": true
+      },
+      {
         "code": "603636",
         "name": "南威软件",
         "votes": 1,
@@ -6745,6 +6927,15 @@
         "amount": 244592935.86,
         "close": 4.58,
         "closed_at_limit": true
+      },
+      {
+        "code": "002474",
+        "name": "榕基软件",
+        "votes": 1,
+        "score": 0,
+        "amount": 171872848.95,
+        "close": 5.55,
+        "closed_at_limit": false
       },
       {
         "code": "603928",
