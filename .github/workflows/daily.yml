@@ -23,7 +23,7 @@ concurrency:
 jobs:
   report:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 25
     steps:
       - uses: actions/checkout@v4
       - run: git pull --ff-only origin main
@@ -39,7 +39,13 @@ jobs:
             python daily.py --date "$REPORT_DATE"
           else
             report_day=$(python -c 'from datetime import datetime, timedelta; from zoneinfo import ZoneInfo; from exchange_calendars import get_calendar; now = datetime.now(ZoneInfo("Asia/Shanghai")); cutoff = now.date() - timedelta(days=int(now.hour < 15)); print(get_calendar("XSHG").date_to_session(cutoff.isoformat(), direction="previous").date())')
-            python daily.py --date "$report_day"
+            for attempt in {1..9}; do
+              python daily.py --date "$report_day"
+              if python -c 'import json, sys; from pathlib import Path; sources = json.loads((Path("reports") / (sys.argv[1] + ".json")).read_text())["sources"]; sys.exit(not all(sources.get(name) == "已读取" for name in ("top", "zonghe", "ceshi", "s9-duoyinzi", "zhulizhuoyao", "2j3")))' "$report_day"; then
+                break
+              fi
+              if [[ "$attempt" != 9 ]]; then sleep 90; fi
+            done
           fi
       - name: 发布 Markdown 和 JSON
         run: |
