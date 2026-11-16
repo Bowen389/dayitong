@@ -1,8 +1,8 @@
 name: 大一统盘后预案
 on:
   schedule:
-    - cron: '0 10 * * 1-5'
-    - cron: '35 10 * * 1-5'
+    - cron: '8 10 * * 1-5'
+    - cron: '43 10 * * 1-5'
     - cron: '50 13 * * 1-5'
   workflow_dispatch:
     inputs:
