@@ -6776,246 +6776,32 @@
     ]
   },
   "top5": {
-    "status": "ready",
-    "candidates": [
-      {
-        "code": "000533",
-        "name": "顺钠股份",
-        "votes": 2,
-        "score": 1,
-        "amount": 428274183.64,
-        "close": 9.82,
-        "closed_at_limit": true
-      },
-      {
-        "code": "601188",
-        "name": "龙江交通",
-        "votes": 2,
-        "score": 0,
-        "amount": 1012325454.0,
-        "close": 4.73,
-        "closed_at_limit": true
-      },
-      {
-        "code": "002685",
-        "name": "华东重机",
-        "votes": 1,
-        "score": 4,
-        "amount": 861278015.97,
-        "close": 6.09,
-        "closed_at_limit": true
-      },
-      {
-        "code": "002452",
-        "name": "长高电气",
-        "votes": 1,
-        "score": 3,
-        "amount": 298746871.74,
-        "close": 10.0,
-        "closed_at_limit": false
-      },
-      {
-        "code": "002861",
-        "name": "瀛通通讯",
-        "votes": 1,
-        "score": 3,
-        "amount": 234710630.15,
-        "close": 13.6,
-        "closed_at_limit": true
-      }
-    ],
-    "missing": {},
-    "pool": [
-      {
-        "code": "000533",
-        "name": "顺钠股份",
-        "votes": 2,
-        "score": 1,
-        "amount": 428274183.64,
-        "close": 9.82,
-        "closed_at_limit": true
-      },
-      {
-        "code": "601188",
-        "name": "龙江交通",
-        "votes": 2,
-        "score": 0,
-        "amount": 1012325454.0,
-        "close": 4.73,
-        "closed_at_limit": true
-      },
-      {
-        "code": "002685",
-        "name": "华东重机",
-        "votes": 1,
-        "score": 4,
-        "amount": 861278015.97,
-        "close": 6.09,
-        "closed_at_limit": true
-      },
-      {
-        "code": "002452",
-        "name": "长高电气",
-        "votes": 1,
-        "score": 3,
-        "amount": 298746871.74,
-        "close": 10.0,
-        "closed_at_limit": false
-      },
-      {
-        "code": "002861",
-        "name": "瀛通通讯",
-        "votes": 1,
-        "score": 3,
-        "amount": 234710630.15,
-        "close": 13.6,
-        "closed_at_limit": true
-      },
-      {
-        "code": "002959",
-        "name": "小熊电器",
-        "votes": 1,
-        "score": 3,
-        "amount": 184572282.38,
-        "close": 36.27,
-        "closed_at_limit": true
-      },
-      {
-        "code": "600936",
-        "name": "北投科技",
-        "votes": 1,
-        "score": 3,
-        "amount": 179720283.0,
-        "close": 4.02,
-        "closed_at_limit": true
-      },
-      {
-        "code": "603118",
-        "name": "共进股份",
-        "votes": 1,
-        "score": 2,
-        "amount": 2150374878.0,
-        "close": 14.71,
-        "closed_at_limit": true
-      },
-      {
-        "code": "603103",
-        "name": "横店影视",
-        "votes": 1,
-        "score": 2,
-        "amount": 899376003.0,
-        "close": 21.0,
-        "closed_at_limit": false
-      },
-      {
-        "code": "000156",
-        "name": "华数传媒",
-        "votes": 1,
-        "score": 2,
-        "amount": 821966353.78,
-        "close": 8.54,
-        "closed_at_limit": true
-      },
-      {
-        "code": "002035",
-        "name": "华帝股份",
-        "votes": 1,
-        "score": 2,
-        "amount": 323247165.81,
-        "close": 4.68,
-        "closed_at_limit": true
-      },
-      {
-        "code": "002058",
-        "name": "紫竹高科",
-        "votes": 1,
-        "score": 2,
-        "amount": 314846071.24,
-        "close": 22.4,
-        "closed_at_limit": true
-      },
-      {
-        "code": "603983",
-        "name": "丸美生物",
-        "votes": 1,
-        "score": 2,
-        "amount": 212221714.0,
-        "close": 26.73,
-        "closed_at_limit": true
-      },
-      {
-        "code": "002356",
-        "name": "鹏飞绿能",
-        "votes": 1,
-        "score": 2,
-        "amount": 205809543.27,
-        "close": 2.52,
-        "closed_at_limit": true
-      },
-      {
-        "code": "600822",
-        "name": "上海物贸",
-        "votes": 1,
-        "score": 2,
-        "amount": 151709788.0,
-        "close": 9.45,
-        "closed_at_limit": true
-      },
-      {
-        "code": "000521",
-        "name": "长虹美菱",
-        "votes": 1,
-        "score": 2,
-        "amount": 131913504.92,
-        "close": 4.31,
-        "closed_at_limit": true
-      },
-      {
-        "code": "600386",
-        "name": "北巴传媒",
-        "votes": 1,
-        "score": 2,
-        "amount": 131616779.0,
-        "close": 3.81,
-        "closed_at_limit": true
-      },
-      {
-        "code": "601929",
-        "name": "吉视传媒",
-        "votes": 1,
-        "score": 1,
-        "amount": 1479940805.0,
-        "close": 2.96,
-        "closed_at_limit": true
-      },
-      {
-        "code": "001318",
-        "name": "阳光乳业",
-        "votes": 1,
-        "score": 1,
-        "amount": 620358520.06,
-        "close": 14.62,
-        "closed_at_limit": true
-      },
-      {
-        "code": "000628",
-        "name": "高新发展",
-        "votes": 1,
-        "score": 0,
-        "amount": 786185717.1,
-        "close": 46.55,
-        "closed_at_limit": true
-      },
-      {
-        "code": "002419",
-        "name": "天虹股份",
-        "votes": 1,
-        "score": 0,
-        "amount": 366253487.55,
-        "close": 5.4,
-        "closed_at_limit": true
-      }
-    ]
+    "status": "incomplete",
+    "candidates": [],
+    "missing": {
+      "000533": "Remote end closed connection without response",
+      "601188": "Remote end closed connection without response",
+      "000156": "Remote end closed connection without response",
+      "000521": "Remote end closed connection without response",
+      "000628": "Remote end closed connection without response",
+      "001318": "Remote end closed connection without response",
+      "002035": "Remote end closed connection without response",
+      "002058": "Remote end closed connection without response",
+      "002356": "Remote end closed connection without response",
+      "002419": "Remote end closed connection without response",
+      "002452": "Remote end closed connection without response",
+      "002685": "Remote end closed connection without response",
+      "002861": "Remote end closed connection without response",
+      "002959": "Remote end closed connection without response",
+      "600386": "Remote end closed connection without response",
+      "600822": "Remote end closed connection without response",
+      "600936": "Remote end closed connection without response",
+      "601929": "Remote end closed connection without response",
+      "603103": "Remote end closed connection without response",
+      "603118": "Remote end closed connection without response",
+      "603983": "Remote end closed connection without response"
+    },
+    "pool": []
   },
   "h1": {
     "title": "H1 BF主线 / FB补位",
