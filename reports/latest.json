@@ -6457,291 +6457,37 @@
     ]
   },
   "top5": {
-    "status": "ready",
-    "candidates": [
-      {
-        "code": "600156",
-        "name": "华升股份",
-        "votes": 2,
-        "score": 2,
-        "amount": 448939593.0,
-        "close": 8.09,
-        "closed_at_limit": true
-      },
-      {
-        "code": "002463",
-        "name": "沪电股份",
-        "votes": 2,
-        "score": 1,
-        "amount": 8186049498.78,
-        "close": 80.19,
-        "closed_at_limit": true
-      },
-      {
-        "code": "603629",
-        "name": "利通电子",
-        "votes": 2,
-        "score": 1,
-        "amount": 2115359486.0,
-        "close": 60.93,
-        "closed_at_limit": true
-      },
-      {
-        "code": "600186",
-        "name": "莲花控股",
-        "votes": 2,
-        "score": 1,
-        "amount": 1696162775.0,
-        "close": 8.98,
-        "closed_at_limit": true
-      },
-      {
-        "code": "002916",
-        "name": "深南电路",
-        "votes": 2,
-        "score": 0,
-        "amount": 2666632885.03,
-        "close": 201.19,
-        "closed_at_limit": true
-      }
-    ],
-    "missing": {},
-    "pool": [
-      {
-        "code": "600156",
-        "name": "华升股份",
-        "votes": 2,
-        "score": 2,
-        "amount": 448939593.0,
-        "close": 8.09,
-        "closed_at_limit": true
-      },
-      {
-        "code": "002463",
-        "name": "沪电股份",
-        "votes": 2,
-        "score": 1,
-        "amount": 8186049498.78,
-        "close": 80.19,
-        "closed_at_limit": true
-      },
-      {
-        "code": "603629",
-        "name": "利通电子",
-        "votes": 2,
-        "score": 1,
-        "amount": 2115359486.0,
-        "close": 60.93,
-        "closed_at_limit": true
-      },
-      {
-        "code": "600186",
-        "name": "莲花控股",
-        "votes": 2,
-        "score": 1,
-        "amount": 1696162775.0,
-        "close": 8.98,
-        "closed_at_limit": true
-      },
-      {
-        "code": "002916",
-        "name": "深南电路",
-        "votes": 2,
-        "score": 0,
-        "amount": 2666632885.03,
-        "close": 201.19,
-        "closed_at_limit": true
-      },
-      {
-        "code": "002929",
-        "name": "润建股份",
-        "votes": 2,
-        "score": 0,
-        "amount": 1799247949.65,
-        "close": 53.76,
-        "closed_at_limit": true
-      },
-      {
-        "code": "600162",
-        "name": "香江控股",
-        "votes": 2,
-        "score": 0,
-        "amount": 492627965.0,
-        "close": 3.29,
-        "closed_at_limit": true
-      },
-      {
-        "code": "000711",
-        "name": "京蓝科技",
-        "votes": 2,
-        "score": 0,
-        "amount": 263324135.0,
-        "close": 3.48,
-        "closed_at_limit": true
-      },
-      {
-        "code": "000889",
-        "name": "中嘉博创",
-        "votes": 2,
-        "score": 0,
-        "amount": 185586795.87,
-        "close": 3.38,
-        "closed_at_limit": true
-      },
-      {
-        "code": "002955",
-        "name": "鸿合科技",
-        "votes": 2,
-        "score": 0,
-        "amount": 178355627.11,
-        "close": 27.39,
-        "closed_at_limit": true
-      },
-      {
-        "code": "000158",
-        "name": "常山北明",
-        "votes": 1,
-        "score": 3,
-        "amount": 919356471.67,
-        "close": 12.43,
-        "closed_at_limit": true
-      },
-      {
-        "code": "000707",
-        "name": "双环科技",
-        "votes": 1,
-        "score": 3,
-        "amount": 406595967.88,
-        "close": 5.05,
-        "closed_at_limit": true
-      },
-      {
-        "code": "603220",
-        "name": "中贝通信",
-        "votes": 1,
-        "score": 2,
-        "amount": 797651527.0,
-        "close": 15.62,
-        "closed_at_limit": true
-      },
-      {
-        "code": "002272",
-        "name": "川润股份",
-        "votes": 1,
-        "score": 2,
-        "amount": 633356769.68,
-        "close": 12.58,
-        "closed_at_limit": true
-      },
-      {
-        "code": "000815",
-        "name": "美利云",
-        "votes": 1,
-        "score": 1,
-        "amount": 1023883311.56,
-        "close": 14.31,
-        "closed_at_limit": true
-      },
-      {
-        "code": "000410",
-        "name": "沈阳机床",
-        "votes": 1,
-        "score": 1,
-        "amount": 604185279.14,
-        "close": 5.71,
-        "closed_at_limit": true
-      },
-      {
-        "code": "603887",
-        "name": "城地香江",
-        "votes": 1,
-        "score": 1,
-        "amount": 381726887.0,
-        "close": 8.18,
-        "closed_at_limit": true
-      },
-      {
-        "code": "603985",
-        "name": "恒润股份",
-        "votes": 1,
-        "score": 1,
-        "amount": 203075333.0,
-        "close": 14.73,
-        "closed_at_limit": true
-      },
-      {
-        "code": "603657",
-        "name": "春光科技",
-        "votes": 1,
-        "score": 1,
-        "amount": 54720248.0,
-        "close": 33.94,
-        "closed_at_limit": true
-      },
-      {
-        "code": "002148",
-        "name": "北纬科技",
-        "votes": 1,
-        "score": 0,
-        "amount": 1676260981.83,
-        "close": 8.92,
-        "closed_at_limit": true
-      },
-      {
-        "code": "002042",
-        "name": "华孚时尚",
-        "votes": 1,
-        "score": 0,
-        "amount": 637167067.6,
-        "close": 3.96,
-        "closed_at_limit": true
-      },
-      {
-        "code": "600839",
-        "name": "四川长虹",
-        "votes": 1,
-        "score": 0,
-        "amount": 589539910.0,
-        "close": 5.68,
-        "closed_at_limit": true
-      },
-      {
-        "code": "000980",
-        "name": "众泰汽车",
-        "votes": 1,
-        "score": 0,
-        "amount": 372748467.79,
-        "close": 1.67,
-        "closed_at_limit": true
-      },
-      {
-        "code": "002197",
-        "name": "证通电子",
-        "votes": 1,
-        "score": 0,
-        "amount": 229285580.22,
-        "close": 6.11,
-        "closed_at_limit": true
-      },
-      {
-        "code": "002194",
-        "name": "武汉凡谷",
-        "votes": 1,
-        "score": 0,
-        "amount": 166126061.52,
-        "close": 9.31,
-        "closed_at_limit": true
-      },
-      {
-        "code": "600405",
-        "name": "动力源",
-        "votes": 1,
-        "score": 0,
-        "amount": 93405888.0,
-        "close": 4.62,
-        "closed_at_limit": true
-      }
-    ]
+    "status": "incomplete",
+    "candidates": [],
+    "missing": {
+      "000711": "Remote end closed connection without response",
+      "000889": "Remote end closed connection without response",
+      "002463": "Remote end closed connection without response",
+      "002916": "Remote end closed connection without response",
+      "002929": "Remote end closed connection without response",
+      "002955": "Remote end closed connection without response",
+      "600156": "Remote end closed connection without response",
+      "600162": "Remote end closed connection without response",
+      "600186": "Remote end closed connection without response",
+      "603629": "Remote end closed connection without response",
+      "000158": "Remote end closed connection without response",
+      "000410": "Remote end closed connection without response",
+      "000707": "Remote end closed connection without response",
+      "000815": "Remote end closed connection without response",
+      "000980": "Remote end closed connection without response",
+      "002042": "Remote end closed connection without response",
+      "002148": "Remote end closed connection without response",
+      "002194": "Remote end closed connection without response",
+      "002197": "Remote end closed connection without response",
+      "002272": "Remote end closed connection without response",
+      "600405": "Remote end closed connection without response",
+      "600839": "Remote end closed connection without response",
+      "603220": "Remote end closed connection without response",
+      "603657": "Remote end closed connection without response",
+      "603887": "Remote end closed connection without response",
+      "603985": "Remote end closed connection without response"
+    },
+    "pool": []
   },
   "h1": {
     "title": "H1 BF主线 / FB补位",
