@@ -9,6 +9,7 @@ from datetime import date, timedelta
 import json
 from pathlib import Path
 import re
+import time
 import akshare as ak
 import pandas as pd
 
@@ -82,10 +83,14 @@ def build(day):
             pool=pd.read_csv(cache,dtype={'代码':str})
         pool['代码']=pool['代码'].astype(str).str.zfill(6)
         pool=pool[pool['代码'].str.fullmatch(PREFIX)&~pool['名称'].str.contains('ST|退',case=False,na=False)&pd.to_numeric(pool['连板数']).eq(1)]
+        if '成交额' in pool:
+            amount=pd.to_numeric(pool['成交额'],errors='coerce')
+            pool=pool[amount.isna()|amount.between(300_000_000,1_900_000_000)]
         def load(row):
             code=row['代码']
             try:
                 frame=history(day,code)
+                errors.pop(code,None)
                 if not eligible(frame):return None
                 latest=frame.iloc[-1]
                 return dict(code=code,name=row['名称'],close=float(latest.close),amount=float(latest.amount))
@@ -94,6 +99,12 @@ def build(day):
                 return None
         with ThreadPoolExecutor(max_workers=4) as executor:
             candidates=[r for r in executor.map(load,pool.to_dict('records')) if r is not None]
+        for attempt in range(2):
+            if not errors:break
+            time.sleep(2)
+            retry=pool[pool['代码'].isin(list(errors))].to_dict('records')
+            with ThreadPoolExecutor(max_workers=2) as executor:
+                candidates.extend(r for r in executor.map(load,retry) if r is not None)
         candidates.sort(key=lambda r:(-r['amount'],r['code']))
         count=len(pool)
     except Exception as exc:
