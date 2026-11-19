@@ -123,13 +123,19 @@ MAIN_BOARD = re.compile(r"(?:600|601|603|605|000|001|002|003)\d{3}")
 
 
 def top5_factors(day, code):
+    # Prefer the healthy alternate source/cache during the observed Eastmoney
+    # outage; both paths retain the same factors and exact-date checks.
+    try:
+        return top5_tencent(day, code)
+    except Exception:
+        pass
     params = urlencode(dict(
         secid=f"{int(code.startswith('6'))}.{code}", klt=101, fqt=0,
         beg=(date.fromisoformat(day) - timedelta(days=100)).strftime("%Y%m%d"),
         end=day.replace("-", ""), fields1="f1,f2,f3,f4,f5,f6",
         fields2="f51,f52,f53,f54,f55,f56,f57,f58,f59,f60,f61",
     ))
-    for attempt in range(3):
+    for attempt in range(1):
         try:
             request = Request(f"https://push2his.eastmoney.com/api/qt/stock/kline/get?{params}",
                               headers={"User-Agent": "Mozilla/5.0"})
