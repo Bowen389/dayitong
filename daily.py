@@ -377,7 +377,11 @@ def build(day):
         "缺口[+2%, +5%]，高开幅度降序",
         "" if ladder.get("status") == "scanned" else "源策略门控或扫描状态待核验")
 
-    health["首板最低缺口Top1"] = "缺少独立同日信号源，尚未接入扫描"
+    from firstboard_source import build as firstboard_build
+    firstboard = firstboard_build(day)
+    health['首板最低缺口Top1'] = '已读取' if firstboard['status']=='complete' else '独立扫描行情待补齐'
+    add(firstboard['candidates'], '首板', '首板最低缺口Top1（PTrade版）', firstboard['next_open_rule'],
+        '' if firstboard['status']=='complete' else '独立扫描行情待补齐')
     candidates = []
     for code, signals in rows.items():
         families = sorted({signal["family"] for signal in signals if not signal["reason"]})
