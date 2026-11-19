@@ -212,7 +212,7 @@ def top5_tencent(day, code):
     upper = float(fields[47])
     if upper <= 0:
         raise ValueError('missing actual upper limit')
-    result = dict(score=score,amount=float(amount),close=float(close),closed_at_limit=close>=upper-.001)
+    result = dict(score=score,amount=float(amount),close=float(close),closed_at_limit=bool(close>=upper-.001))
     target.parent.mkdir(parents=True,exist_ok=True)
     target.write_text(json.dumps({'date':day,'source':'Tencent','factors':result}),encoding='utf-8')
     return result
