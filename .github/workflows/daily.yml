@@ -1,9 +1,9 @@
 name: 大一统盘后预案
 on:
   schedule:
-    - cron: '8 10 * * 1-5'
-    - cron: '43 10 * * 1-5'
-    - cron: '50 13 * * 1-5'
+    # GitHub native schedule; UTC -> Asia/Shanghai 17:00 / 18:00
+    - cron: '0 9 * * 1-5'
+    - cron: '0 10 * * 1-5'
   workflow_dispatch:
     inputs:
       date:
@@ -12,7 +12,7 @@ on:
         type: string
   push:
     branches: [main]
-    paths: ['daily.py', '.github/workflows/daily.yml']
+    paths: ['daily.py', 'aggregate_watch.py', '.github/workflows/daily.yml']
 
 permissions:
   contents: write
@@ -23,31 +23,31 @@ concurrency:
 jobs:
   report:
     runs-on: ubuntu-latest
-    timeout-minutes: 25
+    timeout-minutes: 50
     steps:
       - uses: actions/checkout@v4
       - run: git pull --ff-only origin main
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-      - run: pip install 'exchange-calendars>=4.11,<5'
-      - name: 生成预案
+      - run: pip install 'exchange-calendars>=4.11,<5' akshare==1.20.65
+      - uses: actions/cache@v4
+        with:
+          path: data/factors
+          key: aggregate-factors-${{ github.run_id }}
+          restore-keys: aggregate-factors-
+      - name: Follow upstream updates and rebuild dated aggregate
         env:
           REPORT_DATE: ${{ inputs.date }}
+          EVENT_NAME: ${{ github.event_name }}
         run: |
-          if [[ -n "$REPORT_DATE" ]]; then
-            python daily.py --date "$REPORT_DATE"
-          else
-            report_day=$(python -c 'from datetime import datetime, timedelta; from zoneinfo import ZoneInfo; from exchange_calendars import get_calendar; now = datetime.now(ZoneInfo("Asia/Shanghai")); cutoff = now.date() - timedelta(days=int(now.hour < 15)); print(get_calendar("XSHG").date_to_session(cutoff.isoformat(), direction="previous").date())')
-            for attempt in {1..9}; do
-              python daily.py --date "$report_day"
-              if python -c 'import json, sys; from pathlib import Path; sources = json.loads((Path("reports") / (sys.argv[1] + ".json")).read_text())["sources"]; sys.exit(not all(sources.get(name) == "已读取" for name in ("top", "zonghe", "ceshi", "s9-duoyinzi", "zhulizhuoyao", "2j3")))' "$report_day"; then
-                break
-              fi
-              if [[ "$attempt" != 9 ]]; then sleep 90; fi
-            done
-          fi
+          args=()
+          if [ -n "$REPORT_DATE" ]; then args+=(--date "$REPORT_DATE"); fi
+          wait_seconds=0
+          if [ "$EVENT_NAME" = schedule ]; then wait_seconds=1200; fi
+          python -u aggregate_watch.py --wait-seconds "$wait_seconds" "${args[@]}"
       - name: 发布 Markdown 和 JSON
+        if: always()
         run: |
           if [[ ! -d reports ]]; then exit 0; fi
           git add reports/
@@ -55,4 +55,5 @@ jobs:
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git commit -m 'Publish dayitong report'
+          git pull --rebase origin main
           git push origin HEAD:main
