@@ -387,6 +387,11 @@ def build(day):
     top5 = build_top5(day, candidates)
     issues = [f'{key}: {value}' for key,value in health.items()
               if value != '已读取' and key not in ('top/V3',)]
+    unavailable = [key for key in ('top','zonghe','ceshi','s9-duoyinzi','zhulizhuoyao','2j3') if health.get(key) != '已读取']
+    if unavailable:
+        top5['status'] = 'incomplete'
+        top5['candidates'] = []
+        top5['missing']['上游来源'] = ', '.join(unavailable)
     if top5['status'] != 'ready':
         issues.append('Top5行情未齐，禁止锁榜')
     return dict(date=day, status='partial' if issues else 'complete', issues=issues,
