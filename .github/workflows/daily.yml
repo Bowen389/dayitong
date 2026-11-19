@@ -12,7 +12,7 @@ on:
         type: string
   push:
     branches: [main]
-    paths: ['daily.py', 'aggregate_watch.py', '.github/workflows/daily.yml']
+    paths: ['daily.py', 'aggregate_watch.py', 'firstboard_source.py', 'test_firstboard_source.py', '.github/workflows/daily.yml']
 
 permissions:
   contents: write
@@ -34,10 +34,12 @@ jobs:
       - run: pip install 'exchange-calendars>=4.11,<5' akshare==1.20.65
       - uses: actions/cache@v4
         with:
-          path: data/factors
+          path: |
+            data/factors
+            data/firstboard
           key: aggregate-factors-${{ github.run_id }}
           restore-keys: aggregate-factors-
-      - run: python -m unittest test_recovery -v
+      - run: python -m unittest test_recovery test_firstboard_source -v
       - name: Follow upstream updates and rebuild dated aggregate
         env:
           REPORT_DATE: ${{ inputs.date }}
