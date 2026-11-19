@@ -1,0 +1,6132 @@
+{
+  "date": "2026-11-19",
+  "status": "partial",
+  "issues": [
+    "首板最低缺口Top1: 缺少独立同日信号源，尚未接入扫描"
+  ],
+  "sources": {
+    "top": "已读取",
+    "top/V3": "仅观察：沪深300未站上MA20，展示 21 只",
+    "zonghe": "已读取",
+    "ceshi": "已读取",
+    "s9-duoyinzi": "已读取",
+    "zhulizhuoyao": "已读取",
+    "2j3": "已读取",
+    "首板最低缺口Top1": "缺少独立同日信号源，尚未接入扫描"
+  },
+  "candidates": [
+    {
+      "code": "002165",
+      "name": "红 宝 丽",
+      "votes": 3,
+      "families": [
+        "反包",
+        "量价转强",
+        "首板"
+      ],
+      "signals": [
+        {
+          "name": "红 宝 丽",
+          "family": "首板",
+          "route": "top/FB",
+          "rule": "C2[-2.5%, +5%]，C1[-5%, -2%]",
+          "reason": "",
+          "rank": 10,
+          "detail": {
+            "code": "002165",
+            "name": "红 宝 丽",
+            "close": 6.3,
+            "pos60_med": 0.8438880706921944,
+            "money_t": 306855437.84,
+            "B_MA20": -0.07219861723263488
+          }
+        },
+        {
+          "name": "红宝丽",
+          "family": "首板",
+          "route": "zonghe/P2",
+          "rule": "展示顺序为成交额参考。E开盘确认 −5% < 缺口 ≤ −2%，缺口最深优先，同缺口按代码，正式只取1只。",
+          "reason": "",
+          "rank": 1,
+          "detail": {
+            "code": "002165",
+            "name": "红宝丽",
+            "route": "待缺口",
+            "close": 6.3,
+            "score": null
+          }
+        },
+        {
+          "name": "红宝丽",
+          "family": "首板",
+          "route": "zonghe/H1",
+          "rule": "BF门控关闭，FB门控通过。BF先按档位和20日均额，开盘缺口 (−10.1%, +8%]。BF无可执行票才看C2 [−2.5%, +5%]、C1 [−5%, −2%]，同类按缺口升序，合计只取1只。FB盘后按代码展示，次日才定最终名次。",
+          "reason": "",
+          "rank": 1,
+          "detail": {
+            "code": "002165",
+            "name": "红宝丽",
+            "route": "FB C1",
+            "close": 6.3,
+            "score": null
+          }
+        },
+        {
+          "name": "红 宝 丽",
+          "family": "首板",
+          "route": "ceshi/FB_DUAL_K4",
+          "rule": "C2[-2.5%, +5%]，C1[-5%, -2%]",
+          "reason": "",
+          "rank": 4,
+          "detail": {
+            "code": "002165",
+            "name": "红 宝 丽",
+            "arm": "C1",
+            "pos": 0.8438880706921948,
+            "amount": 306855437.84
+          }
+        },
+        {
+          "name": "红 宝 丽",
+          "family": "反包",
+          "route": "ceshi/V6",
+          "rule": "按源策略的分档、开盘缺口和成交约束",
+          "reason": "",
+          "rank": 9,
+          "detail": {
+            "code": "002165",
+            "name": "红 宝 丽",
+            "arm": "深跌",
+            "mean": 140617522.93199998
+          }
+        },
+        {
+          "name": "红 宝 丽",
+          "family": "量价转强",
+          "route": "主力捉妖",
+          "rule": "优先[-2%, -1%)，其次[0%, +3%)",
+          "reason": "",
+          "rank": 1,
+          "detail": {
+            "code": "002165",
+            "name": "红 宝 丽",
+            "turnover": 6.79,
+            "volume_lots": 494253.0,
+            "float_cap": 4585852577.319588
+          }
+        }
+      ]
+    },
+    {
+      "code": "002077",
+      "name": "大港股份",
+      "votes": 2,
+      "families": [
+        "反包",
+        "首板"
+      ],
+      "signals": [
+        {
+          "name": "大港股份",
+          "family": "趋势",
+          "route": "top/V3",
+          "rule": "缺口[-5%, +6%]",
+          "reason": "仅观察：沪深300未站上MA20",
+          "rank": 9,
+          "detail": {
+            "code": "002077",
+            "name": "大港股份",
+            "signal_close_raw": 12.11,
+            "status": "ok",
+            "gain": 0.09990917347865569,
+            "strength": 1,
+            "conditions": [
+              true,
+              false,
+              false
+            ]
+          }
+        },
+        {
+          "name": "大港股份",
+          "family": "首板",
+          "route": "top/FB",
+          "rule": "C2[-2.5%, +5%]，C1[-5%, -2%]",
+          "reason": "",
+          "rank": 8,
+          "detail": {
+            "code": "002077",
+            "name": "大港股份",
+            "close": 12.11,
+            "pos60_med": 0.8868304470398716,
+            "money_t": 608433053.04,
+            "B_MA20": -0.07219861723263488
+          }
+        },
+        {
+          "name": "大港股份",
+          "family": "首板",
+          "route": "zonghe/P2",
+          "rule": "展示顺序为成交额参考。E开盘确认 −5% < 缺口 ≤ −2%，缺口最深优先，同缺口按代码，正式只取1只。",
+          "reason": "",
+          "rank": 1,
+          "detail": {
+            "code": "002077",
+            "name": "大港股份",
+            "route": "待缺口",
+            "close": 12.11,
+            "score": null
+          }
+        },
+        {
+          "name": "大港股份",
+          "family": "首板",
+          "route": "zonghe/H1",
+          "rule": "BF门控关闭，FB门控通过。BF先按档位和20日均额，开盘缺口 (−10.1%, +8%]。BF无可执行票才看C2 [−2.5%, +5%]、C1 [−5%, −2%]，同类按缺口升序，合计只取1只。FB盘后按代码展示，次日才定最终名次。",
+          "reason": "",
+          "rank": 1,
+          "detail": {
+            "code": "002077",
+            "name": "大港股份",
+            "route": "FB C1",
+            "close": 12.11,
+            "score": null
+          }
+        },
+        {
+          "name": "大港股份",
+          "family": "首板",
+          "route": "ceshi/FB_DUAL_K4",
+          "rule": "C2[-2.5%, +5%]，C1[-5%, -2%]",
+          "reason": "",
+          "rank": 2,
+          "detail": {
+            "code": "002077",
+            "name": "大港股份",
+            "arm": "C1",
+            "pos": 0.8868304470398712,
+            "amount": 608433053.04
+          }
+        },
+        {
+          "name": "大港股份",
+          "family": "反包",
+          "route": "ceshi/V6",
+          "rule": "按源策略的分档、开盘缺口和成交约束",
+          "reason": "",
+          "rank": 3,
+          "detail": {
+            "code": "002077",
+            "name": "大港股份",
+            "arm": "深跌",
+            "mean": 410988325.597
+          }
+        }
+      ]
+    },
+    {
+      "code": "002418",
+      "name": "康盛股份",
+      "votes": 2,
+      "families": [
+        "反包",
+        "首板"
+      ],
+      "signals": [
+        {
+          "name": "康盛股份",
+          "family": "首板",
+          "route": "top/FB",
+          "rule": "C2[-2.5%, +5%]，C1[-5%, -2%]",
+          "reason": "",
+          "rank": 11,
+          "detail": {
+            "code": "002418",
+            "name": "康盛股份",
+            "close": 4.02,
+            "pos60_med": 0.8869987849331707,
+            "money_t": 236014780.0,
+            "B_MA20": -0.07219861723263488
+          }
+        },
+        {
+          "name": "康盛股份",
+          "family": "首板",
+          "route": "zonghe/P2",
+          "rule": "展示顺序为成交额参考。E开盘确认 −5% < 缺口 ≤ −2%，缺口最深优先，同缺口按代码，正式只取1只。",
+          "reason": "",
+          "rank": 1,
+          "detail": {
+            "code": "002418",
+            "name": "康盛股份",
+            "route": "待缺口",
+            "close": 4.02,
+            "score": null
+          }
+        },
+        {
+          "name": "康盛股份",
+          "family": "首板",
+          "route": "zonghe/H1",
+          "rule": "BF门控关闭，FB门控通过。BF先按档位和20日均额，开盘缺口 (−10.1%, +8%]。BF无可执行票才看C2 [−2.5%, +5%]、C1 [−5%, −2%]，同类按缺口升序，合计只取1只。FB盘后按代码展示，次日才定最终名次。",
+          "reason": "",
+          "rank": 1,
+          "detail": {
+            "code": "002418",
+            "name": "康盛股份",
+            "route": "FB C1",
+            "close": 4.02,
+            "score": null
+          }
+        },
+        {
+          "name": "康盛股份",
+          "family": "首板",
+          "route": "ceshi/FB_DUAL_K4",
+          "rule": "C2[-2.5%, +5%]，C1[-5%, -2%]",
+          "reason": "",
+          "rank": 5,
+          "detail": {
+            "code": "002418",
+            "name": "康盛股份",
+            "arm": "C1",
+            "pos": 0.8869987849331707,
+            "amount": 236014780.0
+          }
+        },
+        {
+          "name": "康盛股份",
+          "family": "反包",
+          "route": "ceshi/V6",
+          "rule": "按源策略的分档、开盘缺口和成交约束",
+          "reason": "",
+          "rank": 6,
+          "detail": {
+            "code": "002418",
+            "name": "康盛股份",
+            "arm": "深跌",
+            "mean": 187588714.955
+          }
+        },
+        {
+          "name": "康盛股份",
+          "family": "首板",
+          "route": "2j3/ma10_down_below_2pct",
+          "rule": "缺口[+2%, +5%]，高开幅度降序",
+          "reason": "",
+          "rank": 1,
+          "detail": {
+            "code": "002418",
+            "name": "康盛股份",
+            "market": "sz",
+            "close": "4.02"
+          }
+        }
+      ]
+    },
+    {
+      "code": "002579",
+      "name": "中京电子",
+      "votes": 2,
+      "families": [
+        "反包",
+        "首板"
+      ],
+      "signals": [
+        {
+          "name": "中京电子",
+          "family": "首板",
+          "route": "top/FB",
+          "rule": "C2[-2.5%, +5%]，C1[-5%, -2%]",
+          "reason": "",
+          "rank": 12,
+          "detail": {
+            "code": "002579",
+            "name": "中京电子",
+            "close": 12.17,
+            "pos60_med": 0.7572749058541592,
+            "money_t": 915331536.1,
+            "B_MA20": -0.07219861723263488
+          }
+        },
+        {
+          "name": "中京电子",
+          "family": "首板",
+          "route": "zonghe/P2",
+          "rule": "展示顺序为成交额参考。E开盘确认 −5% < 缺口 ≤ −2%，缺口最深优先，同缺口按代码，正式只取1只。",
+          "reason": "",
+          "rank": 1,
+          "detail": {
+            "code": "002579",
+            "name": "中京电子",
+            "route": "待缺口",
+            "close": 12.17,
+            "score": null
+          }
+        },
+        {
+          "name": "中京电子",
+          "family": "首板",
+          "route": "zonghe/H1",
+          "rule": "BF门控关闭，FB门控通过。BF先按档位和20日均额，开盘缺口 (−10.1%, +8%]。BF无可执行票才看C2 [−2.5%, +5%]、C1 [−5%, −2%]，同类按缺口升序，合计只取1只。FB盘后按代码展示，次日才定最终名次。",
+          "reason": "",
+          "rank": 1,
+          "detail": {
+            "code": "002579",
+            "name": "中京电子",
+            "route": "FB C1",
+            "close": 12.17,
+            "score": null
+          }
+        },
+        {
+          "name": "中京电子",
+          "family": "首板",
+          "route": "ceshi/FB_DUAL_K4",
+          "rule": "C2[-2.5%, +5%]，C1[-5%, -2%]",
+          "reason": "",
+          "rank": 6,
+          "detail": {
+            "code": "002579",
+            "name": "中京电子",
+            "arm": "C1",
+            "pos": 0.7572749058541595,
+            "amount": 915331536.1
+          }
+        },
+        {
+          "name": "中京电子",
+          "family": "反包",
+          "route": "ceshi/V6",
+          "rule": "按源策略的分档、开盘缺口和成交约束",
+          "reason": "",
+          "rank": 2,
+          "detail": {
+            "code": "002579",
+            "name": "中京电子",
+            "arm": "深跌",
+            "mean": 654309689.3425001
+          }
+        }
+      ]
+    },
+    {
+      "code": "600520",
+      "name": "三佳科技",
+      "votes": 2,
+      "families": [
+        "反包",
+        "首板"
+      ],
+      "signals": [
+        {
+          "name": "三佳科技",
+          "family": "首板",
+          "route": "top/FB",
+          "rule": "C2[-2.5%, +5%]，C1[-5%, -2%]",
+          "reason": "",
+          "rank": 1,
+          "detail": {
+            "code": "600520",
+            "name": "三佳科技",
+            "close": 22.17,
+            "pos60_med": 0.8614792646430097,
+            "money_t": 242865529.0,
+            "B_MA20": -0.07219861723263488
+          }
+        },
+        {
+          "name": "三佳科技",
+          "family": "首板",
+          "route": "zonghe/P2",
+          "rule": "展示顺序为成交额参考。E开盘确认 −5% < 缺口 ≤ −2%，缺口最深优先，同缺口按代码，正式只取1只。",
+          "reason": "",
+          "rank": 1,
+          "detail": {
+            "code": "600520",
+            "name": "三佳科技",
+            "route": "待缺口",
+            "close": 22.17,
+            "score": null
+          }
+        },
+        {
+          "name": "三佳科技",
+          "family": "首板",
+          "route": "zonghe/H1",
+          "rule": "BF门控关闭，FB门控通过。BF先按档位和20日均额，开盘缺口 (−10.1%, +8%]。BF无可执行票才看C2 [−2.5%, +5%]、C1 [−5%, −2%]，同类按缺口升序，合计只取1只。FB盘后按代码展示，次日才定最终名次。",
+          "reason": "",
+          "rank": 1,
+          "detail": {
+            "code": "600520",
+            "name": "三佳科技",
+            "route": "FB C1",
+            "close": 22.17,
+            "score": null
+          }
+        },
+        {
+          "name": "三佳科技",
+          "family": "首板",
+          "route": "ceshi/FB_DUAL_K4",
+          "rule": "C2[-2.5%, +5%]，C1[-5%, -2%]",
+          "reason": "",
+          "rank": 7,
+          "detail": {
+            "code": "600520",
+            "name": "三佳科技",
+            "arm": "C1",
+            "pos": 0.86147926464301,
+            "amount": 242865529.0
+          }
+        },
+        {
+          "name": "三佳科技",
+          "family": "反包",
+          "route": "ceshi/V6",
+          "rule": "按源策略的分档、开盘缺口和成交约束",
+          "reason": "",
+          "rank": 8,
+          "detail": {
+            "code": "600520",
+            "name": "三佳科技",
+            "arm": "深跌",
+            "mean": 146460416.2
+          }
+        }
+      ]
+    },
+    {
+      "code": "600619",
+      "name": "海立股份",
+      "votes": 2,
+      "families": [
+        "反包",
+        "首板"
+      ],
+      "signals": [
+        {
+          "name": "海立股份",
+          "family": "首板",
+          "route": "zonghe/P2",
+          "rule": "展示顺序为成交额参考。E开盘确认 −5% < 缺口 ≤ −2%，缺口最深优先，同缺口按代码，正式只取1只。",
+          "reason": "",
+          "rank": 1,
+          "detail": {
+            "code": "600619",
+            "name": "海立股份",
+            "route": "待缺口",
+            "close": 15.07,
+            "score": null
+          }
+        },
+        {
+          "name": "海立股份",
+          "family": "反包",
+          "route": "ceshi/V6",
+          "rule": "按源策略的分档、开盘缺口和成交约束",
+          "reason": "",
+          "rank": 5,
+          "detail": {
+            "code": "600619",
+            "name": "海立股份",
+            "arm": "深跌",
+            "mean": 228468389.2
+          }
+        }
+      ]
+    },
+    {
+      "code": "601616",
+      "name": "广电电气",
+      "votes": 2,
+      "families": [
+        "反包",
+        "首板"
+      ],
+      "signals": [
+        {
+          "name": "广电电气",
+          "family": "首板",
+          "route": "top/FB",
+          "rule": "C2[-2.5%, +5%]，C1[-5%, -2%]",
+          "reason": "",
+          "rank": 2,
+          "detail": {
+            "code": "601616",
+            "name": "广电电气",
+            "close": 3.74,
+            "pos60_med": 0.9054593874833551,
+            "money_t": 148024383.0,
+            "B_MA20": -0.07219861723263488
+          }
+        },
+        {
+          "name": "广电电气",
+          "family": "首板",
+          "route": "zonghe/P2",
+          "rule": "展示顺序为成交额参考。E开盘确认 −5% < 缺口 ≤ −2%，缺口最深优先，同缺口按代码，正式只取1只。",
+          "reason": "",
+          "rank": 1,
+          "detail": {
+            "code": "601616",
+            "name": "广电电气",
+            "route": "待缺口",
+            "close": 3.74,
+            "score": null
+          }
+        },
+        {
+          "name": "广电电气",
+          "family": "首板",
+          "route": "zonghe/H1",
+          "rule": "BF门控关闭，FB门控通过。BF先按档位和20日均额，开盘缺口 (−10.1%, +8%]。BF无可执行票才看C2 [−2.5%, +5%]、C1 [−5%, −2%]，同类按缺口升序，合计只取1只。FB盘后按代码展示，次日才定最终名次。",
+          "reason": "",
+          "rank": 1,
+          "detail": {
+            "code": "601616",
+            "name": "广电电气",
+            "route": "FB C1",
+            "close": 3.74,
+            "score": null
+          }
+        },
+        {
+          "name": "广电电气",
+          "family": "首板",
+          "route": "ceshi/FB_DUAL_K4",
+          "rule": "C2[-2.5%, +5%]，C1[-5%, -2%]",
+          "reason": "",
+          "rank": 8,
+          "detail": {
+            "code": "601616",
+            "name": "广电电气",
+            "arm": "C1",
+            "pos": 0.9054593874833555,
+            "amount": 148024383.0
+          }
+        },
+        {
+          "name": "广电电气",
+          "family": "反包",
+          "route": "ceshi/V6",
+          "rule": "按源策略的分档、开盘缺口和成交约束",
+          "reason": "",
+          "rank": 14,
+          "detail": {
+            "code": "601616",
+            "name": "广电电气",
+            "arm": "深跌",
+            "mean": 40137855.45
+          }
+        },
+        {
+          "name": "广电电气",
+          "family": "首板",
+          "route": "2j3/ma10_down_below_2pct",
+          "rule": "缺口[+2%, +5%]，高开幅度降序",
+          "reason": "",
+          "rank": 2,
+          "detail": {
+            "code": "601616",
+            "name": "广电电气",
+            "market": "sh",
+            "close": "3.74"
+          }
+        }
+      ]
+    },
+    {
+      "code": "603078",
+      "name": "江化微",
+      "votes": 2,
+      "families": [
+        "反包",
+        "首板"
+      ],
+      "signals": [
+        {
+          "name": "江化微",
+          "family": "趋势",
+          "route": "top/V3",
+          "rule": "缺口[-5%, +6%]",
+          "reason": "仅观察：沪深300未站上MA20",
+          "rank": 8,
+          "detail": {
+            "code": "603078",
+            "name": "江化微",
+            "signal_close_raw": 26.86,
+            "status": "ok",
+            "gain": 0.09991809991809975,
+            "strength": 1,
+            "conditions": [
+              true,
+              false,
+              false
+            ]
+          }
+        },
+        {
+          "name": "江化微",
+          "family": "首板",
+          "route": "top/FB",
+          "rule": "C2[-2.5%, +5%]，C1[-5%, -2%]",
+          "reason": "",
+          "rank": 3,
+          "detail": {
+            "code": "603078",
+            "name": "江化微",
+            "close": 26.86,
+            "pos60_med": 0.8572933122696161,
+            "money_t": 1274536742.0,
+            "B_MA20": -0.07219861723263488
+          }
+        },
+        {
+          "name": "江化微",
+          "family": "首板",
+          "route": "zonghe/P2",
+          "rule": "展示顺序为成交额参考。E开盘确认 −5% < 缺口 ≤ −2%，缺口最深优先，同缺口按代码，正式只取1只。",
+          "reason": "",
+          "rank": 1,
+          "detail": {
+            "code": "603078",
+            "name": "江化微",
+            "route": "待缺口",
+            "close": 26.86,
+            "score": null
+          }
+        },
+        {
+          "name": "江化微",
+          "family": "首板",
+          "route": "zonghe/H1",
+          "rule": "BF门控关闭，FB门控通过。BF先按档位和20日均额，开盘缺口 (−10.1%, +8%]。BF无可执行票才看C2 [−2.5%, +5%]、C1 [−5%, −2%]，同类按缺口升序，合计只取1只。FB盘后按代码展示，次日才定最终名次。",
+          "reason": "",
+          "rank": 1,
+          "detail": {
+            "code": "603078",
+            "name": "江化微",
+            "route": "FB C1",
+            "close": 26.86,
+            "score": null
+          }
+        },
+        {
+          "name": "江化微",
+          "family": "首板",
+          "route": "ceshi/FB_DUAL_K4",
+          "rule": "C2[-2.5%, +5%]，C1[-5%, -2%]",
+          "reason": "",
+          "rank": 9,
+          "detail": {
+            "code": "603078",
+            "name": "江化微",
+            "arm": "C1",
+            "pos": 0.8572933122696158,
+            "amount": 1274536742.0
+          }
+        },
+        {
+          "name": "江化微",
+          "family": "反包",
+          "route": "ceshi/U4",
+          "rule": "按源策略的分档、开盘缺口和成交约束",
+          "reason": "",
+          "rank": 3,
+          "detail": {
+            "code": "603078",
+            "name": "江化微",
+            "arm": "U4a+U4b",
+            "mean": 310938472.75
+          }
+        },
+        {
+          "name": "江化微",
+          "family": "反包",
+          "route": "ceshi/V6",
+          "rule": "按源策略的分档、开盘缺口和成交约束",
+          "reason": "",
+          "rank": 4,
+          "detail": {
+            "code": "603078",
+            "name": "江化微",
+            "arm": "深跌",
+            "mean": 310938472.75
+          }
+        }
+      ]
+    },
+    {
+      "code": "603928",
+      "name": "兴业股份",
+      "votes": 2,
+      "families": [
+        "反包",
+        "首板"
+      ],
+      "signals": [
+        {
+          "name": "兴业股份",
+          "family": "首板",
+          "route": "top/FB",
+          "rule": "C2[-2.5%, +5%]，C1[-5%, -2%]",
+          "reason": "",
+          "rank": 4,
+          "detail": {
+            "code": "603928",
+            "name": "兴业股份",
+            "close": 12.38,
+            "pos60_med": 0.9679414003044131,
+            "money_t": 626540442.0,
+            "B_MA20": -0.07219861723263488
+          }
+        },
+        {
+          "name": "兴业股份",
+          "family": "首板",
+          "route": "zonghe/H1",
+          "rule": "BF门控关闭，FB门控通过。BF先按档位和20日均额，开盘缺口 (−10.1%, +8%]。BF无可执行票才看C2 [−2.5%, +5%]、C1 [−5%, −2%]，同类按缺口升序，合计只取1只。FB盘后按代码展示，次日才定最终名次。",
+          "reason": "",
+          "rank": 1,
+          "detail": {
+            "code": "603928",
+            "name": "兴业股份",
+            "route": "FB C1",
+            "close": 12.38,
+            "score": null
+          }
+        },
+        {
+          "name": "兴业股份",
+          "family": "首板",
+          "route": "ceshi/FB_DUAL_K4",
+          "rule": "C2[-2.5%, +5%]，C1[-5%, -2%]",
+          "reason": "",
+          "rank": 10,
+          "detail": {
+            "code": "603928",
+            "name": "兴业股份",
+            "arm": "C1",
+            "pos": 0.9679414003044132,
+            "amount": 626540442.0
+          }
+        },
+        {
+          "name": "兴业股份",
+          "family": "反包",
+          "route": "ceshi/U4",
+          "rule": "按源策略的分档、开盘缺口和成交约束",
+          "reason": "",
+          "rank": 4,
+          "detail": {
+            "code": "603928",
+            "name": "兴业股份",
+            "arm": "U4b",
+            "mean": 147769073.9
+          }
+        },
+        {
+          "name": "兴业股份",
+          "family": "反包",
+          "route": "ceshi/V6",
+          "rule": "按源策略的分档、开盘缺口和成交约束",
+          "reason": "",
+          "rank": 7,
+          "detail": {
+            "code": "603928",
+            "name": "兴业股份",
+            "arm": "深跌",
+            "mean": 147769073.9
+          }
+        }
+      ]
+    },
+    {
+      "code": "603931",
+      "name": "格林达",
+      "votes": 2,
+      "families": [
+        "反包",
+        "首板"
+      ],
+      "signals": [
+        {
+          "name": "格林达",
+          "family": "首板",
+          "route": "top/FB",
+          "rule": "C2[-2.5%, +5%]，C1[-5%, -2%]",
+          "reason": "",
+          "rank": 5,
+          "detail": {
+            "code": "603931",
+            "name": "格林达",
+            "close": 29.15,
+            "pos60_med": 0.8325479107759974,
+            "money_t": 177536484.0,
+            "B_MA20": -0.07219861723263488
+          }
+        },
+        {
+          "name": "格林达",
+          "family": "首板",
+          "route": "zonghe/P2",
+          "rule": "展示顺序为成交额参考。E开盘确认 −5% < 缺口 ≤ −2%，缺口最深优先，同缺口按代码，正式只取1只。",
+          "reason": "",
+          "rank": 1,
+          "detail": {
+            "code": "603931",
+            "name": "格林达",
+            "route": "待缺口",
+            "close": 29.15,
+            "score": null
+          }
+        },
+        {
+          "name": "格林达",
+          "family": "首板",
+          "route": "zonghe/H1",
+          "rule": "BF门控关闭，FB门控通过。BF先按档位和20日均额，开盘缺口 (−10.1%, +8%]。BF无可执行票才看C2 [−2.5%, +5%]、C1 [−5%, −2%]，同类按缺口升序，合计只取1只。FB盘后按代码展示，次日才定最终名次。",
+          "reason": "",
+          "rank": 1,
+          "detail": {
+            "code": "603931",
+            "name": "格林达",
+            "route": "FB C1",
+            "close": 29.15,
+            "score": null
+          }
+        },
+        {
+          "name": "格林达",
+          "family": "首板",
+          "route": "ceshi/FB_DUAL_K4",
+          "rule": "C2[-2.5%, +5%]，C1[-5%, -2%]",
+          "reason": "",
+          "rank": 11,
+          "detail": {
+            "code": "603931",
+            "name": "格林达",
+            "arm": "C1",
+            "pos": 0.8325479107759975,
+            "amount": 177536484.0
+          }
+        },
+        {
+          "name": "格林达",
+          "family": "反包",
+          "route": "ceshi/U4",
+          "rule": "按源策略的分档、开盘缺口和成交约束",
+          "reason": "",
+          "rank": 5,
+          "detail": {
+            "code": "603931",
+            "name": "格林达",
+            "arm": "U4b",
+            "mean": 114921600.6
+          }
+        },
+        {
+          "name": "格林达",
+          "family": "反包",
+          "route": "ceshi/V6",
+          "rule": "按源策略的分档、开盘缺口和成交约束",
+          "reason": "",
+          "rank": 12,
+          "detail": {
+            "code": "603931",
+            "name": "格林达",
+            "arm": "深跌",
+            "mean": 114921600.6
+          }
+        }
+      ]
+    },
+    {
+      "code": "605178",
+      "name": "时空科技",
+      "votes": 2,
+      "families": [
+        "反包",
+        "首板"
+      ],
+      "signals": [
+        {
+          "name": "时空科技",
+          "family": "首板",
+          "route": "top/FB",
+          "rule": "C2[-2.5%, +5%]，C1[-5%, -2%]",
+          "reason": "",
+          "rank": 6,
+          "detail": {
+            "code": "605178",
+            "name": "时空科技",
+            "close": 53.25,
+            "pos60_med": 0.7624222379714937,
+            "money_t": 163051350.0,
+            "B_MA20": -0.07219861723263488
+          }
+        },
+        {
+          "name": "时空科技",
+          "family": "首板",
+          "route": "zonghe/P2",
+          "rule": "展示顺序为成交额参考。E开盘确认 −5% < 缺口 ≤ −2%，缺口最深优先，同缺口按代码，正式只取1只。",
+          "reason": "",
+          "rank": 1,
+          "detail": {
+            "code": "605178",
+            "name": "时空科技",
+            "route": "待缺口",
+            "close": 53.25,
+            "score": null
+          }
+        },
+        {
+          "name": "时空科技",
+          "family": "首板",
+          "route": "zonghe/H1",
+          "rule": "BF门控关闭，FB门控通过。BF先按档位和20日均额，开盘缺口 (−10.1%, +8%]。BF无可执行票才看C2 [−2.5%, +5%]、C1 [−5%, −2%]，同类按缺口升序，合计只取1只。FB盘后按代码展示，次日才定最终名次。",
+          "reason": "",
+          "rank": 1,
+          "detail": {
+            "code": "605178",
+            "name": "时空科技",
+            "route": "FB C1",
+            "close": 53.25,
+            "score": null
+          }
+        },
+        {
+          "name": "时空科技",
+          "family": "首板",
+          "route": "ceshi/FB_DUAL_K4",
+          "rule": "C2[-2.5%, +5%]，C1[-5%, -2%]",
+          "reason": "",
+          "rank": 12,
+          "detail": {
+            "code": "605178",
+            "name": "时空科技",
+            "arm": "C1",
+            "pos": 0.7624222379714936,
+            "amount": 163051350.0
+          }
+        },
+        {
+          "name": "时空科技",
+          "family": "反包",
+          "route": "ceshi/V6",
+          "rule": "按源策略的分档、开盘缺口和成交约束",
+          "reason": "",
+          "rank": 10,
+          "detail": {
+            "code": "605178",
+            "name": "时空科技",
+            "arm": "深跌",
+            "mean": 126234861.4
+          }
+        }
+      ]
+    },
+    {
+      "code": "000656",
+      "name": "金科股份",
+      "votes": 1,
+      "families": [
+        "首板"
+      ],
+      "signals": [
+        {
+          "name": "金科股份",
+          "family": "首板",
+          "route": "top/FB",
+          "rule": "C2[-2.5%, +5%]，C1[-5%, -2%]",
+          "reason": "",
+          "rank": 7,
+          "detail": {
+            "code": "000656",
+            "name": "金科股份",
+            "close": 1.02,
+            "pos60_med": 0.7815126050420175,
+            "money_t": 613915072.85,
+            "B_MA20": -0.07219861723263488
+          }
+        },
+        {
+          "name": "金科股份",
+          "family": "首板",
+          "route": "zonghe/P2",
+          "rule": "展示顺序为成交额参考。E开盘确认 −5% < 缺口 ≤ −2%，缺口最深优先，同缺口按代码，正式只取1只。",
+          "reason": "",
+          "rank": 1,
+          "detail": {
+            "code": "000656",
+            "name": "金科股份",
+            "route": "待缺口",
+            "close": 1.02,
+            "score": null
+          }
+        },
+        {
+          "name": "金科股份",
+          "family": "首板",
+          "route": "ceshi/FB_DUAL_K4",
+          "rule": "C2[-2.5%, +5%]，C1[-5%, -2%]",
+          "reason": "",
+          "rank": 1,
+          "detail": {
+            "code": "000656",
+            "name": "金科股份",
+            "arm": "C1",
+            "pos": 0.7815126050420175,
+            "amount": 613915072.85
+          }
+        }
+      ]
+    },
+    {
+      "code": "000678",
+      "name": "襄阳轴承",
+      "votes": 1,
+      "families": [
+        "反包"
+      ],
+      "signals": [
+        {
+          "name": "襄阳轴承",
+          "family": "反包",
+          "route": "top/BF",
+          "rule": "A优先，同档按20日均额降序，开盘缺口至多+8%",
+          "reason": "市场门控未通过或待核验",
+          "rank": 1,
+          "detail": {
+            "code": "000678",
+            "name": "襄阳轴承",
+            "close": 16.74,
+            "status": "raw",
+            "S": 2249497018.4660006,
+            "prior_limits": 1,
+            "score_bits": [
+              1,
+              1,
+              1
+            ],
+            "score": 3,
+            "category": "A",
+            "previous_broken_limit": false,
+            "bf_static_ok": true
+          }
+        },
+        {
+          "name": "襄阳轴承",
+          "family": "反包",
+          "route": "ceshi/U4",
+          "rule": "按源策略的分档、开盘缺口和成交约束",
+          "reason": "",
+          "rank": 2,
+          "detail": {
+            "code": "000678",
+            "name": "襄阳轴承",
+            "arm": "U4a+U4b",
+            "mean": 2249497018.4660006
+          }
+        },
+        {
+          "name": "襄阳轴承",
+          "family": "反包",
+          "route": "ceshi/V6",
+          "rule": "按源策略的分档、开盘缺口和成交约束",
+          "reason": "",
+          "rank": 1,
+          "detail": {
+            "code": "000678",
+            "name": "襄阳轴承",
+            "arm": "双臂",
+            "mean": 2249497018.4660006
+          }
+        }
+      ]
+    },
+    {
+      "code": "001358",
+      "name": "兴欣新材",
+      "votes": 1,
+      "families": [
+        "反包"
+      ],
+      "signals": [
+        {
+          "name": "兴欣新材",
+          "family": "反包",
+          "route": "ceshi/V6",
+          "rule": "按源策略的分档、开盘缺口和成交约束",
+          "reason": "",
+          "rank": 13,
+          "detail": {
+            "code": "001358",
+            "name": "兴欣新材",
+            "arm": "深跌",
+            "mean": 71265254.4005
+          }
+        }
+      ]
+    },
+    {
+      "code": "002146",
+      "name": "荣盛发展",
+      "votes": 1,
+      "families": [
+        "首板"
+      ],
+      "signals": [
+        {
+          "name": "荣盛发展",
+          "family": "首板",
+          "route": "top/FB",
+          "rule": "C2[-2.5%, +5%]，C1[-5%, -2%]",
+          "reason": "",
+          "rank": 9,
+          "detail": {
+            "code": "002146",
+            "name": "荣盛发展",
+            "close": 1.02,
+            "pos60_med": 0.8086956521739133,
+            "money_t": 360609817.4,
+            "B_MA20": -0.07219861723263488
+          }
+        },
+        {
+          "name": "荣盛发展",
+          "family": "首板",
+          "route": "zonghe/P2",
+          "rule": "展示顺序为成交额参考。E开盘确认 −5% < 缺口 ≤ −2%，缺口最深优先，同缺口按代码，正式只取1只。",
+          "reason": "",
+          "rank": 1,
+          "detail": {
+            "code": "002146",
+            "name": "荣盛发展",
+            "route": "待缺口",
+            "close": 1.02,
+            "score": null
+          }
+        },
+        {
+          "name": "荣盛发展",
+          "family": "首板",
+          "route": "ceshi/FB_DUAL_K4",
+          "rule": "C2[-2.5%, +5%]，C1[-5%, -2%]",
+          "reason": "",
+          "rank": 3,
+          "detail": {
+            "code": "002146",
+            "name": "荣盛发展",
+            "arm": "C1",
+            "pos": 0.8086956521739131,
+            "amount": 360609817.4
+          }
+        }
+      ]
+    },
+    {
+      "code": "002242",
+      "name": "九阳股份",
+      "votes": 1,
+      "families": [
+        "反包"
+      ],
+      "signals": [
+        {
+          "name": "九阳股份",
+          "family": "反包",
+          "route": "ceshi/U4",
+          "rule": "按源策略的分档、开盘缺口和成交约束",
+          "reason": "",
+          "rank": 1,
+          "detail": {
+            "code": "002242",
+            "name": "九阳股份",
+            "arm": "U4b",
+            "mean": 2578066993.3889995
+          }
+        }
+      ]
+    },
+    {
+      "code": "002420",
+      "name": "毅昌科技",
+      "votes": 1,
+      "families": [
+        "反包"
+      ],
+      "signals": [
+        {
+          "name": "毅昌科技",
+          "family": "反包",
+          "route": "ceshi/V6",
+          "rule": "按源策略的分档、开盘缺口和成交约束",
+          "reason": "",
+          "rank": 11,
+          "detail": {
+            "code": "002420",
+            "name": "毅昌科技",
+            "arm": "深跌",
+            "mean": 119140936.632
+          }
+        }
+      ]
+    },
+    {
+      "code": "002582",
+      "name": "好想你",
+      "votes": 1,
+      "families": [
+        "量价转强"
+      ],
+      "signals": [
+        {
+          "name": "好想你",
+          "family": "趋势",
+          "route": "top/V3",
+          "rule": "缺口[-5%, +6%]",
+          "reason": "仅观察：沪深300未站上MA20",
+          "rank": 11,
+          "detail": {
+            "code": "002582",
+            "name": "好想你",
+            "signal_close_raw": 10.18,
+            "status": "ok",
+            "gain": 0.052740434332988695,
+            "strength": 1,
+            "conditions": [
+              true,
+              false,
+              false
+            ]
+          }
+        },
+        {
+          "name": "好想你",
+          "family": "量价转强",
+          "route": "主力捉妖",
+          "rule": "优先[-2%, -1%)，其次[0%, +3%)",
+          "reason": "",
+          "rank": 2,
+          "detail": {
+            "code": "002582",
+            "name": "好想你",
+            "turnover": 14.45,
+            "volume_lots": 497314.0,
+            "float_cap": 3503568525.9515567
+          }
+        }
+      ]
+    },
+    {
+      "code": "600156",
+      "name": "华升股份",
+      "votes": 1,
+      "families": [
+        "趋势"
+      ],
+      "signals": [
+        {
+          "name": "华升股份",
+          "family": "趋势",
+          "route": "zonghe/S2_1",
+          "rule": "门控关闭，下面仅作观察。按收盘分展示Top5，执行口径只看Top1，次日开盘缺口须在 [−5%, +6%]。",
+          "reason": "门控关闭",
+          "rank": 1,
+          "detail": {
+            "code": "600156",
+            "name": "华升股份",
+            "route": "观察",
+            "close": 8.9,
+            "score": 10.963256
+          }
+        },
+        {
+          "name": "华升股份",
+          "family": "趋势",
+          "route": "zonghe/S2_2",
+          "rule": "按收盘分展示Top5，执行口径只看Top1，次日开盘缺口须在 [−5%, +6%]。",
+          "reason": "",
+          "rank": 1,
+          "detail": {
+            "code": "600156",
+            "name": "华升股份",
+            "route": "可复核",
+            "close": 8.9,
+            "score": 10.963256
+          }
+        },
+        {
+          "name": "华升股份",
+          "family": "趋势",
+          "route": "zonghe/S2_3",
+          "rule": "门控关闭，下面仅作观察。按收盘分展示Top5，执行口径只看Top1，次日开盘缺口须在 [−5%, +6%]。",
+          "reason": "门控关闭",
+          "rank": 1,
+          "detail": {
+            "code": "600156",
+            "name": "华升股份",
+            "route": "观察",
+            "close": 8.9,
+            "score": 10.506586
+          }
+        },
+        {
+          "name": "华升股份",
+          "family": "趋势",
+          "route": "zonghe/S2_4",
+          "rule": "门控关闭，下面仅作观察。按收盘分展示Top5，执行口径只看Top1，次日开盘缺口须在 [−5%, +6%]。与趋势1同入口，退出规则不同。",
+          "reason": "门控关闭",
+          "rank": 1,
+          "detail": {
+            "code": "600156",
+            "name": "华升股份",
+            "route": "观察",
+            "close": 8.9,
+            "score": 10.963256
+          }
+        }
+      ]
+    },
+    {
+      "code": "603813",
+      "name": "原尚股份",
+      "votes": 1,
+      "families": [
+        "反包"
+      ],
+      "signals": [
+        {
+          "name": "原尚股份",
+          "family": "反包",
+          "route": "ceshi/V6",
+          "rule": "按源策略的分档、开盘缺口和成交约束",
+          "reason": "",
+          "rank": 15,
+          "detail": {
+            "code": "603813",
+            "name": "原尚股份",
+            "arm": "深跌",
+            "mean": 39169041.3
+          }
+        }
+      ]
+    },
+    {
+      "code": "000158",
+      "name": "常山北明",
+      "votes": 0,
+      "families": [],
+      "signals": [
+        {
+          "name": "常山北明",
+          "family": "趋势",
+          "route": "top/V3",
+          "rule": "缺口[-5%, +6%]",
+          "reason": "仅观察：沪深300未站上MA20",
+          "rank": 12,
+          "detail": {
+            "code": "000158",
+            "name": "常山北明",
+            "signal_close_raw": 13.03,
+            "status": "ok",
+            "gain": 0.048270313757039496,
+            "strength": 1,
+            "conditions": [
+              true,
+              false,
+              false
+            ]
+          }
+        },
+        {
+          "name": "常山北明",
+          "family": "趋势",
+          "route": "zonghe/S2_1",
+          "rule": "门控关闭，下面仅作观察。按收盘分展示Top5，执行口径只看Top1，次日开盘缺口须在 [−5%, +6%]。",
+          "reason": "门控关闭",
+          "rank": 1,
+          "detail": {
+            "code": "000158",
+            "name": "常山北明",
+            "route": "观察",
+            "close": 13.03,
+            "score": 10.522718
+          }
+        },
+        {
+          "name": "常山北明",
+          "family": "趋势",
+          "route": "zonghe/S2_2",
+          "rule": "按收盘分展示Top5，执行口径只看Top1，次日开盘缺口须在 [−5%, +6%]。",
+          "reason": "路线只执行Top1",
+          "rank": 1,
+          "detail": {
+            "code": "000158",
+            "name": "常山北明",
+            "route": "可复核",
+            "close": 13.03,
+            "score": 10.522718
+          }
+        },
+        {
+          "name": "常山北明",
+          "family": "趋势",
+          "route": "zonghe/S2_3",
+          "rule": "门控关闭，下面仅作观察。按收盘分展示Top5，执行口径只看Top1，次日开盘缺口须在 [−5%, +6%]。",
+          "reason": "门控关闭",
+          "rank": 1,
+          "detail": {
+            "code": "000158",
+            "name": "常山北明",
+            "route": "观察",
+            "close": 13.03,
+            "score": 11.063034
+          }
+        },
+        {
+          "name": "常山北明",
+          "family": "趋势",
+          "route": "zonghe/S2_4",
+          "rule": "门控关闭，下面仅作观察。按收盘分展示Top5，执行口径只看Top1，次日开盘缺口须在 [−5%, +6%]。与趋势1同入口，退出规则不同。",
+          "reason": "门控关闭",
+          "rank": 1,
+          "detail": {
+            "code": "000158",
+            "name": "常山北明",
+            "route": "观察",
+            "close": 13.03,
+            "score": 10.522718
+          }
+        },
+        {
+          "name": "常山北明",
+          "family": "趋势",
+          "route": "S9/champion",
+          "rule": "核对源策略开盘成交条件",
+          "reason": "市场门控关闭",
+          "rank": 1,
+          "detail": {
+            "code": "000158",
+            "name": "常山北明",
+            "score": 18.09785331719904,
+            "ref_close": 13.03
+          }
+        },
+        {
+          "name": "常山北明",
+          "family": "趋势",
+          "route": "S9/balanced",
+          "rule": "核对源策略开盘成交条件",
+          "reason": "市场门控关闭",
+          "rank": 1,
+          "detail": {
+            "code": "000158",
+            "name": "常山北明",
+            "score": 12.916591207125911,
+            "ref_close": 13.03
+          }
+        },
+        {
+          "name": "常山北明",
+          "family": "趋势",
+          "route": "S9/runner",
+          "rule": "核对源策略开盘成交条件",
+          "reason": "市场门控关闭",
+          "rank": 1,
+          "detail": {
+            "code": "000158",
+            "name": "常山北明",
+            "score": 15.147594875751382,
+            "ref_close": 13.03
+          }
+        },
+        {
+          "name": "常山北明",
+          "family": "趋势",
+          "route": "S9/original",
+          "rule": "核对源策略开盘成交条件",
+          "reason": "市场门控关闭",
+          "rank": 1,
+          "detail": {
+            "code": "000158",
+            "name": "常山北明",
+            "score": 12.916591207125911,
+            "ref_close": 13.03
+          }
+        },
+        {
+          "name": "常山北明",
+          "family": "趋势",
+          "route": "S9/wild",
+          "rule": "核对源策略开盘成交条件",
+          "reason": "市场门控关闭",
+          "rank": 1,
+          "detail": {
+            "code": "000158",
+            "name": "常山北明",
+            "score": 14.109832776483545,
+            "ref_close": 13.03
+          }
+        }
+      ]
+    },
+    {
+      "code": "000415",
+      "name": "渤海租赁",
+      "votes": 0,
+      "families": [],
+      "signals": [
+        {
+          "name": "渤海租赁",
+          "family": "趋势",
+          "route": "S9/balanced",
+          "rule": "核对源策略开盘成交条件",
+          "reason": "市场门控关闭",
+          "rank": 14,
+          "detail": {
+            "code": "000415",
+            "name": "渤海租赁",
+            "score": 7.352277175129759,
+            "ref_close": 4.81
+          }
+        },
+        {
+          "name": "渤海租赁",
+          "family": "趋势",
+          "route": "S9/runner",
+          "rule": "核对源策略开盘成交条件",
+          "reason": "市场门控关闭",
+          "rank": 16,
+          "detail": {
+            "code": "000415",
+            "name": "渤海租赁",
+            "score": 8.767986845716257,
+            "ref_close": 4.81
+          }
+        },
+        {
+          "name": "渤海租赁",
+          "family": "趋势",
+          "route": "S9/original",
+          "rule": "核对源策略开盘成交条件",
+          "reason": "市场门控关闭",
+          "rank": 14,
+          "detail": {
+            "code": "000415",
+            "name": "渤海租赁",
+            "score": 7.352277175129759,
+            "ref_close": 4.81
+          }
+        }
+      ]
+    },
+    {
+      "code": "000423",
+      "name": "东阿阿胶",
+      "votes": 0,
+      "families": [],
+      "signals": [
+        {
+          "name": "东阿阿胶",
+          "family": "趋势",
+          "route": "top/V3",
+          "rule": "缺口[-5%, +6%]",
+          "reason": "仅观察：沪深300未站上MA20",
+          "rank": 18,
+          "detail": {
+            "code": "000423",
+            "name": "东阿阿胶",
+            "signal_close_raw": 53.21,
+            "status": "ok",
+            "gain": 0.010828267477203557,
+            "strength": 1,
+            "conditions": [
+              false,
+              false,
+              true
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "code": "000921",
+      "name": "海信家电",
+      "votes": 0,
+      "families": [],
+      "signals": [
+        {
+          "name": "海信家电",
+          "family": "趋势",
+          "route": "S9/balanced",
+          "rule": "核对源策略开盘成交条件",
+          "reason": "市场门控关闭",
+          "rank": 11,
+          "detail": {
+            "code": "000921",
+            "name": "海信家电",
+            "score": 8.143923925993178,
+            "ref_close": 26.13
+          }
+        },
+        {
+          "name": "海信家电",
+          "family": "趋势",
+          "route": "S9/runner",
+          "rule": "核对源策略开盘成交条件",
+          "reason": "市场门控关闭",
+          "rank": 10,
+          "detail": {
+            "code": "000921",
+            "name": "海信家电",
+            "score": 11.143713919539092,
+            "ref_close": 26.13
+          }
+        },
+        {
+          "name": "海信家电",
+          "family": "趋势",
+          "route": "S9/original",
+          "rule": "核对源策略开盘成交条件",
+          "reason": "市场门控关闭",
+          "rank": 11,
+          "detail": {
+            "code": "000921",
+            "name": "海信家电",
+            "score": 8.143923925993178,
+            "ref_close": 26.13
+          }
+        }
+      ]
+    },
+    {
+      "code": "001872",
+      "name": "招商港口",
+      "votes": 0,
+      "families": [],
+      "signals": [
+        {
+          "name": "招商港口",
+          "family": "趋势",
+          "route": "S9/balanced",
+          "rule": "核对源策略开盘成交条件",
+          "reason": "市场门控关闭",
+          "rank": 15,
+          "detail": {
+            "code": "001872",
+            "name": "招商港口",
+            "score": 7.300317707336594,
+            "ref_close": 27.55
+          }
+        },
+        {
+          "name": "招商港口",
+          "family": "趋势",
+          "route": "S9/runner",
+          "rule": "核对源策略开盘成交条件",
+          "reason": "市场门控关闭",
+          "rank": 15,
+          "detail": {
+            "code": "001872",
+            "name": "招商港口",
+            "score": 8.936309854920708,
+            "ref_close": 27.55
+          }
+        },
+        {
+          "name": "招商港口",
+          "family": "趋势",
+          "route": "S9/original",
+          "rule": "核对源策略开盘成交条件",
+          "reason": "市场门控关闭",
+          "rank": 15,
+          "detail": {
+            "code": "001872",
+            "name": "招商港口",
+            "score": 7.300317707336594,
+            "ref_close": 27.55
+          }
+        }
+      ]
+    },
+    {
+      "code": "002187",
+      "name": "广百股份",
+      "votes": 0,
+      "families": [],
+      "signals": [
+        {
+          "name": "广百股份",
+          "family": "趋势",
+          "route": "zonghe/HGB",
+          "rule": "沪深300收盘未高于MA20，以下Top3仅观察，本日无执行候选。 冻结V3池，逐月训练至 2026-10-29，分数为预期净收益。",
+          "reason": "门控关闭",
+          "rank": 1,
+          "detail": {
+            "code": "002187",
+            "name": "广百股份",
+            "route": "仅观察",
+            "close": 6.56,
+            "score": 0.023005
+          }
+        }
+      ]
+    },
+    {
+      "code": "002197",
+      "name": "证通电子",
+      "votes": 0,
+      "families": [],
+      "signals": [
+        {
+          "name": "证通电子",
+          "family": "趋势",
+          "route": "zonghe/S2_3",
+          "rule": "门控关闭，下面仅作观察。按收盘分展示Top5，执行口径只看Top1，次日开盘缺口须在 [−5%, +6%]。",
+          "reason": "门控关闭",
+          "rank": 1,
+          "detail": {
+            "code": "002197",
+            "name": "证通电子",
+            "route": "观察",
+            "close": 6.15,
+            "score": 10.603706
+          }
+        }
+      ]
+    },
+    {
+      "code": "002557",
+      "name": "洽洽食品",
+      "votes": 0,
+      "families": [],
+      "signals": [
+        {
+          "name": "洽洽食品",
+          "family": "趋势",
+          "route": "top/V3",
+          "rule": "缺口[-5%, +6%]",
+          "reason": "仅观察：沪深300未站上MA20",
+          "rank": 7,
+          "detail": {
+            "code": "002557",
+            "name": "洽洽食品",
+            "signal_close_raw": 20.99,
+            "status": "ok",
+            "gain": 0.0014312977099237845,
+            "strength": 2,
+            "conditions": [
+              false,
+              true,
+              true
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "code": "002745",
+      "name": "木林森",
+      "votes": 0,
+      "families": [],
+      "signals": [
+        {
+          "name": "木林森",
+          "family": "趋势",
+          "route": "top/V3",
+          "rule": "缺口[-5%, +6%]",
+          "reason": "仅观察：沪深300未站上MA20",
+          "rank": 14,
+          "detail": {
+            "code": "002745",
+            "name": "木林森",
+            "signal_close_raw": 10.09,
+            "status": "ok",
+            "gain": 0.04020618556701061,
+            "strength": 1,
+            "conditions": [
+              true,
+              false,
+              false
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "code": "002966",
+      "name": "苏州银行",
+      "votes": 0,
+      "families": [],
+      "signals": [
+        {
+          "name": "苏州银行",
+          "family": "趋势",
+          "route": "S9/balanced",
+          "rule": "核对源策略开盘成交条件",
+          "reason": "市场门控关闭",
+          "rank": 19,
+          "detail": {
+            "code": "002966",
+            "name": "苏州银行",
+            "score": 6.500162779745521,
+            "ref_close": 10.21
+          }
+        },
+        {
+          "name": "苏州银行",
+          "family": "趋势",
+          "route": "S9/original",
+          "rule": "核对源策略开盘成交条件",
+          "reason": "市场门控关闭",
+          "rank": 19,
+          "detail": {
+            "code": "002966",
+            "name": "苏州银行",
+            "score": 6.500162779745521,
+            "ref_close": 10.21
+          }
+        }
+      ]
+    },
+    {
+      "code": "300346",
+      "name": "南大光电",
+      "votes": 0,
+      "families": [],
+      "signals": [
+        {
+          "name": "南大光电",
+          "family": "趋势",
+          "route": "S9/champion",
+          "rule": "核对源策略开盘成交条件",
+          "reason": "市场门控关闭",
+          "rank": 9,
+          "detail": {
+            "code": "300346",
+            "name": "南大光电",
+            "score": 10.307908375349758,
+            "ref_close": 43.87
+          }
+        },
+        {
+          "name": "南大光电",
+          "family": "趋势",
+          "route": "S9/runner",
+          "rule": "核对源策略开盘成交条件",
+          "reason": "市场门控关闭",
+          "rank": 14,
+          "detail": {
+            "code": "300346",
+            "name": "南大光电",
+            "score": 9.249399903543205,
+            "ref_close": 43.87
+          }
+        }
+      ]
+    },
+    {
+      "code": "301396",
+      "name": "宏景科技",
+      "votes": 0,
+      "families": [],
+      "signals": [
+        {
+          "name": "宏景科技",
+          "family": "趋势",
+          "route": "S9/champion",
+          "rule": "核对源策略开盘成交条件",
+          "reason": "市场门控关闭",
+          "rank": 7,
+          "detail": {
+            "code": "301396",
+            "name": "宏景科技",
+            "score": 10.590348603999818,
+            "ref_close": 113.71
+          }
+        },
+        {
+          "name": "宏景科技",
+          "family": "趋势",
+          "route": "S9/balanced",
+          "rule": "核对源策略开盘成交条件",
+          "reason": "市场门控关闭",
+          "rank": 6,
+          "detail": {
+            "code": "301396",
+            "name": "宏景科技",
+            "score": 9.637072516532688,
+            "ref_close": 113.71
+          }
+        },
+        {
+          "name": "宏景科技",
+          "family": "趋势",
+          "route": "S9/runner",
+          "rule": "核对源策略开盘成交条件",
+          "reason": "市场门控关闭",
+          "rank": 18,
+          "detail": {
+            "code": "301396",
+            "name": "宏景科技",
+            "score": 8.56612768591131,
+            "ref_close": 113.71
+          }
+        },
+        {
+          "name": "宏景科技",
+          "family": "趋势",
+          "route": "S9/original",
+          "rule": "核对源策略开盘成交条件",
+          "reason": "市场门控关闭",
+          "rank": 6,
+          "detail": {
+            "code": "301396",
+            "name": "宏景科技",
+            "score": 9.637072516532688,
+            "ref_close": 113.71
+          }
+        }
+      ]
+    },
+    {
+      "code": "301638",
+      "name": "南网数字",
+      "votes": 0,
+      "families": [],
+      "signals": [
+        {
+          "name": "南网数字",
+          "family": "趋势",
+          "route": "S9/champion",
+          "rule": "核对源策略开盘成交条件",
+          "reason": "市场门控关闭",
+          "rank": 14,
+          "detail": {
+            "code": "301638",
+            "name": "南网数字",
+            "score": 8.620892358451798,
+            "ref_close": 17.28
+          }
+        }
+      ]
+    },
+    {
+      "code": "301660",
+      "name": "粤芯半导",
+      "votes": 0,
+      "families": [],
+      "signals": [
+        {
+          "name": "粤芯半导",
+          "family": "趋势",
+          "route": "S9/champion",
+          "rule": "核对源策略开盘成交条件",
+          "reason": "市场门控关闭",
+          "rank": 5,
+          "detail": {
+            "code": "301660",
+            "name": "粤芯半导",
+            "score": 10.832665728466552,
+            "ref_close": 30.02
+          }
+        },
+        {
+          "name": "粤芯半导",
+          "family": "趋势",
+          "route": "S9/runner",
+          "rule": "核对源策略开盘成交条件",
+          "reason": "市场门控关闭",
+          "rank": 11,
+          "detail": {
+            "code": "301660",
+            "name": "粤芯半导",
+            "score": 9.338147457004773,
+            "ref_close": 30.02
+          }
+        }
+      ]
+    },
+    {
+      "code": "600031",
+      "name": "三一重工",
+      "votes": 0,
+      "families": [],
+      "signals": [
+        {
+          "name": "三一重工",
+          "family": "趋势",
+          "route": "top/V3",
+          "rule": "缺口[-5%, +6%]",
+          "reason": "仅观察：沪深300未站上MA20",
+          "rank": 15,
+          "detail": {
+            "code": "600031",
+            "name": "三一重工",
+            "signal_close_raw": 18.9,
+            "status": "ok",
+            "gain": 0.02383531960996743,
+            "strength": 1,
+            "conditions": [
+              true,
+              false,
+              false
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "code": "600236",
+      "name": "桂冠电力",
+      "votes": 0,
+      "families": [],
+      "signals": [
+        {
+          "name": "桂冠电力",
+          "family": "趋势",
+          "route": "zonghe/S2_1",
+          "rule": "门控关闭，下面仅作观察。按收盘分展示Top5，执行口径只看Top1，次日开盘缺口须在 [−5%, +6%]。",
+          "reason": "门控关闭",
+          "rank": 1,
+          "detail": {
+            "code": "600236",
+            "name": "桂冠电力",
+            "route": "观察",
+            "close": 9.28,
+            "score": 10.470086
+          }
+        },
+        {
+          "name": "桂冠电力",
+          "family": "趋势",
+          "route": "zonghe/S2_2",
+          "rule": "按收盘分展示Top5，执行口径只看Top1，次日开盘缺口须在 [−5%, +6%]。",
+          "reason": "路线只执行Top1",
+          "rank": 1,
+          "detail": {
+            "code": "600236",
+            "name": "桂冠电力",
+            "route": "可复核",
+            "close": 9.28,
+            "score": 10.470086
+          }
+        },
+        {
+          "name": "桂冠电力",
+          "family": "趋势",
+          "route": "zonghe/S2_4",
+          "rule": "门控关闭，下面仅作观察。按收盘分展示Top5，执行口径只看Top1，次日开盘缺口须在 [−5%, +6%]。与趋势1同入口，退出规则不同。",
+          "reason": "门控关闭",
+          "rank": 1,
+          "detail": {
+            "code": "600236",
+            "name": "桂冠电力",
+            "route": "观察",
+            "close": 9.28,
+            "score": 10.470086
+          }
+        },
+        {
+          "name": "桂冠电力",
+          "family": "趋势",
+          "route": "S9/champion",
+          "rule": "核对源策略开盘成交条件",
+          "reason": "市场门控关闭",
+          "rank": 11,
+          "detail": {
+            "code": "600236",
+            "name": "桂冠电力",
+            "score": 9.33086387557158,
+            "ref_close": 9.28
+          }
+        },
+        {
+          "name": "桂冠电力",
+          "family": "趋势",
+          "route": "S9/balanced",
+          "rule": "核对源策略开盘成交条件",
+          "reason": "市场门控关闭",
+          "rank": 3,
+          "detail": {
+            "code": "600236",
+            "name": "桂冠电力",
+            "score": 11.158496495400879,
+            "ref_close": 9.28
+          }
+        },
+        {
+          "name": "桂冠电力",
+          "family": "趋势",
+          "route": "S9/runner",
+          "rule": "核对源策略开盘成交条件",
+          "reason": "市场门控关闭",
+          "rank": 7,
+          "detail": {
+            "code": "600236",
+            "name": "桂冠电力",
+            "score": 12.180789660174383,
+            "ref_close": 9.28
+          }
+        },
+        {
+          "name": "桂冠电力",
+          "family": "趋势",
+          "route": "S9/original",
+          "rule": "核对源策略开盘成交条件",
+          "reason": "市场门控关闭",
+          "rank": 3,
+          "detail": {
+            "code": "600236",
+            "name": "桂冠电力",
+            "score": 11.158496495400879,
+            "ref_close": 9.28
+          }
+        }
+      ]
+    },
+    {
+      "code": "600312",
+      "name": "平高电气",
+      "votes": 0,
+      "families": [],
+      "signals": [
+        {
+          "name": "平高电气",
+          "family": "趋势",
+          "route": "top/V3",
+          "rule": "缺口[-5%, +6%]",
+          "reason": "仅观察：沪深300未站上MA20",
+          "rank": 20,
+          "detail": {
+            "code": "600312",
+            "name": "平高电气",
+            "signal_close_raw": 22.29,
+            "status": "ok",
+            "gain": 0.008141112618724522,
+            "strength": 1,
+            "conditions": [
+              false,
+              false,
+              true
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "code": "600406",
+      "name": "国电南瑞",
+      "votes": 0,
+      "families": [],
+      "signals": [
+        {
+          "name": "国电南瑞",
+          "family": "趋势",
+          "route": "top/V3",
+          "rule": "缺口[-5%, +6%]",
+          "reason": "仅观察：沪深300未站上MA20",
+          "rank": 19,
+          "detail": {
+            "code": "600406",
+            "name": "国电南瑞",
+            "signal_close_raw": 24.84,
+            "status": "ok",
+            "gain": 0.009756097560975618,
+            "strength": 1,
+            "conditions": [
+              false,
+              false,
+              true
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "code": "600410",
+      "name": "华胜天成",
+      "votes": 0,
+      "families": [],
+      "signals": [
+        {
+          "name": "华胜天成",
+          "family": "趋势",
+          "route": "zonghe/S2_1",
+          "rule": "门控关闭，下面仅作观察。按收盘分展示Top5，执行口径只看Top1，次日开盘缺口须在 [−5%, +6%]。",
+          "reason": "门控关闭",
+          "rank": 1,
+          "detail": {
+            "code": "600410",
+            "name": "华胜天成",
+            "route": "观察",
+            "close": 16.7,
+            "score": 10.759008
+          }
+        },
+        {
+          "name": "华胜天成",
+          "family": "趋势",
+          "route": "zonghe/S2_2",
+          "rule": "按收盘分展示Top5，执行口径只看Top1，次日开盘缺口须在 [−5%, +6%]。",
+          "reason": "路线只执行Top1",
+          "rank": 1,
+          "detail": {
+            "code": "600410",
+            "name": "华胜天成",
+            "route": "可复核",
+            "close": 16.7,
+            "score": 10.759008
+          }
+        },
+        {
+          "name": "华胜天成",
+          "family": "趋势",
+          "route": "zonghe/S2_3",
+          "rule": "门控关闭，下面仅作观察。按收盘分展示Top5，执行口径只看Top1，次日开盘缺口须在 [−5%, +6%]。",
+          "reason": "门控关闭",
+          "rank": 1,
+          "detail": {
+            "code": "600410",
+            "name": "华胜天成",
+            "route": "观察",
+            "close": 16.7,
+            "score": 11.587391
+          }
+        },
+        {
+          "name": "华胜天成",
+          "family": "趋势",
+          "route": "zonghe/S2_4",
+          "rule": "门控关闭，下面仅作观察。按收盘分展示Top5，执行口径只看Top1，次日开盘缺口须在 [−5%, +6%]。与趋势1同入口，退出规则不同。",
+          "reason": "门控关闭",
+          "rank": 1,
+          "detail": {
+            "code": "600410",
+            "name": "华胜天成",
+            "route": "观察",
+            "close": 16.7,
+            "score": 10.759008
+          }
+        }
+      ]
+    },
+    {
+      "code": "600511",
+      "name": "国药股份",
+      "votes": 0,
+      "families": [],
+      "signals": [
+        {
+          "name": "国药股份",
+          "family": "趋势",
+          "route": "S9/balanced",
+          "rule": "核对源策略开盘成交条件",
+          "reason": "市场门控关闭",
+          "rank": 16,
+          "detail": {
+            "code": "600511",
+            "name": "国药股份",
+            "score": 7.277857776306028,
+            "ref_close": 28.86
+          }
+        },
+        {
+          "name": "国药股份",
+          "family": "趋势",
+          "route": "S9/original",
+          "rule": "核对源策略开盘成交条件",
+          "reason": "市场门控关闭",
+          "rank": 16,
+          "detail": {
+            "code": "600511",
+            "name": "国药股份",
+            "score": 7.277857776306028,
+            "ref_close": 28.86
+          }
+        }
+      ]
+    },
+    {
+      "code": "600690",
+      "name": "海尔智家",
+      "votes": 0,
+      "families": [],
+      "signals": [
+        {
+          "name": "海尔智家",
+          "family": "趋势",
+          "route": "top/V3",
+          "rule": "缺口[-5%, +6%]",
+          "reason": "仅观察：沪深300未站上MA20",
+          "rank": 5,
+          "detail": {
+            "code": "600690",
+            "name": "海尔智家",
+            "signal_close_raw": 23.15,
+            "status": "ok",
+            "gain": 0.02433628318584069,
+            "strength": 2,
+            "conditions": [
+              false,
+              true,
+              true
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "code": "600803",
+      "name": "新奥股份",
+      "votes": 0,
+      "families": [],
+      "signals": [
+        {
+          "name": "新奥股份",
+          "family": "趋势",
+          "route": "S9/balanced",
+          "rule": "核对源策略开盘成交条件",
+          "reason": "市场门控关闭",
+          "rank": 13,
+          "detail": {
+            "code": "600803",
+            "name": "新奥股份",
+            "score": 7.896328950163618,
+            "ref_close": 22.11
+          }
+        },
+        {
+          "name": "新奥股份",
+          "family": "趋势",
+          "route": "S9/runner",
+          "rule": "核对源策略开盘成交条件",
+          "reason": "市场门控关闭",
+          "rank": 19,
+          "detail": {
+            "code": "600803",
+            "name": "新奥股份",
+            "score": 8.21232734705044,
+            "ref_close": 22.11
+          }
+        },
+        {
+          "name": "新奥股份",
+          "family": "趋势",
+          "route": "S9/original",
+          "rule": "核对源策略开盘成交条件",
+          "reason": "市场门控关闭",
+          "rank": 13,
+          "detail": {
+            "code": "600803",
+            "name": "新奥股份",
+            "score": 7.896328950163618,
+            "ref_close": 22.11
+          }
+        }
+      ]
+    },
+    {
+      "code": "600839",
+      "name": "四川长虹",
+      "votes": 0,
+      "families": [],
+      "signals": [
+        {
+          "name": "四川长虹",
+          "family": "趋势",
+          "route": "S9/champion",
+          "rule": "核对源策略开盘成交条件",
+          "reason": "市场门控关闭",
+          "rank": 4,
+          "detail": {
+            "code": "600839",
+            "name": "四川长虹",
+            "score": 11.344511753026108,
+            "ref_close": 5.76
+          }
+        },
+        {
+          "name": "四川长虹",
+          "family": "趋势",
+          "route": "S9/balanced",
+          "rule": "核对源策略开盘成交条件",
+          "reason": "市场门控关闭",
+          "rank": 8,
+          "detail": {
+            "code": "600839",
+            "name": "四川长虹",
+            "score": 8.829659229397489,
+            "ref_close": 5.76
+          }
+        },
+        {
+          "name": "四川长虹",
+          "family": "趋势",
+          "route": "S9/runner",
+          "rule": "核对源策略开盘成交条件",
+          "reason": "市场门控关闭",
+          "rank": 12,
+          "detail": {
+            "code": "600839",
+            "name": "四川长虹",
+            "score": 9.325340623224797,
+            "ref_close": 5.76
+          }
+        },
+        {
+          "name": "四川长虹",
+          "family": "趋势",
+          "route": "S9/original",
+          "rule": "核对源策略开盘成交条件",
+          "reason": "市场门控关闭",
+          "rank": 8,
+          "detail": {
+            "code": "600839",
+            "name": "四川长虹",
+            "score": 8.829659229397489,
+            "ref_close": 5.76
+          }
+        }
+      ]
+    },
+    {
+      "code": "600863",
+      "name": "华能蒙电",
+      "votes": 0,
+      "families": [],
+      "signals": [
+        {
+          "name": "华能蒙电",
+          "family": "趋势",
+          "route": "top/V3",
+          "rule": "缺口[-5%, +6%]",
+          "reason": "仅观察：沪深300未站上MA20",
+          "rank": 1,
+          "detail": {
+            "code": "600863",
+            "name": "华能蒙电",
+            "signal_close_raw": 5.66,
+            "status": "ok",
+            "gain": 0.04814814814814827,
+            "strength": 3,
+            "conditions": [
+              true,
+              true,
+              true
+            ]
+          }
+        },
+        {
+          "name": "华能蒙电",
+          "family": "趋势",
+          "route": "S9/champion",
+          "rule": "核对源策略开盘成交条件",
+          "reason": "市场门控关闭",
+          "rank": 10,
+          "detail": {
+            "code": "600863",
+            "name": "华能蒙电",
+            "score": 9.597566559887946,
+            "ref_close": 5.66
+          }
+        },
+        {
+          "name": "华能蒙电",
+          "family": "趋势",
+          "route": "S9/balanced",
+          "rule": "核对源策略开盘成交条件",
+          "reason": "市场门控关闭",
+          "rank": 9,
+          "detail": {
+            "code": "600863",
+            "name": "华能蒙电",
+            "score": 8.73430779698748,
+            "ref_close": 5.66
+          }
+        },
+        {
+          "name": "华能蒙电",
+          "family": "趋势",
+          "route": "S9/runner",
+          "rule": "核对源策略开盘成交条件",
+          "reason": "市场门控关闭",
+          "rank": 6,
+          "detail": {
+            "code": "600863",
+            "name": "华能蒙电",
+            "score": 12.422416916073537,
+            "ref_close": 5.66
+          }
+        },
+        {
+          "name": "华能蒙电",
+          "family": "趋势",
+          "route": "S9/original",
+          "rule": "核对源策略开盘成交条件",
+          "reason": "市场门控关闭",
+          "rank": 9,
+          "detail": {
+            "code": "600863",
+            "name": "华能蒙电",
+            "score": 8.73430779698748,
+            "ref_close": 5.66
+          }
+        }
+      ]
+    },
+    {
+      "code": "600887",
+      "name": "伊利股份",
+      "votes": 0,
+      "families": [],
+      "signals": [
+        {
+          "name": "伊利股份",
+          "family": "趋势",
+          "route": "top/V3",
+          "rule": "缺口[-5%, +6%]",
+          "reason": "仅观察：沪深300未站上MA20",
+          "rank": 16,
+          "detail": {
+            "code": "600887",
+            "name": "伊利股份",
+            "signal_close_raw": 32.91,
+            "status": "ok",
+            "gain": 0.01605433775856735,
+            "strength": 1,
+            "conditions": [
+              false,
+              false,
+              true
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "code": "600895",
+      "name": "张江高科",
+      "votes": 0,
+      "families": [],
+      "signals": [
+        {
+          "name": "张江高科",
+          "family": "趋势",
+          "route": "S9/champion",
+          "rule": "核对源策略开盘成交条件",
+          "reason": "市场门控关闭",
+          "rank": 12,
+          "detail": {
+            "code": "600895",
+            "name": "张江高科",
+            "score": 9.065259759061286,
+            "ref_close": 27.18
+          }
+        }
+      ]
+    },
+    {
+      "code": "600941",
+      "name": "中国移动",
+      "votes": 0,
+      "families": [],
+      "signals": [
+        {
+          "name": "中国移动",
+          "family": "趋势",
+          "route": "top/V3",
+          "rule": "缺口[-5%, +6%]",
+          "reason": "仅观察：沪深300未站上MA20",
+          "rank": 21,
+          "detail": {
+            "code": "600941",
+            "name": "中国移动",
+            "signal_close_raw": 107.8,
+            "status": "ok",
+            "gain": 0.003911342894393766,
+            "strength": 1,
+            "conditions": [
+              false,
+              false,
+              true
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "code": "600970",
+      "name": "中材国际",
+      "votes": 0,
+      "families": [],
+      "signals": [
+        {
+          "name": "中材国际",
+          "family": "趋势",
+          "route": "S9/balanced",
+          "rule": "核对源策略开盘成交条件",
+          "reason": "市场门控关闭",
+          "rank": 20,
+          "detail": {
+            "code": "600970",
+            "name": "中材国际",
+            "score": 6.492981785511343,
+            "ref_close": 7.92
+          }
+        },
+        {
+          "name": "中材国际",
+          "family": "趋势",
+          "route": "S9/original",
+          "rule": "核对源策略开盘成交条件",
+          "reason": "市场门控关闭",
+          "rank": 20,
+          "detail": {
+            "code": "600970",
+            "name": "中材国际",
+            "score": 6.492981785511343,
+            "ref_close": 7.92
+          }
+        }
+      ]
+    },
+    {
+      "code": "600993",
+      "name": "马应龙",
+      "votes": 0,
+      "families": [],
+      "signals": [
+        {
+          "name": "马应龙",
+          "family": "趋势",
+          "route": "top/V3",
+          "rule": "缺口[-5%, +6%]",
+          "reason": "仅观察：沪深300未站上MA20",
+          "rank": 6,
+          "detail": {
+            "code": "600993",
+            "name": "马应龙",
+            "signal_close_raw": 26.43,
+            "status": "ok",
+            "gain": 0.017712745475548797,
+            "strength": 2,
+            "conditions": [
+              false,
+              true,
+              true
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "code": "601021",
+      "name": "春秋航空",
+      "votes": 0,
+      "families": [],
+      "signals": [
+        {
+          "name": "春秋航空",
+          "family": "趋势",
+          "route": "top/V3",
+          "rule": "缺口[-5%, +6%]",
+          "reason": "仅观察：沪深300未站上MA20",
+          "rank": 17,
+          "detail": {
+            "code": "601021",
+            "name": "春秋航空",
+            "signal_close_raw": 45.71,
+            "status": "ok",
+            "gain": 0.01105950011059531,
+            "strength": 1,
+            "conditions": [
+              false,
+              false,
+              true
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "code": "601997",
+      "name": "贵阳银行",
+      "votes": 0,
+      "families": [],
+      "signals": [
+        {
+          "name": "贵阳银行",
+          "family": "趋势",
+          "route": "S9/balanced",
+          "rule": "核对源策略开盘成交条件",
+          "reason": "市场门控关闭",
+          "rank": 18,
+          "detail": {
+            "code": "601997",
+            "name": "贵阳银行",
+            "score": 6.569233860896583,
+            "ref_close": 5.94
+          }
+        },
+        {
+          "name": "贵阳银行",
+          "family": "趋势",
+          "route": "S9/original",
+          "rule": "核对源策略开盘成交条件",
+          "reason": "市场门控关闭",
+          "rank": 18,
+          "detail": {
+            "code": "601997",
+            "name": "贵阳银行",
+            "score": 6.569233860896583,
+            "ref_close": 5.94
+          }
+        }
+      ]
+    },
+    {
+      "code": "603049",
+      "name": "中策橡胶",
+      "votes": 0,
+      "families": [],
+      "signals": [
+        {
+          "name": "中策橡胶",
+          "family": "趋势",
+          "route": "S9/champion",
+          "rule": "核对源策略开盘成交条件",
+          "reason": "市场门控关闭",
+          "rank": 15,
+          "detail": {
+            "code": "603049",
+            "name": "中策橡胶",
+            "score": 8.532027419749413,
+            "ref_close": 39.79
+          }
+        }
+      ]
+    },
+    {
+      "code": "603220",
+      "name": "中贝通信",
+      "votes": 0,
+      "families": [],
+      "signals": [
+        {
+          "name": "中贝通信",
+          "family": "趋势",
+          "route": "zonghe/S2_1",
+          "rule": "门控关闭，下面仅作观察。按收盘分展示Top5，执行口径只看Top1，次日开盘缺口须在 [−5%, +6%]。",
+          "reason": "门控关闭",
+          "rank": 1,
+          "detail": {
+            "code": "603220",
+            "name": "中贝通信",
+            "route": "观察",
+            "close": 15.46,
+            "score": 10.624626
+          }
+        },
+        {
+          "name": "中贝通信",
+          "family": "趋势",
+          "route": "zonghe/S2_2",
+          "rule": "按收盘分展示Top5，执行口径只看Top1，次日开盘缺口须在 [−5%, +6%]。",
+          "reason": "路线只执行Top1",
+          "rank": 1,
+          "detail": {
+            "code": "603220",
+            "name": "中贝通信",
+            "route": "可复核",
+            "close": 15.46,
+            "score": 10.624626
+          }
+        },
+        {
+          "name": "中贝通信",
+          "family": "趋势",
+          "route": "zonghe/S2_3",
+          "rule": "门控关闭，下面仅作观察。按收盘分展示Top5，执行口径只看Top1，次日开盘缺口须在 [−5%, +6%]。",
+          "reason": "门控关闭",
+          "rank": 1,
+          "detail": {
+            "code": "603220",
+            "name": "中贝通信",
+            "route": "观察",
+            "close": 15.46,
+            "score": 10.916598
+          }
+        },
+        {
+          "name": "中贝通信",
+          "family": "趋势",
+          "route": "zonghe/S2_4",
+          "rule": "门控关闭，下面仅作观察。按收盘分展示Top5，执行口径只看Top1，次日开盘缺口须在 [−5%, +6%]。与趋势1同入口，退出规则不同。",
+          "reason": "门控关闭",
+          "rank": 1,
+          "detail": {
+            "code": "603220",
+            "name": "中贝通信",
+            "route": "观察",
+            "close": 15.46,
+            "score": 10.624626
+          }
+        }
+      ]
+    },
+    {
+      "code": "603486",
+      "name": "科沃斯",
+      "votes": 0,
+      "families": [],
+      "signals": [
+        {
+          "name": "科沃斯",
+          "family": "趋势",
+          "route": "top/V3",
+          "rule": "缺口[-5%, +6%]",
+          "reason": "仅观察：沪深300未站上MA20",
+          "rank": 10,
+          "detail": {
+            "code": "603486",
+            "name": "科沃斯",
+            "signal_close_raw": 50.33,
+            "status": "ok",
+            "gain": 0.07657754010695172,
+            "strength": 1,
+            "conditions": [
+              true,
+              false,
+              false
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "code": "603587",
+      "name": "地素时尚",
+      "votes": 0,
+      "families": [],
+      "signals": [
+        {
+          "name": "地素时尚",
+          "family": "趋势",
+          "route": "top/V3",
+          "rule": "缺口[-5%, +6%]",
+          "reason": "仅观察：沪深300未站上MA20",
+          "rank": 4,
+          "detail": {
+            "code": "603587",
+            "name": "地素时尚",
+            "signal_close_raw": 15.99,
+            "status": "ok",
+            "gain": 0.031612903225806566,
+            "strength": 2,
+            "conditions": [
+              false,
+              true,
+              true
+            ]
+          }
+        },
+        {
+          "name": "地素时尚",
+          "family": "趋势",
+          "route": "zonghe/HGB",
+          "rule": "沪深300收盘未高于MA20，以下Top3仅观察，本日无执行候选。 冻结V3池，逐月训练至 2026-10-29，分数为预期净收益。",
+          "reason": "门控关闭",
+          "rank": 1,
+          "detail": {
+            "code": "603587",
+            "name": "地素时尚",
+            "route": "仅观察",
+            "close": 15.99,
+            "score": 0.039255
+          }
+        }
+      ]
+    },
+    {
+      "code": "603629",
+      "name": "利通电子",
+      "votes": 0,
+      "families": [],
+      "signals": [
+        {
+          "name": "利通电子",
+          "family": "趋势",
+          "route": "top/V3",
+          "rule": "缺口[-5%, +6%]",
+          "reason": "仅观察：沪深300未站上MA20",
+          "rank": 13,
+          "detail": {
+            "code": "603629",
+            "name": "利通电子",
+            "signal_close_raw": 63.42,
+            "status": "ok",
+            "gain": 0.04086656819300849,
+            "strength": 1,
+            "conditions": [
+              true,
+              false,
+              false
+            ]
+          }
+        },
+        {
+          "name": "利通电子",
+          "family": "趋势",
+          "route": "S9/champion",
+          "rule": "核对源策略开盘成交条件",
+          "reason": "市场门控关闭",
+          "rank": 13,
+          "detail": {
+            "code": "603629",
+            "name": "利通电子",
+            "score": 8.734939388416619,
+            "ref_close": 63.42
+          }
+        },
+        {
+          "name": "利通电子",
+          "family": "趋势",
+          "route": "S9/balanced",
+          "rule": "核对源策略开盘成交条件",
+          "reason": "市场门控关闭",
+          "rank": 2,
+          "detail": {
+            "code": "603629",
+            "name": "利通电子",
+            "score": 11.533000016460992,
+            "ref_close": 63.42
+          }
+        },
+        {
+          "name": "利通电子",
+          "family": "趋势",
+          "route": "S9/runner",
+          "rule": "核对源策略开盘成交条件",
+          "reason": "市场门控关闭",
+          "rank": 4,
+          "detail": {
+            "code": "603629",
+            "name": "利通电子",
+            "score": 13.392593925339698,
+            "ref_close": 63.42
+          }
+        },
+        {
+          "name": "利通电子",
+          "family": "趋势",
+          "route": "S9/original",
+          "rule": "核对源策略开盘成交条件",
+          "reason": "市场门控关闭",
+          "rank": 2,
+          "detail": {
+            "code": "603629",
+            "name": "利通电子",
+            "score": 11.533000016460992,
+            "ref_close": 63.42
+          }
+        },
+        {
+          "name": "利通电子",
+          "family": "趋势",
+          "route": "S9/wild",
+          "rule": "核对源策略开盘成交条件",
+          "reason": "市场门控关闭",
+          "rank": 2,
+          "detail": {
+            "code": "603629",
+            "name": "利通电子",
+            "score": 12.78206667701475,
+            "ref_close": 63.42
+          }
+        }
+      ]
+    },
+    {
+      "code": "603885",
+      "name": "吉祥航空",
+      "votes": 0,
+      "families": [],
+      "signals": [
+        {
+          "name": "吉祥航空",
+          "family": "趋势",
+          "route": "top/V3",
+          "rule": "缺口[-5%, +6%]",
+          "reason": "仅观察：沪深300未站上MA20",
+          "rank": 2,
+          "detail": {
+            "code": "603885",
+            "name": "吉祥航空",
+            "signal_close_raw": 10.83,
+            "status": "ok",
+            "gain": 0.03044719314938149,
+            "strength": 3,
+            "conditions": [
+              true,
+              true,
+              true
+            ]
+          }
+        },
+        {
+          "name": "吉祥航空",
+          "family": "趋势",
+          "route": "S9/champion",
+          "rule": "核对源策略开盘成交条件",
+          "reason": "市场门控关闭",
+          "rank": 19,
+          "detail": {
+            "code": "603885",
+            "name": "吉祥航空",
+            "score": 8.352724402089542,
+            "ref_close": 10.83
+          }
+        },
+        {
+          "name": "吉祥航空",
+          "family": "趋势",
+          "route": "S9/balanced",
+          "rule": "核对源策略开盘成交条件",
+          "reason": "市场门控关闭",
+          "rank": 5,
+          "detail": {
+            "code": "603885",
+            "name": "吉祥航空",
+            "score": 9.692025389640648,
+            "ref_close": 10.83
+          }
+        },
+        {
+          "name": "吉祥航空",
+          "family": "趋势",
+          "route": "S9/runner",
+          "rule": "核对源策略开盘成交条件",
+          "reason": "市场门控关闭",
+          "rank": 8,
+          "detail": {
+            "code": "603885",
+            "name": "吉祥航空",
+            "score": 11.931527912010257,
+            "ref_close": 10.83
+          }
+        },
+        {
+          "name": "吉祥航空",
+          "family": "趋势",
+          "route": "S9/original",
+          "rule": "核对源策略开盘成交条件",
+          "reason": "市场门控关闭",
+          "rank": 5,
+          "detail": {
+            "code": "603885",
+            "name": "吉祥航空",
+            "score": 9.692025389640648,
+            "ref_close": 10.83
+          }
+        }
+      ]
+    },
+    {
+      "code": "605338",
+      "name": "巴比食品",
+      "votes": 0,
+      "families": [],
+      "signals": [
+        {
+          "name": "巴比食品",
+          "family": "趋势",
+          "route": "top/V3",
+          "rule": "缺口[-5%, +6%]",
+          "reason": "仅观察：沪深300未站上MA20",
+          "rank": 3,
+          "detail": {
+            "code": "605338",
+            "name": "巴比食品",
+            "signal_close_raw": 23.4,
+            "status": "ok",
+            "gain": 0.06654512306289884,
+            "strength": 2,
+            "conditions": [
+              false,
+              true,
+              true
+            ]
+          }
+        },
+        {
+          "name": "巴比食品",
+          "family": "趋势",
+          "route": "zonghe/HGB",
+          "rule": "沪深300收盘未高于MA20，以下Top3仅观察，本日无执行候选。 冻结V3池，逐月训练至 2026-10-29，分数为预期净收益。",
+          "reason": "门控关闭",
+          "rank": 1,
+          "detail": {
+            "code": "605338",
+            "name": "巴比食品",
+            "route": "仅观察",
+            "close": 23.4,
+            "score": 0.022191
+          }
+        }
+      ]
+    },
+    {
+      "code": "688047",
+      "name": "龙芯中科",
+      "votes": 0,
+      "families": [],
+      "signals": [
+        {
+          "name": "龙芯中科",
+          "family": "趋势",
+          "route": "S9/champion",
+          "rule": "核对源策略开盘成交条件",
+          "reason": "市场门控关闭",
+          "rank": 20,
+          "detail": {
+            "code": "688047",
+            "name": "龙芯中科",
+            "score": 8.300286202425104,
+            "ref_close": 96.99
+          }
+        }
+      ]
+    },
+    {
+      "code": "688172",
+      "name": "燕东微",
+      "votes": 0,
+      "families": [],
+      "signals": [
+        {
+          "name": "燕东微",
+          "family": "趋势",
+          "route": "S9/champion",
+          "rule": "核对源策略开盘成交条件",
+          "reason": "市场门控关闭",
+          "rank": 2,
+          "detail": {
+            "code": "688172",
+            "name": "燕东微",
+            "score": 16.019845103531967,
+            "ref_close": 37.51
+          }
+        },
+        {
+          "name": "燕东微",
+          "family": "趋势",
+          "route": "S9/balanced",
+          "rule": "核对源策略开盘成交条件",
+          "reason": "市场门控关闭",
+          "rank": 4,
+          "detail": {
+            "code": "688172",
+            "name": "燕东微",
+            "score": 10.039551090097959,
+            "ref_close": 37.51
+          }
+        },
+        {
+          "name": "燕东微",
+          "family": "趋势",
+          "route": "S9/runner",
+          "rule": "核对源策略开盘成交条件",
+          "reason": "市场门控关闭",
+          "rank": 2,
+          "detail": {
+            "code": "688172",
+            "name": "燕东微",
+            "score": 15.091326665279839,
+            "ref_close": 37.51
+          }
+        },
+        {
+          "name": "燕东微",
+          "family": "趋势",
+          "route": "S9/original",
+          "rule": "核对源策略开盘成交条件",
+          "reason": "市场门控关闭",
+          "rank": 4,
+          "detail": {
+            "code": "688172",
+            "name": "燕东微",
+            "score": 10.039551090097959,
+            "ref_close": 37.51
+          }
+        }
+      ]
+    },
+    {
+      "code": "688187",
+      "name": "时代电气",
+      "votes": 0,
+      "families": [],
+      "signals": [
+        {
+          "name": "时代电气",
+          "family": "趋势",
+          "route": "S9/champion",
+          "rule": "核对源策略开盘成交条件",
+          "reason": "市场门控关闭",
+          "rank": 6,
+          "detail": {
+            "code": "688187",
+            "name": "时代电气",
+            "score": 10.730193731215465,
+            "ref_close": 48.76
+          }
+        },
+        {
+          "name": "时代电气",
+          "family": "趋势",
+          "route": "S9/balanced",
+          "rule": "核对源策略开盘成交条件",
+          "reason": "市场门控关闭",
+          "rank": 17,
+          "detail": {
+            "code": "688187",
+            "name": "时代电气",
+            "score": 6.721470138462597,
+            "ref_close": 48.76
+          }
+        },
+        {
+          "name": "时代电气",
+          "family": "趋势",
+          "route": "S9/runner",
+          "rule": "核对源策略开盘成交条件",
+          "reason": "市场门控关闭",
+          "rank": 17,
+          "detail": {
+            "code": "688187",
+            "name": "时代电气",
+            "score": 8.756350489394777,
+            "ref_close": 48.76
+          }
+        },
+        {
+          "name": "时代电气",
+          "family": "趋势",
+          "route": "S9/original",
+          "rule": "核对源策略开盘成交条件",
+          "reason": "市场门控关闭",
+          "rank": 17,
+          "detail": {
+            "code": "688187",
+            "name": "时代电气",
+            "score": 6.721470138462597,
+            "ref_close": 48.76
+          }
+        }
+      ]
+    },
+    {
+      "code": "688249",
+      "name": "晶合集成",
+      "votes": 0,
+      "families": [],
+      "signals": [
+        {
+          "name": "晶合集成",
+          "family": "趋势",
+          "route": "S9/balanced",
+          "rule": "核对源策略开盘成交条件",
+          "reason": "市场门控关闭",
+          "rank": 7,
+          "detail": {
+            "code": "688249",
+            "name": "晶合集成",
+            "score": 9.344392303912175,
+            "ref_close": 29.98
+          }
+        },
+        {
+          "name": "晶合集成",
+          "family": "趋势",
+          "route": "S9/runner",
+          "rule": "核对源策略开盘成交条件",
+          "reason": "市场门控关闭",
+          "rank": 3,
+          "detail": {
+            "code": "688249",
+            "name": "晶合集成",
+            "score": 14.772173184399826,
+            "ref_close": 29.98
+          }
+        },
+        {
+          "name": "晶合集成",
+          "family": "趋势",
+          "route": "S9/original",
+          "rule": "核对源策略开盘成交条件",
+          "reason": "市场门控关闭",
+          "rank": 7,
+          "detail": {
+            "code": "688249",
+            "name": "晶合集成",
+            "score": 9.344392303912175,
+            "ref_close": 29.98
+          }
+        }
+      ]
+    },
+    {
+      "code": "688303",
+      "name": "大全能源",
+      "votes": 0,
+      "families": [],
+      "signals": [
+        {
+          "name": "大全能源",
+          "family": "趋势",
+          "route": "S9/champion",
+          "rule": "核对源策略开盘成交条件",
+          "reason": "市场门控关闭",
+          "rank": 8,
+          "detail": {
+            "code": "688303",
+            "name": "大全能源",
+            "score": 10.544558540442862,
+            "ref_close": 17.3
+          }
+        },
+        {
+          "name": "大全能源",
+          "family": "趋势",
+          "route": "S9/balanced",
+          "rule": "核对源策略开盘成交条件",
+          "reason": "市场门控关闭",
+          "rank": 12,
+          "detail": {
+            "code": "688303",
+            "name": "大全能源",
+            "score": 7.970876707917977,
+            "ref_close": 17.3
+          }
+        },
+        {
+          "name": "大全能源",
+          "family": "趋势",
+          "route": "S9/runner",
+          "rule": "核对源策略开盘成交条件",
+          "reason": "市场门控关闭",
+          "rank": 9,
+          "detail": {
+            "code": "688303",
+            "name": "大全能源",
+            "score": 11.331824809896503,
+            "ref_close": 17.3
+          }
+        },
+        {
+          "name": "大全能源",
+          "family": "趋势",
+          "route": "S9/original",
+          "rule": "核对源策略开盘成交条件",
+          "reason": "市场门控关闭",
+          "rank": 12,
+          "detail": {
+            "code": "688303",
+            "name": "大全能源",
+            "score": 7.970876707917977,
+            "ref_close": 17.3
+          }
+        }
+      ]
+    },
+    {
+      "code": "688347",
+      "name": "华虹宏力",
+      "votes": 0,
+      "families": [],
+      "signals": [
+        {
+          "name": "华虹宏力",
+          "family": "趋势",
+          "route": "S9/champion",
+          "rule": "核对源策略开盘成交条件",
+          "reason": "市场门控关闭",
+          "rank": 17,
+          "detail": {
+            "code": "688347",
+            "name": "华虹宏力",
+            "score": 8.45379225870338,
+            "ref_close": 199.86
+          }
+        }
+      ]
+    },
+    {
+      "code": "688396",
+      "name": "华润微",
+      "votes": 0,
+      "families": [],
+      "signals": [
+        {
+          "name": "华润微",
+          "family": "趋势",
+          "route": "S9/runner",
+          "rule": "核对源策略开盘成交条件",
+          "reason": "市场门控关闭",
+          "rank": 13,
+          "detail": {
+            "code": "688396",
+            "name": "华润微",
+            "score": 9.315514707839153,
+            "ref_close": 48.89
+          }
+        }
+      ]
+    },
+    {
+      "code": "688506",
+      "name": "百利天恒",
+      "votes": 0,
+      "families": [],
+      "signals": [
+        {
+          "name": "百利天恒",
+          "family": "趋势",
+          "route": "S9/champion",
+          "rule": "核对源策略开盘成交条件",
+          "reason": "市场门控关闭",
+          "rank": 3,
+          "detail": {
+            "code": "688506",
+            "name": "百利天恒",
+            "score": 11.909564060545616,
+            "ref_close": 252.0
+          }
+        },
+        {
+          "name": "百利天恒",
+          "family": "趋势",
+          "route": "S9/balanced",
+          "rule": "核对源策略开盘成交条件",
+          "reason": "市场门控关闭",
+          "rank": 10,
+          "detail": {
+            "code": "688506",
+            "name": "百利天恒",
+            "score": 8.352152852015687,
+            "ref_close": 252.0
+          }
+        },
+        {
+          "name": "百利天恒",
+          "family": "趋势",
+          "route": "S9/runner",
+          "rule": "核对源策略开盘成交条件",
+          "reason": "市场门控关闭",
+          "rank": 5,
+          "detail": {
+            "code": "688506",
+            "name": "百利天恒",
+            "score": 12.522839260449555,
+            "ref_close": 252.0
+          }
+        },
+        {
+          "name": "百利天恒",
+          "family": "趋势",
+          "route": "S9/original",
+          "rule": "核对源策略开盘成交条件",
+          "reason": "市场门控关闭",
+          "rank": 10,
+          "detail": {
+            "code": "688506",
+            "name": "百利天恒",
+            "score": 8.352152852015687,
+            "ref_close": 252.0
+          }
+        }
+      ]
+    },
+    {
+      "code": "688630",
+      "name": "芯碁微装",
+      "votes": 0,
+      "families": [],
+      "signals": [
+        {
+          "name": "芯碁微装",
+          "family": "趋势",
+          "route": "S9/champion",
+          "rule": "核对源策略开盘成交条件",
+          "reason": "市场门控关闭",
+          "rank": 18,
+          "detail": {
+            "code": "688630",
+            "name": "芯碁微装",
+            "score": 8.446135520720585,
+            "ref_close": 228.0
+          }
+        }
+      ]
+    },
+    {
+      "code": "688981",
+      "name": "中芯国际",
+      "votes": 0,
+      "families": [],
+      "signals": [
+        {
+          "name": "中芯国际",
+          "family": "趋势",
+          "route": "S9/champion",
+          "rule": "核对源策略开盘成交条件",
+          "reason": "市场门控关闭",
+          "rank": 16,
+          "detail": {
+            "code": "688981",
+            "name": "中芯国际",
+            "score": 8.47961446245768,
+            "ref_close": 122.25
+          }
+        },
+        {
+          "name": "中芯国际",
+          "family": "趋势",
+          "route": "S9/runner",
+          "rule": "核对源策略开盘成交条件",
+          "reason": "市场门控关闭",
+          "rank": 20,
+          "detail": {
+            "code": "688981",
+            "name": "中芯国际",
+            "score": 8.193963597255589,
+            "ref_close": 122.25
+          }
+        }
+      ]
+    }
+  ],
+  "etfs": {
+    "B0": {
+      "strategy": "B0",
+      "label": "ETF S9 B0",
+      "status": "ok",
+      "asof": "2026-11-19",
+      "exec_day": "2026-11-20",
+      "gate_on": false,
+      "picks": [
+        {
+          "code": "515650",
+          "name": "消费50ETF富国",
+          "score": 1.157174385051582
+        },
+        {
+          "code": "513070",
+          "name": "港股通消费ETF易方达",
+          "score": 0.7998554132447505
+        },
+        {
+          "code": "159928",
+          "name": "消费ETF汇添富",
+          "score": 0.7726910393460011
+        },
+        {
+          "code": "515450",
+          "name": "红利低波50ETF南方",
+          "score": 0.6658652475208792
+        },
+        {
+          "code": "513970",
+          "name": "恒生消费ETF景顺",
+          "score": 0.6568086969698163
+        },
+        {
+          "code": "159207",
+          "name": "高股息ETF广发",
+          "score": 0.6405380222356893
+        },
+        {
+          "code": "512700",
+          "name": "银行ETF南方",
+          "score": 0.6400886907875482
+        },
+        {
+          "code": "512690",
+          "name": "酒ETF鹏华",
+          "score": 0.5310532515981792
+        },
+        {
+          "code": "515170",
+          "name": "食品饮料ETF华夏",
+          "score": 0.5272200874522482
+        },
+        {
+          "code": "515300",
+          "name": "300红利低波ETF嘉实",
+          "score": 0.5039615425241578
+        }
+      ],
+      "weights": {},
+      "rebalance": false,
+      "target_codes": [
+        "511260",
+        "518880"
+      ],
+      "reasons": {
+        "518880": "趋势破位"
+      },
+      "params": {
+        "static_pool_size": 150,
+        "static_min_amt": 0.0,
+        "dyn_min_amt": 50000000.0,
+        "dyn_top": 100,
+        "dyn_win": 5,
+        "static_asof": "2019-12-31",
+        "ma_fast": 20,
+        "ma_slow": 60,
+        "mom_lookback": 40,
+        "mom_decay": 0.05,
+        "r2_power": 1.0,
+        "score_cap": 20.0,
+        "use_vol_filter": true,
+        "vol_spike_mult": 2.0,
+        "vol_win": 5,
+        "stop_loss": 0.1,
+        "stop_mode": "close",
+        "min_hold": 5,
+        "cooldown": 5,
+        "switch_margin": 0.15,
+        "use_rank_exit": true,
+        "regime": "or",
+        "regime_thr": 0.25,
+        "regime_win": 5,
+        "regime_ma": 60,
+        "risk_asset": "bond_gold",
+        "exec_mode": "next_open",
+        "cost_per_side": 0.0001,
+        "min_amt": 3000000.0,
+        "min_age": 120,
+        "top_n": 3,
+        "dedupe_theme": true,
+        "weight": "equal",
+        "target_vol": 0.0,
+        "vol_lookback": 20,
+        "dd_brake": 0.0,
+        "dd_resume": 0.1,
+        "rebalance_dow": null,
+        "rebalance_buffer": 0.02
+      },
+      "data_warnings": {
+        "158015": "158015: 158015: Tencent rich kline missing amount/turnover | push2his.eastmoney.com: circuit open after vendor connection/rate-limit errors; batch skipped",
+        "158900": "158900: 158900: Tencent rich kline missing amount/turnover | push2his.eastmoney.com: circuit open after vendor connection/rate-limit errors; batch skipped",
+        "159319": "159319: 159319: Tencent rich kline missing amount/turnover | push2his.eastmoney.com: circuit open after vendor connection/rate-limit errors; batch skipped",
+        "159585": "159585: 159585: Tencent rich kline missing amount/turnover | push2his.eastmoney.com: circuit open after vendor connection/rate-limit errors; batch skipped",
+        "159756": "159756: 159756: Tencent rich kline missing amount/turnover | push2his.eastmoney.com: circuit open after vendor connection/rate-limit errors; batch skipped",
+        "159799": "159799: 159799: Tencent rich kline missing amount/turnover | push2his.eastmoney.com: circuit open after vendor connection/rate-limit errors; batch skipped",
+        "512830": "512830: 512830: Tencent rich kline missing amount/turnover | push2his.eastmoney.com: circuit open after vendor connection/rate-limit errors; batch skipped",
+        "516170": "516170: 516170: Tencent rich kline missing amount/turnover | push2his.eastmoney.com: circuit open after vendor connection/rate-limit errors; batch skipped",
+        "517980": "517980: 517980: Tencent rich kline missing amount/turnover | push2his.eastmoney.com: circuit open after vendor connection/rate-limit errors; batch skipped",
+        "159528": "missing current-session history; excluded from ranking",
+        "511930": "missing current-session history; excluded from ranking",
+        "511950": "missing current-session history; excluded from ranking",
+        "512390": "missing current-session history; excluded from ranking",
+        "530080": "missing current-session history; excluded from ranking"
+      },
+      "data_health": {
+        "asof": "2026-11-19",
+        "total_manifest": 1777,
+        "loaded": 1718,
+        "eligible_data_expected": 1732,
+        "verified_young_or_unlisted": {
+          "158016": {
+            "code": "158016",
+            "name": "工业有色ETF嘉实",
+            "verified_asof": "2026-11-19",
+            "issue_date": "2026-10-12",
+            "establishment_date": null,
+            "maximum_possible_trading_sessions": 29,
+            "required_sessions": 60,
+            "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
+            "source_url": "https://fundf10.eastmoney.com/jbgk_158016.html"
+          },
+          "158060": {
+            "code": "158060",
+            "name": "创业板金融科技ETF长城",
+            "verified_asof": "2026-11-19",
+            "issue_date": "2026-11-09",
+            "establishment_date": null,
+            "maximum_possible_trading_sessions": 9,
+            "required_sessions": 60,
+            "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
+            "source_url": "https://fundf10.eastmoney.com/jbgk_158060.html"
+          },
+          "158070": {
+            "code": "158070",
+            "name": "港股通金融ETF招商",
+            "verified_asof": "2026-11-19",
+            "issue_date": "2026-10-08",
+            "establishment_date": null,
+            "maximum_possible_trading_sessions": 31,
+            "required_sessions": 60,
+            "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
+            "source_url": "https://fundf10.eastmoney.com/jbgk_158070.html"
+          },
+          "158087": {
+            "code": "158087",
+            "name": "创业板电池ETF国联",
+            "verified_asof": "2026-11-19",
+            "issue_date": "2026-10-19",
+            "establishment_date": null,
+            "maximum_possible_trading_sessions": 24,
+            "required_sessions": 60,
+            "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
+            "source_url": "https://fundf10.eastmoney.com/jbgk_158087.html"
+          },
+          "158088": {
+            "code": "158088",
+            "name": "创业板电池ETF博时",
+            "verified_asof": "2026-11-19",
+            "issue_date": "2026-10-08",
+            "establishment_date": "2026-11-18",
+            "maximum_possible_trading_sessions": 31,
+            "required_sessions": 60,
+            "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
+            "source_url": "https://fundf10.eastmoney.com/jbgk_158088.html"
+          },
+          "158091": {
+            "code": "158091",
+            "name": "创业板电池ETF汇添富",
+            "verified_asof": "2026-11-19",
+            "issue_date": "2026-10-19",
+            "establishment_date": null,
+            "maximum_possible_trading_sessions": 24,
+            "required_sessions": 60,
+            "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
+            "source_url": "https://fundf10.eastmoney.com/jbgk_158091.html"
+          },
+          "158901": {
+            "code": "158901",
+            "name": "价值优选主动ETF富国",
+            "verified_asof": "2026-11-19",
+            "issue_date": "2026-10-23",
+            "establishment_date": "2026-10-28",
+            "maximum_possible_trading_sessions": 20,
+            "required_sessions": 60,
+            "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
+            "source_url": "https://fundf10.eastmoney.com/jbgk_158901.html"
+          },
+          "158902": {
+            "code": "158902",
+            "name": "红利智选主动ETF大成",
+            "verified_asof": "2026-11-19",
+            "issue_date": "2026-10-23",
+            "establishment_date": "2026-10-30",
+            "maximum_possible_trading_sessions": 20,
+            "required_sessions": 60,
+            "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
+            "source_url": "https://fundf10.eastmoney.com/jbgk_158902.html"
+          },
+          "158903": {
+            "code": "158903",
+            "name": "价值主动ETF鹏华",
+            "verified_asof": "2026-11-19",
+            "issue_date": "2026-10-23",
+            "establishment_date": "2026-11-06",
+            "maximum_possible_trading_sessions": 20,
+            "required_sessions": 60,
+            "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
+            "source_url": "https://fundf10.eastmoney.com/jbgk_158903.html"
+          },
+          "158905": {
+            "code": "158905",
+            "name": "红利主动ETF工银",
+            "verified_asof": "2026-11-19",
+            "issue_date": "2026-10-23",
+            "establishment_date": "2026-11-04",
+            "maximum_possible_trading_sessions": 20,
+            "required_sessions": 60,
+            "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
+            "source_url": "https://fundf10.eastmoney.com/jbgk_158905.html"
+          },
+          "158906": {
+            "code": "158906",
+            "name": "均衡主动ETF华宝",
+            "verified_asof": "2026-11-19",
+            "issue_date": "2026-10-23",
+            "establishment_date": "2026-11-05",
+            "maximum_possible_trading_sessions": 20,
+            "required_sessions": 60,
+            "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
+            "source_url": "https://fundf10.eastmoney.com/jbgk_158906.html"
+          },
+          "158907": {
+            "code": "158907",
+            "name": "鑫汇均衡主动ETF国泰",
+            "verified_asof": "2026-11-19",
+            "issue_date": "2026-10-23",
+            "establishment_date": "2026-11-04",
+            "maximum_possible_trading_sessions": 20,
+            "required_sessions": 60,
+            "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
+            "source_url": "https://fundf10.eastmoney.com/jbgk_158907.html"
+          },
+          "158908": {
+            "code": "158908",
+            "name": "均衡量化主动ETF天弘",
+            "verified_asof": "2026-11-19",
+            "issue_date": "2026-10-23",
+            "establishment_date": "2026-10-30",
+            "maximum_possible_trading_sessions": 20,
+            "required_sessions": 60,
+            "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
+            "source_url": "https://fundf10.eastmoney.com/jbgk_158908.html"
+          },
+          "158909": {
+            "code": "158909",
+            "name": "均衡优选主动ETF建信",
+            "verified_asof": "2026-11-19",
+            "issue_date": "2026-10-23",
+            "establishment_date": "2026-11-09",
+            "maximum_possible_trading_sessions": 20,
+            "required_sessions": 60,
+            "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
+            "source_url": "https://fundf10.eastmoney.com/jbgk_158909.html"
+          },
+          "512490": {
+            "code": "512490",
+            "name": "红利低波100ETF华安",
+            "verified_asof": "2026-11-19",
+            "issue_date": "2026-10-19",
+            "establishment_date": null,
+            "maximum_possible_trading_sessions": 24,
+            "required_sessions": 60,
+            "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
+            "source_url": "https://fundf10.eastmoney.com/jbgk_512490.html"
+          },
+          "513790": {
+            "code": "513790",
+            "name": "港股红利低波ETF博时",
+            "verified_asof": "2026-11-19",
+            "issue_date": "2026-10-12",
+            "establishment_date": null,
+            "maximum_possible_trading_sessions": 29,
+            "required_sessions": 60,
+            "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
+            "source_url": "https://fundf10.eastmoney.com/jbgk_513790.html"
+          },
+          "517250": {
+            "code": "517250",
+            "name": "智能驾驶ETF易方达",
+            "verified_asof": "2026-11-19",
+            "issue_date": "2026-11-03",
+            "establishment_date": null,
+            "maximum_possible_trading_sessions": 13,
+            "required_sessions": 60,
+            "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
+            "source_url": "https://fundf10.eastmoney.com/jbgk_517250.html"
+          },
+          "520800": {
+            "code": "520800",
+            "name": "港股通汽车ETF嘉实",
+            "verified_asof": "2026-11-19",
+            "issue_date": "2026-10-19",
+            "establishment_date": null,
+            "maximum_possible_trading_sessions": 24,
+            "required_sessions": 60,
+            "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
+            "source_url": "https://fundf10.eastmoney.com/jbgk_520800.html"
+          },
+          "526020": {
+            "code": "526020",
+            "name": "港股通汽车ETF华泰柏瑞",
+            "verified_asof": "2026-11-19",
+            "issue_date": "2026-09-01",
+            "establishment_date": null,
+            "maximum_possible_trading_sessions": 52,
+            "required_sessions": 60,
+            "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
+            "source_url": "https://fundf10.eastmoney.com/jbgk_526020.html"
+          },
+          "526080": {
+            "code": "526080",
+            "name": "恒生生物科技ETF东财",
+            "verified_asof": "2026-11-19",
+            "issue_date": "2026-10-19",
+            "establishment_date": "2026-11-16",
+            "maximum_possible_trading_sessions": 24,
+            "required_sessions": 60,
+            "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
+            "source_url": "https://fundf10.eastmoney.com/jbgk_526080.html"
+          },
+          "560430": {
+            "code": "560430",
+            "name": "A500ETF中银证券",
+            "verified_asof": "2026-11-19",
+            "issue_date": "2026-08-26",
+            "establishment_date": null,
+            "maximum_possible_trading_sessions": 56,
+            "required_sessions": 60,
+            "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
+            "source_url": "https://fundf10.eastmoney.com/jbgk_560430.html"
+          },
+          "561270": {
+            "code": "561270",
+            "name": "家电龙头ETF鹏华",
+            "verified_asof": "2026-11-19",
+            "issue_date": "2026-08-24",
+            "establishment_date": null,
+            "maximum_possible_trading_sessions": 58,
+            "required_sessions": 60,
+            "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
+            "source_url": "https://fundf10.eastmoney.com/jbgk_561270.html"
+          },
+          "561860": {
+            "code": "561860",
+            "name": "银行ETF大成",
+            "verified_asof": "2026-11-19",
+            "issue_date": "2026-10-12",
+            "establishment_date": null,
+            "maximum_possible_trading_sessions": 29,
+            "required_sessions": 60,
+            "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
+            "source_url": "https://fundf10.eastmoney.com/jbgk_561860.html"
+          },
+          "562090": {
+            "code": "562090",
+            "name": "汽车ETF富国",
+            "verified_asof": "2026-11-19",
+            "issue_date": "2026-10-21",
+            "establishment_date": null,
+            "maximum_possible_trading_sessions": 22,
+            "required_sessions": 60,
+            "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
+            "source_url": "https://fundf10.eastmoney.com/jbgk_562090.html"
+          },
+          "562100": {
+            "code": "562100",
+            "name": "工程机械ETF永赢",
+            "verified_asof": "2026-11-19",
+            "issue_date": "2026-10-14",
+            "establishment_date": null,
+            "maximum_possible_trading_sessions": 27,
+            "required_sessions": 60,
+            "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
+            "source_url": "https://fundf10.eastmoney.com/jbgk_562100.html"
+          },
+          "562210": {
+            "code": "562210",
+            "name": "光伏ETF华宝",
+            "verified_asof": "2026-11-19",
+            "issue_date": "2026-10-08",
+            "establishment_date": null,
+            "maximum_possible_trading_sessions": 31,
+            "required_sessions": 60,
+            "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
+            "source_url": "https://fundf10.eastmoney.com/jbgk_562210.html"
+          },
+          "562630": {
+            "code": "562630",
+            "name": "通信ETF易方达",
+            "verified_asof": "2026-11-19",
+            "issue_date": "2026-09-24",
+            "establishment_date": null,
+            "maximum_possible_trading_sessions": 35,
+            "required_sessions": 60,
+            "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
+            "source_url": "https://fundf10.eastmoney.com/jbgk_562630.html"
+          },
+          "562690": {
+            "code": "562690",
+            "name": "养殖ETF华夏",
+            "verified_asof": "2026-11-19",
+            "issue_date": "2026-10-19",
+            "establishment_date": null,
+            "maximum_possible_trading_sessions": 24,
+            "required_sessions": 60,
+            "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
+            "source_url": "https://fundf10.eastmoney.com/jbgk_562690.html"
+          },
+          "562710": {
+            "code": "562710",
+            "name": "上证指数增强ETF鹏华",
+            "verified_asof": "2026-11-19",
+            "issue_date": "2026-10-12",
+            "establishment_date": "2026-11-11",
+            "maximum_possible_trading_sessions": 29,
+            "required_sessions": 60,
+            "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
+            "source_url": "https://fundf10.eastmoney.com/jbgk_562710.html"
+          },
+          "563100": {
+            "code": "563100",
+            "name": "红利增长ETF易方达",
+            "verified_asof": "2026-11-19",
+            "issue_date": "2026-10-30",
+            "establishment_date": null,
+            "maximum_possible_trading_sessions": 15,
+            "required_sessions": 60,
+            "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
+            "source_url": "https://fundf10.eastmoney.com/jbgk_563100.html"
+          },
+          "581000": {
+            "code": "581000",
+            "name": "大盘成长主动ETF摩根",
+            "verified_asof": "2026-11-19",
+            "issue_date": "2026-10-23",
+            "establishment_date": "2026-10-28",
+            "maximum_possible_trading_sessions": 20,
+            "required_sessions": 60,
+            "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
+            "source_url": "https://fundf10.eastmoney.com/jbgk_581000.html"
+          },
+          "581010": {
+            "code": "581010",
+            "name": "均衡智选主动ETF汇添富",
+            "verified_asof": "2026-11-19",
+            "issue_date": "2026-10-23",
+            "establishment_date": "2026-10-30",
+            "maximum_possible_trading_sessions": 20,
+            "required_sessions": 60,
+            "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
+            "source_url": "https://fundf10.eastmoney.com/jbgk_581010.html"
+          },
+          "581020": {
+            "code": "581020",
+            "name": "均衡主动ETF华安",
+            "verified_asof": "2026-11-19",
+            "issue_date": "2026-10-23",
+            "establishment_date": "2026-11-02",
+            "maximum_possible_trading_sessions": 20,
+            "required_sessions": 60,
+            "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
+            "source_url": "https://fundf10.eastmoney.com/jbgk_581020.html"
+          },
+          "581030": {
+            "code": "581030",
+            "name": "质量主动ETF华夏",
+            "verified_asof": "2026-11-19",
+            "issue_date": "2026-10-23",
+            "establishment_date": "2026-10-29",
+            "maximum_possible_trading_sessions": 20,
+            "required_sessions": 60,
+            "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
+            "source_url": "https://fundf10.eastmoney.com/jbgk_581030.html"
+          },
+          "581050": {
+            "code": "581050",
+            "name": "品质均衡主动ETF易方达",
+            "verified_asof": "2026-11-19",
+            "issue_date": "2026-10-23",
+            "establishment_date": "2026-10-28",
+            "maximum_possible_trading_sessions": 20,
+            "required_sessions": 60,
+            "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
+            "source_url": "https://fundf10.eastmoney.com/jbgk_581050.html"
+          },
+          "581060": {
+            "code": "581060",
+            "name": "景气均衡主动ETF永赢",
+            "verified_asof": "2026-11-19",
+            "issue_date": "2026-10-23",
+            "establishment_date": "2026-11-03",
+            "maximum_possible_trading_sessions": 20,
+            "required_sessions": 60,
+            "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
+            "source_url": "https://fundf10.eastmoney.com/jbgk_581060.html"
+          },
+          "581070": {
+            "code": "581070",
+            "name": "红利主动ETF平安",
+            "verified_asof": "2026-11-19",
+            "issue_date": "2026-10-23",
+            "establishment_date": "2026-10-29",
+            "maximum_possible_trading_sessions": 20,
+            "required_sessions": 60,
+            "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
+            "source_url": "https://fundf10.eastmoney.com/jbgk_581070.html"
+          },
+          "581080": {
+            "code": "581080",
+            "name": "价值主动ETF招商",
+            "verified_asof": "2026-11-19",
+            "issue_date": "2026-10-23",
+            "establishment_date": "2026-10-30",
+            "maximum_possible_trading_sessions": 20,
+            "required_sessions": 60,
+            "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
+            "source_url": "https://fundf10.eastmoney.com/jbgk_581080.html"
+          },
+          "581090": {
+            "code": "581090",
+            "name": "价值精选主动ETF华泰柏瑞",
+            "verified_asof": "2026-11-19",
+            "issue_date": "2026-10-23",
+            "establishment_date": "2026-10-29",
+            "maximum_possible_trading_sessions": 20,
+            "required_sessions": 60,
+            "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
+            "source_url": "https://fundf10.eastmoney.com/jbgk_581090.html"
+          },
+          "588490": {
+            "code": "588490",
+            "name": "科创创业人工智能ETF泰康",
+            "verified_asof": "2026-11-19",
+            "issue_date": "2026-09-11",
+            "establishment_date": null,
+            "maximum_possible_trading_sessions": 44,
+            "required_sessions": 60,
+            "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
+            "source_url": "https://fundf10.eastmoney.com/jbgk_588490.html"
+          },
+          "588560": {
+            "code": "588560",
+            "name": "科创创业人工智能ETF华富",
+            "verified_asof": "2026-11-19",
+            "issue_date": "2026-10-19",
+            "establishment_date": "2026-11-11",
+            "maximum_possible_trading_sessions": 24,
+            "required_sessions": 60,
+            "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
+            "source_url": "https://fundf10.eastmoney.com/jbgk_588560.html"
+          },
+          "589370": {
+            "code": "589370",
+            "name": "科创芯片设计ETF华安",
+            "verified_asof": "2026-11-19",
+            "issue_date": "2026-10-20",
+            "establishment_date": null,
+            "maximum_possible_trading_sessions": 23,
+            "required_sessions": 60,
+            "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
+            "source_url": "https://fundf10.eastmoney.com/jbgk_589370.html"
+          },
+          "589590": {
+            "code": "589590",
+            "name": "科创芯片设计ETF华泰柏瑞",
+            "verified_asof": "2026-11-19",
+            "issue_date": "2026-10-12",
+            "establishment_date": null,
+            "maximum_possible_trading_sessions": 29,
+            "required_sessions": 60,
+            "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
+            "source_url": "https://fundf10.eastmoney.com/jbgk_589590.html"
+          },
+          "589610": {
+            "code": "589610",
+            "name": "科创芯片ETF华夏",
+            "verified_asof": "2026-11-19",
+            "issue_date": "2026-10-15",
+            "establishment_date": null,
+            "maximum_possible_trading_sessions": 26,
+            "required_sessions": 60,
+            "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
+            "source_url": "https://fundf10.eastmoney.com/jbgk_589610.html"
+          },
+          "589670": {
+            "code": "589670",
+            "name": "科创新材料ETF华夏",
+            "verified_asof": "2026-11-19",
+            "issue_date": "2026-11-09",
+            "establishment_date": null,
+            "maximum_possible_trading_sessions": 9,
+            "required_sessions": 60,
+            "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
+            "source_url": "https://fundf10.eastmoney.com/jbgk_589670.html"
+          }
+        },
+        "unresolved": {
+          "158015": "158015: 158015: Tencent rich kline missing amount/turnover | push2his.eastmoney.com: circuit open after vendor connection/rate-limit errors; batch skipped",
+          "158900": "158900: 158900: Tencent rich kline missing amount/turnover | push2his.eastmoney.com: circuit open after vendor connection/rate-limit errors; batch skipped",
+          "159319": "159319: 159319: Tencent rich kline missing amount/turnover | push2his.eastmoney.com: circuit open after vendor connection/rate-limit errors; batch skipped",
+          "159585": "159585: 159585: Tencent rich kline missing amount/turnover | push2his.eastmoney.com: circuit open after vendor connection/rate-limit errors; batch skipped",
+          "159756": "159756: 159756: Tencent rich kline missing amount/turnover | push2his.eastmoney.com: circuit open after vendor connection/rate-limit errors; batch skipped",
+          "159799": "159799: 159799: Tencent rich kline missing amount/turnover | push2his.eastmoney.com: circuit open after vendor connection/rate-limit errors; batch skipped",
+          "512830": "512830: 512830: Tencent rich kline missing amount/turnover | push2his.eastmoney.com: circuit open after vendor connection/rate-limit errors; batch skipped",
+          "516170": "516170: 516170: Tencent rich kline missing amount/turnover | push2his.eastmoney.com: circuit open after vendor connection/rate-limit errors; batch skipped",
+          "517980": "517980: 517980: Tencent rich kline missing amount/turnover | push2his.eastmoney.com: circuit open after vendor connection/rate-limit errors; batch skipped",
+          "159528": "missing current-session history; excluded from ranking",
+          "511930": "missing current-session history; excluded from ranking",
+          "511950": "missing current-session history; excluded from ranking",
+          "512390": "missing current-session history; excluded from ranking",
+          "530080": "missing current-session history; excluded from ranking"
+        },
+        "coverage": 0.9919168591224018
+      },
+      "live_warmup": "up to 640 actual sessions per ETF; no inherited historical holdings"
+    },
+    "K3": {
+      "strategy": "K3",
+      "label": "ETF S9 K3",
+      "status": "ok",
+      "asof": "2026-11-19",
+      "exec_day": "2026-11-20",
+      "gate_on": false,
+      "picks": [
+        {
+          "code": "159798",
+          "name": "消费ETF易方达",
+          "score": 1.1762026379098651
+        },
+        {
+          "code": "515650",
+          "name": "消费50ETF富国",
+          "score": 1.157174385051582
+        },
+        {
+          "code": "516130",
+          "name": "消费龙头ETF华宝",
+          "score": 0.9874994905418987
+        },
+        {
+          "code": "513070",
+          "name": "港股通消费ETF易方达",
+          "score": 0.7998554132447505
+        },
+        {
+          "code": "159735",
+          "name": "港股消费ETF银华",
+          "score": 0.7853852958988355
+        },
+        {
+          "code": "520620",
+          "name": "恒生消费ETF嘉实",
+          "score": 0.7112631276781973
+        },
+        {
+          "code": "515450",
+          "name": "红利低波50ETF南方",
+          "score": 0.6658652475208792
+        },
+        {
+          "code": "516900",
+          "name": "食品饮料ETF华安",
+          "score": 0.6424944007669751
+        },
+        {
+          "code": "159207",
+          "name": "高股息ETF广发",
+          "score": 0.6405380222356893
+        },
+        {
+          "code": "512700",
+          "name": "银行ETF南方",
+          "score": 0.6400886907875482
+        }
+      ],
+      "weights": {},
+      "rebalance": false,
+      "target_codes": [
+        "511260",
+        "518880"
+      ],
+      "reasons": {
+        "518880": "趋势破位"
+      },
+      "params": {
+        "static_pool_size": 150,
+        "static_min_amt": 0.0,
+        "dyn_min_amt": 0,
+        "dyn_top": 100,
+        "dyn_win": 5,
+        "static_asof": "2019-12-31",
+        "ma_fast": 20,
+        "ma_slow": 60,
+        "mom_lookback": 40,
+        "mom_decay": 0.05,
+        "r2_power": 1.0,
+        "score_cap": 20.0,
+        "use_vol_filter": true,
+        "vol_spike_mult": 2.0,
+        "vol_win": 5,
+        "stop_loss": 0.0,
+        "stop_mode": "close",
+        "min_hold": 5,
+        "cooldown": 5,
+        "switch_margin": 0.15,
+        "use_rank_exit": true,
+        "regime": "or",
+        "regime_thr": 0.2,
+        "regime_win": 5,
+        "regime_ma": 60,
+        "risk_asset": "bond_gold",
+        "exec_mode": "next_open",
+        "cost_per_side": 0.0001,
+        "min_amt": 3000000.0,
+        "min_age": 120,
+        "top_n": 2,
+        "dedupe_theme": true,
+        "weight": "score",
+        "target_vol": 0.0,
+        "vol_lookback": 20,
+        "dd_brake": 0.0,
+        "dd_resume": 0.1,
+        "rebalance_dow": null,
+        "rebalance_buffer": 0.02
+      },
+      "data_warnings": {
+        "158015": "158015: 158015: Tencent rich kline missing amount/turnover | push2his.eastmoney.com: circuit open after vendor connection/rate-limit errors; batch skipped",
+        "158900": "158900: 158900: Tencent rich kline missing amount/turnover | push2his.eastmoney.com: circuit open after vendor connection/rate-limit errors; batch skipped",
+        "159319": "159319: 159319: Tencent rich kline missing amount/turnover | push2his.eastmoney.com: circuit open after vendor connection/rate-limit errors; batch skipped",
+        "159585": "159585: 159585: Tencent rich kline missing amount/turnover | push2his.eastmoney.com: circuit open after vendor connection/rate-limit errors; batch skipped",
+        "159756": "159756: 159756: Tencent rich kline missing amount/turnover | push2his.eastmoney.com: circuit open after vendor connection/rate-limit errors; batch skipped",
+        "159799": "159799: 159799: Tencent rich kline missing amount/turnover | push2his.eastmoney.com: circuit open after vendor connection/rate-limit errors; batch skipped",
+        "512830": "512830: 512830: Tencent rich kline missing amount/turnover | push2his.eastmoney.com: circuit open after vendor connection/rate-limit errors; batch skipped",
+        "516170": "516170: 516170: Tencent rich kline missing amount/turnover | push2his.eastmoney.com: circuit open after vendor connection/rate-limit errors; batch skipped",
+        "517980": "517980: 517980: Tencent rich kline missing amount/turnover | push2his.eastmoney.com: circuit open after vendor connection/rate-limit errors; batch skipped",
+        "159528": "missing current-session history; excluded from ranking",
+        "511930": "missing current-session history; excluded from ranking",
+        "511950": "missing current-session history; excluded from ranking",
+        "512390": "missing current-session history; excluded from ranking",
+        "530080": "missing current-session history; excluded from ranking"
+      },
+      "data_health": {
+        "asof": "2026-11-19",
+        "total_manifest": 1777,
+        "loaded": 1718,
+        "eligible_data_expected": 1732,
+        "verified_young_or_unlisted": {
+          "158016": {
+            "code": "158016",
+            "name": "工业有色ETF嘉实",
+            "verified_asof": "2026-11-19",
+            "issue_date": "2026-10-12",
+            "establishment_date": null,
+            "maximum_possible_trading_sessions": 29,
+            "required_sessions": 60,
+            "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
+            "source_url": "https://fundf10.eastmoney.com/jbgk_158016.html"
+          },
+          "158060": {
+            "code": "158060",
+            "name": "创业板金融科技ETF长城",
+            "verified_asof": "2026-11-19",
+            "issue_date": "2026-11-09",
+            "establishment_date": null,
+            "maximum_possible_trading_sessions": 9,
+            "required_sessions": 60,
+            "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
+            "source_url": "https://fundf10.eastmoney.com/jbgk_158060.html"
+          },
+          "158070": {
+            "code": "158070",
+            "name": "港股通金融ETF招商",
+            "verified_asof": "2026-11-19",
+            "issue_date": "2026-10-08",
+            "establishment_date": null,
+            "maximum_possible_trading_sessions": 31,
+            "required_sessions": 60,
+            "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
+            "source_url": "https://fundf10.eastmoney.com/jbgk_158070.html"
+          },
+          "158087": {
+            "code": "158087",
+            "name": "创业板电池ETF国联",
+            "verified_asof": "2026-11-19",
+            "issue_date": "2026-10-19",
+            "establishment_date": null,
+            "maximum_possible_trading_sessions": 24,
+            "required_sessions": 60,
+            "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
+            "source_url": "https://fundf10.eastmoney.com/jbgk_158087.html"
+          },
+          "158088": {
+            "code": "158088",
+            "name": "创业板电池ETF博时",
+            "verified_asof": "2026-11-19",
+            "issue_date": "2026-10-08",
+            "establishment_date": "2026-11-18",
+            "maximum_possible_trading_sessions": 31,
+            "required_sessions": 60,
+            "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
+            "source_url": "https://fundf10.eastmoney.com/jbgk_158088.html"
+          },
+          "158091": {
+            "code": "158091",
+            "name": "创业板电池ETF汇添富",
+            "verified_asof": "2026-11-19",
+            "issue_date": "2026-10-19",
+            "establishment_date": null,
+            "maximum_possible_trading_sessions": 24,
+            "required_sessions": 60,
+            "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
+            "source_url": "https://fundf10.eastmoney.com/jbgk_158091.html"
+          },
+          "158901": {
+            "code": "158901",
+            "name": "价值优选主动ETF富国",
+            "verified_asof": "2026-11-19",
+            "issue_date": "2026-10-23",
+            "establishment_date": "2026-10-28",
+            "maximum_possible_trading_sessions": 20,
+            "required_sessions": 60,
+            "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
+            "source_url": "https://fundf10.eastmoney.com/jbgk_158901.html"
+          },
+          "158902": {
+            "code": "158902",
+            "name": "红利智选主动ETF大成",
+            "verified_asof": "2026-11-19",
+            "issue_date": "2026-10-23",
+            "establishment_date": "2026-10-30",
+            "maximum_possible_trading_sessions": 20,
+            "required_sessions": 60,
+            "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
+            "source_url": "https://fundf10.eastmoney.com/jbgk_158902.html"
+          },
+          "158903": {
+            "code": "158903",
+            "name": "价值主动ETF鹏华",
+            "verified_asof": "2026-11-19",
+            "issue_date": "2026-10-23",
+            "establishment_date": "2026-11-06",
+            "maximum_possible_trading_sessions": 20,
+            "required_sessions": 60,
+            "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
+            "source_url": "https://fundf10.eastmoney.com/jbgk_158903.html"
+          },
+          "158905": {
+            "code": "158905",
+            "name": "红利主动ETF工银",
+            "verified_asof": "2026-11-19",
+            "issue_date": "2026-10-23",
+            "establishment_date": "2026-11-04",
+            "maximum_possible_trading_sessions": 20,
+            "required_sessions": 60,
+            "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
+            "source_url": "https://fundf10.eastmoney.com/jbgk_158905.html"
+          },
+          "158906": {
+            "code": "158906",
+            "name": "均衡主动ETF华宝",
+            "verified_asof": "2026-11-19",
+            "issue_date": "2026-10-23",
+            "establishment_date": "2026-11-05",
+            "maximum_possible_trading_sessions": 20,
+            "required_sessions": 60,
+            "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
+            "source_url": "https://fundf10.eastmoney.com/jbgk_158906.html"
+          },
+          "158907": {
+            "code": "158907",
+            "name": "鑫汇均衡主动ETF国泰",
+            "verified_asof": "2026-11-19",
+            "issue_date": "2026-10-23",
+            "establishment_date": "2026-11-04",
+            "maximum_possible_trading_sessions": 20,
+            "required_sessions": 60,
+            "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
+            "source_url": "https://fundf10.eastmoney.com/jbgk_158907.html"
+          },
+          "158908": {
+            "code": "158908",
+            "name": "均衡量化主动ETF天弘",
+            "verified_asof": "2026-11-19",
+            "issue_date": "2026-10-23",
+            "establishment_date": "2026-10-30",
+            "maximum_possible_trading_sessions": 20,
+            "required_sessions": 60,
+            "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
+            "source_url": "https://fundf10.eastmoney.com/jbgk_158908.html"
+          },
+          "158909": {
+            "code": "158909",
+            "name": "均衡优选主动ETF建信",
+            "verified_asof": "2026-11-19",
+            "issue_date": "2026-10-23",
+            "establishment_date": "2026-11-09",
+            "maximum_possible_trading_sessions": 20,
+            "required_sessions": 60,
+            "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
+            "source_url": "https://fundf10.eastmoney.com/jbgk_158909.html"
+          },
+          "512490": {
+            "code": "512490",
+            "name": "红利低波100ETF华安",
+            "verified_asof": "2026-11-19",
+            "issue_date": "2026-10-19",
+            "establishment_date": null,
+            "maximum_possible_trading_sessions": 24,
+            "required_sessions": 60,
+            "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
+            "source_url": "https://fundf10.eastmoney.com/jbgk_512490.html"
+          },
+          "513790": {
+            "code": "513790",
+            "name": "港股红利低波ETF博时",
+            "verified_asof": "2026-11-19",
+            "issue_date": "2026-10-12",
+            "establishment_date": null,
+            "maximum_possible_trading_sessions": 29,
+            "required_sessions": 60,
+            "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
+            "source_url": "https://fundf10.eastmoney.com/jbgk_513790.html"
+          },
+          "517250": {
+            "code": "517250",
+            "name": "智能驾驶ETF易方达",
+            "verified_asof": "2026-11-19",
+            "issue_date": "2026-11-03",
+            "establishment_date": null,
+            "maximum_possible_trading_sessions": 13,
+            "required_sessions": 60,
+            "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
+            "source_url": "https://fundf10.eastmoney.com/jbgk_517250.html"
+          },
+          "520800": {
+            "code": "520800",
+            "name": "港股通汽车ETF嘉实",
+            "verified_asof": "2026-11-19",
+            "issue_date": "2026-10-19",
+            "establishment_date": null,
+            "maximum_possible_trading_sessions": 24,
+            "required_sessions": 60,
+            "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
+            "source_url": "https://fundf10.eastmoney.com/jbgk_520800.html"
+          },
+          "526020": {
+            "code": "526020",
+            "name": "港股通汽车ETF华泰柏瑞",
+            "verified_asof": "2026-11-19",
+            "issue_date": "2026-09-01",
+            "establishment_date": null,
+            "maximum_possible_trading_sessions": 52,
+            "required_sessions": 60,
+            "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
+            "source_url": "https://fundf10.eastmoney.com/jbgk_526020.html"
+          },
+          "526080": {
+            "code": "526080",
+            "name": "恒生生物科技ETF东财",
+            "verified_asof": "2026-11-19",
+            "issue_date": "2026-10-19",
+            "establishment_date": "2026-11-16",
+            "maximum_possible_trading_sessions": 24,
+            "required_sessions": 60,
+            "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
+            "source_url": "https://fundf10.eastmoney.com/jbgk_526080.html"
+          },
+          "560430": {
+            "code": "560430",
+            "name": "A500ETF中银证券",
+            "verified_asof": "2026-11-19",
+            "issue_date": "2026-08-26",
+            "establishment_date": null,
+            "maximum_possible_trading_sessions": 56,
+            "required_sessions": 60,
+            "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
+            "source_url": "https://fundf10.eastmoney.com/jbgk_560430.html"
+          },
+          "561270": {
+            "code": "561270",
+            "name": "家电龙头ETF鹏华",
+            "verified_asof": "2026-11-19",
+            "issue_date": "2026-08-24",
+            "establishment_date": null,
+            "maximum_possible_trading_sessions": 58,
+            "required_sessions": 60,
+            "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
+            "source_url": "https://fundf10.eastmoney.com/jbgk_561270.html"
+          },
+          "561860": {
+            "code": "561860",
+            "name": "银行ETF大成",
+            "verified_asof": "2026-11-19",
+            "issue_date": "2026-10-12",
+            "establishment_date": null,
+            "maximum_possible_trading_sessions": 29,
+            "required_sessions": 60,
+            "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
+            "source_url": "https://fundf10.eastmoney.com/jbgk_561860.html"
+          },
+          "562090": {
+            "code": "562090",
+            "name": "汽车ETF富国",
+            "verified_asof": "2026-11-19",
+            "issue_date": "2026-10-21",
+            "establishment_date": null,
+            "maximum_possible_trading_sessions": 22,
+            "required_sessions": 60,
+            "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
+            "source_url": "https://fundf10.eastmoney.com/jbgk_562090.html"
+          },
+          "562100": {
+            "code": "562100",
+            "name": "工程机械ETF永赢",
+            "verified_asof": "2026-11-19",
+            "issue_date": "2026-10-14",
+            "establishment_date": null,
+            "maximum_possible_trading_sessions": 27,
+            "required_sessions": 60,
+            "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
+            "source_url": "https://fundf10.eastmoney.com/jbgk_562100.html"
+          },
+          "562210": {
+            "code": "562210",
+            "name": "光伏ETF华宝",
+            "verified_asof": "2026-11-19",
+            "issue_date": "2026-10-08",
+            "establishment_date": null,
+            "maximum_possible_trading_sessions": 31,
+            "required_sessions": 60,
+            "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
+            "source_url": "https://fundf10.eastmoney.com/jbgk_562210.html"
+          },
+          "562630": {
+            "code": "562630",
+            "name": "通信ETF易方达",
+            "verified_asof": "2026-11-19",
+            "issue_date": "2026-09-24",
+            "establishment_date": null,
+            "maximum_possible_trading_sessions": 35,
+            "required_sessions": 60,
+            "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
+            "source_url": "https://fundf10.eastmoney.com/jbgk_562630.html"
+          },
+          "562690": {
+            "code": "562690",
+            "name": "养殖ETF华夏",
+            "verified_asof": "2026-11-19",
+            "issue_date": "2026-10-19",
+            "establishment_date": null,
+            "maximum_possible_trading_sessions": 24,
+            "required_sessions": 60,
+            "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
+            "source_url": "https://fundf10.eastmoney.com/jbgk_562690.html"
+          },
+          "562710": {
+            "code": "562710",
+            "name": "上证指数增强ETF鹏华",
+            "verified_asof": "2026-11-19",
+            "issue_date": "2026-10-12",
+            "establishment_date": "2026-11-11",
+            "maximum_possible_trading_sessions": 29,
+            "required_sessions": 60,
+            "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
+            "source_url": "https://fundf10.eastmoney.com/jbgk_562710.html"
+          },
+          "563100": {
+            "code": "563100",
+            "name": "红利增长ETF易方达",
+            "verified_asof": "2026-11-19",
+            "issue_date": "2026-10-30",
+            "establishment_date": null,
+            "maximum_possible_trading_sessions": 15,
+            "required_sessions": 60,
+            "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
+            "source_url": "https://fundf10.eastmoney.com/jbgk_563100.html"
+          },
+          "581000": {
+            "code": "581000",
+            "name": "大盘成长主动ETF摩根",
+            "verified_asof": "2026-11-19",
+            "issue_date": "2026-10-23",
+            "establishment_date": "2026-10-28",
+            "maximum_possible_trading_sessions": 20,
+            "required_sessions": 60,
+            "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
+            "source_url": "https://fundf10.eastmoney.com/jbgk_581000.html"
+          },
+          "581010": {
+            "code": "581010",
+            "name": "均衡智选主动ETF汇添富",
+            "verified_asof": "2026-11-19",
+            "issue_date": "2026-10-23",
+            "establishment_date": "2026-10-30",
+            "maximum_possible_trading_sessions": 20,
+            "required_sessions": 60,
+            "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
+            "source_url": "https://fundf10.eastmoney.com/jbgk_581010.html"
+          },
+          "581020": {
+            "code": "581020",
+            "name": "均衡主动ETF华安",
+            "verified_asof": "2026-11-19",
+            "issue_date": "2026-10-23",
+            "establishment_date": "2026-11-02",
+            "maximum_possible_trading_sessions": 20,
+            "required_sessions": 60,
+            "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
+            "source_url": "https://fundf10.eastmoney.com/jbgk_581020.html"
+          },
+          "581030": {
+            "code": "581030",
+            "name": "质量主动ETF华夏",
+            "verified_asof": "2026-11-19",
+            "issue_date": "2026-10-23",
+            "establishment_date": "2026-10-29",
+            "maximum_possible_trading_sessions": 20,
+            "required_sessions": 60,
+            "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
+            "source_url": "https://fundf10.eastmoney.com/jbgk_581030.html"
+          },
+          "581050": {
+            "code": "581050",
+            "name": "品质均衡主动ETF易方达",
+            "verified_asof": "2026-11-19",
+            "issue_date": "2026-10-23",
+            "establishment_date": "2026-10-28",
+            "maximum_possible_trading_sessions": 20,
+            "required_sessions": 60,
+            "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
+            "source_url": "https://fundf10.eastmoney.com/jbgk_581050.html"
+          },
+          "581060": {
+            "code": "581060",
+            "name": "景气均衡主动ETF永赢",
+            "verified_asof": "2026-11-19",
+            "issue_date": "2026-10-23",
+            "establishment_date": "2026-11-03",
+            "maximum_possible_trading_sessions": 20,
+            "required_sessions": 60,
+            "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
+            "source_url": "https://fundf10.eastmoney.com/jbgk_581060.html"
+          },
+          "581070": {
+            "code": "581070",
+            "name": "红利主动ETF平安",
+            "verified_asof": "2026-11-19",
+            "issue_date": "2026-10-23",
+            "establishment_date": "2026-10-29",
+            "maximum_possible_trading_sessions": 20,
+            "required_sessions": 60,
+            "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
+            "source_url": "https://fundf10.eastmoney.com/jbgk_581070.html"
+          },
+          "581080": {
+            "code": "581080",
+            "name": "价值主动ETF招商",
+            "verified_asof": "2026-11-19",
+            "issue_date": "2026-10-23",
+            "establishment_date": "2026-10-30",
+            "maximum_possible_trading_sessions": 20,
+            "required_sessions": 60,
+            "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
+            "source_url": "https://fundf10.eastmoney.com/jbgk_581080.html"
+          },
+          "581090": {
+            "code": "581090",
+            "name": "价值精选主动ETF华泰柏瑞",
+            "verified_asof": "2026-11-19",
+            "issue_date": "2026-10-23",
+            "establishment_date": "2026-10-29",
+            "maximum_possible_trading_sessions": 20,
+            "required_sessions": 60,
+            "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
+            "source_url": "https://fundf10.eastmoney.com/jbgk_581090.html"
+          },
+          "588490": {
+            "code": "588490",
+            "name": "科创创业人工智能ETF泰康",
+            "verified_asof": "2026-11-19",
+            "issue_date": "2026-09-11",
+            "establishment_date": null,
+            "maximum_possible_trading_sessions": 44,
+            "required_sessions": 60,
+            "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
+            "source_url": "https://fundf10.eastmoney.com/jbgk_588490.html"
+          },
+          "588560": {
+            "code": "588560",
+            "name": "科创创业人工智能ETF华富",
+            "verified_asof": "2026-11-19",
+            "issue_date": "2026-10-19",
+            "establishment_date": "2026-11-11",
+            "maximum_possible_trading_sessions": 24,
+            "required_sessions": 60,
+            "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
+            "source_url": "https://fundf10.eastmoney.com/jbgk_588560.html"
+          },
+          "589370": {
+            "code": "589370",
+            "name": "科创芯片设计ETF华安",
+            "verified_asof": "2026-11-19",
+            "issue_date": "2026-10-20",
+            "establishment_date": null,
+            "maximum_possible_trading_sessions": 23,
+            "required_sessions": 60,
+            "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
+            "source_url": "https://fundf10.eastmoney.com/jbgk_589370.html"
+          },
+          "589590": {
+            "code": "589590",
+            "name": "科创芯片设计ETF华泰柏瑞",
+            "verified_asof": "2026-11-19",
+            "issue_date": "2026-10-12",
+            "establishment_date": null,
+            "maximum_possible_trading_sessions": 29,
+            "required_sessions": 60,
+            "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
+            "source_url": "https://fundf10.eastmoney.com/jbgk_589590.html"
+          },
+          "589610": {
+            "code": "589610",
+            "name": "科创芯片ETF华夏",
+            "verified_asof": "2026-11-19",
+            "issue_date": "2026-10-15",
+            "establishment_date": null,
+            "maximum_possible_trading_sessions": 26,
+            "required_sessions": 60,
+            "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
+            "source_url": "https://fundf10.eastmoney.com/jbgk_589610.html"
+          },
+          "589670": {
+            "code": "589670",
+            "name": "科创新材料ETF华夏",
+            "verified_asof": "2026-11-19",
+            "issue_date": "2026-11-09",
+            "establishment_date": null,
+            "maximum_possible_trading_sessions": 9,
+            "required_sessions": 60,
+            "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
+            "source_url": "https://fundf10.eastmoney.com/jbgk_589670.html"
+          }
+        },
+        "unresolved": {
+          "158015": "158015: 158015: Tencent rich kline missing amount/turnover | push2his.eastmoney.com: circuit open after vendor connection/rate-limit errors; batch skipped",
+          "158900": "158900: 158900: Tencent rich kline missing amount/turnover | push2his.eastmoney.com: circuit open after vendor connection/rate-limit errors; batch skipped",
+          "159319": "159319: 159319: Tencent rich kline missing amount/turnover | push2his.eastmoney.com: circuit open after vendor connection/rate-limit errors; batch skipped",
+          "159585": "159585: 159585: Tencent rich kline missing amount/turnover | push2his.eastmoney.com: circuit open after vendor connection/rate-limit errors; batch skipped",
+          "159756": "159756: 159756: Tencent rich kline missing amount/turnover | push2his.eastmoney.com: circuit open after vendor connection/rate-limit errors; batch skipped",
+          "159799": "159799: 159799: Tencent rich kline missing amount/turnover | push2his.eastmoney.com: circuit open after vendor connection/rate-limit errors; batch skipped",
+          "512830": "512830: 512830: Tencent rich kline missing amount/turnover | push2his.eastmoney.com: circuit open after vendor connection/rate-limit errors; batch skipped",
+          "516170": "516170: 516170: Tencent rich kline missing amount/turnover | push2his.eastmoney.com: circuit open after vendor connection/rate-limit errors; batch skipped",
+          "517980": "517980: 517980: Tencent rich kline missing amount/turnover | push2his.eastmoney.com: circuit open after vendor connection/rate-limit errors; batch skipped",
+          "159528": "missing current-session history; excluded from ranking",
+          "511930": "missing current-session history; excluded from ranking",
+          "511950": "missing current-session history; excluded from ranking",
+          "512390": "missing current-session history; excluded from ranking",
+          "530080": "missing current-session history; excluded from ranking"
+        },
+        "coverage": 0.9919168591224018
+      },
+      "live_warmup": "up to 640 actual sessions per ETF; no inherited historical holdings"
+    },
+    "K5": {
+      "strategy": "K5",
+      "label": "ETF S9 K5",
+      "status": "ok",
+      "asof": "2026-11-19",
+      "exec_day": "2026-11-20",
+      "gate_on": false,
+      "picks": [
+        {
+          "code": "515650",
+          "name": "消费50ETF富国",
+          "score": 1.157174385051582
+        },
+        {
+          "code": "513070",
+          "name": "港股通消费ETF易方达",
+          "score": 0.7998554132447505
+        },
+        {
+          "code": "159928",
+          "name": "消费ETF汇添富",
+          "score": 0.7726910393460011
+        },
+        {
+          "code": "515450",
+          "name": "红利低波50ETF南方",
+          "score": 0.6658652475208792
+        },
+        {
+          "code": "513970",
+          "name": "恒生消费ETF景顺",
+          "score": 0.6568086969698163
+        },
+        {
+          "code": "159207",
+          "name": "高股息ETF广发",
+          "score": 0.6405380222356893
+        },
+        {
+          "code": "512700",
+          "name": "银行ETF南方",
+          "score": 0.6400886907875482
+        },
+        {
+          "code": "512690",
+          "name": "酒ETF鹏华",
+          "score": 0.5310532515981792
+        },
+        {
+          "code": "515170",
+          "name": "食品饮料ETF华夏",
+          "score": 0.5272200874522482
+        },
+        {
+          "code": "515300",
+          "name": "300红利低波ETF嘉实",
+          "score": 0.5039615425241578
+        }
+      ],
+      "weights": {},
+      "rebalance": false,
+      "target_codes": [
+        "511260",
+        "518880"
+      ],
+      "reasons": {
+        "518880": "趋势破位"
+      },
+      "params": {
+        "static_pool_size": 150,
+        "static_min_amt": 0.0,
+        "dyn_min_amt": 50000000.0,
+        "dyn_top": 100,
+        "dyn_win": 5,
+        "static_asof": "2019-12-31",
+        "ma_fast": 20,
+        "ma_slow": 60,
+        "mom_lookback": 40,
+        "mom_decay": 0.05,
+        "r2_power": 1.0,
+        "score_cap": 20.0,
+        "use_vol_filter": true,
+        "vol_spike_mult": 2.0,
+        "vol_win": 5,
+        "stop_loss": 0.1,
+        "stop_mode": "close",
+        "min_hold": 5,
+        "cooldown": 5,
+        "switch_margin": 0.15,
+        "use_rank_exit": true,
+        "regime": "or",
+        "regime_thr": 0.2,
+        "regime_win": 5,
+        "regime_ma": 60,
+        "risk_asset": "bond_gold",
+        "exec_mode": "next_open",
+        "cost_per_side": 0.0001,
+        "min_amt": 3000000.0,
+        "min_age": 120,
+        "top_n": 2,
+        "dedupe_theme": true,
+        "weight": "equal",
+        "target_vol": 0.15,
+        "vol_lookback": 20,
+        "dd_brake": 0.0,
+        "dd_resume": 0.1,
+        "rebalance_dow": null,
+        "rebalance_buffer": 0.02
+      },
+      "data_warnings": {
+        "158015": "158015: 158015: Tencent rich kline missing amount/turnover | push2his.eastmoney.com: circuit open after vendor connection/rate-limit errors; batch skipped",
+        "158900": "158900: 158900: Tencent rich kline missing amount/turnover | push2his.eastmoney.com: circuit open after vendor connection/rate-limit errors; batch skipped",
+        "159319": "159319: 159319: Tencent rich kline missing amount/turnover | push2his.eastmoney.com: circuit open after vendor connection/rate-limit errors; batch skipped",
+        "159585": "159585: 159585: Tencent rich kline missing amount/turnover | push2his.eastmoney.com: circuit open after vendor connection/rate-limit errors; batch skipped",
+        "159756": "159756: 159756: Tencent rich kline missing amount/turnover | push2his.eastmoney.com: circuit open after vendor connection/rate-limit errors; batch skipped",
+        "159799": "159799: 159799: Tencent rich kline missing amount/turnover | push2his.eastmoney.com: circuit open after vendor connection/rate-limit errors; batch skipped",
+        "512830": "512830: 512830: Tencent rich kline missing amount/turnover | push2his.eastmoney.com: circuit open after vendor connection/rate-limit errors; batch skipped",
+        "516170": "516170: 516170: Tencent rich kline missing amount/turnover | push2his.eastmoney.com: circuit open after vendor connection/rate-limit errors; batch skipped",
+        "517980": "517980: 517980: Tencent rich kline missing amount/turnover | push2his.eastmoney.com: circuit open after vendor connection/rate-limit errors; batch skipped",
+        "159528": "missing current-session history; excluded from ranking",
+        "511930": "missing current-session history; excluded from ranking",
+        "511950": "missing current-session history; excluded from ranking",
+        "512390": "missing current-session history; excluded from ranking",
+        "530080": "missing current-session history; excluded from ranking"
+      },
+      "data_health": {
+        "asof": "2026-11-19",
+        "total_manifest": 1777,
+        "loaded": 1718,
+        "eligible_data_expected": 1732,
+        "verified_young_or_unlisted": {
+          "158016": {
+            "code": "158016",
+            "name": "工业有色ETF嘉实",
+            "verified_asof": "2026-11-19",
+            "issue_date": "2026-10-12",
+            "establishment_date": null,
+            "maximum_possible_trading_sessions": 29,
+            "required_sessions": 60,
+            "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
+            "source_url": "https://fundf10.eastmoney.com/jbgk_158016.html"
+          },
+          "158060": {
+            "code": "158060",
+            "name": "创业板金融科技ETF长城",
+            "verified_asof": "2026-11-19",
+            "issue_date": "2026-11-09",
+            "establishment_date": null,
+            "maximum_possible_trading_sessions": 9,
+            "required_sessions": 60,
+            "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
+            "source_url": "https://fundf10.eastmoney.com/jbgk_158060.html"
+          },
+          "158070": {
+            "code": "158070",
+            "name": "港股通金融ETF招商",
+            "verified_asof": "2026-11-19",
+            "issue_date": "2026-10-08",
+            "establishment_date": null,
+            "maximum_possible_trading_sessions": 31,
+            "required_sessions": 60,
+            "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
+            "source_url": "https://fundf10.eastmoney.com/jbgk_158070.html"
+          },
+          "158087": {
+            "code": "158087",
+            "name": "创业板电池ETF国联",
+            "verified_asof": "2026-11-19",
+            "issue_date": "2026-10-19",
+            "establishment_date": null,
+            "maximum_possible_trading_sessions": 24,
+            "required_sessions": 60,
+            "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
+            "source_url": "https://fundf10.eastmoney.com/jbgk_158087.html"
+          },
+          "158088": {
+            "code": "158088",
+            "name": "创业板电池ETF博时",
+            "verified_asof": "2026-11-19",
+            "issue_date": "2026-10-08",
+            "establishment_date": "2026-11-18",
+            "maximum_possible_trading_sessions": 31,
+            "required_sessions": 60,
+            "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
+            "source_url": "https://fundf10.eastmoney.com/jbgk_158088.html"
+          },
+          "158091": {
+            "code": "158091",
+            "name": "创业板电池ETF汇添富",
+            "verified_asof": "2026-11-19",
+            "issue_date": "2026-10-19",
+            "establishment_date": null,
+            "maximum_possible_trading_sessions": 24,
+            "required_sessions": 60,
+            "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
+            "source_url": "https://fundf10.eastmoney.com/jbgk_158091.html"
+          },
+          "158901": {
+            "code": "158901",
+            "name": "价值优选主动ETF富国",
+            "verified_asof": "2026-11-19",
+            "issue_date": "2026-10-23",
+            "establishment_date": "2026-10-28",
+            "maximum_possible_trading_sessions": 20,
+            "required_sessions": 60,
+            "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
+            "source_url": "https://fundf10.eastmoney.com/jbgk_158901.html"
+          },
+          "158902": {
+            "code": "158902",
+            "name": "红利智选主动ETF大成",
+            "verified_asof": "2026-11-19",
+            "issue_date": "2026-10-23",
+            "establishment_date": "2026-10-30",
+            "maximum_possible_trading_sessions": 20,
+            "required_sessions": 60,
+            "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
+            "source_url": "https://fundf10.eastmoney.com/jbgk_158902.html"
+          },
+          "158903": {
+            "code": "158903",
+            "name": "价值主动ETF鹏华",
+            "verified_asof": "2026-11-19",
+            "issue_date": "2026-10-23",
+            "establishment_date": "2026-11-06",
+            "maximum_possible_trading_sessions": 20,
+            "required_sessions": 60,
+            "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
+            "source_url": "https://fundf10.eastmoney.com/jbgk_158903.html"
+          },
+          "158905": {
+            "code": "158905",
+            "name": "红利主动ETF工银",
+            "verified_asof": "2026-11-19",
+            "issue_date": "2026-10-23",
+            "establishment_date": "2026-11-04",
+            "maximum_possible_trading_sessions": 20,
+            "required_sessions": 60,
+            "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
+            "source_url": "https://fundf10.eastmoney.com/jbgk_158905.html"
+          },
+          "158906": {
+            "code": "158906",
+            "name": "均衡主动ETF华宝",
+            "verified_asof": "2026-11-19",
+            "issue_date": "2026-10-23",
+            "establishment_date": "2026-11-05",
+            "maximum_possible_trading_sessions": 20,
+            "required_sessions": 60,
+            "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
+            "source_url": "https://fundf10.eastmoney.com/jbgk_158906.html"
+          },
+          "158907": {
+            "code": "158907",
+            "name": "鑫汇均衡主动ETF国泰",
+            "verified_asof": "2026-11-19",
+            "issue_date": "2026-10-23",
+            "establishment_date": "2026-11-04",
+            "maximum_possible_trading_sessions": 20,
+            "required_sessions": 60,
+            "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
+            "source_url": "https://fundf10.eastmoney.com/jbgk_158907.html"
+          },
+          "158908": {
+            "code": "158908",
+            "name": "均衡量化主动ETF天弘",
+            "verified_asof": "2026-11-19",
+            "issue_date": "2026-10-23",
+            "establishment_date": "2026-10-30",
+            "maximum_possible_trading_sessions": 20,
+            "required_sessions": 60,
+            "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
+            "source_url": "https://fundf10.eastmoney.com/jbgk_158908.html"
+          },
+          "158909": {
+            "code": "158909",
+            "name": "均衡优选主动ETF建信",
+            "verified_asof": "2026-11-19",
+            "issue_date": "2026-10-23",
+            "establishment_date": "2026-11-09",
+            "maximum_possible_trading_sessions": 20,
+            "required_sessions": 60,
+            "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
+            "source_url": "https://fundf10.eastmoney.com/jbgk_158909.html"
+          },
+          "512490": {
+            "code": "512490",
+            "name": "红利低波100ETF华安",
+            "verified_asof": "2026-11-19",
+            "issue_date": "2026-10-19",
+            "establishment_date": null,
+            "maximum_possible_trading_sessions": 24,
+            "required_sessions": 60,
+            "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
+            "source_url": "https://fundf10.eastmoney.com/jbgk_512490.html"
+          },
+          "513790": {
+            "code": "513790",
+            "name": "港股红利低波ETF博时",
+            "verified_asof": "2026-11-19",
+            "issue_date": "2026-10-12",
+            "establishment_date": null,
+            "maximum_possible_trading_sessions": 29,
+            "required_sessions": 60,
+            "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
+            "source_url": "https://fundf10.eastmoney.com/jbgk_513790.html"
+          },
+          "517250": {
+            "code": "517250",
+            "name": "智能驾驶ETF易方达",
+            "verified_asof": "2026-11-19",
+            "issue_date": "2026-11-03",
+            "establishment_date": null,
+            "maximum_possible_trading_sessions": 13,
+            "required_sessions": 60,
+            "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
+            "source_url": "https://fundf10.eastmoney.com/jbgk_517250.html"
+          },
+          "520800": {
+            "code": "520800",
+            "name": "港股通汽车ETF嘉实",
+            "verified_asof": "2026-11-19",
+            "issue_date": "2026-10-19",
+            "establishment_date": null,
+            "maximum_possible_trading_sessions": 24,
+            "required_sessions": 60,
+            "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
+            "source_url": "https://fundf10.eastmoney.com/jbgk_520800.html"
+          },
+          "526020": {
+            "code": "526020",
+            "name": "港股通汽车ETF华泰柏瑞",
+            "verified_asof": "2026-11-19",
+            "issue_date": "2026-09-01",
+            "establishment_date": null,
+            "maximum_possible_trading_sessions": 52,
+            "required_sessions": 60,
+            "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
+            "source_url": "https://fundf10.eastmoney.com/jbgk_526020.html"
+          },
+          "526080": {
+            "code": "526080",
+            "name": "恒生生物科技ETF东财",
+            "verified_asof": "2026-11-19",
+            "issue_date": "2026-10-19",
+            "establishment_date": "2026-11-16",
+            "maximum_possible_trading_sessions": 24,
+            "required_sessions": 60,
+            "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
+            "source_url": "https://fundf10.eastmoney.com/jbgk_526080.html"
+          },
+          "560430": {
+            "code": "560430",
+            "name": "A500ETF中银证券",
+            "verified_asof": "2026-11-19",
+            "issue_date": "2026-08-26",
+            "establishment_date": null,
+            "maximum_possible_trading_sessions": 56,
+            "required_sessions": 60,
+            "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
+            "source_url": "https://fundf10.eastmoney.com/jbgk_560430.html"
+          },
+          "561270": {
+            "code": "561270",
+            "name": "家电龙头ETF鹏华",
+            "verified_asof": "2026-11-19",
+            "issue_date": "2026-08-24",
+            "establishment_date": null,
+            "maximum_possible_trading_sessions": 58,
+            "required_sessions": 60,
+            "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
+            "source_url": "https://fundf10.eastmoney.com/jbgk_561270.html"
+          },
+          "561860": {
+            "code": "561860",
+            "name": "银行ETF大成",
+            "verified_asof": "2026-11-19",
+            "issue_date": "2026-10-12",
+            "establishment_date": null,
+            "maximum_possible_trading_sessions": 29,
+            "required_sessions": 60,
+            "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
+            "source_url": "https://fundf10.eastmoney.com/jbgk_561860.html"
+          },
+          "562090": {
+            "code": "562090",
+            "name": "汽车ETF富国",
+            "verified_asof": "2026-11-19",
+            "issue_date": "2026-10-21",
+            "establishment_date": null,
+            "maximum_possible_trading_sessions": 22,
+            "required_sessions": 60,
+            "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
+            "source_url": "https://fundf10.eastmoney.com/jbgk_562090.html"
+          },
+          "562100": {
+            "code": "562100",
+            "name": "工程机械ETF永赢",
+            "verified_asof": "2026-11-19",
+            "issue_date": "2026-10-14",
+            "establishment_date": null,
+            "maximum_possible_trading_sessions": 27,
+            "required_sessions": 60,
+            "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
+            "source_url": "https://fundf10.eastmoney.com/jbgk_562100.html"
+          },
+          "562210": {
+            "code": "562210",
+            "name": "光伏ETF华宝",
+            "verified_asof": "2026-11-19",
+            "issue_date": "2026-10-08",
+            "establishment_date": null,
+            "maximum_possible_trading_sessions": 31,
+            "required_sessions": 60,
+            "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
+            "source_url": "https://fundf10.eastmoney.com/jbgk_562210.html"
+          },
+          "562630": {
+            "code": "562630",
+            "name": "通信ETF易方达",
+            "verified_asof": "2026-11-19",
+            "issue_date": "2026-09-24",
+            "establishment_date": null,
+            "maximum_possible_trading_sessions": 35,
+            "required_sessions": 60,
+            "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
+            "source_url": "https://fundf10.eastmoney.com/jbgk_562630.html"
+          },
+          "562690": {
+            "code": "562690",
+            "name": "养殖ETF华夏",
+            "verified_asof": "2026-11-19",
+            "issue_date": "2026-10-19",
+            "establishment_date": null,
+            "maximum_possible_trading_sessions": 24,
+            "required_sessions": 60,
+            "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
+            "source_url": "https://fundf10.eastmoney.com/jbgk_562690.html"
+          },
+          "562710": {
+            "code": "562710",
+            "name": "上证指数增强ETF鹏华",
+            "verified_asof": "2026-11-19",
+            "issue_date": "2026-10-12",
+            "establishment_date": "2026-11-11",
+            "maximum_possible_trading_sessions": 29,
+            "required_sessions": 60,
+            "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
+            "source_url": "https://fundf10.eastmoney.com/jbgk_562710.html"
+          },
+          "563100": {
+            "code": "563100",
+            "name": "红利增长ETF易方达",
+            "verified_asof": "2026-11-19",
+            "issue_date": "2026-10-30",
+            "establishment_date": null,
+            "maximum_possible_trading_sessions": 15,
+            "required_sessions": 60,
+            "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
+            "source_url": "https://fundf10.eastmoney.com/jbgk_563100.html"
+          },
+          "581000": {
+            "code": "581000",
+            "name": "大盘成长主动ETF摩根",
+            "verified_asof": "2026-11-19",
+            "issue_date": "2026-10-23",
+            "establishment_date": "2026-10-28",
+            "maximum_possible_trading_sessions": 20,
+            "required_sessions": 60,
+            "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
+            "source_url": "https://fundf10.eastmoney.com/jbgk_581000.html"
+          },
+          "581010": {
+            "code": "581010",
+            "name": "均衡智选主动ETF汇添富",
+            "verified_asof": "2026-11-19",
+            "issue_date": "2026-10-23",
+            "establishment_date": "2026-10-30",
+            "maximum_possible_trading_sessions": 20,
+            "required_sessions": 60,
+            "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
+            "source_url": "https://fundf10.eastmoney.com/jbgk_581010.html"
+          },
+          "581020": {
+            "code": "581020",
+            "name": "均衡主动ETF华安",
+            "verified_asof": "2026-11-19",
+            "issue_date": "2026-10-23",
+            "establishment_date": "2026-11-02",
+            "maximum_possible_trading_sessions": 20,
+            "required_sessions": 60,
+            "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
+            "source_url": "https://fundf10.eastmoney.com/jbgk_581020.html"
+          },
+          "581030": {
+            "code": "581030",
+            "name": "质量主动ETF华夏",
+            "verified_asof": "2026-11-19",
+            "issue_date": "2026-10-23",
+            "establishment_date": "2026-10-29",
+            "maximum_possible_trading_sessions": 20,
+            "required_sessions": 60,
+            "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
+            "source_url": "https://fundf10.eastmoney.com/jbgk_581030.html"
+          },
+          "581050": {
+            "code": "581050",
+            "name": "品质均衡主动ETF易方达",
+            "verified_asof": "2026-11-19",
+            "issue_date": "2026-10-23",
+            "establishment_date": "2026-10-28",
+            "maximum_possible_trading_sessions": 20,
+            "required_sessions": 60,
+            "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
+            "source_url": "https://fundf10.eastmoney.com/jbgk_581050.html"
+          },
+          "581060": {
+            "code": "581060",
+            "name": "景气均衡主动ETF永赢",
+            "verified_asof": "2026-11-19",
+            "issue_date": "2026-10-23",
+            "establishment_date": "2026-11-03",
+            "maximum_possible_trading_sessions": 20,
+            "required_sessions": 60,
+            "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
+            "source_url": "https://fundf10.eastmoney.com/jbgk_581060.html"
+          },
+          "581070": {
+            "code": "581070",
+            "name": "红利主动ETF平安",
+            "verified_asof": "2026-11-19",
+            "issue_date": "2026-10-23",
+            "establishment_date": "2026-10-29",
+            "maximum_possible_trading_sessions": 20,
+            "required_sessions": 60,
+            "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
+            "source_url": "https://fundf10.eastmoney.com/jbgk_581070.html"
+          },
+          "581080": {
+            "code": "581080",
+            "name": "价值主动ETF招商",
+            "verified_asof": "2026-11-19",
+            "issue_date": "2026-10-23",
+            "establishment_date": "2026-10-30",
+            "maximum_possible_trading_sessions": 20,
+            "required_sessions": 60,
+            "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
+            "source_url": "https://fundf10.eastmoney.com/jbgk_581080.html"
+          },
+          "581090": {
+            "code": "581090",
+            "name": "价值精选主动ETF华泰柏瑞",
+            "verified_asof": "2026-11-19",
+            "issue_date": "2026-10-23",
+            "establishment_date": "2026-10-29",
+            "maximum_possible_trading_sessions": 20,
+            "required_sessions": 60,
+            "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
+            "source_url": "https://fundf10.eastmoney.com/jbgk_581090.html"
+          },
+          "588490": {
+            "code": "588490",
+            "name": "科创创业人工智能ETF泰康",
+            "verified_asof": "2026-11-19",
+            "issue_date": "2026-09-11",
+            "establishment_date": null,
+            "maximum_possible_trading_sessions": 44,
+            "required_sessions": 60,
+            "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
+            "source_url": "https://fundf10.eastmoney.com/jbgk_588490.html"
+          },
+          "588560": {
+            "code": "588560",
+            "name": "科创创业人工智能ETF华富",
+            "verified_asof": "2026-11-19",
+            "issue_date": "2026-10-19",
+            "establishment_date": "2026-11-11",
+            "maximum_possible_trading_sessions": 24,
+            "required_sessions": 60,
+            "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
+            "source_url": "https://fundf10.eastmoney.com/jbgk_588560.html"
+          },
+          "589370": {
+            "code": "589370",
+            "name": "科创芯片设计ETF华安",
+            "verified_asof": "2026-11-19",
+            "issue_date": "2026-10-20",
+            "establishment_date": null,
+            "maximum_possible_trading_sessions": 23,
+            "required_sessions": 60,
+            "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
+            "source_url": "https://fundf10.eastmoney.com/jbgk_589370.html"
+          },
+          "589590": {
+            "code": "589590",
+            "name": "科创芯片设计ETF华泰柏瑞",
+            "verified_asof": "2026-11-19",
+            "issue_date": "2026-10-12",
+            "establishment_date": null,
+            "maximum_possible_trading_sessions": 29,
+            "required_sessions": 60,
+            "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
+            "source_url": "https://fundf10.eastmoney.com/jbgk_589590.html"
+          },
+          "589610": {
+            "code": "589610",
+            "name": "科创芯片ETF华夏",
+            "verified_asof": "2026-11-19",
+            "issue_date": "2026-10-15",
+            "establishment_date": null,
+            "maximum_possible_trading_sessions": 26,
+            "required_sessions": 60,
+            "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
+            "source_url": "https://fundf10.eastmoney.com/jbgk_589610.html"
+          },
+          "589670": {
+            "code": "589670",
+            "name": "科创新材料ETF华夏",
+            "verified_asof": "2026-11-19",
+            "issue_date": "2026-11-09",
+            "establishment_date": null,
+            "maximum_possible_trading_sessions": 9,
+            "required_sessions": 60,
+            "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
+            "source_url": "https://fundf10.eastmoney.com/jbgk_589670.html"
+          }
+        },
+        "unresolved": {
+          "158015": "158015: 158015: Tencent rich kline missing amount/turnover | push2his.eastmoney.com: circuit open after vendor connection/rate-limit errors; batch skipped",
+          "158900": "158900: 158900: Tencent rich kline missing amount/turnover | push2his.eastmoney.com: circuit open after vendor connection/rate-limit errors; batch skipped",
+          "159319": "159319: 159319: Tencent rich kline missing amount/turnover | push2his.eastmoney.com: circuit open after vendor connection/rate-limit errors; batch skipped",
+          "159585": "159585: 159585: Tencent rich kline missing amount/turnover | push2his.eastmoney.com: circuit open after vendor connection/rate-limit errors; batch skipped",
+          "159756": "159756: 159756: Tencent rich kline missing amount/turnover | push2his.eastmoney.com: circuit open after vendor connection/rate-limit errors; batch skipped",
+          "159799": "159799: 159799: Tencent rich kline missing amount/turnover | push2his.eastmoney.com: circuit open after vendor connection/rate-limit errors; batch skipped",
+          "512830": "512830: 512830: Tencent rich kline missing amount/turnover | push2his.eastmoney.com: circuit open after vendor connection/rate-limit errors; batch skipped",
+          "516170": "516170: 516170: Tencent rich kline missing amount/turnover | push2his.eastmoney.com: circuit open after vendor connection/rate-limit errors; batch skipped",
+          "517980": "517980: 517980: Tencent rich kline missing amount/turnover | push2his.eastmoney.com: circuit open after vendor connection/rate-limit errors; batch skipped",
+          "159528": "missing current-session history; excluded from ranking",
+          "511930": "missing current-session history; excluded from ranking",
+          "511950": "missing current-session history; excluded from ranking",
+          "512390": "missing current-session history; excluded from ranking",
+          "530080": "missing current-session history; excluded from ranking"
+        },
+        "coverage": 0.9919168591224018
+      },
+      "live_warmup": "up to 640 actual sessions per ETF; no inherited historical holdings"
+    },
+    "DUAL55": {
+      "strategy": "DUAL55",
+      "label": "ETF 双席趋势",
+      "status": "ok",
+      "asof": "2026-11-19",
+      "exec_day": "2026-11-20",
+      "gate_on": false,
+      "picks": [
+        {
+          "code": "159529",
+          "name": "标普消费ETF景顺",
+          "score": 0.37448808870752537,
+          "ref_close": 1.378
+        },
+        {
+          "code": "159887",
+          "name": "银行ETF富国",
+          "score": 0.3524520473246806,
+          "ref_close": 1.5
+        },
+        {
+          "code": "512700",
+          "name": "银行ETF南方",
+          "score": 0.33902139522466945,
+          "ref_close": 1.639
+        },
+        {
+          "code": "516310",
+          "name": "银行ETF易方达",
+          "score": 0.3374712522623377,
+          "ref_close": 1.518
+        },
+        {
+          "code": "515020",
+          "name": "银行ETF华夏",
+          "score": 0.33632472925383017,
+          "ref_close": 1.963
+        },
+        {
+          "code": "515450",
+          "name": "红利低波50ETF南方",
+          "score": 0.3350781529516507,
+          "ref_close": 1.509
+        },
+        {
+          "code": "515290",
+          "name": "银行ETF天弘",
+          "score": 0.3317626384478307,
+          "ref_close": 1.647
+        },
+        {
+          "code": "512730",
+          "name": "银行ETF鹏华",
+          "score": 0.3298795683576554,
+          "ref_close": 1.871
+        },
+        {
+          "code": "516210",
+          "name": "银行ETF华安",
+          "score": 0.328801626952657,
+          "ref_close": 1.558
+        },
+        {
+          "code": "512800",
+          "name": "银行ETF华宝",
+          "score": 0.32852183219016723,
+          "ref_close": 0.915
+        }
+      ],
+      "defense_picks": [
+        {
+          "code": "511260",
+          "name": "十年国债ETF国泰",
+          "score": 0.055330196166299146
+        },
+        {
+          "code": "511010",
+          "name": "国债ETF国泰",
+          "score": 0.032422549977787804
+        },
+        {
+          "code": "511360",
+          "name": "短融ETF海富通",
+          "score": 0.014316824016477965
+        },
+        {
+          "code": "518880",
+          "name": "黄金ETF华安",
+          "score": -0.6802384979487247
+        }
+      ],
+      "benchmark_close": 3984.84,
+      "benchmark_ma75": 4374.108400000002,
+      "gold_blocked": false,
+      "rebalance": true,
+      "weights": {
+        "511260": 0.5,
+        "511360": 0.5
+      },
+      "target_codes": [
+        "511260",
+        "511360"
+      ]
+    }
+  },
+  "systems": {
+    "factor": [
+      {
+        "code": "002165",
+        "name": "红 宝 丽",
+        "anchor": {
+          "name": "红宝丽",
+          "family": "首板",
+          "route": "zonghe/H1",
+          "rule": "BF门控关闭，FB门控通过。BF先按档位和20日均额，开盘缺口 (−10.1%, +8%]。BF无可执行票才看C2 [−2.5%, +5%]、C1 [−5%, −2%]，同类按缺口升序，合计只取1只。FB盘后按代码展示，次日才定最终名次。",
+          "reason": "",
+          "rank": 1,
+          "detail": {
+            "code": "002165",
+            "name": "红宝丽",
+            "route": "FB C1",
+            "close": 6.3,
+            "score": null
+          }
+        },
+        "score": 12.707,
+        "parts": {
+          "流动性": 4.219,
+          "换手适度": 8.488
+        }
+      }
+    ],
+    "confirmation": [
+      {
+        "code": "002165",
+        "name": "红 宝 丽",
+        "anchor": {
+          "name": "红宝丽",
+          "family": "首板",
+          "route": "zonghe/H1",
+          "rule": "BF门控关闭，FB门控通过。BF先按档位和20日均额，开盘缺口 (−10.1%, +8%]。BF无可执行票才看C2 [−2.5%, +5%]、C1 [−5%, −2%]，同类按缺口升序，合计只取1只。FB盘后按代码展示，次日才定最终名次。",
+          "reason": "",
+          "rank": 1,
+          "detail": {
+            "code": "002165",
+            "name": "红宝丽",
+            "route": "FB C1",
+            "close": 6.3,
+            "score": null
+          }
+        },
+        "evidence": {
+          "name": "红 宝 丽",
+          "family": "量价转强",
+          "route": "主力捉妖",
+          "rule": "优先[-2%, -1%)，其次[0%, +3%)",
+          "reason": "",
+          "rank": 1,
+          "detail": {
+            "code": "002165",
+            "name": "红 宝 丽",
+            "turnover": 6.79,
+            "volume_lots": 494253.0,
+            "float_cap": 4585852577.319588
+          }
+        },
+        "families": [
+          "反包",
+          "量价转强",
+          "首板"
+        ],
+        "parts": {
+          "主信号": 18,
+          "辅证": 13,
+          "因子分": 4.447
+        },
+        "score": 35.447
+      },
+      {
+        "code": "002579",
+        "name": "中京电子",
+        "anchor": {
+          "name": "中京电子",
+          "family": "首板",
+          "route": "zonghe/H1",
+          "rule": "BF门控关闭，FB门控通过。BF先按档位和20日均额，开盘缺口 (−10.1%, +8%]。BF无可执行票才看C2 [−2.5%, +5%]、C1 [−5%, −2%]，同类按缺口升序，合计只取1只。FB盘后按代码展示，次日才定最终名次。",
+          "reason": "",
+          "rank": 1,
+          "detail": {
+            "code": "002579",
+            "name": "中京电子",
+            "route": "FB C1",
+            "close": 12.17,
+            "score": null
+          }
+        },
+        "evidence": {
+          "name": "中京电子",
+          "family": "反包",
+          "route": "ceshi/V6",
+          "rule": "按源策略的分档、开盘缺口和成交约束",
+          "reason": "",
+          "rank": 2,
+          "detail": {
+            "code": "002579",
+            "name": "中京电子",
+            "arm": "深跌",
+            "mean": 654309689.3425001
+          }
+        },
+        "families": [
+          "反包",
+          "首板"
+        ],
+        "parts": {
+          "主信号": 18,
+          "辅证": 10,
+          "因子分": 5.25
+        },
+        "score": 33.25
+      },
+      {
+        "code": "002077",
+        "name": "大港股份",
+        "anchor": {
+          "name": "大港股份",
+          "family": "首板",
+          "route": "zonghe/H1",
+          "rule": "BF门控关闭，FB门控通过。BF先按档位和20日均额，开盘缺口 (−10.1%, +8%]。BF无可执行票才看C2 [−2.5%, +5%]、C1 [−5%, −2%]，同类按缺口升序，合计只取1只。FB盘后按代码展示，次日才定最终名次。",
+          "reason": "",
+          "rank": 1,
+          "detail": {
+            "code": "002077",
+            "name": "大港股份",
+            "route": "FB C1",
+            "close": 12.11,
+            "score": null
+          }
+        },
+        "evidence": {
+          "name": "大港股份",
+          "family": "反包",
+          "route": "ceshi/V6",
+          "rule": "按源策略的分档、开盘缺口和成交约束",
+          "reason": "",
+          "rank": 3,
+          "detail": {
+            "code": "002077",
+            "name": "大港股份",
+            "arm": "深跌",
+            "mean": 410988325.597
+          }
+        },
+        "families": [
+          "反包",
+          "首板"
+        ],
+        "parts": {
+          "主信号": 18,
+          "辅证": 10,
+          "因子分": 4.316
+        },
+        "score": 32.316
+      }
+    ]
+  },
+  "top5": {
+    "status": "ready",
+    "candidates": [
+      {
+        "code": "002165",
+        "name": "红 宝 丽",
+        "votes": 3,
+        "score": 0,
+        "amount": 306855400.0,
+        "close": 6.3,
+        "closed_at_limit": true
+      },
+      {
+        "code": "600619",
+        "name": "海立股份",
+        "votes": 2,
+        "score": 3,
+        "amount": 1617058100.0,
+        "close": 15.07,
+        "closed_at_limit": true
+      },
+      {
+        "code": "603078",
+        "name": "江化微",
+        "votes": 2,
+        "score": 3,
+        "amount": 1274536700.0,
+        "close": 26.86,
+        "closed_at_limit": true
+      },
+      {
+        "code": "002077",
+        "name": "大港股份",
+        "votes": 2,
+        "score": 2,
+        "amount": 608433100.0,
+        "close": 12.11,
+        "closed_at_limit": true
+      },
+      {
+        "code": "601616",
+        "name": "广电电气",
+        "votes": 2,
+        "score": 2,
+        "amount": 148024400.0,
+        "close": 3.74,
+        "closed_at_limit": true
+      }
+    ],
+    "missing": {},
+    "pool": [
+      {
+        "code": "002165",
+        "name": "红 宝 丽",
+        "votes": 3,
+        "score": 0,
+        "amount": 306855400.0,
+        "close": 6.3,
+        "closed_at_limit": true
+      },
+      {
+        "code": "600619",
+        "name": "海立股份",
+        "votes": 2,
+        "score": 3,
+        "amount": 1617058100.0,
+        "close": 15.07,
+        "closed_at_limit": true
+      },
+      {
+        "code": "603078",
+        "name": "江化微",
+        "votes": 2,
+        "score": 3,
+        "amount": 1274536700.0,
+        "close": 26.86,
+        "closed_at_limit": true
+      },
+      {
+        "code": "002077",
+        "name": "大港股份",
+        "votes": 2,
+        "score": 2,
+        "amount": 608433100.0,
+        "close": 12.11,
+        "closed_at_limit": true
+      },
+      {
+        "code": "601616",
+        "name": "广电电气",
+        "votes": 2,
+        "score": 2,
+        "amount": 148024400.0,
+        "close": 3.74,
+        "closed_at_limit": true
+      },
+      {
+        "code": "002579",
+        "name": "中京电子",
+        "votes": 2,
+        "score": 1,
+        "amount": 915331500.0,
+        "close": 12.17,
+        "closed_at_limit": true
+      },
+      {
+        "code": "605178",
+        "name": "时空科技",
+        "votes": 2,
+        "score": 1,
+        "amount": 163051400.0,
+        "close": 53.25,
+        "closed_at_limit": true
+      },
+      {
+        "code": "603928",
+        "name": "兴业股份",
+        "votes": 2,
+        "score": 0,
+        "amount": 626540400.0,
+        "close": 12.38,
+        "closed_at_limit": true
+      },
+      {
+        "code": "600520",
+        "name": "三佳科技",
+        "votes": 2,
+        "score": 0,
+        "amount": 242865500.0,
+        "close": 22.17,
+        "closed_at_limit": true
+      },
+      {
+        "code": "002418",
+        "name": "康盛股份",
+        "votes": 2,
+        "score": 0,
+        "amount": 236014800.0,
+        "close": 4.02,
+        "closed_at_limit": true
+      },
+      {
+        "code": "603931",
+        "name": "格林达",
+        "votes": 2,
+        "score": 0,
+        "amount": 177536500.0,
+        "close": 29.15,
+        "closed_at_limit": true
+      },
+      {
+        "code": "002582",
+        "name": "好想你",
+        "votes": 1,
+        "score": 4,
+        "amount": 500701000.0,
+        "close": 10.18,
+        "closed_at_limit": false
+      },
+      {
+        "code": "002146",
+        "name": "荣盛发展",
+        "votes": 1,
+        "score": 4,
+        "amount": 360609800.00000006,
+        "close": 1.02,
+        "closed_at_limit": true
+      },
+      {
+        "code": "000656",
+        "name": "金科股份",
+        "votes": 1,
+        "score": 2,
+        "amount": 613915100.0,
+        "close": 1.02,
+        "closed_at_limit": true
+      },
+      {
+        "code": "002242",
+        "name": "九阳股份",
+        "votes": 1,
+        "score": 1,
+        "amount": 5129187900.0,
+        "close": 31.21,
+        "closed_at_limit": true
+      },
+      {
+        "code": "600156",
+        "name": "华升股份",
+        "votes": 1,
+        "score": 1,
+        "amount": 596871900.0,
+        "close": 8.9,
+        "closed_at_limit": true
+      },
+      {
+        "code": "603813",
+        "name": "原尚股份",
+        "votes": 1,
+        "score": 1,
+        "amount": 58480800.0,
+        "close": 22.9,
+        "closed_at_limit": true
+      },
+      {
+        "code": "000678",
+        "name": "襄阳轴承",
+        "votes": 1,
+        "score": 0,
+        "amount": 2449370000.0,
+        "close": 16.74,
+        "closed_at_limit": true
+      },
+      {
+        "code": "001358",
+        "name": "兴欣新材",
+        "votes": 1,
+        "score": 0,
+        "amount": 427736200.0,
+        "close": 28.55,
+        "closed_at_limit": true
+      },
+      {
+        "code": "002420",
+        "name": "毅昌科技",
+        "votes": 1,
+        "score": 0,
+        "amount": 47635800.0,
+        "close": 6.42,
+        "closed_at_limit": true
+      }
+    ]
+  },
+  "h1": {
+    "title": "H1 BF主线 / FB补位",
+    "status": "待开盘",
+    "note": "BF门控关闭，FB门控通过。BF先按档位和20日均额，开盘缺口 (−10.1%, +8%]。BF无可执行票才看C2 [−2.5%, +5%]、C1 [−5%, −2%]，同类按缺口升序，合计只取1只。FB盘后按代码展示，次日才定最终名次。",
+    "candidates": [
+      {
+        "code": "002077",
+        "name": "大港股份",
+        "route": "FB C1",
+        "close": 12.11,
+        "score": null
+      },
+      {
+        "code": "002165",
+        "name": "红宝丽",
+        "route": "FB C1",
+        "close": 6.3,
+        "score": null
+      },
+      {
+        "code": "002418",
+        "name": "康盛股份",
+        "route": "FB C1",
+        "close": 4.02,
+        "score": null
+      },
+      {
+        "code": "002579",
+        "name": "中京电子",
+        "route": "FB C1",
+        "close": 12.17,
+        "score": null
+      },
+      {
+        "code": "600520",
+        "name": "三佳科技",
+        "route": "FB C1",
+        "close": 22.17,
+        "score": null
+      },
+      {
+        "code": "601616",
+        "name": "广电电气",
+        "route": "FB C1",
+        "close": 3.74,
+        "score": null
+      },
+      {
+        "code": "603078",
+        "name": "江化微",
+        "route": "FB C1",
+        "close": 26.86,
+        "score": null
+      },
+      {
+        "code": "603928",
+        "name": "兴业股份",
+        "route": "FB C1",
+        "close": 12.38,
+        "score": null
+      },
+      {
+        "code": "603931",
+        "name": "格林达",
+        "route": "FB C1",
+        "close": 29.15,
+        "score": null
+      },
+      {
+        "code": "605178",
+        "name": "时空科技",
+        "route": "FB C1",
+        "close": 53.25,
+        "score": null
+      }
+    ]
+  }
+}
