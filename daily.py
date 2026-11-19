@@ -164,7 +164,58 @@ def top5_factors(day, code):
             error = str(exc)
             if attempt < 2:
                 sleep(attempt + 1)
-    raise ValueError(error)
+    try:
+        return top5_tencent(day, code)
+    except Exception as backup:
+        raise ValueError(error + '; Tencent: ' + str(backup)) from backup
+
+
+def top5_tencent(day, code):
+    import akshare as ak
+    import pandas as pd
+    target = Path('data/factors') / f'{day}-{code}.json'
+    if target.exists():
+        cached = json.loads(target.read_text())
+        if cached.get('date') == day:
+            return cached['factors']
+    symbol = ('sh' if code.startswith('6') else 'sz') + code
+    frame = ak.stock_zh_a_hist_tx(symbol=symbol, start_date=(date.fromisoformat(day)-timedelta(days=100)).strftime('%Y%m%d'), end_date=day.replace('-',''), adjust='')
+    needed = ['date','close','volume','amount','turnover','high','low']
+    if not set(needed).issubset(frame.columns):
+        raise ValueError('missing amount/turnover fields')
+    frame = frame.copy()
+    frame['date'] = pd.to_datetime(frame['date']).dt.strftime('%Y-%m-%d')
+    frame = frame[frame.date <= day].drop_duplicates('date').sort_values('date')
+    if len(frame) < 21 or frame.iloc[-1]['date'] != day:
+        raise ValueError('target-date history not ready')
+    for key in needed[1:]:
+        frame[key] = pd.to_numeric(frame[key], errors='coerce')
+    if not all(isfinite(v) for v in frame[needed[1:]].to_numpy().ravel()):
+        raise ValueError('nonfinite fields')
+    current = frame.iloc[-1]
+    close, volume, amount, turnover = current['close'], current['volume'], current['amount'], current['turnover']*100
+    average = frame.volume.iloc[-6:-1].mean()
+    low20, high20 = frame.low.iloc[-21:-1].min(), frame.high.iloc[-21:-1].max()
+    low10, high10 = frame.low.iloc[-11:-1].min(), frame.high.iloc[-11:-1].max()
+    if min(close,volume,amount,average,low20,low10) <= 0:
+        raise ValueError('invalid positive fields')
+    position = (close-low20)/(high20-low20) if high20>low20 else None
+    amplitude = high10/low10-1
+    score = int(2*(volume/average>=2.5)+(10<=turnover<15)+(position is not None and .60<=position<.85)+(.25<=amplitude<.35))
+    # Fetch the exchange reference close from the same-date timestamped quote;
+    # yesterday's raw close is unsafe across corporate actions.
+    with urlopen(Request('https://qt.gtimg.cn/q='+symbol, headers={'Referer':'https://gu.qq.com/'}),timeout=15) as response:
+        fields = response.read().decode('gb18030').split('"')[1].split('~')
+    stamp = datetime.strptime(fields[30],'%Y%m%d%H%M%S')
+    if str(stamp.date()) != day or stamp.hour < 15 or abs(float(fields[3])-close)>.005:
+        raise ValueError('quote date/close mismatch')
+    upper = float(fields[47])
+    if upper <= 0:
+        raise ValueError('missing actual upper limit')
+    result = dict(score=score,amount=float(amount),close=float(close),closed_at_limit=close>=upper-.001)
+    target.parent.mkdir(parents=True,exist_ok=True)
+    target.write_text(json.dumps({'date':day,'source':'Tencent','factors':result}),encoding='utf-8')
+    return result
 
 
 def build_top5(day, candidates, fetch=top5_factors):
@@ -241,6 +292,8 @@ def build(day):
     }
     for key, (family, rule) in routes.items():
         section = top.get(key, {})
+        if key not in top:
+            health[f'top/{key}'] = '模块缺失'
         meta = section.get("meta") or {}
         reason = section.get("error") or ("数据待核验" if section.get("provisional") else "")
         if reason:
@@ -266,6 +319,8 @@ def build(day):
 
     zonghe = read("zonghe", "zonghe", daily).get("strategies", {})
     for key, section in zonghe.items():
+        if section.get('status') in ('数据异常','error','failed'):
+            health[f'zonghe/{key}'] = section.get('note') or '策略数据异常'
         for rank, item in enumerate(section.get("candidates") or [], 1):
             arm = str(item.get("route", ""))
             family = ("首板" if key == "P2" or (key == "H1" and not arm.startswith("BF"))
@@ -291,6 +346,10 @@ def build(day):
         add(items, family, f"ceshi/{key}", rule, "源策略暂停开仓" if paused else "")
 
     s9 = read("s9-duoyinzi", "s9-duoyinzi", daily, "asof")
+    for key in ('champion','balanced','runner','original','wild','B0','K3','K5','DUAL55'):
+        section = s9.get('strategies',{}).get(key,{})
+        if section.get('status') != 'ok' or section.get('asof') != day or (s9.get('errors') or {}).get(key):
+            health[f's9-duoyinzi/{key}'] = '模块缺失或数据异常'
     for key, section in s9.get("strategies", {}).items():
         if key not in {"champion", "balanced", "runner", "original", "wild"}:
             etfs[key] = section
@@ -319,7 +378,13 @@ def build(day):
         candidates.append(dict(code=code, name=signals[0]["name"], votes=len(families),
                                families=families, signals=signals))
     candidates.sort(key=lambda item: (-item["votes"], item["code"]))
-    return dict(date=day, sources=health, candidates=candidates, etfs=etfs, systems=rank_systems(candidates), top5=build_top5(day, candidates), h1=zonghe.get("H1", {}))
+    top5 = build_top5(day, candidates)
+    issues = [f'{key}: {value}' for key,value in health.items()
+              if value != '已读取' and key not in ('top/V3',)]
+    if top5['status'] != 'ready':
+        issues.append('Top5行情未齐，禁止锁榜')
+    return dict(date=day, status='partial' if issues else 'complete', issues=issues,
+                sources=health, candidates=candidates, etfs=etfs, systems=rank_systems(candidates), top5=top5, h1=zonghe.get("H1", {}))
 
 
 def execution_plan(report):
@@ -359,6 +424,7 @@ def execution_plan(report):
 
 def markdown(report):
     lines = [f"# {report['date']} 大一统盘后预案", "",
+             f"完整性：{report.get('status', '待核验')}。", "",
              "两套系统仅用盘后信息定榜，不使用次日开盘缺口。下方各来源的原始条件仅供对照。", "",
              "## 数据来源", ""]
     lines.extend(f"- {key} · {status}" for key, status in report["sources"].items())
