@@ -18,7 +18,8 @@ permissions:
   contents: write
 concurrency:
   group: dayitong-report
-  cancel-in-progress: false
+  # Code updates supersede obsolete aggregate-only runs; scheduled runs keep recovery ordering.
+  cancel-in-progress: ${{ github.event_name == 'push' }}
 
 jobs:
   report:
