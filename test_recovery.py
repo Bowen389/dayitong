@@ -22,4 +22,25 @@ class AggregateRecovery(unittest.TestCase):
     def test_partial_report_is_not_success(self):self.check_status('partial',2)
     def test_all_sources_complete_is_success(self):self.check_status('complete',0)
 
+class FactorFallback(unittest.TestCase):
+    def test_tencent_factors_are_cacheable_with_native_boolean(self):
+        import pandas as pd
+        import akshare as ak
+        import daily
+        dates=pd.bdate_range(end='2026-11-19',periods=25)
+        frame=pd.DataFrame({'date':dates,'open':10.,'close':11.,'high':11.,'low':9.,'volume':1000.,'amount':10000.,'turnover':.10})
+        fields=['']*49
+        fields[3]='11';fields[30]='20261119150000';fields[47]='11'
+        class Response:
+            def __enter__(self):return self
+            def __exit__(self,*args):pass
+            def read(self):return ('v_sz000889="'+'~'.join(fields)+'";').encode()
+        with tempfile.TemporaryDirectory() as root,chdir(root), \
+             patch.object(ak,'stock_zh_a_hist_tx',return_value=frame), \
+             patch.object(daily,'urlopen',return_value=Response()):
+            result=daily.top5_tencent('2026-11-19','000889')
+            self.assertIs(result['closed_at_limit'],True)
+            cached=json.loads(Path('data/factors/2026-11-19-000889.json').read_text())
+            self.assertEqual(cached['date'],'2026-11-19')
+
 if __name__=='__main__':unittest.main()
