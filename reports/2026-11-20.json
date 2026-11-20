@@ -1,0 +1,1623 @@
+{
+  "date": "2026-11-20",
+  "status": "partial",
+  "issues": [
+    "zonghe: 待补齐（HTTP Error 404: Not Found）",
+    "ceshi: 日期不符（2026-11-19）",
+    "s9-duoyinzi: 待补齐（HTTP Error 404: Not Found）",
+    "s9-duoyinzi/champion: 模块缺失或数据异常",
+    "s9-duoyinzi/balanced: 模块缺失或数据异常",
+    "s9-duoyinzi/runner: 模块缺失或数据异常",
+    "s9-duoyinzi/original: 模块缺失或数据异常",
+    "s9-duoyinzi/wild: 模块缺失或数据异常",
+    "s9-duoyinzi/B0: 模块缺失或数据异常",
+    "s9-duoyinzi/K3: 模块缺失或数据异常",
+    "s9-duoyinzi/K5: 模块缺失或数据异常",
+    "s9-duoyinzi/DUAL55: 模块缺失或数据异常",
+    "zhulizhuoyao: 待补齐（HTTP Error 404: Not Found）",
+    "2j3: 待补齐（HTTP Error 404: Not Found）",
+    "Top5行情未齐，禁止锁榜"
+  ],
+  "sources": {
+    "top": "已读取",
+    "top/V3": "仅观察：沪深300未站上MA20，展示 35 只",
+    "zonghe": "待补齐（HTTP Error 404: Not Found）",
+    "ceshi": "日期不符（2026-11-19）",
+    "s9-duoyinzi": "待补齐（HTTP Error 404: Not Found）",
+    "s9-duoyinzi/champion": "模块缺失或数据异常",
+    "s9-duoyinzi/balanced": "模块缺失或数据异常",
+    "s9-duoyinzi/runner": "模块缺失或数据异常",
+    "s9-duoyinzi/original": "模块缺失或数据异常",
+    "s9-duoyinzi/wild": "模块缺失或数据异常",
+    "s9-duoyinzi/B0": "模块缺失或数据异常",
+    "s9-duoyinzi/K3": "模块缺失或数据异常",
+    "s9-duoyinzi/K5": "模块缺失或数据异常",
+    "s9-duoyinzi/DUAL55": "模块缺失或数据异常",
+    "zhulizhuoyao": "待补齐（HTTP Error 404: Not Found）",
+    "2j3": "待补齐（HTTP Error 404: Not Found）",
+    "首板最低缺口Top1": "已读取"
+  },
+  "candidates": [
+    {
+      "code": "000593",
+      "name": "德龙汇能",
+      "votes": 1,
+      "families": [
+        "首板"
+      ],
+      "signals": [
+        {
+          "name": "德龙汇能",
+          "family": "首板",
+          "route": "top/FB",
+          "rule": "C2[-2.5%, +5%]，C1[-5%, -2%]",
+          "reason": "",
+          "rank": 9,
+          "detail": {
+            "code": "000593",
+            "name": "德龙汇能",
+            "close": 17.51,
+            "pos60_med": 0.7954034474144397,
+            "money_t": 172667664.82,
+            "B_MA20": -0.10999717997480218
+          }
+        }
+      ]
+    },
+    {
+      "code": "000607",
+      "name": "华媒控股",
+      "votes": 1,
+      "families": [
+        "首板"
+      ],
+      "signals": [
+        {
+          "name": "华媒控股",
+          "family": "首板",
+          "route": "top/FB",
+          "rule": "C2[-2.5%, +5%]，C1[-5%, -2%]",
+          "reason": "",
+          "rank": 10,
+          "detail": {
+            "code": "000607",
+            "name": "华媒控股",
+            "close": 3.73,
+            "pos60_med": 0.8725868725868718,
+            "money_t": 162782356.92,
+            "B_MA20": -0.10999717997480218
+          }
+        }
+      ]
+    },
+    {
+      "code": "000823",
+      "name": "超声电子",
+      "votes": 1,
+      "families": [
+        "首板"
+      ],
+      "signals": [
+        {
+          "name": "超声电子",
+          "family": "首板",
+          "route": "top/FB",
+          "rule": "C2[-2.5%, +5%]，C1[-5%, -2%]",
+          "reason": "",
+          "rank": 11,
+          "detail": {
+            "code": "000823",
+            "name": "超声电子",
+            "close": 18.51,
+            "pos60_med": 0.9189189189189185,
+            "money_t": 2135377921.81,
+            "B_MA20": -0.10999717997480218
+          }
+        }
+      ]
+    },
+    {
+      "code": "002548",
+      "name": "金新农",
+      "votes": 1,
+      "families": [
+        "首板"
+      ],
+      "signals": [
+        {
+          "name": "金新农",
+          "family": "首板",
+          "route": "top/FB",
+          "rule": "C2[-2.5%, +5%]，C1[-5%, -2%]",
+          "reason": "",
+          "rank": 12,
+          "detail": {
+            "code": "002548",
+            "name": "金新农",
+            "close": 3.76,
+            "pos60_med": 0.8791773778920307,
+            "money_t": 241998608.1,
+            "B_MA20": -0.10999717997480218
+          }
+        }
+      ]
+    },
+    {
+      "code": "002642",
+      "name": "荣联科技",
+      "votes": 1,
+      "families": [
+        "首板"
+      ],
+      "signals": [
+        {
+          "name": "荣联科技",
+          "family": "首板",
+          "route": "top/FB",
+          "rule": "C2[-2.5%, +5%]，C1[-5%, -2%]",
+          "reason": "",
+          "rank": 13,
+          "detail": {
+            "code": "002642",
+            "name": "荣联科技",
+            "close": 7.26,
+            "pos60_med": 0.9496402877697843,
+            "money_t": 154136082.72,
+            "B_MA20": -0.10999717997480218
+          }
+        }
+      ]
+    },
+    {
+      "code": "002741",
+      "name": "光华科技",
+      "votes": 1,
+      "families": [
+        "首板"
+      ],
+      "signals": [
+        {
+          "name": "光华科技",
+          "family": "趋势",
+          "route": "top/V3",
+          "rule": "缺口[-5%, +6%]",
+          "reason": "仅观察：沪深300未站上MA20",
+          "rank": 15,
+          "detail": {
+            "code": "002741",
+            "name": "光华科技",
+            "signal_close_raw": 18.76,
+            "status": "ok",
+            "gain": 0.10029325513196485,
+            "strength": 1,
+            "conditions": [
+              true,
+              false,
+              false
+            ]
+          }
+        },
+        {
+          "name": "光华科技",
+          "family": "首板",
+          "route": "top/FB",
+          "rule": "C2[-2.5%, +5%]，C1[-5%, -2%]",
+          "reason": "",
+          "rank": 14,
+          "detail": {
+            "code": "002741",
+            "name": "光华科技",
+            "close": 18.76,
+            "pos60_med": 0.7511013215859033,
+            "money_t": 751890932.43,
+            "B_MA20": -0.10999717997480218
+          }
+        },
+        {
+          "name": "光华科技",
+          "family": "首板",
+          "route": "首板最低缺口Top1（PTrade版）",
+          "rule": "开盘缺口[0%,6%]；缺口升序、信号日成交额降序、代码升序；最多新买1只；次日流通市值10—200亿元、停牌及涨跌停另核验",
+          "reason": "",
+          "rank": 2,
+          "detail": {
+            "code": "002741",
+            "name": "光华科技",
+            "close": 18.76,
+            "amount": 751890900.0
+          }
+        }
+      ]
+    },
+    {
+      "code": "002749",
+      "name": "国光股份",
+      "votes": 1,
+      "families": [
+        "首板"
+      ],
+      "signals": [
+        {
+          "name": "国光股份",
+          "family": "首板",
+          "route": "top/FB",
+          "rule": "C2[-2.5%, +5%]，C1[-5%, -2%]",
+          "reason": "",
+          "rank": 15,
+          "detail": {
+            "code": "002749",
+            "name": "国光股份",
+            "close": 8.69,
+            "pos60_med": 0.9360189573459716,
+            "money_t": 162618392.75,
+            "B_MA20": -0.10999717997480218
+          }
+        }
+      ]
+    },
+    {
+      "code": "600360",
+      "name": "华微电子",
+      "votes": 1,
+      "families": [
+        "首板"
+      ],
+      "signals": [
+        {
+          "name": "华微电子",
+          "family": "首板",
+          "route": "top/FB",
+          "rule": "C2[-2.5%, +5%]，C1[-5%, -2%]",
+          "reason": "",
+          "rank": 1,
+          "detail": {
+            "code": "600360",
+            "name": "华微电子",
+            "close": 9.01,
+            "pos60_med": 0.8418976259800656,
+            "money_t": 1229042006.0,
+            "B_MA20": -0.10999717997480218
+          }
+        },
+        {
+          "name": "华微电子",
+          "family": "首板",
+          "route": "首板最低缺口Top1（PTrade版）",
+          "rule": "开盘缺口[0%,6%]；缺口升序、信号日成交额降序、代码升序；最多新买1只；次日流通市值10—200亿元、停牌及涨跌停另核验",
+          "reason": "",
+          "rank": 1,
+          "detail": {
+            "code": "600360",
+            "name": "华微电子",
+            "close": 9.01,
+            "amount": 1229042000.0
+          }
+        }
+      ]
+    },
+    {
+      "code": "600371",
+      "name": "万向德农",
+      "votes": 1,
+      "families": [
+        "首板"
+      ],
+      "signals": [
+        {
+          "name": "万向德农",
+          "family": "首板",
+          "route": "top/FB",
+          "rule": "C2[-2.5%, +5%]，C1[-5%, -2%]",
+          "reason": "",
+          "rank": 2,
+          "detail": {
+            "code": "600371",
+            "name": "万向德农",
+            "close": 10.69,
+            "pos60_med": 0.7680758593441326,
+            "money_t": 299364156.0,
+            "B_MA20": -0.10999717997480218
+          }
+        }
+      ]
+    },
+    {
+      "code": "603004",
+      "name": "鼎龙科技",
+      "votes": 1,
+      "families": [
+        "首板"
+      ],
+      "signals": [
+        {
+          "name": "鼎龙科技",
+          "family": "首板",
+          "route": "top/FB",
+          "rule": "C2[-2.5%, +5%]，C1[-5%, -2%]",
+          "reason": "",
+          "rank": 3,
+          "detail": {
+            "code": "603004",
+            "name": "鼎龙科技",
+            "close": 18.22,
+            "pos60_med": 0.8946515397082656,
+            "money_t": 136585809.0,
+            "B_MA20": -0.10999717997480218
+          }
+        }
+      ]
+    },
+    {
+      "code": "603386",
+      "name": "骏亚科技",
+      "votes": 1,
+      "families": [
+        "首板"
+      ],
+      "signals": [
+        {
+          "name": "骏亚科技",
+          "family": "趋势",
+          "route": "top/V3",
+          "rule": "缺口[-5%, +6%]",
+          "reason": "仅观察：沪深300未站上MA20",
+          "rank": 14,
+          "detail": {
+            "code": "603386",
+            "name": "骏亚科技",
+            "signal_close_raw": 14.59,
+            "status": "ok",
+            "gain": 0.1003016591251884,
+            "strength": 1,
+            "conditions": [
+              true,
+              false,
+              false
+            ]
+          }
+        },
+        {
+          "name": "骏亚科技",
+          "family": "首板",
+          "route": "top/FB",
+          "rule": "C2[-2.5%, +5%]，C1[-5%, -2%]",
+          "reason": "",
+          "rank": 4,
+          "detail": {
+            "code": "603386",
+            "name": "骏亚科技",
+            "close": 14.59,
+            "pos60_med": 0.8834110592938041,
+            "money_t": 392535963.0,
+            "B_MA20": -0.10999717997480218
+          }
+        },
+        {
+          "name": "骏亚科技",
+          "family": "首板",
+          "route": "首板最低缺口Top1（PTrade版）",
+          "rule": "开盘缺口[0%,6%]；缺口升序、信号日成交额降序、代码升序；最多新买1只；次日流通市值10—200亿元、停牌及涨跌停另核验",
+          "reason": "",
+          "rank": 3,
+          "detail": {
+            "code": "603386",
+            "name": "骏亚科技",
+            "close": 14.59,
+            "amount": 392536000.0
+          }
+        }
+      ]
+    },
+    {
+      "code": "603948",
+      "name": "建业股份",
+      "votes": 1,
+      "families": [
+        "首板"
+      ],
+      "signals": [
+        {
+          "name": "建业股份",
+          "family": "首板",
+          "route": "top/FB",
+          "rule": "C2[-2.5%, +5%]，C1[-5%, -2%]",
+          "reason": "",
+          "rank": 5,
+          "detail": {
+            "code": "603948",
+            "name": "建业股份",
+            "close": 19.56,
+            "pos60_med": 0.9087656529516994,
+            "money_t": 184850343.0,
+            "B_MA20": -0.10999717997480218
+          }
+        }
+      ]
+    },
+    {
+      "code": "605018",
+      "name": "长华集团",
+      "votes": 1,
+      "families": [
+        "首板"
+      ],
+      "signals": [
+        {
+          "name": "长华集团",
+          "family": "首板",
+          "route": "top/FB",
+          "rule": "C2[-2.5%, +5%]，C1[-5%, -2%]",
+          "reason": "",
+          "rank": 6,
+          "detail": {
+            "code": "605018",
+            "name": "长华集团",
+            "close": 10.26,
+            "pos60_med": 0.8345259391771018,
+            "money_t": 114199205.0,
+            "B_MA20": -0.10999717997480218
+          }
+        }
+      ]
+    },
+    {
+      "code": "605058",
+      "name": "澳弘电子",
+      "votes": 1,
+      "families": [
+        "首板"
+      ],
+      "signals": [
+        {
+          "name": "澳弘电子",
+          "family": "首板",
+          "route": "top/FB",
+          "rule": "C2[-2.5%, +5%]，C1[-5%, -2%]",
+          "reason": "",
+          "rank": 7,
+          "detail": {
+            "code": "605058",
+            "name": "澳弘电子",
+            "close": 42.92,
+            "pos60_med": 0.8013143033165627,
+            "money_t": 510670425.0,
+            "B_MA20": -0.10999717997480218
+          }
+        }
+      ]
+    },
+    {
+      "code": "605577",
+      "name": "龙版传媒",
+      "votes": 1,
+      "families": [
+        "首板"
+      ],
+      "signals": [
+        {
+          "name": "龙版传媒",
+          "family": "首板",
+          "route": "top/FB",
+          "rule": "C2[-2.5%, +5%]，C1[-5%, -2%]",
+          "reason": "",
+          "rank": 8,
+          "detail": {
+            "code": "605577",
+            "name": "龙版传媒",
+            "close": 16.19,
+            "pos60_med": 0.9573983739837398,
+            "money_t": 515991409.0,
+            "B_MA20": -0.10999717997480218
+          }
+        }
+      ]
+    },
+    {
+      "code": "000158",
+      "name": "常山北明",
+      "votes": 0,
+      "families": [],
+      "signals": [
+        {
+          "name": "常山北明",
+          "family": "趋势",
+          "route": "top/V3",
+          "rule": "缺口[-5%, +6%]",
+          "reason": "仅观察：沪深300未站上MA20",
+          "rank": 17,
+          "detail": {
+            "code": "000158",
+            "name": "常山北明",
+            "signal_close_raw": 13.52,
+            "status": "ok",
+            "gain": 0.03760552570990017,
+            "strength": 1,
+            "conditions": [
+              true,
+              false,
+              false
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "code": "000410",
+      "name": "沈阳机床",
+      "votes": 0,
+      "families": [],
+      "signals": [
+        {
+          "name": "沈阳机床",
+          "family": "趋势",
+          "route": "top/V3",
+          "rule": "缺口[-5%, +6%]",
+          "reason": "仅观察：沪深300未站上MA20",
+          "rank": 16,
+          "detail": {
+            "code": "000410",
+            "name": "沈阳机床",
+            "signal_close_raw": 5.87,
+            "status": "ok",
+            "gain": 0.055755395683453335,
+            "strength": 1,
+            "conditions": [
+              true,
+              false,
+              false
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "code": "000538",
+      "name": "云南白药",
+      "votes": 0,
+      "families": [],
+      "signals": [
+        {
+          "name": "云南白药",
+          "family": "趋势",
+          "route": "top/V3",
+          "rule": "缺口[-5%, +6%]",
+          "reason": "仅观察：沪深300未站上MA20",
+          "rank": 34,
+          "detail": {
+            "code": "000538",
+            "name": "云南白药",
+            "signal_close_raw": 56.4,
+            "status": "ok",
+            "gain": 0.00391598433606255,
+            "strength": 1,
+            "conditions": [
+              false,
+              false,
+              true
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "code": "000895",
+      "name": "双汇发展",
+      "votes": 0,
+      "families": [],
+      "signals": [
+        {
+          "name": "双汇发展",
+          "family": "趋势",
+          "route": "top/V3",
+          "rule": "缺口[-5%, +6%]",
+          "reason": "仅观察：沪深300未站上MA20",
+          "rank": 31,
+          "detail": {
+            "code": "000895",
+            "name": "双汇发展",
+            "signal_close_raw": 25.87,
+            "status": "ok",
+            "gain": 0.00857699805068246,
+            "strength": 1,
+            "conditions": [
+              false,
+              false,
+              true
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "code": "002157",
+      "name": "正邦科技",
+      "votes": 0,
+      "families": [],
+      "signals": [
+        {
+          "name": "正邦科技",
+          "family": "趋势",
+          "route": "top/V3",
+          "rule": "缺口[-5%, +6%]",
+          "reason": "仅观察：沪深300未站上MA20",
+          "rank": 18,
+          "detail": {
+            "code": "002157",
+            "name": "正邦科技",
+            "signal_close_raw": 2.98,
+            "status": "ok",
+            "gain": 0.03472222222222232,
+            "strength": 1,
+            "conditions": [
+              true,
+              false,
+              false
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "code": "002311",
+      "name": "海大集团",
+      "votes": 0,
+      "families": [],
+      "signals": [
+        {
+          "name": "海大集团",
+          "family": "趋势",
+          "route": "top/V3",
+          "rule": "缺口[-5%, +6%]",
+          "reason": "仅观察：沪深300未站上MA20",
+          "rank": 30,
+          "detail": {
+            "code": "002311",
+            "name": "海大集团",
+            "signal_close_raw": 49.75,
+            "status": "ok",
+            "gain": 0.009127789046653234,
+            "strength": 1,
+            "conditions": [
+              false,
+              false,
+              true
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "code": "600000",
+      "name": "浦发银行",
+      "votes": 0,
+      "families": [],
+      "signals": [
+        {
+          "name": "浦发银行",
+          "family": "趋势",
+          "route": "top/V3",
+          "rule": "缺口[-5%, +6%]",
+          "reason": "仅观察：沪深300未站上MA20",
+          "rank": 25,
+          "detail": {
+            "code": "600000",
+            "name": "浦发银行",
+            "signal_close_raw": 10.87,
+            "status": "ok",
+            "gain": 0.015887850467289466,
+            "strength": 1,
+            "conditions": [
+              false,
+              false,
+              true
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "code": "600009",
+      "name": "上海机场",
+      "votes": 0,
+      "families": [],
+      "signals": [
+        {
+          "name": "上海机场",
+          "family": "趋势",
+          "route": "top/V3",
+          "rule": "缺口[-5%, +6%]",
+          "reason": "仅观察：沪深300未站上MA20",
+          "rank": 10,
+          "detail": {
+            "code": "600009",
+            "name": "上海机场",
+            "signal_close_raw": 25.0,
+            "status": "ok",
+            "gain": 0.00684655658477662,
+            "strength": 2,
+            "conditions": [
+              false,
+              true,
+              true
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "code": "600036",
+      "name": "招商银行",
+      "votes": 0,
+      "families": [],
+      "signals": [
+        {
+          "name": "招商银行",
+          "family": "趋势",
+          "route": "top/V3",
+          "rule": "缺口[-5%, +6%]",
+          "reason": "仅观察：沪深300未站上MA20",
+          "rank": 7,
+          "detail": {
+            "code": "600036",
+            "name": "招商银行",
+            "signal_close_raw": 44.0,
+            "status": "ok",
+            "gain": 0.015697137580794163,
+            "strength": 2,
+            "conditions": [
+              false,
+              true,
+              true
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "code": "600406",
+      "name": "国电南瑞",
+      "votes": 0,
+      "families": [],
+      "signals": [
+        {
+          "name": "国电南瑞",
+          "family": "趋势",
+          "route": "top/V3",
+          "rule": "缺口[-5%, +6%]",
+          "reason": "仅观察：沪深300未站上MA20",
+          "rank": 13,
+          "detail": {
+            "code": "600406",
+            "name": "国电南瑞",
+            "signal_close_raw": 24.94,
+            "status": "ok",
+            "gain": 0.004025764895330131,
+            "strength": 2,
+            "conditions": [
+              false,
+              true,
+              true
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "code": "600410",
+      "name": "华胜天成",
+      "votes": 0,
+      "families": [],
+      "signals": [
+        {
+          "name": "华胜天成",
+          "family": "趋势",
+          "route": "top/V3",
+          "rule": "缺口[-5%, +6%]",
+          "reason": "仅观察：沪深300未站上MA20",
+          "rank": 2,
+          "detail": {
+            "code": "600410",
+            "name": "华胜天成",
+            "signal_close_raw": 17.32,
+            "status": "ok",
+            "gain": 0.037125748502994105,
+            "strength": 2,
+            "conditions": [
+              false,
+              true,
+              true
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "code": "600519",
+      "name": "贵州茅台",
+      "votes": 0,
+      "families": [],
+      "signals": [
+        {
+          "name": "贵州茅台",
+          "family": "趋势",
+          "route": "top/V3",
+          "rule": "缺口[-5%, +6%]",
+          "reason": "仅观察：沪深300未站上MA20",
+          "rank": 6,
+          "detail": {
+            "code": "600519",
+            "name": "贵州茅台",
+            "signal_close_raw": 1485.75,
+            "status": "ok",
+            "gain": 0.017490634908677416,
+            "strength": 2,
+            "conditions": [
+              false,
+              true,
+              true
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "code": "600674",
+      "name": "川投能源",
+      "votes": 0,
+      "families": [],
+      "signals": [
+        {
+          "name": "川投能源",
+          "family": "趋势",
+          "route": "top/V3",
+          "rule": "缺口[-5%, +6%]",
+          "reason": "仅观察：沪深300未站上MA20",
+          "rank": 22,
+          "detail": {
+            "code": "600674",
+            "name": "川投能源",
+            "signal_close_raw": 19.14,
+            "status": "ok",
+            "gain": 0.028479312197742912,
+            "strength": 1,
+            "conditions": [
+              false,
+              false,
+              true
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "code": "600722",
+      "name": "金牛化工",
+      "votes": 0,
+      "families": [],
+      "signals": [
+        {
+          "name": "金牛化工",
+          "family": "趋势",
+          "route": "top/V3",
+          "rule": "缺口[-5%, +6%]",
+          "reason": "仅观察：沪深300未站上MA20",
+          "rank": 23,
+          "detail": {
+            "code": "600722",
+            "name": "金牛化工",
+            "signal_close_raw": 10.75,
+            "status": "ok",
+            "gain": 0.025763358778625678,
+            "strength": 1,
+            "conditions": [
+              true,
+              false,
+              false
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "code": "600886",
+      "name": "国投电力",
+      "votes": 0,
+      "families": [],
+      "signals": [
+        {
+          "name": "国投电力",
+          "family": "趋势",
+          "route": "top/V3",
+          "rule": "缺口[-5%, +6%]",
+          "reason": "仅观察：沪深300未站上MA20",
+          "rank": 1,
+          "detail": {
+            "code": "600886",
+            "name": "国投电力",
+            "signal_close_raw": 16.82,
+            "status": "ok",
+            "gain": 0.039555006180469476,
+            "strength": 2,
+            "conditions": [
+              false,
+              true,
+              true
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "code": "600887",
+      "name": "伊利股份",
+      "votes": 0,
+      "families": [],
+      "signals": [
+        {
+          "name": "伊利股份",
+          "family": "趋势",
+          "route": "top/V3",
+          "rule": "缺口[-5%, +6%]",
+          "reason": "仅观察：沪深300未站上MA20",
+          "rank": 8,
+          "detail": {
+            "code": "600887",
+            "name": "伊利股份",
+            "signal_close_raw": 33.35,
+            "status": "ok",
+            "gain": 0.013369796414463897,
+            "strength": 2,
+            "conditions": [
+              false,
+              true,
+              true
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "code": "600900",
+      "name": "长江电力",
+      "votes": 0,
+      "families": [],
+      "signals": [
+        {
+          "name": "长江电力",
+          "family": "趋势",
+          "route": "top/V3",
+          "rule": "缺口[-5%, +6%]",
+          "reason": "仅观察：沪深300未站上MA20",
+          "rank": 5,
+          "detail": {
+            "code": "600900",
+            "name": "长江电力",
+            "signal_close_raw": 31.62,
+            "status": "ok",
+            "gain": 0.02396373056994827,
+            "strength": 2,
+            "conditions": [
+              false,
+              true,
+              true
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "code": "600919",
+      "name": "江苏银行",
+      "votes": 0,
+      "families": [],
+      "signals": [
+        {
+          "name": "江苏银行",
+          "family": "趋势",
+          "route": "top/V3",
+          "rule": "缺口[-5%, +6%]",
+          "reason": "仅观察：沪深300未站上MA20",
+          "rank": 33,
+          "detail": {
+            "code": "600919",
+            "name": "江苏银行",
+            "signal_close_raw": 13.66,
+            "status": "ok",
+            "gain": 0.007374631268436627,
+            "strength": 1,
+            "conditions": [
+              false,
+              false,
+              true
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "code": "600941",
+      "name": "中国移动",
+      "votes": 0,
+      "families": [],
+      "signals": [
+        {
+          "name": "中国移动",
+          "family": "趋势",
+          "route": "top/V3",
+          "rule": "缺口[-5%, +6%]",
+          "reason": "仅观察：沪深300未站上MA20",
+          "rank": 32,
+          "detail": {
+            "code": "600941",
+            "name": "中国移动",
+            "signal_close_raw": 108.71,
+            "status": "ok",
+            "gain": 0.008441558441558472,
+            "strength": 1,
+            "conditions": [
+              false,
+              false,
+              true
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "code": "601000",
+      "name": "唐山港",
+      "votes": 0,
+      "families": [],
+      "signals": [
+        {
+          "name": "唐山港",
+          "family": "趋势",
+          "route": "top/V3",
+          "rule": "缺口[-5%, +6%]",
+          "reason": "仅观察：沪深300未站上MA20",
+          "rank": 24,
+          "detail": {
+            "code": "601000",
+            "name": "唐山港",
+            "signal_close_raw": 5.29,
+            "status": "ok",
+            "gain": 0.019267822736031004,
+            "strength": 1,
+            "conditions": [
+              false,
+              false,
+              true
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "code": "601166",
+      "name": "兴业银行",
+      "votes": 0,
+      "families": [],
+      "signals": [
+        {
+          "name": "兴业银行",
+          "family": "趋势",
+          "route": "top/V3",
+          "rule": "缺口[-5%, +6%]",
+          "reason": "仅观察：沪深300未站上MA20",
+          "rank": 9,
+          "detail": {
+            "code": "601166",
+            "name": "兴业银行",
+            "signal_close_raw": 20.3,
+            "status": "ok",
+            "gain": 0.010452961672474004,
+            "strength": 2,
+            "conditions": [
+              false,
+              true,
+              true
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "code": "601288",
+      "name": "农业银行",
+      "votes": 0,
+      "families": [],
+      "signals": [
+        {
+          "name": "农业银行",
+          "family": "趋势",
+          "route": "top/V3",
+          "rule": "缺口[-5%, +6%]",
+          "reason": "仅观察：沪深300未站上MA20",
+          "rank": 26,
+          "detail": {
+            "code": "601288",
+            "name": "农业银行",
+            "signal_close_raw": 7.77,
+            "status": "ok",
+            "gain": 0.015686274509803866,
+            "strength": 1,
+            "conditions": [
+              false,
+              false,
+              true
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "code": "601328",
+      "name": "交通银行",
+      "votes": 0,
+      "families": [],
+      "signals": [
+        {
+          "name": "交通银行",
+          "family": "趋势",
+          "route": "top/V3",
+          "rule": "缺口[-5%, +6%]",
+          "reason": "仅观察：沪深300未站上MA20",
+          "rank": 4,
+          "detail": {
+            "code": "601328",
+            "name": "交通银行",
+            "signal_close_raw": 8.98,
+            "status": "ok",
+            "gain": 0.026285714285714024,
+            "strength": 2,
+            "conditions": [
+              false,
+              true,
+              true
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "code": "601398",
+      "name": "工商银行",
+      "votes": 0,
+      "families": [],
+      "signals": [
+        {
+          "name": "工商银行",
+          "family": "趋势",
+          "route": "top/V3",
+          "rule": "缺口[-5%, +6%]",
+          "reason": "仅观察：沪深300未站上MA20",
+          "rank": 19,
+          "detail": {
+            "code": "601398",
+            "name": "工商银行",
+            "signal_close_raw": 9.4,
+            "status": "ok",
+            "gain": 0.03296703296703307,
+            "strength": 1,
+            "conditions": [
+              false,
+              false,
+              true
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "code": "601658",
+      "name": "邮储银行",
+      "votes": 0,
+      "families": [],
+      "signals": [
+        {
+          "name": "邮储银行",
+          "family": "趋势",
+          "route": "top/V3",
+          "rule": "缺口[-5%, +6%]",
+          "reason": "仅观察：沪深300未站上MA20",
+          "rank": 29,
+          "detail": {
+            "code": "601658",
+            "name": "邮储银行",
+            "signal_close_raw": 5.8,
+            "status": "ok",
+            "gain": 0.010452961672474004,
+            "strength": 1,
+            "conditions": [
+              false,
+              false,
+              true
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "code": "601668",
+      "name": "中国建筑",
+      "votes": 0,
+      "families": [],
+      "signals": [
+        {
+          "name": "中国建筑",
+          "family": "趋势",
+          "route": "top/V3",
+          "rule": "缺口[-5%, +6%]",
+          "reason": "仅观察：沪深300未站上MA20",
+          "rank": 12,
+          "detail": {
+            "code": "601668",
+            "name": "中国建筑",
+            "signal_close_raw": 4.75,
+            "status": "ok",
+            "gain": 0.004228329809724984,
+            "strength": 2,
+            "conditions": [
+              false,
+              true,
+              true
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "code": "601728",
+      "name": "中国电信",
+      "votes": 0,
+      "families": [],
+      "signals": [
+        {
+          "name": "中国电信",
+          "family": "趋势",
+          "route": "top/V3",
+          "rule": "缺口[-5%, +6%]",
+          "reason": "仅观察：沪深300未站上MA20",
+          "rank": 3,
+          "detail": {
+            "code": "601728",
+            "name": "中国电信",
+            "signal_close_raw": 7.34,
+            "status": "ok",
+            "gain": 0.02657342657342654,
+            "strength": 2,
+            "conditions": [
+              false,
+              true,
+              true
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "code": "601816",
+      "name": "京沪高铁",
+      "votes": 0,
+      "families": [],
+      "signals": [
+        {
+          "name": "京沪高铁",
+          "family": "趋势",
+          "route": "top/V3",
+          "rule": "缺口[-5%, +6%]",
+          "reason": "仅观察：沪深300未站上MA20",
+          "rank": 27,
+          "detail": {
+            "code": "601816",
+            "name": "京沪高铁",
+            "signal_close_raw": 5.43,
+            "status": "ok",
+            "gain": 0.01495327102803734,
+            "strength": 1,
+            "conditions": [
+              false,
+              false,
+              true
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "code": "601825",
+      "name": "沪农商行",
+      "votes": 0,
+      "families": [],
+      "signals": [
+        {
+          "name": "沪农商行",
+          "family": "趋势",
+          "route": "top/V3",
+          "rule": "缺口[-5%, +6%]",
+          "reason": "仅观察：沪深300未站上MA20",
+          "rank": 11,
+          "detail": {
+            "code": "601825",
+            "name": "沪农商行",
+            "signal_close_raw": 9.9,
+            "status": "ok",
+            "gain": 0.0060975609756097615,
+            "strength": 2,
+            "conditions": [
+              false,
+              true,
+              true
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "code": "601939",
+      "name": "建设银行",
+      "votes": 0,
+      "families": [],
+      "signals": [
+        {
+          "name": "建设银行",
+          "family": "趋势",
+          "route": "top/V3",
+          "rule": "缺口[-5%, +6%]",
+          "reason": "仅观察：沪深300未站上MA20",
+          "rank": 21,
+          "detail": {
+            "code": "601939",
+            "name": "建设银行",
+            "signal_close_raw": 12.76,
+            "status": "ok",
+            "gain": 0.030694668820678395,
+            "strength": 1,
+            "conditions": [
+              false,
+              false,
+              true
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "code": "601985",
+      "name": "中国核电",
+      "votes": 0,
+      "families": [],
+      "signals": [
+        {
+          "name": "中国核电",
+          "family": "趋势",
+          "route": "top/V3",
+          "rule": "缺口[-5%, +6%]",
+          "reason": "仅观察：沪深300未站上MA20",
+          "rank": 28,
+          "detail": {
+            "code": "601985",
+            "name": "中国核电",
+            "signal_close_raw": 9.98,
+            "status": "ok",
+            "gain": 0.014227642276422925,
+            "strength": 1,
+            "conditions": [
+              false,
+              false,
+              true
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "code": "601998",
+      "name": "XD中信银",
+      "votes": 0,
+      "families": [],
+      "signals": [
+        {
+          "name": "XD中信银",
+          "family": "趋势",
+          "route": "top/V3",
+          "rule": "缺口[-5%, +6%]",
+          "reason": "仅观察：沪深300未站上MA20",
+          "rank": 20,
+          "detail": {
+            "code": "601998",
+            "name": "XD中信银",
+            "signal_close_raw": 9.66,
+            "status": "ok",
+            "gain": 0.030949839914621302,
+            "strength": 1,
+            "conditions": [
+              false,
+              false,
+              true
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "code": "603766",
+      "name": "隆鑫通用",
+      "votes": 0,
+      "families": [],
+      "signals": [
+        {
+          "name": "隆鑫通用",
+          "family": "趋势",
+          "route": "top/V3",
+          "rule": "缺口[-5%, +6%]",
+          "reason": "仅观察：沪深300未站上MA20",
+          "rank": 35,
+          "detail": {
+            "code": "603766",
+            "name": "隆鑫通用",
+            "signal_close_raw": 16.28,
+            "status": "ok",
+            "gain": 0.0018461538461538307,
+            "strength": 1,
+            "conditions": [
+              false,
+              false,
+              true
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "etfs": {},
+  "systems": {
+    "factor": [],
+    "confirmation": []
+  },
+  "top5": {
+    "status": "incomplete",
+    "candidates": [],
+    "missing": {
+      "上游来源": "zonghe, ceshi, s9-duoyinzi, zhulizhuoyao, 2j3"
+    },
+    "pool": [
+      {
+        "code": "600360",
+        "name": "华微电子",
+        "votes": 1,
+        "score": 3,
+        "amount": 1229042000.0,
+        "close": 9.01,
+        "closed_at_limit": true
+      },
+      {
+        "code": "603948",
+        "name": "建业股份",
+        "votes": 1,
+        "score": 3,
+        "amount": 184850300.0,
+        "close": 19.56,
+        "closed_at_limit": true
+      },
+      {
+        "code": "603004",
+        "name": "鼎龙科技",
+        "votes": 1,
+        "score": 3,
+        "amount": 136585800.0,
+        "close": 18.22,
+        "closed_at_limit": true
+      },
+      {
+        "code": "605577",
+        "name": "龙版传媒",
+        "votes": 1,
+        "score": 2,
+        "amount": 515991400.0,
+        "close": 16.19,
+        "closed_at_limit": true
+      },
+      {
+        "code": "603386",
+        "name": "骏亚科技",
+        "votes": 1,
+        "score": 2,
+        "amount": 392536000.0,
+        "close": 14.59,
+        "closed_at_limit": true
+      },
+      {
+        "code": "605018",
+        "name": "长华集团",
+        "votes": 1,
+        "score": 2,
+        "amount": 114199200.0,
+        "close": 10.26,
+        "closed_at_limit": true
+      },
+      {
+        "code": "600371",
+        "name": "万向德农",
+        "votes": 1,
+        "score": 1,
+        "amount": 299364200.0,
+        "close": 10.69,
+        "closed_at_limit": true
+      },
+      {
+        "code": "000593",
+        "name": "德龙汇能",
+        "votes": 1,
+        "score": 1,
+        "amount": 172667700.0,
+        "close": 17.51,
+        "closed_at_limit": true
+      },
+      {
+        "code": "000607",
+        "name": "华媒控股",
+        "votes": 1,
+        "score": 1,
+        "amount": 162782400.0,
+        "close": 3.73,
+        "closed_at_limit": true
+      },
+      {
+        "code": "000823",
+        "name": "超声电子",
+        "votes": 1,
+        "score": 0,
+        "amount": 2135377900.0,
+        "close": 18.51,
+        "closed_at_limit": true
+      },
+      {
+        "code": "002741",
+        "name": "光华科技",
+        "votes": 1,
+        "score": 0,
+        "amount": 751890900.0,
+        "close": 18.76,
+        "closed_at_limit": true
+      },
+      {
+        "code": "605058",
+        "name": "澳弘电子",
+        "votes": 1,
+        "score": 0,
+        "amount": 510670400.0,
+        "close": 42.92,
+        "closed_at_limit": true
+      },
+      {
+        "code": "002548",
+        "name": "金新农",
+        "votes": 1,
+        "score": 0,
+        "amount": 241998600.0,
+        "close": 3.76,
+        "closed_at_limit": true
+      },
+      {
+        "code": "002749",
+        "name": "国光股份",
+        "votes": 1,
+        "score": 0,
+        "amount": 162618400.0,
+        "close": 8.69,
+        "closed_at_limit": true
+      },
+      {
+        "code": "002642",
+        "name": "荣联科技",
+        "votes": 1,
+        "score": 0,
+        "amount": 154136100.0,
+        "close": 7.26,
+        "closed_at_limit": true
+      }
+    ]
+  },
+  "h1": {}
+}

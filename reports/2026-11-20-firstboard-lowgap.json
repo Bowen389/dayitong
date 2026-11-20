@@ -1,0 +1,29 @@
+{
+  "date": "2026-11-20",
+  "status": "complete",
+  "pool_count": 9,
+  "errors": {},
+  "rule_version": "ptrade_firstboard_top1.py",
+  "candidates": [
+    {
+      "code": "600360",
+      "name": "华微电子",
+      "close": 9.01,
+      "amount": 1229042000.0
+    },
+    {
+      "code": "002741",
+      "name": "光华科技",
+      "close": 18.76,
+      "amount": 751890900.0
+    },
+    {
+      "code": "603386",
+      "name": "骏亚科技",
+      "close": 14.59,
+      "amount": 392536000.0
+    }
+  ],
+  "next_open_rule": "开盘缺口[0%,6%]；缺口升序、信号日成交额降序、代码升序；最多新买1只；次日流通市值10—200亿元、停牌及涨跌停另核验",
+  "selection_note": "盘后条件沿用PTrade版本：连续6根有成交量；成交额3—19亿元；(近5日最高-近5日最低)/第6根收盘≤20%；可用日线跨度≥50自然日。"
+}
