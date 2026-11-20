@@ -2,8 +2,6 @@
   "date": "2026-11-20",
   "status": "partial",
   "issues": [
-    "zonghe: 待补齐（HTTP Error 404: Not Found）",
-    "ceshi: 日期不符（2026-11-19）",
     "s9-duoyinzi: 待补齐（HTTP Error 404: Not Found）",
     "s9-duoyinzi/champion: 模块缺失或数据异常",
     "s9-duoyinzi/balanced: 模块缺失或数据异常",
@@ -14,15 +12,13 @@
     "s9-duoyinzi/K3: 模块缺失或数据异常",
     "s9-duoyinzi/K5: 模块缺失或数据异常",
     "s9-duoyinzi/DUAL55: 模块缺失或数据异常",
-    "zhulizhuoyao: 待补齐（HTTP Error 404: Not Found）",
-    "2j3: 待补齐（HTTP Error 404: Not Found）",
     "Top5行情未齐，禁止锁榜"
   ],
   "sources": {
     "top": "已读取",
     "top/V3": "仅观察：沪深300未站上MA20，展示 35 只",
-    "zonghe": "待补齐（HTTP Error 404: Not Found）",
-    "ceshi": "日期不符（2026-11-19）",
+    "zonghe": "已读取",
+    "ceshi": "已读取",
     "s9-duoyinzi": "待补齐（HTTP Error 404: Not Found）",
     "s9-duoyinzi/champion": "模块缺失或数据异常",
     "s9-duoyinzi/balanced": "模块缺失或数据异常",
@@ -33,16 +29,17 @@
     "s9-duoyinzi/K3": "模块缺失或数据异常",
     "s9-duoyinzi/K5": "模块缺失或数据异常",
     "s9-duoyinzi/DUAL55": "模块缺失或数据异常",
-    "zhulizhuoyao": "待补齐（HTTP Error 404: Not Found）",
-    "2j3": "待补齐（HTTP Error 404: Not Found）",
+    "zhulizhuoyao": "已读取",
+    "2j3": "已读取",
     "首板最低缺口Top1": "已读取"
   },
   "candidates": [
     {
       "code": "000593",
       "name": "德龙汇能",
-      "votes": 1,
+      "votes": 2,
       "families": [
+        "反包",
         "首板"
       ],
       "signals": [
@@ -61,14 +58,73 @@
             "money_t": 172667664.82,
             "B_MA20": -0.10999717997480218
           }
+        },
+        {
+          "name": "德龙汇能",
+          "family": "首板",
+          "route": "zonghe/H1",
+          "rule": "BF门控关闭，FB门控通过。BF先按档位和20日均额，开盘缺口 (−10.1%, +8%]。BF无可执行票才看C2 [−2.5%, +5%]、C1 [−5%, −2%]，同类按缺口升序，合计只取1只。FB盘后按代码展示，次日才定最终名次。",
+          "reason": "",
+          "rank": 1,
+          "detail": {
+            "code": "000593",
+            "name": "德龙汇能",
+            "route": "FB C1",
+            "close": 17.51,
+            "score": null
+          }
+        },
+        {
+          "name": "德龙汇能",
+          "family": "首板",
+          "route": "ceshi/FB_DUAL_K4",
+          "rule": "C2[-2.5%, +5%]，C1[-5%, -2%]",
+          "reason": "",
+          "rank": 1,
+          "detail": {
+            "code": "000593",
+            "name": "德龙汇能",
+            "arm": "C1",
+            "pos": 0.7954034474144389,
+            "amount": 172667664.82
+          }
+        },
+        {
+          "name": "德龙汇能",
+          "family": "反包",
+          "route": "ceshi/U4",
+          "rule": "按源策略的分档、开盘缺口和成交约束",
+          "reason": "",
+          "rank": 4,
+          "detail": {
+            "code": "000593",
+            "name": "德龙汇能",
+            "arm": "U4b",
+            "mean": 220872654.24649996
+          }
+        },
+        {
+          "name": "德龙汇能",
+          "family": "反包",
+          "route": "ceshi/V6",
+          "rule": "按源策略的分档、开盘缺口和成交约束",
+          "reason": "",
+          "rank": 12,
+          "detail": {
+            "code": "000593",
+            "name": "德龙汇能",
+            "arm": "深跌",
+            "mean": 220872654.24649996
+          }
         }
       ]
     },
     {
       "code": "000607",
       "name": "华媒控股",
-      "votes": 1,
+      "votes": 2,
       "families": [
+        "反包",
         "首板"
       ],
       "signals": [
@@ -87,14 +143,88 @@
             "money_t": 162782356.92,
             "B_MA20": -0.10999717997480218
           }
+        },
+        {
+          "name": "华媒控股",
+          "family": "首板",
+          "route": "zonghe/P2",
+          "rule": "展示顺序为成交额参考。E开盘确认 −5% < 缺口 ≤ −2%，缺口最深优先，同缺口按代码，正式只取1只。",
+          "reason": "",
+          "rank": 1,
+          "detail": {
+            "code": "000607",
+            "name": "华媒控股",
+            "route": "待缺口",
+            "close": 3.73,
+            "score": null
+          }
+        },
+        {
+          "name": "华媒控股",
+          "family": "首板",
+          "route": "zonghe/H1",
+          "rule": "BF门控关闭，FB门控通过。BF先按档位和20日均额，开盘缺口 (−10.1%, +8%]。BF无可执行票才看C2 [−2.5%, +5%]、C1 [−5%, −2%]，同类按缺口升序，合计只取1只。FB盘后按代码展示，次日才定最终名次。",
+          "reason": "",
+          "rank": 1,
+          "detail": {
+            "code": "000607",
+            "name": "华媒控股",
+            "route": "FB C1",
+            "close": 3.73,
+            "score": null
+          }
+        },
+        {
+          "name": "华媒控股",
+          "family": "首板",
+          "route": "ceshi/FB_DUAL_K4",
+          "rule": "C2[-2.5%, +5%]，C1[-5%, -2%]",
+          "reason": "",
+          "rank": 2,
+          "detail": {
+            "code": "000607",
+            "name": "华媒控股",
+            "arm": "C1",
+            "pos": 0.8725868725868723,
+            "amount": 162782356.92
+          }
+        },
+        {
+          "name": "华媒控股",
+          "family": "反包",
+          "route": "ceshi/V6",
+          "rule": "按源策略的分档、开盘缺口和成交约束",
+          "reason": "",
+          "rank": 13,
+          "detail": {
+            "code": "000607",
+            "name": "华媒控股",
+            "arm": "深跌",
+            "mean": 157106594.2205
+          }
+        },
+        {
+          "name": "华媒控股",
+          "family": "首板",
+          "route": "2j3/ma10_down_below_2pct",
+          "rule": "缺口[+2%, +5%]，高开幅度降序",
+          "reason": "",
+          "rank": 1,
+          "detail": {
+            "code": "000607",
+            "name": "华媒控股",
+            "market": "sz",
+            "close": "3.73"
+          }
         }
       ]
     },
     {
       "code": "000823",
       "name": "超声电子",
-      "votes": 1,
+      "votes": 2,
       "families": [
+        "反包",
         "首板"
       ],
       "signals": [
@@ -113,14 +243,112 @@
             "money_t": 2135377921.81,
             "B_MA20": -0.10999717997480218
           }
+        },
+        {
+          "name": "超声电子",
+          "family": "首板",
+          "route": "zonghe/H1",
+          "rule": "BF门控关闭，FB门控通过。BF先按档位和20日均额，开盘缺口 (−10.1%, +8%]。BF无可执行票才看C2 [−2.5%, +5%]、C1 [−5%, −2%]，同类按缺口升序，合计只取1只。FB盘后按代码展示，次日才定最终名次。",
+          "reason": "",
+          "rank": 1,
+          "detail": {
+            "code": "000823",
+            "name": "超声电子",
+            "route": "FB C1",
+            "close": 18.51,
+            "score": null
+          }
+        },
+        {
+          "name": "超声电子",
+          "family": "首板",
+          "route": "ceshi/FB_DUAL_K4",
+          "rule": "C2[-2.5%, +5%]，C1[-5%, -2%]",
+          "reason": "",
+          "rank": 3,
+          "detail": {
+            "code": "000823",
+            "name": "超声电子",
+            "arm": "C1",
+            "pos": 0.9189189189189187,
+            "amount": 2135377921.81
+          }
+        },
+        {
+          "name": "超声电子",
+          "family": "反包",
+          "route": "ceshi/U4",
+          "rule": "按源策略的分档、开盘缺口和成交约束",
+          "reason": "",
+          "rank": 1,
+          "detail": {
+            "code": "000823",
+            "name": "超声电子",
+            "arm": "U4b",
+            "mean": 2010662684.0925002
+          }
+        },
+        {
+          "name": "超声电子",
+          "family": "反包",
+          "route": "ceshi/V6",
+          "rule": "按源策略的分档、开盘缺口和成交约束",
+          "reason": "",
+          "rank": 2,
+          "detail": {
+            "code": "000823",
+            "name": "超声电子",
+            "arm": "深跌",
+            "mean": 2010662684.0925002
+          }
+        }
+      ]
+    },
+    {
+      "code": "002086",
+      "name": "东方海洋",
+      "votes": 2,
+      "families": [
+        "反包",
+        "首板"
+      ],
+      "signals": [
+        {
+          "name": "东方海洋",
+          "family": "反包",
+          "route": "ceshi/V6",
+          "rule": "按源策略的分档、开盘缺口和成交约束",
+          "reason": "",
+          "rank": 3,
+          "detail": {
+            "code": "002086",
+            "name": "东方海洋",
+            "arm": "双臂",
+            "mean": 1879481919.5185
+          }
+        },
+        {
+          "name": "东方海洋",
+          "family": "首板",
+          "route": "2j3/ma10_down_below_2pct",
+          "rule": "缺口[+2%, +5%]，高开幅度降序",
+          "reason": "",
+          "rank": 2,
+          "detail": {
+            "code": "002086",
+            "name": "东方海洋",
+            "market": "sz",
+            "close": "3.75"
+          }
         }
       ]
     },
     {
       "code": "002548",
       "name": "金新农",
-      "votes": 1,
+      "votes": 2,
       "families": [
+        "反包",
         "首板"
       ],
       "signals": [
@@ -139,14 +367,102 @@
             "money_t": 241998608.1,
             "B_MA20": -0.10999717997480218
           }
+        },
+        {
+          "name": "金新农",
+          "family": "首板",
+          "route": "zonghe/P2",
+          "rule": "展示顺序为成交额参考。E开盘确认 −5% < 缺口 ≤ −2%，缺口最深优先，同缺口按代码，正式只取1只。",
+          "reason": "",
+          "rank": 1,
+          "detail": {
+            "code": "002548",
+            "name": "金新农",
+            "route": "待缺口",
+            "close": 3.76,
+            "score": null
+          }
+        },
+        {
+          "name": "金新农",
+          "family": "首板",
+          "route": "zonghe/H1",
+          "rule": "BF门控关闭，FB门控通过。BF先按档位和20日均额，开盘缺口 (−10.1%, +8%]。BF无可执行票才看C2 [−2.5%, +5%]、C1 [−5%, −2%]，同类按缺口升序，合计只取1只。FB盘后按代码展示，次日才定最终名次。",
+          "reason": "",
+          "rank": 1,
+          "detail": {
+            "code": "002548",
+            "name": "金新农",
+            "route": "FB C1",
+            "close": 3.76,
+            "score": null
+          }
+        },
+        {
+          "name": "金新农",
+          "family": "首板",
+          "route": "ceshi/FB_DUAL_K4",
+          "rule": "C2[-2.5%, +5%]，C1[-5%, -2%]",
+          "reason": "",
+          "rank": 4,
+          "detail": {
+            "code": "002548",
+            "name": "金新农",
+            "arm": "C1",
+            "pos": 0.8791773778920309,
+            "amount": 241998608.1
+          }
+        },
+        {
+          "name": "金新农",
+          "family": "反包",
+          "route": "ceshi/U4",
+          "rule": "按源策略的分档、开盘缺口和成交约束",
+          "reason": "",
+          "rank": 5,
+          "detail": {
+            "code": "002548",
+            "name": "金新农",
+            "arm": "U4b",
+            "mean": 119655027.322
+          }
+        },
+        {
+          "name": "金新农",
+          "family": "反包",
+          "route": "ceshi/V6",
+          "rule": "按源策略的分档、开盘缺口和成交约束",
+          "reason": "",
+          "rank": 14,
+          "detail": {
+            "code": "002548",
+            "name": "金新农",
+            "arm": "深跌",
+            "mean": 119655027.322
+          }
+        },
+        {
+          "name": "金新农",
+          "family": "首板",
+          "route": "2j3/ma10_down_below_2pct",
+          "rule": "缺口[+2%, +5%]，高开幅度降序",
+          "reason": "",
+          "rank": 3,
+          "detail": {
+            "code": "002548",
+            "name": "金新农",
+            "market": "sz",
+            "close": "3.76"
+          }
         }
       ]
     },
     {
       "code": "002642",
       "name": "荣联科技",
-      "votes": 1,
+      "votes": 2,
       "families": [
+        "反包",
         "首板"
       ],
       "signals": [
@@ -165,14 +481,74 @@
             "money_t": 154136082.72,
             "B_MA20": -0.10999717997480218
           }
+        },
+        {
+          "name": "荣联科技",
+          "family": "首板",
+          "route": "zonghe/P2",
+          "rule": "展示顺序为成交额参考。E开盘确认 −5% < 缺口 ≤ −2%，缺口最深优先，同缺口按代码，正式只取1只。",
+          "reason": "",
+          "rank": 1,
+          "detail": {
+            "code": "002642",
+            "name": "荣联科技",
+            "route": "待缺口",
+            "close": 7.26,
+            "score": null
+          }
+        },
+        {
+          "name": "荣联科技",
+          "family": "首板",
+          "route": "zonghe/H1",
+          "rule": "BF门控关闭，FB门控通过。BF先按档位和20日均额，开盘缺口 (−10.1%, +8%]。BF无可执行票才看C2 [−2.5%, +5%]、C1 [−5%, −2%]，同类按缺口升序，合计只取1只。FB盘后按代码展示，次日才定最终名次。",
+          "reason": "",
+          "rank": 1,
+          "detail": {
+            "code": "002642",
+            "name": "荣联科技",
+            "route": "FB C1",
+            "close": 7.26,
+            "score": null
+          }
+        },
+        {
+          "name": "荣联科技",
+          "family": "首板",
+          "route": "ceshi/FB_DUAL_K4",
+          "rule": "C2[-2.5%, +5%]，C1[-5%, -2%]",
+          "reason": "",
+          "rank": 5,
+          "detail": {
+            "code": "002642",
+            "name": "荣联科技",
+            "arm": "C1",
+            "pos": 0.9496402877697839,
+            "amount": 154136082.72
+          }
+        },
+        {
+          "name": "荣联科技",
+          "family": "反包",
+          "route": "ceshi/V6",
+          "rule": "按源策略的分档、开盘缺口和成交约束",
+          "reason": "",
+          "rank": 15,
+          "detail": {
+            "code": "002642",
+            "name": "荣联科技",
+            "arm": "深跌",
+            "mean": 87005911.44150001
+          }
         }
       ]
     },
     {
       "code": "002741",
       "name": "光华科技",
-      "votes": 1,
+      "votes": 2,
       "families": [
+        "反包",
         "首板"
       ],
       "signals": [
@@ -216,6 +592,125 @@
         {
           "name": "光华科技",
           "family": "首板",
+          "route": "zonghe/P2",
+          "rule": "展示顺序为成交额参考。E开盘确认 −5% < 缺口 ≤ −2%，缺口最深优先，同缺口按代码，正式只取1只。",
+          "reason": "",
+          "rank": 1,
+          "detail": {
+            "code": "002741",
+            "name": "光华科技",
+            "route": "待缺口",
+            "close": 18.76,
+            "score": null
+          }
+        },
+        {
+          "name": "光华科技",
+          "family": "首板",
+          "route": "zonghe/H1",
+          "rule": "BF门控关闭，FB门控通过。BF先按档位和20日均额，开盘缺口 (−10.1%, +8%]。BF无可执行票才看C2 [−2.5%, +5%]、C1 [−5%, −2%]，同类按缺口升序，合计只取1只。FB盘后按代码展示，次日才定最终名次。",
+          "reason": "",
+          "rank": 1,
+          "detail": {
+            "code": "002741",
+            "name": "光华科技",
+            "route": "FB C1",
+            "close": 18.76,
+            "score": null
+          }
+        },
+        {
+          "name": "光华科技",
+          "family": "趋势",
+          "route": "zonghe/S2_1",
+          "rule": "门控关闭，下面仅作观察。按收盘分展示Top5，执行口径只看Top1，次日开盘缺口须在 [−5%, +6%]。",
+          "reason": "门控关闭",
+          "rank": 1,
+          "detail": {
+            "code": "002741",
+            "name": "光华科技",
+            "route": "观察",
+            "close": 18.76,
+            "score": 12.736515
+          }
+        },
+        {
+          "name": "光华科技",
+          "family": "趋势",
+          "route": "zonghe/S2_2",
+          "rule": "按收盘分展示Top5，执行口径只看Top1，次日开盘缺口须在 [−5%, +6%]。",
+          "reason": "路线只执行Top1",
+          "rank": 1,
+          "detail": {
+            "code": "002741",
+            "name": "光华科技",
+            "route": "可复核",
+            "close": 18.76,
+            "score": 12.736515
+          }
+        },
+        {
+          "name": "光华科技",
+          "family": "趋势",
+          "route": "zonghe/S2_3",
+          "rule": "门控关闭，下面仅作观察。按收盘分展示Top5，执行口径只看Top1，次日开盘缺口须在 [−5%, +6%]。",
+          "reason": "门控关闭",
+          "rank": 1,
+          "detail": {
+            "code": "002741",
+            "name": "光华科技",
+            "route": "观察",
+            "close": 18.76,
+            "score": 11.935995
+          }
+        },
+        {
+          "name": "光华科技",
+          "family": "趋势",
+          "route": "zonghe/S2_4",
+          "rule": "门控关闭，下面仅作观察。按收盘分展示Top5，执行口径只看Top1，次日开盘缺口须在 [−5%, +6%]。与趋势1同入口，退出规则不同。",
+          "reason": "门控关闭",
+          "rank": 1,
+          "detail": {
+            "code": "002741",
+            "name": "光华科技",
+            "route": "观察",
+            "close": 18.76,
+            "score": 12.736515
+          }
+        },
+        {
+          "name": "光华科技",
+          "family": "首板",
+          "route": "ceshi/FB_DUAL_K4",
+          "rule": "C2[-2.5%, +5%]，C1[-5%, -2%]",
+          "reason": "",
+          "rank": 6,
+          "detail": {
+            "code": "002741",
+            "name": "光华科技",
+            "arm": "C1",
+            "pos": 0.7511013215859033,
+            "amount": 751890932.43
+          }
+        },
+        {
+          "name": "光华科技",
+          "family": "反包",
+          "route": "ceshi/V6",
+          "rule": "按源策略的分档、开盘缺口和成交约束",
+          "reason": "",
+          "rank": 6,
+          "detail": {
+            "code": "002741",
+            "name": "光华科技",
+            "arm": "深跌",
+            "mean": 572543278.2685
+          }
+        },
+        {
+          "name": "光华科技",
+          "family": "首板",
           "route": "首板最低缺口Top1（PTrade版）",
           "rule": "开盘缺口[0%,6%]；缺口升序、信号日成交额降序、代码升序；最多新买1只；次日流通市值10—200亿元、停牌及涨跌停另核验",
           "reason": "",
@@ -230,27 +725,40 @@
       ]
     },
     {
-      "code": "002749",
-      "name": "国光股份",
-      "votes": 1,
+      "code": "600327",
+      "name": "大东方",
+      "votes": 2,
       "families": [
+        "反包",
         "首板"
       ],
       "signals": [
         {
-          "name": "国光股份",
-          "family": "首板",
-          "route": "top/FB",
-          "rule": "C2[-2.5%, +5%]，C1[-5%, -2%]",
+          "name": "大东方",
+          "family": "反包",
+          "route": "ceshi/V6",
+          "rule": "按源策略的分档、开盘缺口和成交约束",
           "reason": "",
-          "rank": 15,
+          "rank": 8,
           "detail": {
-            "code": "002749",
-            "name": "国光股份",
-            "close": 8.69,
-            "pos60_med": 0.9360189573459716,
-            "money_t": 162618392.75,
-            "B_MA20": -0.10999717997480218
+            "code": "600327",
+            "name": "大东方",
+            "arm": "双臂",
+            "mean": 564472337.25
+          }
+        },
+        {
+          "name": "大东方",
+          "family": "首板",
+          "route": "2j3/ma10_down_below_2pct",
+          "rule": "缺口[+2%, +5%]，高开幅度降序",
+          "reason": "",
+          "rank": 4,
+          "detail": {
+            "code": "600327",
+            "name": "大东方",
+            "market": "sh",
+            "close": "4.83"
           }
         }
       ]
@@ -258,8 +766,9 @@
     {
       "code": "600360",
       "name": "华微电子",
-      "votes": 1,
+      "votes": 2,
       "families": [
+        "反包",
         "首板"
       ],
       "signals": [
@@ -282,6 +791,65 @@
         {
           "name": "华微电子",
           "family": "首板",
+          "route": "zonghe/P2",
+          "rule": "展示顺序为成交额参考。E开盘确认 −5% < 缺口 ≤ −2%，缺口最深优先，同缺口按代码，正式只取1只。",
+          "reason": "",
+          "rank": 1,
+          "detail": {
+            "code": "600360",
+            "name": "华微电子",
+            "route": "待缺口",
+            "close": 9.01,
+            "score": null
+          }
+        },
+        {
+          "name": "华微电子",
+          "family": "首板",
+          "route": "zonghe/H1",
+          "rule": "BF门控关闭，FB门控通过。BF先按档位和20日均额，开盘缺口 (−10.1%, +8%]。BF无可执行票才看C2 [−2.5%, +5%]、C1 [−5%, −2%]，同类按缺口升序，合计只取1只。FB盘后按代码展示，次日才定最终名次。",
+          "reason": "",
+          "rank": 1,
+          "detail": {
+            "code": "600360",
+            "name": "华微电子",
+            "route": "FB C1",
+            "close": 9.01,
+            "score": null
+          }
+        },
+        {
+          "name": "华微电子",
+          "family": "首板",
+          "route": "ceshi/FB_DUAL_K4",
+          "rule": "C2[-2.5%, +5%]，C1[-5%, -2%]",
+          "reason": "",
+          "rank": 8,
+          "detail": {
+            "code": "600360",
+            "name": "华微电子",
+            "arm": "C1",
+            "pos": 0.8418976259800653,
+            "amount": 1229042006.0
+          }
+        },
+        {
+          "name": "华微电子",
+          "family": "反包",
+          "route": "ceshi/V6",
+          "rule": "按源策略的分档、开盘缺口和成交约束",
+          "reason": "",
+          "rank": 11,
+          "detail": {
+            "code": "600360",
+            "name": "华微电子",
+            "arm": "深跌",
+            "mean": 248687443.7
+          }
+        },
+        {
+          "name": "华微电子",
+          "family": "首板",
           "route": "首板最低缺口Top1（PTrade版）",
           "rule": "开盘缺口[0%,6%]；缺口升序、信号日成交额降序、代码升序；最多新买1只；次日流通市值10—200亿元、停牌及涨跌停另核验",
           "reason": "",
@@ -298,8 +866,9 @@
     {
       "code": "600371",
       "name": "万向德农",
-      "votes": 1,
+      "votes": 2,
       "families": [
+        "反包",
         "首板"
       ],
       "signals": [
@@ -318,14 +887,88 @@
             "money_t": 299364156.0,
             "B_MA20": -0.10999717997480218
           }
+        },
+        {
+          "name": "万向德农",
+          "family": "首板",
+          "route": "zonghe/P2",
+          "rule": "展示顺序为成交额参考。E开盘确认 −5% < 缺口 ≤ −2%，缺口最深优先，同缺口按代码，正式只取1只。",
+          "reason": "",
+          "rank": 1,
+          "detail": {
+            "code": "600371",
+            "name": "万向德农",
+            "route": "待缺口",
+            "close": 10.69,
+            "score": null
+          }
+        },
+        {
+          "name": "万向德农",
+          "family": "首板",
+          "route": "zonghe/H1",
+          "rule": "BF门控关闭，FB门控通过。BF先按档位和20日均额，开盘缺口 (−10.1%, +8%]。BF无可执行票才看C2 [−2.5%, +5%]、C1 [−5%, −2%]，同类按缺口升序，合计只取1只。FB盘后按代码展示，次日才定最终名次。",
+          "reason": "",
+          "rank": 1,
+          "detail": {
+            "code": "600371",
+            "name": "万向德农",
+            "route": "FB C1",
+            "close": 10.69,
+            "score": null
+          }
+        },
+        {
+          "name": "万向德农",
+          "family": "首板",
+          "route": "ceshi/FB_DUAL_K4",
+          "rule": "C2[-2.5%, +5%]，C1[-5%, -2%]",
+          "reason": "",
+          "rank": 9,
+          "detail": {
+            "code": "600371",
+            "name": "万向德农",
+            "arm": "C1",
+            "pos": 0.7680758593441328,
+            "amount": 299364156.0
+          }
+        },
+        {
+          "name": "万向德农",
+          "family": "反包",
+          "route": "ceshi/U4",
+          "rule": "按源策略的分档、开盘缺口和成交约束",
+          "reason": "",
+          "rank": 3,
+          "detail": {
+            "code": "600371",
+            "name": "万向德农",
+            "arm": "U4b",
+            "mean": 475101263.1
+          }
+        },
+        {
+          "name": "万向德农",
+          "family": "反包",
+          "route": "ceshi/V6",
+          "rule": "按源策略的分档、开盘缺口和成交约束",
+          "reason": "",
+          "rank": 9,
+          "detail": {
+            "code": "600371",
+            "name": "万向德农",
+            "arm": "深跌",
+            "mean": 475101263.1
+          }
         }
       ]
     },
     {
       "code": "603004",
       "name": "鼎龙科技",
-      "votes": 1,
+      "votes": 2,
       "families": [
+        "反包",
         "首板"
       ],
       "signals": [
@@ -344,14 +987,74 @@
             "money_t": 136585809.0,
             "B_MA20": -0.10999717997480218
           }
+        },
+        {
+          "name": "鼎龙科技",
+          "family": "首板",
+          "route": "zonghe/P2",
+          "rule": "展示顺序为成交额参考。E开盘确认 −5% < 缺口 ≤ −2%，缺口最深优先，同缺口按代码，正式只取1只。",
+          "reason": "",
+          "rank": 1,
+          "detail": {
+            "code": "603004",
+            "name": "鼎龙科技",
+            "route": "待缺口",
+            "close": 18.22,
+            "score": null
+          }
+        },
+        {
+          "name": "鼎龙科技",
+          "family": "首板",
+          "route": "zonghe/H1",
+          "rule": "BF门控关闭，FB门控通过。BF先按档位和20日均额，开盘缺口 (−10.1%, +8%]。BF无可执行票才看C2 [−2.5%, +5%]、C1 [−5%, −2%]，同类按缺口升序，合计只取1只。FB盘后按代码展示，次日才定最终名次。",
+          "reason": "",
+          "rank": 1,
+          "detail": {
+            "code": "603004",
+            "name": "鼎龙科技",
+            "route": "FB C1",
+            "close": 18.22,
+            "score": null
+          }
+        },
+        {
+          "name": "鼎龙科技",
+          "family": "首板",
+          "route": "ceshi/FB_DUAL_K4",
+          "rule": "C2[-2.5%, +5%]，C1[-5%, -2%]",
+          "reason": "",
+          "rank": 10,
+          "detail": {
+            "code": "603004",
+            "name": "鼎龙科技",
+            "arm": "C1",
+            "pos": 0.8946515397082657,
+            "amount": 136585809.0
+          }
+        },
+        {
+          "name": "鼎龙科技",
+          "family": "反包",
+          "route": "ceshi/V6",
+          "rule": "按源策略的分档、开盘缺口和成交约束",
+          "reason": "",
+          "rank": 20,
+          "detail": {
+            "code": "603004",
+            "name": "鼎龙科技",
+            "arm": "深跌",
+            "mean": 30636583.95
+          }
         }
       ]
     },
     {
       "code": "603386",
       "name": "骏亚科技",
-      "votes": 1,
+      "votes": 2,
       "families": [
+        "反包",
         "首板"
       ],
       "signals": [
@@ -395,6 +1098,65 @@
         {
           "name": "骏亚科技",
           "family": "首板",
+          "route": "zonghe/P2",
+          "rule": "展示顺序为成交额参考。E开盘确认 −5% < 缺口 ≤ −2%，缺口最深优先，同缺口按代码，正式只取1只。",
+          "reason": "",
+          "rank": 1,
+          "detail": {
+            "code": "603386",
+            "name": "骏亚科技",
+            "route": "待缺口",
+            "close": 14.59,
+            "score": null
+          }
+        },
+        {
+          "name": "骏亚科技",
+          "family": "首板",
+          "route": "zonghe/H1",
+          "rule": "BF门控关闭，FB门控通过。BF先按档位和20日均额，开盘缺口 (−10.1%, +8%]。BF无可执行票才看C2 [−2.5%, +5%]、C1 [−5%, −2%]，同类按缺口升序，合计只取1只。FB盘后按代码展示，次日才定最终名次。",
+          "reason": "",
+          "rank": 1,
+          "detail": {
+            "code": "603386",
+            "name": "骏亚科技",
+            "route": "FB C1",
+            "close": 14.59,
+            "score": null
+          }
+        },
+        {
+          "name": "骏亚科技",
+          "family": "首板",
+          "route": "ceshi/FB_DUAL_K4",
+          "rule": "C2[-2.5%, +5%]，C1[-5%, -2%]",
+          "reason": "",
+          "rank": 11,
+          "detail": {
+            "code": "603386",
+            "name": "骏亚科技",
+            "arm": "C1",
+            "pos": 0.8834110592938046,
+            "amount": 392535963.0
+          }
+        },
+        {
+          "name": "骏亚科技",
+          "family": "反包",
+          "route": "ceshi/V6",
+          "rule": "按源策略的分档、开盘缺口和成交约束",
+          "reason": "",
+          "rank": 10,
+          "detail": {
+            "code": "603386",
+            "name": "骏亚科技",
+            "arm": "深跌",
+            "mean": 271072570.3
+          }
+        },
+        {
+          "name": "骏亚科技",
+          "family": "首板",
           "route": "首板最低缺口Top1（PTrade版）",
           "rule": "开盘缺口[0%,6%]；缺口升序、信号日成交额降序、代码升序；最多新买1只；次日流通市值10—200亿元、停牌及涨跌停另核验",
           "reason": "",
@@ -411,8 +1173,9 @@
     {
       "code": "603948",
       "name": "建业股份",
-      "votes": 1,
+      "votes": 2,
       "families": [
+        "反包",
         "首板"
       ],
       "signals": [
@@ -431,14 +1194,134 @@
             "money_t": 184850343.0,
             "B_MA20": -0.10999717997480218
           }
+        },
+        {
+          "name": "建业股份",
+          "family": "首板",
+          "route": "zonghe/P2",
+          "rule": "展示顺序为成交额参考。E开盘确认 −5% < 缺口 ≤ −2%，缺口最深优先，同缺口按代码，正式只取1只。",
+          "reason": "",
+          "rank": 1,
+          "detail": {
+            "code": "603948",
+            "name": "建业股份",
+            "route": "待缺口",
+            "close": 19.56,
+            "score": null
+          }
+        },
+        {
+          "name": "建业股份",
+          "family": "首板",
+          "route": "zonghe/H1",
+          "rule": "BF门控关闭，FB门控通过。BF先按档位和20日均额，开盘缺口 (−10.1%, +8%]。BF无可执行票才看C2 [−2.5%, +5%]、C1 [−5%, −2%]，同类按缺口升序，合计只取1只。FB盘后按代码展示，次日才定最终名次。",
+          "reason": "",
+          "rank": 1,
+          "detail": {
+            "code": "603948",
+            "name": "建业股份",
+            "route": "FB C1",
+            "close": 19.56,
+            "score": null
+          }
+        },
+        {
+          "name": "建业股份",
+          "family": "趋势",
+          "route": "zonghe/S2_1",
+          "rule": "门控关闭，下面仅作观察。按收盘分展示Top5，执行口径只看Top1，次日开盘缺口须在 [−5%, +6%]。",
+          "reason": "门控关闭",
+          "rank": 1,
+          "detail": {
+            "code": "603948",
+            "name": "建业股份",
+            "route": "观察",
+            "close": 19.56,
+            "score": 11.201101
+          }
+        },
+        {
+          "name": "建业股份",
+          "family": "趋势",
+          "route": "zonghe/S2_2",
+          "rule": "按收盘分展示Top5，执行口径只看Top1，次日开盘缺口须在 [−5%, +6%]。",
+          "reason": "路线只执行Top1",
+          "rank": 1,
+          "detail": {
+            "code": "603948",
+            "name": "建业股份",
+            "route": "可复核",
+            "close": 19.56,
+            "score": 11.201101
+          }
+        },
+        {
+          "name": "建业股份",
+          "family": "趋势",
+          "route": "zonghe/S2_3",
+          "rule": "门控关闭，下面仅作观察。按收盘分展示Top5，执行口径只看Top1，次日开盘缺口须在 [−5%, +6%]。",
+          "reason": "门控关闭",
+          "rank": 1,
+          "detail": {
+            "code": "603948",
+            "name": "建业股份",
+            "route": "观察",
+            "close": 19.56,
+            "score": 10.847559
+          }
+        },
+        {
+          "name": "建业股份",
+          "family": "趋势",
+          "route": "zonghe/S2_4",
+          "rule": "门控关闭，下面仅作观察。按收盘分展示Top5，执行口径只看Top1，次日开盘缺口须在 [−5%, +6%]。与趋势1同入口，退出规则不同。",
+          "reason": "门控关闭",
+          "rank": 1,
+          "detail": {
+            "code": "603948",
+            "name": "建业股份",
+            "route": "观察",
+            "close": 19.56,
+            "score": 11.201101
+          }
+        },
+        {
+          "name": "建业股份",
+          "family": "首板",
+          "route": "ceshi/FB_DUAL_K4",
+          "rule": "C2[-2.5%, +5%]，C1[-5%, -2%]",
+          "reason": "",
+          "rank": 12,
+          "detail": {
+            "code": "603948",
+            "name": "建业股份",
+            "arm": "C1",
+            "pos": 0.9087656529516998,
+            "amount": 184850343.0
+          }
+        },
+        {
+          "name": "建业股份",
+          "family": "反包",
+          "route": "ceshi/V6",
+          "rule": "按源策略的分档、开盘缺口和成交约束",
+          "reason": "",
+          "rank": 19,
+          "detail": {
+            "code": "603948",
+            "name": "建业股份",
+            "arm": "深跌",
+            "mean": 31860276.6
+          }
         }
       ]
     },
     {
       "code": "605018",
       "name": "长华集团",
-      "votes": 1,
+      "votes": 2,
       "families": [
+        "反包",
         "首板"
       ],
       "signals": [
@@ -457,14 +1340,59 @@
             "money_t": 114199205.0,
             "B_MA20": -0.10999717997480218
           }
+        },
+        {
+          "name": "长华集团",
+          "family": "首板",
+          "route": "zonghe/H1",
+          "rule": "BF门控关闭，FB门控通过。BF先按档位和20日均额，开盘缺口 (−10.1%, +8%]。BF无可执行票才看C2 [−2.5%, +5%]、C1 [−5%, −2%]，同类按缺口升序，合计只取1只。FB盘后按代码展示，次日才定最终名次。",
+          "reason": "",
+          "rank": 1,
+          "detail": {
+            "code": "605018",
+            "name": "长华集团",
+            "route": "FB C1",
+            "close": 10.26,
+            "score": null
+          }
+        },
+        {
+          "name": "长华集团",
+          "family": "首板",
+          "route": "ceshi/FB_DUAL_K4",
+          "rule": "C2[-2.5%, +5%]，C1[-5%, -2%]",
+          "reason": "",
+          "rank": 13,
+          "detail": {
+            "code": "605018",
+            "name": "长华集团",
+            "arm": "C1",
+            "pos": 0.8345259391771017,
+            "amount": 114199205.0
+          }
+        },
+        {
+          "name": "长华集团",
+          "family": "反包",
+          "route": "ceshi/V6",
+          "rule": "按源策略的分档、开盘缺口和成交约束",
+          "reason": "",
+          "rank": 17,
+          "detail": {
+            "code": "605018",
+            "name": "长华集团",
+            "arm": "深跌",
+            "mean": 42115952.25
+          }
         }
       ]
     },
     {
       "code": "605058",
       "name": "澳弘电子",
-      "votes": 1,
+      "votes": 2,
       "families": [
+        "反包",
         "首板"
       ],
       "signals": [
@@ -483,14 +1411,74 @@
             "money_t": 510670425.0,
             "B_MA20": -0.10999717997480218
           }
+        },
+        {
+          "name": "澳弘电子",
+          "family": "首板",
+          "route": "zonghe/P2",
+          "rule": "展示顺序为成交额参考。E开盘确认 −5% < 缺口 ≤ −2%，缺口最深优先，同缺口按代码，正式只取1只。",
+          "reason": "",
+          "rank": 1,
+          "detail": {
+            "code": "605058",
+            "name": "澳弘电子",
+            "route": "待缺口",
+            "close": 42.92,
+            "score": null
+          }
+        },
+        {
+          "name": "澳弘电子",
+          "family": "首板",
+          "route": "zonghe/H1",
+          "rule": "BF门控关闭，FB门控通过。BF先按档位和20日均额，开盘缺口 (−10.1%, +8%]。BF无可执行票才看C2 [−2.5%, +5%]、C1 [−5%, −2%]，同类按缺口升序，合计只取1只。FB盘后按代码展示，次日才定最终名次。",
+          "reason": "",
+          "rank": 1,
+          "detail": {
+            "code": "605058",
+            "name": "澳弘电子",
+            "route": "FB C1",
+            "close": 42.92,
+            "score": null
+          }
+        },
+        {
+          "name": "澳弘电子",
+          "family": "首板",
+          "route": "ceshi/FB_DUAL_K4",
+          "rule": "C2[-2.5%, +5%]，C1[-5%, -2%]",
+          "reason": "",
+          "rank": 14,
+          "detail": {
+            "code": "605058",
+            "name": "澳弘电子",
+            "arm": "C1",
+            "pos": 0.8013143033165627,
+            "amount": 510670425.0
+          }
+        },
+        {
+          "name": "澳弘电子",
+          "family": "反包",
+          "route": "ceshi/V6",
+          "rule": "按源策略的分档、开盘缺口和成交约束",
+          "reason": "",
+          "rank": 5,
+          "detail": {
+            "code": "605058",
+            "name": "澳弘电子",
+            "arm": "深跌",
+            "mean": 884687521.2
+          }
         }
       ]
     },
     {
       "code": "605577",
       "name": "龙版传媒",
-      "votes": 1,
+      "votes": 2,
       "families": [
+        "反包",
         "首板"
       ],
       "signals": [
@@ -508,6 +1496,311 @@
             "pos60_med": 0.9573983739837398,
             "money_t": 515991409.0,
             "B_MA20": -0.10999717997480218
+          }
+        },
+        {
+          "name": "龙版传媒",
+          "family": "首板",
+          "route": "zonghe/P2",
+          "rule": "展示顺序为成交额参考。E开盘确认 −5% < 缺口 ≤ −2%，缺口最深优先，同缺口按代码，正式只取1只。",
+          "reason": "",
+          "rank": 1,
+          "detail": {
+            "code": "605577",
+            "name": "龙版传媒",
+            "route": "待缺口",
+            "close": 16.19,
+            "score": null
+          }
+        },
+        {
+          "name": "龙版传媒",
+          "family": "首板",
+          "route": "ceshi/FB_DUAL_K4",
+          "rule": "C2[-2.5%, +5%]，C1[-5%, -2%]",
+          "reason": "",
+          "rank": 15,
+          "detail": {
+            "code": "605577",
+            "name": "龙版传媒",
+            "arm": "C1",
+            "pos": 0.9573983739837397,
+            "amount": 515991409.0
+          }
+        },
+        {
+          "name": "龙版传媒",
+          "family": "反包",
+          "route": "ceshi/V6",
+          "rule": "按源策略的分档、开盘缺口和成交约束",
+          "reason": "",
+          "rank": 7,
+          "detail": {
+            "code": "605577",
+            "name": "龙版传媒",
+            "arm": "深跌",
+            "mean": 568045980.9
+          }
+        }
+      ]
+    },
+    {
+      "code": "000530",
+      "name": "冰山冷热",
+      "votes": 1,
+      "families": [
+        "反包"
+      ],
+      "signals": [
+        {
+          "name": "冰山冷热",
+          "family": "反包",
+          "route": "ceshi/V6",
+          "rule": "按源策略的分档、开盘缺口和成交约束",
+          "reason": "",
+          "rank": 1,
+          "detail": {
+            "code": "000530",
+            "name": "冰山冷热",
+            "arm": "深跌",
+            "mean": 2123701403.6035
+          }
+        }
+      ]
+    },
+    {
+      "code": "002077",
+      "name": "大港股份",
+      "votes": 1,
+      "families": [
+        "量价转强"
+      ],
+      "signals": [
+        {
+          "name": "大港股份",
+          "family": "量价转强",
+          "route": "主力捉妖",
+          "rule": "优先[-2%, -1%)，其次[0%, +3%)",
+          "reason": "",
+          "rank": 1,
+          "detail": {
+            "code": "002077",
+            "name": "大港股份",
+            "turnover": 12.41,
+            "volume_lots": 720501.0,
+            "float_cap": 6792797502.014504
+          }
+        }
+      ]
+    },
+    {
+      "code": "002199",
+      "name": "东晶电子",
+      "votes": 1,
+      "families": [
+        "反包"
+      ],
+      "signals": [
+        {
+          "name": "东晶电子",
+          "family": "反包",
+          "route": "ceshi/V6",
+          "rule": "按源策略的分档、开盘缺口和成交约束",
+          "reason": "",
+          "rank": 18,
+          "detail": {
+            "code": "002199",
+            "name": "东晶电子",
+            "arm": "深跌",
+            "mean": 36156583.0485
+          }
+        }
+      ]
+    },
+    {
+      "code": "002749",
+      "name": "国光股份",
+      "votes": 1,
+      "families": [
+        "首板"
+      ],
+      "signals": [
+        {
+          "name": "国光股份",
+          "family": "首板",
+          "route": "top/FB",
+          "rule": "C2[-2.5%, +5%]，C1[-5%, -2%]",
+          "reason": "",
+          "rank": 15,
+          "detail": {
+            "code": "002749",
+            "name": "国光股份",
+            "close": 8.69,
+            "pos60_med": 0.9360189573459716,
+            "money_t": 162618392.75,
+            "B_MA20": -0.10999717997480218
+          }
+        },
+        {
+          "name": "国光股份",
+          "family": "首板",
+          "route": "zonghe/P2",
+          "rule": "展示顺序为成交额参考。E开盘确认 −5% < 缺口 ≤ −2%，缺口最深优先，同缺口按代码，正式只取1只。",
+          "reason": "",
+          "rank": 1,
+          "detail": {
+            "code": "002749",
+            "name": "国光股份",
+            "route": "待缺口",
+            "close": 8.69,
+            "score": null
+          }
+        },
+        {
+          "name": "国光股份",
+          "family": "首板",
+          "route": "ceshi/FB_DUAL_K4",
+          "rule": "C2[-2.5%, +5%]，C1[-5%, -2%]",
+          "reason": "",
+          "rank": 7,
+          "detail": {
+            "code": "002749",
+            "name": "国光股份",
+            "arm": "C1",
+            "pos": 0.9360189573459718,
+            "amount": 162618392.75
+          }
+        }
+      ]
+    },
+    {
+      "code": "002771",
+      "name": "真视通",
+      "votes": 1,
+      "families": [
+        "趋势"
+      ],
+      "signals": [
+        {
+          "name": "真视通",
+          "family": "趋势",
+          "route": "zonghe/S2_1",
+          "rule": "门控关闭，下面仅作观察。按收盘分展示Top5，执行口径只看Top1，次日开盘缺口须在 [−5%, +6%]。",
+          "reason": "门控关闭",
+          "rank": 1,
+          "detail": {
+            "code": "002771",
+            "name": "真视通",
+            "route": "观察",
+            "close": 15.82,
+            "score": 13.139623
+          }
+        },
+        {
+          "name": "真视通",
+          "family": "趋势",
+          "route": "zonghe/S2_2",
+          "rule": "按收盘分展示Top5，执行口径只看Top1，次日开盘缺口须在 [−5%, +6%]。",
+          "reason": "",
+          "rank": 1,
+          "detail": {
+            "code": "002771",
+            "name": "真视通",
+            "route": "可复核",
+            "close": 15.82,
+            "score": 13.139623
+          }
+        },
+        {
+          "name": "真视通",
+          "family": "趋势",
+          "route": "zonghe/S2_3",
+          "rule": "门控关闭，下面仅作观察。按收盘分展示Top5，执行口径只看Top1，次日开盘缺口须在 [−5%, +6%]。",
+          "reason": "门控关闭",
+          "rank": 1,
+          "detail": {
+            "code": "002771",
+            "name": "真视通",
+            "route": "观察",
+            "close": 15.82,
+            "score": 13.66409
+          }
+        },
+        {
+          "name": "真视通",
+          "family": "趋势",
+          "route": "zonghe/S2_4",
+          "rule": "门控关闭，下面仅作观察。按收盘分展示Top5，执行口径只看Top1，次日开盘缺口须在 [−5%, +6%]。与趋势1同入口，退出规则不同。",
+          "reason": "门控关闭",
+          "rank": 1,
+          "detail": {
+            "code": "002771",
+            "name": "真视通",
+            "route": "观察",
+            "close": 15.82,
+            "score": 13.139623
+          }
+        }
+      ]
+    },
+    {
+      "code": "603466",
+      "name": "风语筑",
+      "votes": 1,
+      "families": [
+        "反包"
+      ],
+      "signals": [
+        {
+          "name": "风语筑",
+          "family": "反包",
+          "route": "ceshi/U4",
+          "rule": "按源策略的分档、开盘缺口和成交约束",
+          "reason": "",
+          "rank": 2,
+          "detail": {
+            "code": "603466",
+            "name": "风语筑",
+            "arm": "U4b",
+            "mean": 1441740604.8
+          }
+        },
+        {
+          "name": "风语筑",
+          "family": "反包",
+          "route": "ceshi/V6",
+          "rule": "按源策略的分档、开盘缺口和成交约束",
+          "reason": "",
+          "rank": 4,
+          "detail": {
+            "code": "603466",
+            "name": "风语筑",
+            "arm": "深跌",
+            "mean": 1441740604.8
+          }
+        }
+      ]
+    },
+    {
+      "code": "603960",
+      "name": "克来机电",
+      "votes": 1,
+      "families": [
+        "反包"
+      ],
+      "signals": [
+        {
+          "name": "克来机电",
+          "family": "反包",
+          "route": "ceshi/V6",
+          "rule": "按源策略的分档、开盘缺口和成交约束",
+          "reason": "",
+          "rank": 16,
+          "detail": {
+            "code": "603960",
+            "name": "克来机电",
+            "arm": "深跌",
+            "mean": 78341575.05
           }
         }
       ]
@@ -682,6 +1975,74 @@
               false,
               true
             ]
+          }
+        }
+      ]
+    },
+    {
+      "code": "002579",
+      "name": "中京电子",
+      "votes": 0,
+      "families": [],
+      "signals": [
+        {
+          "name": "中京电子",
+          "family": "趋势",
+          "route": "zonghe/S2_1",
+          "rule": "门控关闭，下面仅作观察。按收盘分展示Top5，执行口径只看Top1，次日开盘缺口须在 [−5%, +6%]。",
+          "reason": "门控关闭",
+          "rank": 1,
+          "detail": {
+            "code": "002579",
+            "name": "中京电子",
+            "route": "观察",
+            "close": 13.39,
+            "score": 10.724952
+          }
+        },
+        {
+          "name": "中京电子",
+          "family": "趋势",
+          "route": "zonghe/S2_2",
+          "rule": "按收盘分展示Top5，执行口径只看Top1，次日开盘缺口须在 [−5%, +6%]。",
+          "reason": "路线只执行Top1",
+          "rank": 1,
+          "detail": {
+            "code": "002579",
+            "name": "中京电子",
+            "route": "可复核",
+            "close": 13.39,
+            "score": 10.724952
+          }
+        },
+        {
+          "name": "中京电子",
+          "family": "趋势",
+          "route": "zonghe/S2_3",
+          "rule": "门控关闭，下面仅作观察。按收盘分展示Top5，执行口径只看Top1，次日开盘缺口须在 [−5%, +6%]。",
+          "reason": "门控关闭",
+          "rank": 1,
+          "detail": {
+            "code": "002579",
+            "name": "中京电子",
+            "route": "观察",
+            "close": 13.39,
+            "score": 9.284494
+          }
+        },
+        {
+          "name": "中京电子",
+          "family": "趋势",
+          "route": "zonghe/S2_4",
+          "rule": "门控关闭，下面仅作观察。按收盘分展示Top5，执行口径只看Top1，次日开盘缺口须在 [−5%, +6%]。与趋势1同入口，退出规则不同。",
+          "reason": "门控关闭",
+          "rank": 1,
+          "detail": {
+            "code": "002579",
+            "name": "中京电子",
+            "route": "观察",
+            "close": 13.39,
+            "score": 10.724952
           }
         }
       ]
@@ -890,6 +2251,29 @@
       ]
     },
     {
+      "code": "600715",
+      "name": "文投控股",
+      "votes": 0,
+      "families": [],
+      "signals": [
+        {
+          "name": "文投控股",
+          "family": "趋势",
+          "route": "zonghe/HGB",
+          "rule": "沪深300收盘未高于MA20，以下Top3仅观察，本日无执行候选。 冻结V3池，逐月训练至 2026-10-29，分数为预期净收益。",
+          "reason": "门控关闭",
+          "rank": 1,
+          "detail": {
+            "code": "600715",
+            "name": "文投控股",
+            "route": "仅观察",
+            "close": 2.74,
+            "score": 0.019206
+          }
+        }
+      ]
+    },
+    {
       "code": "600722",
       "name": "金牛化工",
       "votes": 0,
@@ -914,6 +2298,29 @@
               false,
               false
             ]
+          }
+        }
+      ]
+    },
+    {
+      "code": "600801",
+      "name": "华新建材",
+      "votes": 0,
+      "families": [],
+      "signals": [
+        {
+          "name": "华新建材",
+          "family": "趋势",
+          "route": "zonghe/HGB",
+          "rule": "沪深300收盘未高于MA20，以下Top3仅观察，本日无执行候选。 冻结V3池，逐月训练至 2026-10-29，分数为预期净收益。",
+          "reason": "门控关闭",
+          "rank": 1,
+          "detail": {
+            "code": "600801",
+            "name": "华新建材",
+            "route": "仅观察",
+            "close": 27.34,
+            "score": 0.021268
           }
         }
       ]
@@ -1441,6 +2848,97 @@
       ]
     },
     {
+      "code": "603324",
+      "name": "盛剑科技",
+      "votes": 0,
+      "families": [],
+      "signals": [
+        {
+          "name": "盛剑科技",
+          "family": "趋势",
+          "route": "zonghe/S2_1",
+          "rule": "门控关闭，下面仅作观察。按收盘分展示Top5，执行口径只看Top1，次日开盘缺口须在 [−5%, +6%]。",
+          "reason": "门控关闭",
+          "rank": 1,
+          "detail": {
+            "code": "603324",
+            "name": "盛剑科技",
+            "route": "观察",
+            "close": 27.71,
+            "score": 9.897613
+          }
+        },
+        {
+          "name": "盛剑科技",
+          "family": "趋势",
+          "route": "zonghe/S2_2",
+          "rule": "按收盘分展示Top5，执行口径只看Top1，次日开盘缺口须在 [−5%, +6%]。",
+          "reason": "路线只执行Top1",
+          "rank": 1,
+          "detail": {
+            "code": "603324",
+            "name": "盛剑科技",
+            "route": "可复核",
+            "close": 27.71,
+            "score": 9.897613
+          }
+        },
+        {
+          "name": "盛剑科技",
+          "family": "趋势",
+          "route": "zonghe/S2_3",
+          "rule": "门控关闭，下面仅作观察。按收盘分展示Top5，执行口径只看Top1，次日开盘缺口须在 [−5%, +6%]。",
+          "reason": "门控关闭",
+          "rank": 1,
+          "detail": {
+            "code": "603324",
+            "name": "盛剑科技",
+            "route": "观察",
+            "close": 27.71,
+            "score": 10.983495
+          }
+        },
+        {
+          "name": "盛剑科技",
+          "family": "趋势",
+          "route": "zonghe/S2_4",
+          "rule": "门控关闭，下面仅作观察。按收盘分展示Top5，执行口径只看Top1，次日开盘缺口须在 [−5%, +6%]。与趋势1同入口，退出规则不同。",
+          "reason": "门控关闭",
+          "rank": 1,
+          "detail": {
+            "code": "603324",
+            "name": "盛剑科技",
+            "route": "观察",
+            "close": 27.71,
+            "score": 9.897613
+          }
+        }
+      ]
+    },
+    {
+      "code": "603587",
+      "name": "地素时尚",
+      "votes": 0,
+      "families": [],
+      "signals": [
+        {
+          "name": "地素时尚",
+          "family": "趋势",
+          "route": "zonghe/HGB",
+          "rule": "沪深300收盘未高于MA20，以下Top3仅观察，本日无执行候选。 冻结V3池，逐月训练至 2026-10-29，分数为预期净收益。",
+          "reason": "门控关闭",
+          "rank": 1,
+          "detail": {
+            "code": "603587",
+            "name": "地素时尚",
+            "route": "仅观察",
+            "close": 15.86,
+            "score": 0.038844
+          }
+        }
+      ]
+    },
+    {
       "code": "603766",
       "name": "隆鑫通用",
       "votes": 0,
@@ -1473,19 +2971,149 @@
   "etfs": {},
   "systems": {
     "factor": [],
-    "confirmation": []
+    "confirmation": [
+      {
+        "code": "000823",
+        "name": "超声电子",
+        "anchor": {
+          "name": "超声电子",
+          "family": "首板",
+          "route": "zonghe/H1",
+          "rule": "BF门控关闭，FB门控通过。BF先按档位和20日均额，开盘缺口 (−10.1%, +8%]。BF无可执行票才看C2 [−2.5%, +5%]、C1 [−5%, −2%]，同类按缺口升序，合计只取1只。FB盘后按代码展示，次日才定最终名次。",
+          "reason": "",
+          "rank": 1,
+          "detail": {
+            "code": "000823",
+            "name": "超声电子",
+            "route": "FB C1",
+            "close": 18.51,
+            "score": null
+          }
+        },
+        "evidence": {
+          "name": "超声电子",
+          "family": "反包",
+          "route": "ceshi/U4",
+          "rule": "按源策略的分档、开盘缺口和成交约束",
+          "reason": "",
+          "rank": 1,
+          "detail": {
+            "code": "000823",
+            "name": "超声电子",
+            "arm": "U4b",
+            "mean": 2010662684.0925002
+          }
+        },
+        "families": [
+          "反包",
+          "首板"
+        ],
+        "parts": {
+          "主信号": 18,
+          "辅证": 10,
+          "因子分": 5.25
+        },
+        "score": 33.25
+      },
+      {
+        "code": "002741",
+        "name": "光华科技",
+        "anchor": {
+          "name": "光华科技",
+          "family": "首板",
+          "route": "zonghe/H1",
+          "rule": "BF门控关闭，FB门控通过。BF先按档位和20日均额，开盘缺口 (−10.1%, +8%]。BF无可执行票才看C2 [−2.5%, +5%]、C1 [−5%, −2%]，同类按缺口升序，合计只取1只。FB盘后按代码展示，次日才定最终名次。",
+          "reason": "",
+          "rank": 1,
+          "detail": {
+            "code": "002741",
+            "name": "光华科技",
+            "route": "FB C1",
+            "close": 18.76,
+            "score": null
+          }
+        },
+        "evidence": {
+          "name": "光华科技",
+          "family": "反包",
+          "route": "ceshi/V6",
+          "rule": "按源策略的分档、开盘缺口和成交约束",
+          "reason": "",
+          "rank": 6,
+          "detail": {
+            "code": "002741",
+            "name": "光华科技",
+            "arm": "深跌",
+            "mean": 572543278.2685
+          }
+        },
+        "families": [
+          "反包",
+          "首板"
+        ],
+        "parts": {
+          "主信号": 18,
+          "辅证": 10,
+          "因子分": 5.25
+        },
+        "score": 33.25
+      },
+      {
+        "code": "605058",
+        "name": "澳弘电子",
+        "anchor": {
+          "name": "澳弘电子",
+          "family": "首板",
+          "route": "zonghe/H1",
+          "rule": "BF门控关闭，FB门控通过。BF先按档位和20日均额，开盘缺口 (−10.1%, +8%]。BF无可执行票才看C2 [−2.5%, +5%]、C1 [−5%, −2%]，同类按缺口升序，合计只取1只。FB盘后按代码展示，次日才定最终名次。",
+          "reason": "",
+          "rank": 1,
+          "detail": {
+            "code": "605058",
+            "name": "澳弘电子",
+            "route": "FB C1",
+            "close": 42.92,
+            "score": null
+          }
+        },
+        "evidence": {
+          "name": "澳弘电子",
+          "family": "反包",
+          "route": "ceshi/V6",
+          "rule": "按源策略的分档、开盘缺口和成交约束",
+          "reason": "",
+          "rank": 5,
+          "detail": {
+            "code": "605058",
+            "name": "澳弘电子",
+            "arm": "深跌",
+            "mean": 884687521.2
+          }
+        },
+        "families": [
+          "反包",
+          "首板"
+        ],
+        "parts": {
+          "主信号": 18,
+          "辅证": 10,
+          "因子分": 5.25
+        },
+        "score": 33.25
+      }
+    ]
   },
   "top5": {
     "status": "incomplete",
     "candidates": [],
     "missing": {
-      "上游来源": "zonghe, ceshi, s9-duoyinzi, zhulizhuoyao, 2j3"
+      "上游来源": "s9-duoyinzi"
     },
     "pool": [
       {
         "code": "600360",
         "name": "华微电子",
-        "votes": 1,
+        "votes": 2,
         "score": 3,
         "amount": 1229042000.0,
         "close": 9.01,
@@ -1494,7 +3122,7 @@
       {
         "code": "603948",
         "name": "建业股份",
-        "votes": 1,
+        "votes": 2,
         "score": 3,
         "amount": 184850300.0,
         "close": 19.56,
@@ -1503,7 +3131,7 @@
       {
         "code": "603004",
         "name": "鼎龙科技",
-        "votes": 1,
+        "votes": 2,
         "score": 3,
         "amount": 136585800.0,
         "close": 18.22,
@@ -1512,7 +3140,7 @@
       {
         "code": "605577",
         "name": "龙版传媒",
-        "votes": 1,
+        "votes": 2,
         "score": 2,
         "amount": 515991400.0,
         "close": 16.19,
@@ -1521,7 +3149,7 @@
       {
         "code": "603386",
         "name": "骏亚科技",
-        "votes": 1,
+        "votes": 2,
         "score": 2,
         "amount": 392536000.0,
         "close": 14.59,
@@ -1530,7 +3158,7 @@
       {
         "code": "605018",
         "name": "长华集团",
-        "votes": 1,
+        "votes": 2,
         "score": 2,
         "amount": 114199200.0,
         "close": 10.26,
@@ -1539,7 +3167,7 @@
       {
         "code": "600371",
         "name": "万向德农",
-        "votes": 1,
+        "votes": 2,
         "score": 1,
         "amount": 299364200.0,
         "close": 10.69,
@@ -1548,7 +3176,7 @@
       {
         "code": "000593",
         "name": "德龙汇能",
-        "votes": 1,
+        "votes": 2,
         "score": 1,
         "amount": 172667700.0,
         "close": 17.51,
@@ -1557,7 +3185,7 @@
       {
         "code": "000607",
         "name": "华媒控股",
-        "votes": 1,
+        "votes": 2,
         "score": 1,
         "amount": 162782400.0,
         "close": 3.73,
@@ -1566,16 +3194,34 @@
       {
         "code": "000823",
         "name": "超声电子",
-        "votes": 1,
+        "votes": 2,
         "score": 0,
         "amount": 2135377900.0,
         "close": 18.51,
         "closed_at_limit": true
       },
       {
+        "code": "002086",
+        "name": "东方海洋",
+        "votes": 2,
+        "score": 0,
+        "amount": 1371317500.0,
+        "close": 3.75,
+        "closed_at_limit": true
+      },
+      {
+        "code": "600327",
+        "name": "大东方",
+        "votes": 2,
+        "score": 0,
+        "amount": 1143613200.0,
+        "close": 4.83,
+        "closed_at_limit": true
+      },
+      {
         "code": "002741",
         "name": "光华科技",
-        "votes": 1,
+        "votes": 2,
         "score": 0,
         "amount": 751890900.0,
         "close": 18.76,
@@ -1584,7 +3230,7 @@
       {
         "code": "605058",
         "name": "澳弘电子",
-        "votes": 1,
+        "votes": 2,
         "score": 0,
         "amount": 510670400.0,
         "close": 42.92,
@@ -1593,10 +3239,55 @@
       {
         "code": "002548",
         "name": "金新农",
-        "votes": 1,
+        "votes": 2,
         "score": 0,
         "amount": 241998600.0,
         "close": 3.76,
+        "closed_at_limit": true
+      },
+      {
+        "code": "002642",
+        "name": "荣联科技",
+        "votes": 2,
+        "score": 0,
+        "amount": 154136100.0,
+        "close": 7.26,
+        "closed_at_limit": true
+      },
+      {
+        "code": "002077",
+        "name": "大港股份",
+        "votes": 1,
+        "score": 3,
+        "amount": 867467800.0,
+        "close": 11.7,
+        "closed_at_limit": false
+      },
+      {
+        "code": "002771",
+        "name": "真视通",
+        "votes": 1,
+        "score": 2,
+        "amount": 489263100.0,
+        "close": 15.82,
+        "closed_at_limit": true
+      },
+      {
+        "code": "000530",
+        "name": "冰山冷热",
+        "votes": 1,
+        "score": 0,
+        "amount": 3062277199.9999995,
+        "close": 12.29,
+        "closed_at_limit": true
+      },
+      {
+        "code": "603466",
+        "name": "风语筑",
+        "votes": 1,
+        "score": 0,
+        "amount": 1206474200.0,
+        "close": 14.3,
         "closed_at_limit": true
       },
       {
@@ -1609,15 +3300,121 @@
         "closed_at_limit": true
       },
       {
-        "code": "002642",
-        "name": "荣联科技",
+        "code": "603960",
+        "name": "克来机电",
         "votes": 1,
         "score": 0,
-        "amount": 154136100.0,
-        "close": 7.26,
+        "amount": 95014000.0,
+        "close": 13.97,
+        "closed_at_limit": true
+      },
+      {
+        "code": "002199",
+        "name": "东晶电子",
+        "votes": 1,
+        "score": 0,
+        "amount": 37774400.0,
+        "close": 9.45,
         "closed_at_limit": true
       }
     ]
   },
-  "h1": {}
+  "h1": {
+    "title": "H1 BF主线 / FB补位",
+    "status": "待开盘",
+    "note": "BF门控关闭，FB门控通过。BF先按档位和20日均额，开盘缺口 (−10.1%, +8%]。BF无可执行票才看C2 [−2.5%, +5%]、C1 [−5%, −2%]，同类按缺口升序，合计只取1只。FB盘后按代码展示，次日才定最终名次。",
+    "candidates": [
+      {
+        "code": "000593",
+        "name": "德龙汇能",
+        "route": "FB C1",
+        "close": 17.51,
+        "score": null
+      },
+      {
+        "code": "000607",
+        "name": "华媒控股",
+        "route": "FB C1",
+        "close": 3.73,
+        "score": null
+      },
+      {
+        "code": "000823",
+        "name": "超声电子",
+        "route": "FB C1",
+        "close": 18.51,
+        "score": null
+      },
+      {
+        "code": "002548",
+        "name": "金新农",
+        "route": "FB C1",
+        "close": 3.76,
+        "score": null
+      },
+      {
+        "code": "002642",
+        "name": "荣联科技",
+        "route": "FB C1",
+        "close": 7.26,
+        "score": null
+      },
+      {
+        "code": "002741",
+        "name": "光华科技",
+        "route": "FB C1",
+        "close": 18.76,
+        "score": null
+      },
+      {
+        "code": "600360",
+        "name": "华微电子",
+        "route": "FB C1",
+        "close": 9.01,
+        "score": null
+      },
+      {
+        "code": "600371",
+        "name": "万向德农",
+        "route": "FB C1",
+        "close": 10.69,
+        "score": null
+      },
+      {
+        "code": "603004",
+        "name": "鼎龙科技",
+        "route": "FB C1",
+        "close": 18.22,
+        "score": null
+      },
+      {
+        "code": "603386",
+        "name": "骏亚科技",
+        "route": "FB C1",
+        "close": 14.59,
+        "score": null
+      },
+      {
+        "code": "603948",
+        "name": "建业股份",
+        "route": "FB C1",
+        "close": 19.56,
+        "score": null
+      },
+      {
+        "code": "605018",
+        "name": "长华集团",
+        "route": "FB C1",
+        "close": 10.26,
+        "score": null
+      },
+      {
+        "code": "605058",
+        "name": "澳弘电子",
+        "route": "FB C1",
+        "close": 42.92,
+        "score": null
+      }
+    ]
+  }
 }
