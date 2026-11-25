@@ -1,0 +1,3111 @@
+{
+  "date": "2026-11-25",
+  "status": "partial",
+  "issues": [
+    "zonghe: 待补齐（HTTP Error 404: Not Found）",
+    "s9-duoyinzi/champion: 模块缺失或数据异常",
+    "s9-duoyinzi/balanced: 模块缺失或数据异常",
+    "s9-duoyinzi/runner: 模块缺失或数据异常",
+    "s9-duoyinzi/original: 模块缺失或数据异常",
+    "s9-duoyinzi/wild: 模块缺失或数据异常",
+    "s9-duoyinzi/B0: 模块缺失或数据异常",
+    "s9-duoyinzi/K3: 模块缺失或数据异常",
+    "s9-duoyinzi/K5: 模块缺失或数据异常",
+    "s9-duoyinzi/DUAL55: 模块缺失或数据异常",
+    "Top5行情未齐，禁止锁榜"
+  ],
+  "sources": {
+    "top": "已读取",
+    "top/V3": "仅观察：沪深300未站上MA20，展示 27 只",
+    "zonghe": "待补齐（HTTP Error 404: Not Found）",
+    "ceshi": "已读取",
+    "s9-duoyinzi": "已读取",
+    "s9-duoyinzi/champion": "模块缺失或数据异常",
+    "s9-duoyinzi/balanced": "模块缺失或数据异常",
+    "s9-duoyinzi/runner": "模块缺失或数据异常",
+    "s9-duoyinzi/original": "模块缺失或数据异常",
+    "s9-duoyinzi/wild": "模块缺失或数据异常",
+    "s9-duoyinzi/B0": "模块缺失或数据异常",
+    "s9-duoyinzi/K3": "模块缺失或数据异常",
+    "s9-duoyinzi/K5": "模块缺失或数据异常",
+    "s9-duoyinzi/DUAL55": "模块缺失或数据异常",
+    "zhulizhuoyao": "已读取",
+    "2j3": "已读取",
+    "首板最低缺口Top1": "已读取"
+  },
+  "candidates": [
+    {
+      "code": "002069",
+      "name": "獐子岛",
+      "votes": 3,
+      "families": [
+        "反包",
+        "量价转强",
+        "首板"
+      ],
+      "signals": [
+        {
+          "name": "獐子岛",
+          "family": "首板",
+          "route": "top/FB",
+          "rule": "C2[-2.5%, +5%]，C1[-5%, -2%]",
+          "reason": "",
+          "rank": 13,
+          "detail": {
+            "code": "002069",
+            "name": "獐子岛",
+            "close": 3.54,
+            "pos60_med": 0.8956884561891514,
+            "money_t": 144055641.9,
+            "B_MA20": -0.1094469104534892
+          }
+        },
+        {
+          "name": "獐子岛",
+          "family": "首板",
+          "route": "ceshi/FB_DUAL_K4",
+          "rule": "C2[-2.5%, +5%]，C1[-5%, -2%]",
+          "reason": "",
+          "rank": 4,
+          "detail": {
+            "code": "002069",
+            "name": "獐子岛",
+            "arm": "C1",
+            "pos": 0.8956884561891516,
+            "amount": 144055641.9
+          }
+        },
+        {
+          "name": "獐子岛",
+          "family": "反包",
+          "route": "ceshi/V6",
+          "rule": "按源策略的分档、开盘缺口和成交约束",
+          "reason": "",
+          "rank": 24,
+          "detail": {
+            "code": "002069",
+            "name": "獐子岛",
+            "arm": "深跌",
+            "mean": 55214191.072000004
+          }
+        },
+        {
+          "name": "獐子岛",
+          "family": "量价转强",
+          "route": "主力捉妖",
+          "rule": "优先[-2%, -1%)，其次[0%, +3%)",
+          "reason": "",
+          "rank": 2,
+          "detail": {
+            "code": "002069",
+            "name": "獐子岛",
+            "turnover": 5.9,
+            "volume_lots": 419043.0,
+            "float_cap": 2514258000.0
+          }
+        },
+        {
+          "name": "獐子岛",
+          "family": "首板",
+          "route": "2j3/ma10_down_below_2pct",
+          "rule": "缺口[+2%, +5%]，高开幅度降序",
+          "reason": "",
+          "rank": 4,
+          "detail": {
+            "code": "002069",
+            "name": "獐子岛",
+            "market": "sz",
+            "close": "3.54"
+          }
+        }
+      ]
+    },
+    {
+      "code": "603887",
+      "name": "城地香江",
+      "votes": 3,
+      "families": [
+        "反包",
+        "量价转强",
+        "首板"
+      ],
+      "signals": [
+        {
+          "name": "城地香江",
+          "family": "首板",
+          "route": "top/FB",
+          "rule": "C2[-2.5%, +5%]，C1[-5%, -2%]",
+          "reason": "",
+          "rank": 9,
+          "detail": {
+            "code": "603887",
+            "name": "城地香江",
+            "close": 8.48,
+            "pos60_med": 0.9408175716900546,
+            "money_t": 536271328.0,
+            "B_MA20": -0.1094469104534892
+          }
+        },
+        {
+          "name": "城地香江",
+          "family": "首板",
+          "route": "ceshi/FB_DUAL_K4",
+          "rule": "C2[-2.5%, +5%]，C1[-5%, -2%]",
+          "reason": "",
+          "rank": 20,
+          "detail": {
+            "code": "603887",
+            "name": "城地香江",
+            "arm": "C1",
+            "pos": 0.940817571690055,
+            "amount": 536271328.0
+          }
+        },
+        {
+          "name": "城地香江",
+          "family": "反包",
+          "route": "ceshi/V6",
+          "rule": "按源策略的分档、开盘缺口和成交约束",
+          "reason": "",
+          "rank": 6,
+          "detail": {
+            "code": "603887",
+            "name": "城地香江",
+            "arm": "深跌",
+            "mean": 253990781.5
+          }
+        },
+        {
+          "name": "城地香江",
+          "family": "量价转强",
+          "route": "主力捉妖",
+          "rule": "优先[-2%, -1%)，其次[0%, +3%)",
+          "reason": "",
+          "rank": 3,
+          "detail": {
+            "code": "603887",
+            "name": "城地香江",
+            "turnover": 10.77,
+            "volume_lots": 648600.0,
+            "float_cap": 5106896935.933147
+          }
+        },
+        {
+          "name": "城地香江",
+          "family": "首板",
+          "route": "首板最低缺口Top1（PTrade版）",
+          "rule": "开盘缺口[0%,6%]；缺口升序、信号日成交额降序、代码升序；最多新买1只；次日流通市值10—200亿元、停牌及涨跌停另核验",
+          "reason": "",
+          "rank": 3,
+          "detail": {
+            "code": "603887",
+            "name": "城地香江",
+            "close": 8.48,
+            "amount": 536271300.0
+          }
+        }
+      ]
+    },
+    {
+      "code": "000593",
+      "name": "德龙汇能",
+      "votes": 2,
+      "families": [
+        "反包",
+        "首板"
+      ],
+      "signals": [
+        {
+          "name": "德龙汇能",
+          "family": "首板",
+          "route": "top/FB",
+          "rule": "C2[-2.5%, +5%]，C1[-5%, -2%]",
+          "reason": "",
+          "rank": 10,
+          "detail": {
+            "code": "000593",
+            "name": "德龙汇能",
+            "close": 20.54,
+            "pos60_med": 0.959403905447071,
+            "money_t": 120906272.1,
+            "B_MA20": -0.1094469104534892
+          }
+        },
+        {
+          "name": "德龙汇能",
+          "family": "首板",
+          "route": "ceshi/FB_DUAL_K4",
+          "rule": "C2[-2.5%, +5%]，C1[-5%, -2%]",
+          "reason": "",
+          "rank": 1,
+          "detail": {
+            "code": "000593",
+            "name": "德龙汇能",
+            "arm": "C1",
+            "pos": 0.9594039054470709,
+            "amount": 120906272.1
+          }
+        },
+        {
+          "name": "德龙汇能",
+          "family": "反包",
+          "route": "ceshi/U4",
+          "rule": "按源策略的分档、开盘缺口和成交约束",
+          "reason": "",
+          "rank": 2,
+          "detail": {
+            "code": "000593",
+            "name": "德龙汇能",
+            "arm": "U4b",
+            "mean": 236978035.61749998
+          }
+        }
+      ]
+    },
+    {
+      "code": "000702",
+      "name": "正虹科技",
+      "votes": 2,
+      "families": [
+        "反包",
+        "首板"
+      ],
+      "signals": [
+        {
+          "name": "正虹科技",
+          "family": "反包",
+          "route": "ceshi/V6",
+          "rule": "按源策略的分档、开盘缺口和成交约束",
+          "reason": "",
+          "rank": 25,
+          "detail": {
+            "code": "000702",
+            "name": "正虹科技",
+            "arm": "深跌",
+            "mean": 41778305.5535
+          }
+        },
+        {
+          "name": "正虹科技",
+          "family": "首板",
+          "route": "2j3/ma10_down_below_2pct",
+          "rule": "缺口[+2%, +5%]，高开幅度降序",
+          "reason": "",
+          "rank": 1,
+          "detail": {
+            "code": "000702",
+            "name": "正虹科技",
+            "market": "sz",
+            "close": "4.88"
+          }
+        }
+      ]
+    },
+    {
+      "code": "000756",
+      "name": "新华制药",
+      "votes": 2,
+      "families": [
+        "反包",
+        "首板"
+      ],
+      "signals": [
+        {
+          "name": "新华制药",
+          "family": "首板",
+          "route": "top/FB",
+          "rule": "C2[-2.5%, +5%]，C1[-5%, -2%]",
+          "reason": "",
+          "rank": 11,
+          "detail": {
+            "code": "000756",
+            "name": "新华制药",
+            "close": 12.16,
+            "pos60_med": 0.8422256097560977,
+            "money_t": 406918947.5,
+            "B_MA20": -0.1094469104534892
+          }
+        },
+        {
+          "name": "新华制药",
+          "family": "首板",
+          "route": "ceshi/FB_DUAL_K4",
+          "rule": "C2[-2.5%, +5%]，C1[-5%, -2%]",
+          "reason": "",
+          "rank": 2,
+          "detail": {
+            "code": "000756",
+            "name": "新华制药",
+            "arm": "C1",
+            "pos": 0.8422256097560976,
+            "amount": 406918947.5
+          }
+        },
+        {
+          "name": "新华制药",
+          "family": "反包",
+          "route": "ceshi/V6",
+          "rule": "按源策略的分档、开盘缺口和成交约束",
+          "reason": "",
+          "rank": 19,
+          "detail": {
+            "code": "000756",
+            "name": "新华制药",
+            "arm": "深跌",
+            "mean": 101886648.9685
+          }
+        },
+        {
+          "name": "新华制药",
+          "family": "首板",
+          "route": "首板最低缺口Top1（PTrade版）",
+          "rule": "开盘缺口[0%,6%]；缺口升序、信号日成交额降序、代码升序；最多新买1只；次日流通市值10—200亿元、停牌及涨跌停另核验",
+          "reason": "",
+          "rank": 6,
+          "detail": {
+            "code": "000756",
+            "name": "新华制药",
+            "close": 12.16,
+            "amount": 406918900.0
+          }
+        }
+      ]
+    },
+    {
+      "code": "000908",
+      "name": "石药景峰",
+      "votes": 2,
+      "families": [
+        "反包",
+        "首板"
+      ],
+      "signals": [
+        {
+          "name": "石药景峰",
+          "family": "反包",
+          "route": "ceshi/V6",
+          "rule": "按源策略的分档、开盘缺口和成交约束",
+          "reason": "",
+          "rank": 23,
+          "detail": {
+            "code": "000908",
+            "name": "石药景峰",
+            "arm": "深跌",
+            "mean": 55710558.021000005
+          }
+        },
+        {
+          "name": "石药景峰",
+          "family": "首板",
+          "route": "2j3/ma10_down_below_2pct",
+          "rule": "缺口[+2%, +5%]，高开幅度降序",
+          "reason": "",
+          "rank": 2,
+          "detail": {
+            "code": "000908",
+            "name": "石药景峰",
+            "market": "sz",
+            "close": "4.81"
+          }
+        }
+      ]
+    },
+    {
+      "code": "002038",
+      "name": "双鹭药业",
+      "votes": 2,
+      "families": [
+        "反包",
+        "首板"
+      ],
+      "signals": [
+        {
+          "name": "双鹭药业",
+          "family": "首板",
+          "route": "top/FB",
+          "rule": "C2[-2.5%, +5%]，C1[-5%, -2%]",
+          "reason": "",
+          "rank": 12,
+          "detail": {
+            "code": "002038",
+            "name": "双鹭药业",
+            "close": 4.9,
+            "pos60_med": 0.8127853881278543,
+            "money_t": 283267102.66,
+            "B_MA20": -0.1094469104534892
+          }
+        },
+        {
+          "name": "双鹭药业",
+          "family": "首板",
+          "route": "ceshi/FB_DUAL_K4",
+          "rule": "C2[-2.5%, +5%]，C1[-5%, -2%]",
+          "reason": "",
+          "rank": 3,
+          "detail": {
+            "code": "002038",
+            "name": "双鹭药业",
+            "arm": "C1",
+            "pos": 0.8127853881278542,
+            "amount": 283267102.66
+          }
+        },
+        {
+          "name": "双鹭药业",
+          "family": "反包",
+          "route": "ceshi/V6",
+          "rule": "按源策略的分档、开盘缺口和成交约束",
+          "reason": "",
+          "rank": 20,
+          "detail": {
+            "code": "002038",
+            "name": "双鹭药业",
+            "arm": "深跌",
+            "mean": 63918480.938
+          }
+        },
+        {
+          "name": "双鹭药业",
+          "family": "首板",
+          "route": "2j3/ma10_down_below_2pct",
+          "rule": "缺口[+2%, +5%]，高开幅度降序",
+          "reason": "",
+          "rank": 3,
+          "detail": {
+            "code": "002038",
+            "name": "双鹭药业",
+            "market": "sz",
+            "close": "4.90"
+          }
+        }
+      ]
+    },
+    {
+      "code": "002144",
+      "name": "宏达高科",
+      "votes": 2,
+      "families": [
+        "反包",
+        "首板"
+      ],
+      "signals": [
+        {
+          "name": "宏达高科",
+          "family": "首板",
+          "route": "top/FB",
+          "rule": "C2[-2.5%, +5%]，C1[-5%, -2%]",
+          "reason": "",
+          "rank": 14,
+          "detail": {
+            "code": "002144",
+            "name": "宏达高科",
+            "close": 9.08,
+            "pos60_med": 0.792126740278444,
+            "money_t": 101599777.0,
+            "B_MA20": -0.1094469104534892
+          }
+        },
+        {
+          "name": "宏达高科",
+          "family": "首板",
+          "route": "ceshi/FB_DUAL_K4",
+          "rule": "C2[-2.5%, +5%]，C1[-5%, -2%]",
+          "reason": "",
+          "rank": 5,
+          "detail": {
+            "code": "002144",
+            "name": "宏达高科",
+            "arm": "C1",
+            "pos": 0.7921267402784443,
+            "amount": 101599777.0
+          }
+        },
+        {
+          "name": "宏达高科",
+          "family": "反包",
+          "route": "ceshi/V6",
+          "rule": "按源策略的分档、开盘缺口和成交约束",
+          "reason": "",
+          "rank": 29,
+          "detail": {
+            "code": "002144",
+            "name": "宏达高科",
+            "arm": "深跌",
+            "mean": 32659016.408
+          }
+        }
+      ]
+    },
+    {
+      "code": "002145",
+      "name": "钛能化学",
+      "votes": 2,
+      "families": [
+        "反包",
+        "首板"
+      ],
+      "signals": [
+        {
+          "name": "钛能化学",
+          "family": "首板",
+          "route": "top/FB",
+          "rule": "C2[-2.5%, +5%]，C1[-5%, -2%]",
+          "reason": "",
+          "rank": 15,
+          "detail": {
+            "code": "002145",
+            "name": "钛能化学",
+            "close": 3.72,
+            "pos60_med": 0.7952941176470585,
+            "money_t": 173693693.88,
+            "B_MA20": -0.1094469104534892
+          }
+        },
+        {
+          "name": "钛能化学",
+          "family": "首板",
+          "route": "ceshi/FB_DUAL_K4",
+          "rule": "C2[-2.5%, +5%]，C1[-5%, -2%]",
+          "reason": "",
+          "rank": 6,
+          "detail": {
+            "code": "002145",
+            "name": "钛能化学",
+            "arm": "C1",
+            "pos": 0.7952941176470587,
+            "amount": 173693693.88
+          }
+        },
+        {
+          "name": "钛能化学",
+          "family": "反包",
+          "route": "ceshi/V6",
+          "rule": "按源策略的分档、开盘缺口和成交约束",
+          "reason": "",
+          "rank": 17,
+          "detail": {
+            "code": "002145",
+            "name": "钛能化学",
+            "arm": "深跌",
+            "mean": 142724992.07400003
+          }
+        },
+        {
+          "name": "钛能化学",
+          "family": "首板",
+          "route": "2j3/ma10_down_below_2pct",
+          "rule": "缺口[+2%, +5%]，高开幅度降序",
+          "reason": "",
+          "rank": 5,
+          "detail": {
+            "code": "002145",
+            "name": "钛能化学",
+            "market": "sz",
+            "close": "3.72"
+          }
+        }
+      ]
+    },
+    {
+      "code": "002197",
+      "name": "证通电子",
+      "votes": 2,
+      "families": [
+        "反包",
+        "首板"
+      ],
+      "signals": [
+        {
+          "name": "证通电子",
+          "family": "首板",
+          "route": "top/FB",
+          "rule": "C2[-2.5%, +5%]，C1[-5%, -2%]",
+          "reason": "",
+          "rank": 16,
+          "detail": {
+            "code": "002197",
+            "name": "证通电子",
+            "close": 6.41,
+            "pos60_med": 0.9380530973451332,
+            "money_t": 250111232.44,
+            "B_MA20": -0.1094469104534892
+          }
+        },
+        {
+          "name": "证通电子",
+          "family": "首板",
+          "route": "ceshi/FB_DUAL_K4",
+          "rule": "C2[-2.5%, +5%]，C1[-5%, -2%]",
+          "reason": "",
+          "rank": 7,
+          "detail": {
+            "code": "002197",
+            "name": "证通电子",
+            "arm": "C1",
+            "pos": 0.938053097345133,
+            "amount": 250111232.44
+          }
+        },
+        {
+          "name": "证通电子",
+          "family": "反包",
+          "route": "ceshi/U4",
+          "rule": "按源策略的分档、开盘缺口和成交约束",
+          "reason": "",
+          "rank": 3,
+          "detail": {
+            "code": "002197",
+            "name": "证通电子",
+            "arm": "U4b",
+            "mean": 188218564.60550004
+          }
+        },
+        {
+          "name": "证通电子",
+          "family": "反包",
+          "route": "ceshi/V6",
+          "rule": "按源策略的分档、开盘缺口和成交约束",
+          "reason": "",
+          "rank": 9,
+          "detail": {
+            "code": "002197",
+            "name": "证通电子",
+            "arm": "深跌",
+            "mean": 188218564.60550004
+          }
+        }
+      ]
+    },
+    {
+      "code": "002275",
+      "name": "桂林三金",
+      "votes": 2,
+      "families": [
+        "反包",
+        "首板"
+      ],
+      "signals": [
+        {
+          "name": "桂林三金",
+          "family": "趋势",
+          "route": "top/V3",
+          "rule": "缺口[-5%, +6%]",
+          "reason": "仅观察：沪深300未站上MA20",
+          "rank": 12,
+          "detail": {
+            "code": "002275",
+            "name": "桂林三金",
+            "signal_close_raw": 13.82,
+            "status": "ok",
+            "gain": 0.10031847133757976,
+            "strength": 1,
+            "conditions": [
+              true,
+              false,
+              false
+            ]
+          }
+        },
+        {
+          "name": "桂林三金",
+          "family": "反包",
+          "route": "ceshi/V6",
+          "rule": "按源策略的分档、开盘缺口和成交约束",
+          "reason": "",
+          "rank": 3,
+          "detail": {
+            "code": "002275",
+            "name": "桂林三金",
+            "arm": "深跌",
+            "mean": 575818390.4015
+          }
+        },
+        {
+          "name": "桂林三金",
+          "family": "首板",
+          "route": "首板最低缺口Top1（PTrade版）",
+          "rule": "开盘缺口[0%,6%]；缺口升序、信号日成交额降序、代码升序；最多新买1只；次日流通市值10—200亿元、停牌及涨跌停另核验",
+          "reason": "",
+          "rank": 2,
+          "detail": {
+            "code": "002275",
+            "name": "桂林三金",
+            "close": 13.82,
+            "amount": 668374200.0
+          }
+        }
+      ]
+    },
+    {
+      "code": "002728",
+      "name": "特一药业",
+      "votes": 2,
+      "families": [
+        "反包",
+        "首板"
+      ],
+      "signals": [
+        {
+          "name": "特一药业",
+          "family": "首板",
+          "route": "top/FB",
+          "rule": "C2[-2.5%, +5%]，C1[-5%, -2%]",
+          "reason": "",
+          "rank": 17,
+          "detail": {
+            "code": "002728",
+            "name": "特一药业",
+            "close": 8.35,
+            "pos60_med": 0.8331503841931944,
+            "money_t": 114177618.51,
+            "B_MA20": -0.1094469104534892
+          }
+        },
+        {
+          "name": "特一药业",
+          "family": "首板",
+          "route": "ceshi/FB_DUAL_K4",
+          "rule": "C2[-2.5%, +5%]，C1[-5%, -2%]",
+          "reason": "",
+          "rank": 8,
+          "detail": {
+            "code": "002728",
+            "name": "特一药业",
+            "arm": "C1",
+            "pos": 0.8331503841931944,
+            "amount": 114177618.51
+          }
+        },
+        {
+          "name": "特一药业",
+          "family": "反包",
+          "route": "ceshi/V6",
+          "rule": "按源策略的分档、开盘缺口和成交约束",
+          "reason": "",
+          "rank": 15,
+          "detail": {
+            "code": "002728",
+            "name": "特一药业",
+            "arm": "深跌",
+            "mean": 156109109.19300002
+          }
+        }
+      ]
+    },
+    {
+      "code": "002820",
+      "name": "桂发祥",
+      "votes": 2,
+      "families": [
+        "反包",
+        "首板"
+      ],
+      "signals": [
+        {
+          "name": "桂发祥",
+          "family": "首板",
+          "route": "top/FB",
+          "rule": "C2[-2.5%, +5%]，C1[-5%, -2%]",
+          "reason": "",
+          "rank": 18,
+          "detail": {
+            "code": "002820",
+            "name": "桂发祥",
+            "close": 8.86,
+            "pos60_med": 0.8247950819672143,
+            "money_t": 116164801.3,
+            "B_MA20": -0.1094469104534892
+          }
+        },
+        {
+          "name": "桂发祥",
+          "family": "首板",
+          "route": "ceshi/FB_DUAL_K4",
+          "rule": "C2[-2.5%, +5%]，C1[-5%, -2%]",
+          "reason": "",
+          "rank": 9,
+          "detail": {
+            "code": "002820",
+            "name": "桂发祥",
+            "arm": "C1",
+            "pos": 0.8247950819672132,
+            "amount": 116164801.3
+          }
+        },
+        {
+          "name": "桂发祥",
+          "family": "反包",
+          "route": "ceshi/V6",
+          "rule": "按源策略的分档、开盘缺口和成交约束",
+          "reason": "",
+          "rank": 7,
+          "detail": {
+            "code": "002820",
+            "name": "桂发祥",
+            "arm": "深跌",
+            "mean": 227324113.23849997
+          }
+        }
+      ]
+    },
+    {
+      "code": "002861",
+      "name": "瀛通通讯",
+      "votes": 2,
+      "families": [
+        "反包",
+        "首板"
+      ],
+      "signals": [
+        {
+          "name": "瀛通通讯",
+          "family": "反包",
+          "route": "top/BF",
+          "rule": "A优先，同档按20日均额降序，开盘缺口至多+8%",
+          "reason": "排除：信号日前一交易日触板未封",
+          "rank": 2,
+          "detail": {
+            "code": "002861",
+            "name": "瀛通通讯",
+            "close": 13.17,
+            "status": "raw",
+            "S": 170774146.0925,
+            "prior_limits": 1,
+            "score_bits": [
+              1,
+              0,
+              0
+            ],
+            "score": 1,
+            "category": "discard",
+            "previous_broken_limit": true,
+            "bf_static_ok": false
+          }
+        },
+        {
+          "name": "瀛通通讯",
+          "family": "首板",
+          "route": "top/FB",
+          "rule": "C2[-2.5%, +5%]，C1[-5%, -2%]",
+          "reason": "",
+          "rank": 19,
+          "detail": {
+            "code": "002861",
+            "name": "瀛通通讯",
+            "close": 13.17,
+            "pos60_med": 0.8817679558011048,
+            "money_t": 186800587.64,
+            "B_MA20": -0.1094469104534892
+          }
+        },
+        {
+          "name": "瀛通通讯",
+          "family": "首板",
+          "route": "ceshi/FB_DUAL_K4",
+          "rule": "C2[-2.5%, +5%]，C1[-5%, -2%]",
+          "reason": "",
+          "rank": 10,
+          "detail": {
+            "code": "002861",
+            "name": "瀛通通讯",
+            "arm": "C1",
+            "pos": 0.8817679558011048,
+            "amount": 186800587.64
+          }
+        },
+        {
+          "name": "瀛通通讯",
+          "family": "反包",
+          "route": "ceshi/V6",
+          "rule": "按源策略的分档、开盘缺口和成交约束",
+          "reason": "",
+          "rank": 13,
+          "detail": {
+            "code": "002861",
+            "name": "瀛通通讯",
+            "arm": "深跌",
+            "mean": 170774146.0925
+          }
+        }
+      ]
+    },
+    {
+      "code": "002864",
+      "name": "盘龙药业",
+      "votes": 2,
+      "families": [
+        "反包",
+        "首板"
+      ],
+      "signals": [
+        {
+          "name": "盘龙药业",
+          "family": "首板",
+          "route": "top/FB",
+          "rule": "C2[-2.5%, +5%]，C1[-5%, -2%]",
+          "reason": "",
+          "rank": 20,
+          "detail": {
+            "code": "002864",
+            "name": "盘龙药业",
+            "close": 19.86,
+            "pos60_med": 0.8730116079105759,
+            "money_t": 110140265.45,
+            "B_MA20": -0.1094469104534892
+          }
+        },
+        {
+          "name": "盘龙药业",
+          "family": "首板",
+          "route": "ceshi/FB_DUAL_K4",
+          "rule": "C2[-2.5%, +5%]，C1[-5%, -2%]",
+          "reason": "",
+          "rank": 11,
+          "detail": {
+            "code": "002864",
+            "name": "盘龙药业",
+            "arm": "C1",
+            "pos": 0.8730116079105757,
+            "amount": 110140265.45
+          }
+        },
+        {
+          "name": "盘龙药业",
+          "family": "反包",
+          "route": "ceshi/V6",
+          "rule": "按源策略的分档、开盘缺口和成交约束",
+          "reason": "",
+          "rank": 14,
+          "detail": {
+            "code": "002864",
+            "name": "盘龙药业",
+            "arm": "深跌",
+            "mean": 158225364.67749998
+          }
+        }
+      ]
+    },
+    {
+      "code": "600088",
+      "name": "中视传媒",
+      "votes": 2,
+      "families": [
+        "反包",
+        "首板"
+      ],
+      "signals": [
+        {
+          "name": "中视传媒",
+          "family": "首板",
+          "route": "top/FB",
+          "rule": "C2[-2.5%, +5%]，C1[-5%, -2%]",
+          "reason": "",
+          "rank": 1,
+          "detail": {
+            "code": "600088",
+            "name": "中视传媒",
+            "close": 12.64,
+            "pos60_med": 0.8794489092996557,
+            "money_t": 229127870.0,
+            "B_MA20": -0.1094469104534892
+          }
+        },
+        {
+          "name": "中视传媒",
+          "family": "首板",
+          "route": "ceshi/FB_DUAL_K4",
+          "rule": "C2[-2.5%, +5%]，C1[-5%, -2%]",
+          "reason": "",
+          "rank": 12,
+          "detail": {
+            "code": "600088",
+            "name": "中视传媒",
+            "arm": "C1",
+            "pos": 0.8794489092996558,
+            "amount": 229127870.0
+          }
+        },
+        {
+          "name": "中视传媒",
+          "family": "反包",
+          "route": "ceshi/V6",
+          "rule": "按源策略的分档、开盘缺口和成交约束",
+          "reason": "",
+          "rank": 10,
+          "detail": {
+            "code": "600088",
+            "name": "中视传媒",
+            "arm": "深跌",
+            "mean": 184352295.75
+          }
+        }
+      ]
+    },
+    {
+      "code": "600103",
+      "name": "青山纸业",
+      "votes": 2,
+      "families": [
+        "反包",
+        "首板"
+      ],
+      "signals": [
+        {
+          "name": "青山纸业",
+          "family": "反包",
+          "route": "ceshi/U4",
+          "rule": "按源策略的分档、开盘缺口和成交约束",
+          "reason": "",
+          "rank": 1,
+          "detail": {
+            "code": "600103",
+            "name": "青山纸业",
+            "arm": "U4b",
+            "mean": 736584786.05
+          }
+        },
+        {
+          "name": "青山纸业",
+          "family": "首板",
+          "route": "2j3/ma10_down_below_2pct",
+          "rule": "缺口[+2%, +5%]，高开幅度降序",
+          "reason": "",
+          "rank": 6,
+          "detail": {
+            "code": "600103",
+            "name": "青山纸业",
+            "market": "sh",
+            "close": "3.78"
+          }
+        }
+      ]
+    },
+    {
+      "code": "600223",
+      "name": "福瑞达",
+      "votes": 2,
+      "families": [
+        "反包",
+        "首板"
+      ],
+      "signals": [
+        {
+          "name": "福瑞达",
+          "family": "首板",
+          "route": "top/FB",
+          "rule": "C2[-2.5%, +5%]，C1[-5%, -2%]",
+          "reason": "",
+          "rank": 2,
+          "detail": {
+            "code": "600223",
+            "name": "福瑞达",
+            "close": 5.49,
+            "pos60_med": 0.8942652329749102,
+            "money_t": 150897700.0,
+            "B_MA20": -0.1094469104534892
+          }
+        },
+        {
+          "name": "福瑞达",
+          "family": "首板",
+          "route": "ceshi/FB_DUAL_K4",
+          "rule": "C2[-2.5%, +5%]，C1[-5%, -2%]",
+          "reason": "",
+          "rank": 13,
+          "detail": {
+            "code": "600223",
+            "name": "福瑞达",
+            "arm": "C1",
+            "pos": 0.8942652329749103,
+            "amount": 150897700.0
+          }
+        },
+        {
+          "name": "福瑞达",
+          "family": "反包",
+          "route": "ceshi/V6",
+          "rule": "按源策略的分档、开盘缺口和成交约束",
+          "reason": "",
+          "rank": 26,
+          "detail": {
+            "code": "600223",
+            "name": "福瑞达",
+            "arm": "深跌",
+            "mean": 41534478.9
+          }
+        }
+      ]
+    },
+    {
+      "code": "600227",
+      "name": "赤天化",
+      "votes": 2,
+      "families": [
+        "反包",
+        "首板"
+      ],
+      "signals": [
+        {
+          "name": "赤天化",
+          "family": "首板",
+          "route": "top/FB",
+          "rule": "C2[-2.5%, +5%]，C1[-5%, -2%]",
+          "reason": "",
+          "rank": 3,
+          "detail": {
+            "code": "600227",
+            "name": "赤天化",
+            "close": 3.23,
+            "pos60_med": 0.7967479674796748,
+            "money_t": 856167354.0,
+            "B_MA20": -0.1094469104534892
+          }
+        },
+        {
+          "name": "赤天化",
+          "family": "首板",
+          "route": "ceshi/FB_DUAL_K4",
+          "rule": "C2[-2.5%, +5%]，C1[-5%, -2%]",
+          "reason": "",
+          "rank": 14,
+          "detail": {
+            "code": "600227",
+            "name": "赤天化",
+            "arm": "C1",
+            "pos": 0.7967479674796748,
+            "amount": 856167354.0
+          }
+        },
+        {
+          "name": "赤天化",
+          "family": "反包",
+          "route": "ceshi/V6",
+          "rule": "按源策略的分档、开盘缺口和成交约束",
+          "reason": "",
+          "rank": 16,
+          "detail": {
+            "code": "600227",
+            "name": "赤天化",
+            "arm": "深跌",
+            "mean": 150172724.7
+          }
+        },
+        {
+          "name": "赤天化",
+          "family": "首板",
+          "route": "2j3/ma10_down_below_2pct",
+          "rule": "缺口[+2%, +5%]，高开幅度降序",
+          "reason": "",
+          "rank": 7,
+          "detail": {
+            "code": "600227",
+            "name": "赤天化",
+            "market": "sh",
+            "close": "3.23"
+          }
+        },
+        {
+          "name": "赤天化",
+          "family": "首板",
+          "route": "首板最低缺口Top1（PTrade版）",
+          "rule": "开盘缺口[0%,6%]；缺口升序、信号日成交额降序、代码升序；最多新买1只；次日流通市值10—200亿元、停牌及涨跌停另核验",
+          "reason": "",
+          "rank": 1,
+          "detail": {
+            "code": "600227",
+            "name": "赤天化",
+            "close": 3.23,
+            "amount": 856167354.0
+          }
+        }
+      ]
+    },
+    {
+      "code": "600229",
+      "name": "城市传媒",
+      "votes": 2,
+      "families": [
+        "反包",
+        "首板"
+      ],
+      "signals": [
+        {
+          "name": "城市传媒",
+          "family": "首板",
+          "route": "top/FB",
+          "rule": "C2[-2.5%, +5%]，C1[-5%, -2%]",
+          "reason": "",
+          "rank": 4,
+          "detail": {
+            "code": "600229",
+            "name": "城市传媒",
+            "close": 5.41,
+            "pos60_med": 0.8556521739130433,
+            "money_t": 235626304.0,
+            "B_MA20": -0.1094469104534892
+          }
+        },
+        {
+          "name": "城市传媒",
+          "family": "首板",
+          "route": "ceshi/FB_DUAL_K4",
+          "rule": "C2[-2.5%, +5%]，C1[-5%, -2%]",
+          "reason": "",
+          "rank": 15,
+          "detail": {
+            "code": "600229",
+            "name": "城市传媒",
+            "arm": "C1",
+            "pos": 0.8556521739130434,
+            "amount": 235626304.0
+          }
+        },
+        {
+          "name": "城市传媒",
+          "family": "反包",
+          "route": "ceshi/V6",
+          "rule": "按源策略的分档、开盘缺口和成交约束",
+          "reason": "",
+          "rank": 11,
+          "detail": {
+            "code": "600229",
+            "name": "城市传媒",
+            "arm": "深跌",
+            "mean": 183381950.6
+          }
+        }
+      ]
+    },
+    {
+      "code": "600467",
+      "name": "好当家",
+      "votes": 2,
+      "families": [
+        "反包",
+        "首板"
+      ],
+      "signals": [
+        {
+          "name": "好当家",
+          "family": "反包",
+          "route": "top/BF",
+          "rule": "A优先，同档按20日均额降序，开盘缺口至多+8%",
+          "reason": "排除：信号日前一交易日触板未封",
+          "rank": 1,
+          "detail": {
+            "code": "600467",
+            "name": "好当家",
+            "close": 3.6,
+            "status": "raw",
+            "S": 439020886.65,
+            "prior_limits": 3,
+            "score_bits": [
+              0,
+              1,
+              1
+            ],
+            "score": 2,
+            "category": "B",
+            "previous_broken_limit": true,
+            "bf_static_ok": false
+          }
+        },
+        {
+          "name": "好当家",
+          "family": "反包",
+          "route": "ceshi/V6",
+          "rule": "按源策略的分档、开盘缺口和成交约束",
+          "reason": "",
+          "rank": 4,
+          "detail": {
+            "code": "600467",
+            "name": "好当家",
+            "arm": "深跌",
+            "mean": 439020886.65
+          }
+        },
+        {
+          "name": "好当家",
+          "family": "首板",
+          "route": "2j3/ma10_down_below_2pct",
+          "rule": "缺口[+2%, +5%]，高开幅度降序",
+          "reason": "",
+          "rank": 8,
+          "detail": {
+            "code": "600467",
+            "name": "好当家",
+            "market": "sh",
+            "close": "3.60"
+          }
+        }
+      ]
+    },
+    {
+      "code": "600829",
+      "name": "人民同泰",
+      "votes": 2,
+      "families": [
+        "反包",
+        "首板"
+      ],
+      "signals": [
+        {
+          "name": "人民同泰",
+          "family": "首板",
+          "route": "top/FB",
+          "rule": "C2[-2.5%, +5%]，C1[-5%, -2%]",
+          "reason": "",
+          "rank": 6,
+          "detail": {
+            "code": "600829",
+            "name": "人民同泰",
+            "close": 8.39,
+            "pos60_med": 0.8125665601703943,
+            "money_t": 382640145.0,
+            "B_MA20": -0.1094469104534892
+          }
+        },
+        {
+          "name": "人民同泰",
+          "family": "首板",
+          "route": "ceshi/FB_DUAL_K4",
+          "rule": "C2[-2.5%, +5%]，C1[-5%, -2%]",
+          "reason": "",
+          "rank": 17,
+          "detail": {
+            "code": "600829",
+            "name": "人民同泰",
+            "arm": "C1",
+            "pos": 0.8125665601703943,
+            "amount": 382640145.0
+          }
+        },
+        {
+          "name": "人民同泰",
+          "family": "反包",
+          "route": "ceshi/V6",
+          "rule": "按源策略的分档、开盘缺口和成交约束",
+          "reason": "",
+          "rank": 8,
+          "detail": {
+            "code": "600829",
+            "name": "人民同泰",
+            "arm": "深跌",
+            "mean": 226162617.9
+          }
+        },
+        {
+          "name": "人民同泰",
+          "family": "首板",
+          "route": "首板最低缺口Top1（PTrade版）",
+          "rule": "开盘缺口[0%,6%]；缺口升序、信号日成交额降序、代码升序；最多新买1只；次日流通市值10—200亿元、停牌及涨跌停另核验",
+          "reason": "",
+          "rank": 7,
+          "detail": {
+            "code": "600829",
+            "name": "人民同泰",
+            "close": 8.39,
+            "amount": 382640100.0
+          }
+        }
+      ]
+    },
+    {
+      "code": "601086",
+      "name": "国芳集团",
+      "votes": 2,
+      "families": [
+        "反包",
+        "首板"
+      ],
+      "signals": [
+        {
+          "name": "国芳集团",
+          "family": "首板",
+          "route": "top/FB",
+          "rule": "C2[-2.5%, +5%]，C1[-5%, -2%]",
+          "reason": "",
+          "rank": 7,
+          "detail": {
+            "code": "601086",
+            "name": "国芳集团",
+            "close": 10.75,
+            "pos60_med": 0.7418375094912679,
+            "money_t": 500975413.0,
+            "B_MA20": -0.1094469104534892
+          }
+        },
+        {
+          "name": "国芳集团",
+          "family": "首板",
+          "route": "ceshi/FB_DUAL_K4",
+          "rule": "C2[-2.5%, +5%]，C1[-5%, -2%]",
+          "reason": "",
+          "rank": 18,
+          "detail": {
+            "code": "601086",
+            "name": "国芳集团",
+            "arm": "C1",
+            "pos": 0.7418375094912678,
+            "amount": 500975413.0
+          }
+        },
+        {
+          "name": "国芳集团",
+          "family": "反包",
+          "route": "ceshi/V6",
+          "rule": "按源策略的分档、开盘缺口和成交约束",
+          "reason": "",
+          "rank": 1,
+          "detail": {
+            "code": "601086",
+            "name": "国芳集团",
+            "arm": "深跌",
+            "mean": 909983378.85
+          }
+        },
+        {
+          "name": "国芳集团",
+          "family": "首板",
+          "route": "首板最低缺口Top1（PTrade版）",
+          "rule": "开盘缺口[0%,6%]；缺口升序、信号日成交额降序、代码升序；最多新买1只；次日流通市值10—200亿元、停牌及涨跌停另核验",
+          "reason": "",
+          "rank": 5,
+          "detail": {
+            "code": "601086",
+            "name": "国芳集团",
+            "close": 10.75,
+            "amount": 500975400.0
+          }
+        }
+      ]
+    },
+    {
+      "code": "603122",
+      "name": "合富中国",
+      "votes": 2,
+      "families": [
+        "反包",
+        "首板"
+      ],
+      "signals": [
+        {
+          "name": "合富中国",
+          "family": "趋势",
+          "route": "top/V3",
+          "rule": "缺口[-5%, +6%]",
+          "reason": "仅观察：沪深300未站上MA20",
+          "rank": 11,
+          "detail": {
+            "code": "603122",
+            "name": "合富中国",
+            "signal_close_raw": 10.09,
+            "status": "ok",
+            "gain": 0.10032715376226853,
+            "strength": 1,
+            "conditions": [
+              true,
+              false,
+              false
+            ]
+          }
+        },
+        {
+          "name": "合富中国",
+          "family": "首板",
+          "route": "top/FB",
+          "rule": "C2[-2.5%, +5%]，C1[-5%, -2%]",
+          "reason": "",
+          "rank": 8,
+          "detail": {
+            "code": "603122",
+            "name": "合富中国",
+            "close": 10.09,
+            "pos60_med": 0.7572254335260115,
+            "money_t": 502928967.0,
+            "B_MA20": -0.1094469104534892
+          }
+        },
+        {
+          "name": "合富中国",
+          "family": "首板",
+          "route": "ceshi/FB_DUAL_K4",
+          "rule": "C2[-2.5%, +5%]，C1[-5%, -2%]",
+          "reason": "",
+          "rank": 19,
+          "detail": {
+            "code": "603122",
+            "name": "合富中国",
+            "arm": "C1",
+            "pos": 0.7572254335260117,
+            "amount": 502928967.0
+          }
+        },
+        {
+          "name": "合富中国",
+          "family": "反包",
+          "route": "ceshi/V6",
+          "rule": "按源策略的分档、开盘缺口和成交约束",
+          "reason": "",
+          "rank": 5,
+          "detail": {
+            "code": "603122",
+            "name": "合富中国",
+            "arm": "深跌",
+            "mean": 258435071.25
+          }
+        },
+        {
+          "name": "合富中国",
+          "family": "首板",
+          "route": "首板最低缺口Top1（PTrade版）",
+          "rule": "开盘缺口[0%,6%]；缺口升序、信号日成交额降序、代码升序；最多新买1只；次日流通市值10—200亿元、停牌及涨跌停另核验",
+          "reason": "",
+          "rank": 4,
+          "detail": {
+            "code": "603122",
+            "name": "合富中国",
+            "close": 10.09,
+            "amount": 502929000.0
+          }
+        }
+      ]
+    },
+    {
+      "code": "000888",
+      "name": "峨眉山Ａ",
+      "votes": 1,
+      "families": [
+        "量价转强"
+      ],
+      "signals": [
+        {
+          "name": "峨眉山Ａ",
+          "family": "量价转强",
+          "route": "主力捉妖",
+          "rule": "优先[-2%, -1%)，其次[0%, +3%)",
+          "reason": "",
+          "rank": 1,
+          "detail": {
+            "code": "000888",
+            "name": "峨眉山Ａ",
+            "turnover": 5.91,
+            "volume_lots": 311333.0,
+            "float_cap": 5610315482.233502
+          }
+        }
+      ]
+    },
+    {
+      "code": "002480",
+      "name": "新筑股份",
+      "votes": 1,
+      "families": [
+        "反包"
+      ],
+      "signals": [
+        {
+          "name": "新筑股份",
+          "family": "反包",
+          "route": "ceshi/V6",
+          "rule": "按源策略的分档、开盘缺口和成交约束",
+          "reason": "",
+          "rank": 27,
+          "detail": {
+            "code": "002480",
+            "name": "新筑股份",
+            "arm": "深跌",
+            "mean": 37513866.047000006
+          }
+        }
+      ]
+    },
+    {
+      "code": "002642",
+      "name": "荣联科技",
+      "votes": 1,
+      "families": [
+        "反包"
+      ],
+      "signals": [
+        {
+          "name": "荣联科技",
+          "family": "反包",
+          "route": "ceshi/U4",
+          "rule": "按源策略的分档、开盘缺口和成交约束",
+          "reason": "",
+          "rank": 5,
+          "detail": {
+            "code": "002642",
+            "name": "荣联科技",
+            "arm": "U4b",
+            "mean": 168890260.55549997
+          }
+        }
+      ]
+    },
+    {
+      "code": "002900",
+      "name": "哈三联",
+      "votes": 1,
+      "families": [
+        "反包"
+      ],
+      "signals": [
+        {
+          "name": "哈三联",
+          "family": "反包",
+          "route": "ceshi/V6",
+          "rule": "按源策略的分档、开盘缺口和成交约束",
+          "reason": "",
+          "rank": 22,
+          "detail": {
+            "code": "002900",
+            "name": "哈三联",
+            "arm": "深跌",
+            "mean": 56835662.336
+          }
+        }
+      ]
+    },
+    {
+      "code": "600280",
+      "name": "中央商场",
+      "votes": 1,
+      "families": [
+        "首板"
+      ],
+      "signals": [
+        {
+          "name": "中央商场",
+          "family": "首板",
+          "route": "top/FB",
+          "rule": "C2[-2.5%, +5%]，C1[-5%, -2%]",
+          "reason": "",
+          "rank": 5,
+          "detail": {
+            "code": "600280",
+            "name": "中央商场",
+            "close": 2.82,
+            "pos60_med": 0.8533333333333333,
+            "money_t": 179943870.0,
+            "B_MA20": -0.1094469104534892
+          }
+        },
+        {
+          "name": "中央商场",
+          "family": "首板",
+          "route": "ceshi/FB_DUAL_K4",
+          "rule": "C2[-2.5%, +5%]，C1[-5%, -2%]",
+          "reason": "",
+          "rank": 16,
+          "detail": {
+            "code": "600280",
+            "name": "中央商场",
+            "arm": "C1",
+            "pos": 0.8533333333333332,
+            "amount": 179943870.0
+          }
+        }
+      ]
+    },
+    {
+      "code": "603069",
+      "name": "海汽集团",
+      "votes": 1,
+      "families": [
+        "反包"
+      ],
+      "signals": [
+        {
+          "name": "海汽集团",
+          "family": "反包",
+          "route": "ceshi/V6",
+          "rule": "按源策略的分档、开盘缺口和成交约束",
+          "reason": "",
+          "rank": 28,
+          "detail": {
+            "code": "603069",
+            "name": "海汽集团",
+            "arm": "深跌",
+            "mean": 33957651.6
+          }
+        }
+      ]
+    },
+    {
+      "code": "603324",
+      "name": "盛剑科技",
+      "votes": 1,
+      "families": [
+        "反包"
+      ],
+      "signals": [
+        {
+          "name": "盛剑科技",
+          "family": "反包",
+          "route": "ceshi/U4",
+          "rule": "按源策略的分档、开盘缺口和成交约束",
+          "reason": "",
+          "rank": 4,
+          "detail": {
+            "code": "603324",
+            "name": "盛剑科技",
+            "arm": "U4b",
+            "mean": 177885041.45
+          }
+        },
+        {
+          "name": "盛剑科技",
+          "family": "反包",
+          "route": "ceshi/V6",
+          "rule": "按源策略的分档、开盘缺口和成交约束",
+          "reason": "",
+          "rank": 12,
+          "detail": {
+            "code": "603324",
+            "name": "盛剑科技",
+            "arm": "深跌",
+            "mean": 177885041.45
+          }
+        }
+      ]
+    },
+    {
+      "code": "603708",
+      "name": "家家悦",
+      "votes": 1,
+      "families": [
+        "反包"
+      ],
+      "signals": [
+        {
+          "name": "家家悦",
+          "family": "反包",
+          "route": "ceshi/V6",
+          "rule": "按源策略的分档、开盘缺口和成交约束",
+          "reason": "",
+          "rank": 21,
+          "detail": {
+            "code": "603708",
+            "name": "家家悦",
+            "arm": "深跌",
+            "mean": 60592090.65
+          }
+        }
+      ]
+    },
+    {
+      "code": "605136",
+      "name": "丽人丽妆",
+      "votes": 1,
+      "families": [
+        "反包"
+      ],
+      "signals": [
+        {
+          "name": "丽人丽妆",
+          "family": "反包",
+          "route": "ceshi/V6",
+          "rule": "按源策略的分档、开盘缺口和成交约束",
+          "reason": "",
+          "rank": 18,
+          "detail": {
+            "code": "605136",
+            "name": "丽人丽妆",
+            "arm": "深跌",
+            "mean": 120368774.65
+          }
+        }
+      ]
+    },
+    {
+      "code": "605577",
+      "name": "龙版传媒",
+      "votes": 1,
+      "families": [
+        "反包"
+      ],
+      "signals": [
+        {
+          "name": "龙版传媒",
+          "family": "反包",
+          "route": "ceshi/V6",
+          "rule": "按源策略的分档、开盘缺口和成交约束",
+          "reason": "",
+          "rank": 2,
+          "detail": {
+            "code": "605577",
+            "name": "龙版传媒",
+            "arm": "深跌",
+            "mean": 628155640.85
+          }
+        }
+      ]
+    },
+    {
+      "code": "000001",
+      "name": "平安银行",
+      "votes": 0,
+      "families": [],
+      "signals": [
+        {
+          "name": "平安银行",
+          "family": "趋势",
+          "route": "top/V3",
+          "rule": "缺口[-5%, +6%]",
+          "reason": "仅观察：沪深300未站上MA20",
+          "rank": 26,
+          "detail": {
+            "code": "000001",
+            "name": "平安银行",
+            "signal_close_raw": 12.4,
+            "status": "ok",
+            "gain": 0.008130081300812941,
+            "strength": 1,
+            "conditions": [
+              false,
+              false,
+              true
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "code": "000530",
+      "name": "冰山冷热",
+      "votes": 0,
+      "families": [],
+      "signals": [
+        {
+          "name": "冰山冷热",
+          "family": "趋势",
+          "route": "top/V3",
+          "rule": "缺口[-5%, +6%]",
+          "reason": "仅观察：沪深300未站上MA20",
+          "rank": 3,
+          "detail": {
+            "code": "000530",
+            "name": "冰山冷热",
+            "signal_close_raw": 14.7,
+            "status": "ok",
+            "gain": 0.09538002980625926,
+            "strength": 2,
+            "conditions": [
+              false,
+              true,
+              true
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "code": "000759",
+      "name": "中百集团",
+      "votes": 0,
+      "families": [],
+      "signals": [
+        {
+          "name": "中百集团",
+          "family": "趋势",
+          "route": "top/V3",
+          "rule": "缺口[-5%, +6%]",
+          "reason": "仅观察：沪深300未站上MA20",
+          "rank": 20,
+          "detail": {
+            "code": "000759",
+            "name": "中百集团",
+            "signal_close_raw": 4.95,
+            "status": "ok",
+            "gain": 0.03340292275574108,
+            "strength": 1,
+            "conditions": [
+              true,
+              false,
+              false
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "code": "000819",
+      "name": "岳阳兴长",
+      "votes": 0,
+      "families": [],
+      "signals": [
+        {
+          "name": "岳阳兴长",
+          "family": "趋势",
+          "route": "top/V3",
+          "rule": "缺口[-5%, +6%]",
+          "reason": "仅观察：沪深300未站上MA20",
+          "rank": 4,
+          "detail": {
+            "code": "000819",
+            "name": "岳阳兴长",
+            "signal_close_raw": 14.94,
+            "status": "ok",
+            "gain": 0.05063291139240489,
+            "strength": 2,
+            "conditions": [
+              false,
+              true,
+              true
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "code": "001328",
+      "name": "登康口腔",
+      "votes": 0,
+      "families": [],
+      "signals": [
+        {
+          "name": "登康口腔",
+          "family": "趋势",
+          "route": "top/V3",
+          "rule": "缺口[-5%, +6%]",
+          "reason": "仅观察：沪深300未站上MA20",
+          "rank": 9,
+          "detail": {
+            "code": "001328",
+            "name": "登康口腔",
+            "signal_close_raw": 36.8,
+            "status": "ok",
+            "gain": 0.0062893081761006275,
+            "strength": 2,
+            "conditions": [
+              false,
+              true,
+              true
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "code": "002190",
+      "name": "成飞集成",
+      "votes": 0,
+      "families": [],
+      "signals": [
+        {
+          "name": "成飞集成",
+          "family": "趋势",
+          "route": "top/V3",
+          "rule": "缺口[-5%, +6%]",
+          "reason": "仅观察：沪深300未站上MA20",
+          "rank": 15,
+          "detail": {
+            "code": "002190",
+            "name": "成飞集成",
+            "signal_close_raw": 20.81,
+            "status": "ok",
+            "gain": 0.0883891213389123,
+            "strength": 1,
+            "conditions": [
+              true,
+              false,
+              false
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "code": "002242",
+      "name": "九阳股份",
+      "votes": 0,
+      "families": [],
+      "signals": [
+        {
+          "name": "九阳股份",
+          "family": "趋势",
+          "route": "top/V3",
+          "rule": "缺口[-5%, +6%]",
+          "reason": "仅观察：沪深300未站上MA20",
+          "rank": 2,
+          "detail": {
+            "code": "002242",
+            "name": "九阳股份",
+            "signal_close_raw": 38.56,
+            "status": "ok",
+            "gain": 0.10014265335235373,
+            "strength": 2,
+            "conditions": [
+              false,
+              true,
+              true
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "code": "002579",
+      "name": "中京电子",
+      "votes": 0,
+      "families": [],
+      "signals": [
+        {
+          "name": "中京电子",
+          "family": "趋势",
+          "route": "top/V3",
+          "rule": "缺口[-5%, +6%]",
+          "reason": "仅观察：沪深300未站上MA20",
+          "rank": 14,
+          "detail": {
+            "code": "002579",
+            "name": "中京电子",
+            "signal_close_raw": 17.82,
+            "status": "ok",
+            "gain": 0.10000000000000009,
+            "strength": 1,
+            "conditions": [
+              true,
+              false,
+              false
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "code": "002603",
+      "name": "以岭药业",
+      "votes": 0,
+      "families": [],
+      "signals": [
+        {
+          "name": "以岭药业",
+          "family": "趋势",
+          "route": "top/V3",
+          "rule": "缺口[-5%, +6%]",
+          "reason": "仅观察：沪深300未站上MA20",
+          "rank": 17,
+          "detail": {
+            "code": "002603",
+            "name": "以岭药业",
+            "signal_close_raw": 15.14,
+            "status": "ok",
+            "gain": 0.044137931034482714,
+            "strength": 1,
+            "conditions": [
+              true,
+              false,
+              false
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "code": "002651",
+      "name": "利君股份",
+      "votes": 0,
+      "families": [],
+      "signals": [
+        {
+          "name": "利君股份",
+          "family": "趋势",
+          "route": "top/V3",
+          "rule": "缺口[-5%, +6%]",
+          "reason": "仅观察：沪深300未站上MA20",
+          "rank": 13,
+          "detail": {
+            "code": "002651",
+            "name": "利君股份",
+            "signal_close_raw": 7.9,
+            "status": "ok",
+            "gain": 0.10027855153203347,
+            "strength": 1,
+            "conditions": [
+              true,
+              false,
+              false
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "code": "600132",
+      "name": "重庆啤酒",
+      "votes": 0,
+      "families": [],
+      "signals": [
+        {
+          "name": "重庆啤酒",
+          "family": "趋势",
+          "route": "top/V3",
+          "rule": "缺口[-5%, +6%]",
+          "reason": "仅观察：沪深300未站上MA20",
+          "rank": 6,
+          "detail": {
+            "code": "600132",
+            "name": "重庆啤酒",
+            "signal_close_raw": 40.45,
+            "status": "ok",
+            "gain": 0.023791445203745987,
+            "strength": 2,
+            "conditions": [
+              false,
+              true,
+              true
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "code": "600196",
+      "name": "复星医药",
+      "votes": 0,
+      "families": [],
+      "signals": [
+        {
+          "name": "复星医药",
+          "family": "趋势",
+          "route": "top/V3",
+          "rule": "缺口[-5%, +6%]",
+          "reason": "仅观察：沪深300未站上MA20",
+          "rank": 19,
+          "detail": {
+            "code": "600196",
+            "name": "复星医药",
+            "signal_close_raw": 21.08,
+            "status": "ok",
+            "gain": 0.036381514257620484,
+            "strength": 1,
+            "conditions": [
+              true,
+              false,
+              false
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "code": "600285",
+      "name": "羚锐制药",
+      "votes": 0,
+      "families": [],
+      "signals": [
+        {
+          "name": "羚锐制药",
+          "family": "趋势",
+          "route": "top/V3",
+          "rule": "缺口[-5%, +6%]",
+          "reason": "仅观察：沪深300未站上MA20",
+          "rank": 8,
+          "detail": {
+            "code": "600285",
+            "name": "羚锐制药",
+            "signal_close_raw": 24.26,
+            "status": "ok",
+            "gain": 0.015062761506276168,
+            "strength": 2,
+            "conditions": [
+              false,
+              true,
+              true
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "code": "600398",
+      "name": "海澜之家",
+      "votes": 0,
+      "families": [],
+      "signals": [
+        {
+          "name": "海澜之家",
+          "family": "趋势",
+          "route": "top/V3",
+          "rule": "缺口[-5%, +6%]",
+          "reason": "仅观察：沪深300未站上MA20",
+          "rank": 7,
+          "detail": {
+            "code": "600398",
+            "name": "海澜之家",
+            "signal_close_raw": 6.49,
+            "status": "ok",
+            "gain": 0.020440251572326984,
+            "strength": 2,
+            "conditions": [
+              false,
+              true,
+              true
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "code": "600410",
+      "name": "华胜天成",
+      "votes": 0,
+      "families": [],
+      "signals": [
+        {
+          "name": "华胜天成",
+          "family": "趋势",
+          "route": "top/V3",
+          "rule": "缺口[-5%, +6%]",
+          "reason": "仅观察：沪深300未站上MA20",
+          "rank": 5,
+          "detail": {
+            "code": "600410",
+            "name": "华胜天成",
+            "signal_close_raw": 17.92,
+            "status": "ok",
+            "gain": 0.043680838672102595,
+            "strength": 2,
+            "conditions": [
+              false,
+              true,
+              true
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "code": "600576",
+      "name": "祥源文旅",
+      "votes": 0,
+      "families": [],
+      "signals": [
+        {
+          "name": "祥源文旅",
+          "family": "趋势",
+          "route": "top/V3",
+          "rule": "缺口[-5%, +6%]",
+          "reason": "仅观察：沪深300未站上MA20",
+          "rank": 18,
+          "detail": {
+            "code": "600576",
+            "name": "祥源文旅",
+            "signal_close_raw": 4.98,
+            "status": "ok",
+            "gain": 0.04184100418410042,
+            "strength": 1,
+            "conditions": [
+              true,
+              false,
+              false
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "code": "600600",
+      "name": "青岛啤酒",
+      "votes": 0,
+      "families": [],
+      "signals": [
+        {
+          "name": "青岛啤酒",
+          "family": "趋势",
+          "route": "top/V3",
+          "rule": "缺口[-5%, +6%]",
+          "reason": "仅观察：沪深300未站上MA20",
+          "rank": 1,
+          "detail": {
+            "code": "600600",
+            "name": "青岛啤酒",
+            "signal_close_raw": 55.42,
+            "status": "ok",
+            "gain": 0.035887850467289706,
+            "strength": 3,
+            "conditions": [
+              true,
+              true,
+              true
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "code": "600722",
+      "name": "金牛化工",
+      "votes": 0,
+      "families": [],
+      "signals": [
+        {
+          "name": "金牛化工",
+          "family": "趋势",
+          "route": "top/V3",
+          "rule": "缺口[-5%, +6%]",
+          "reason": "仅观察：沪深300未站上MA20",
+          "rank": 10,
+          "detail": {
+            "code": "600722",
+            "name": "金牛化工",
+            "signal_close_raw": 13.15,
+            "status": "ok",
+            "gain": 0.10041841004184127,
+            "strength": 1,
+            "conditions": [
+              true,
+              false,
+              false
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "code": "600812",
+      "name": "华北制药",
+      "votes": 0,
+      "families": [],
+      "signals": [
+        {
+          "name": "华北制药",
+          "family": "趋势",
+          "route": "top/V3",
+          "rule": "缺口[-5%, +6%]",
+          "reason": "仅观察：沪深300未站上MA20",
+          "rank": 21,
+          "detail": {
+            "code": "600812",
+            "name": "华北制药",
+            "signal_close_raw": 4.29,
+            "status": "ok",
+            "gain": 0.026315789473684292,
+            "strength": 1,
+            "conditions": [
+              true,
+              false,
+              false
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "code": "600865",
+      "name": "百大集团",
+      "votes": 0,
+      "families": [],
+      "signals": [
+        {
+          "name": "百大集团",
+          "family": "趋势",
+          "route": "top/V3",
+          "rule": "缺口[-5%, +6%]",
+          "reason": "仅观察：沪深300未站上MA20",
+          "rank": 16,
+          "detail": {
+            "code": "600865",
+            "name": "百大集团",
+            "signal_close_raw": 9.86,
+            "status": "ok",
+            "gain": 0.06479481641468654,
+            "strength": 1,
+            "conditions": [
+              true,
+              false,
+              false
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "code": "600887",
+      "name": "伊利股份",
+      "votes": 0,
+      "families": [],
+      "signals": [
+        {
+          "name": "伊利股份",
+          "family": "趋势",
+          "route": "top/V3",
+          "rule": "缺口[-5%, +6%]",
+          "reason": "仅观察：沪深300未站上MA20",
+          "rank": 22,
+          "detail": {
+            "code": "600887",
+            "name": "伊利股份",
+            "signal_close_raw": 33.58,
+            "status": "ok",
+            "gain": 0.017575757575757578,
+            "strength": 1,
+            "conditions": [
+              false,
+              false,
+              true
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "code": "600900",
+      "name": "长江电力",
+      "votes": 0,
+      "families": [],
+      "signals": [
+        {
+          "name": "长江电力",
+          "family": "趋势",
+          "route": "top/V3",
+          "rule": "缺口[-5%, +6%]",
+          "reason": "仅观察：沪深300未站上MA20",
+          "rank": 25,
+          "detail": {
+            "code": "600900",
+            "name": "长江电力",
+            "signal_close_raw": 31.96,
+            "status": "ok",
+            "gain": 0.010113780025284402,
+            "strength": 1,
+            "conditions": [
+              false,
+              false,
+              true
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "code": "601166",
+      "name": "兴业银行",
+      "votes": 0,
+      "families": [],
+      "signals": [
+        {
+          "name": "兴业银行",
+          "family": "趋势",
+          "route": "top/V3",
+          "rule": "缺口[-5%, +6%]",
+          "reason": "仅观察：沪深300未站上MA20",
+          "rank": 23,
+          "detail": {
+            "code": "601166",
+            "name": "兴业银行",
+            "signal_close_raw": 20.48,
+            "status": "ok",
+            "gain": 0.013861386138613874,
+            "strength": 1,
+            "conditions": [
+              false,
+              false,
+              true
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "code": "601658",
+      "name": "邮储银行",
+      "votes": 0,
+      "families": [],
+      "signals": [
+        {
+          "name": "邮储银行",
+          "family": "趋势",
+          "route": "top/V3",
+          "rule": "缺口[-5%, +6%]",
+          "reason": "仅观察：沪深300未站上MA20",
+          "rank": 24,
+          "detail": {
+            "code": "601658",
+            "name": "邮储银行",
+            "signal_close_raw": 5.97,
+            "status": "ok",
+            "gain": 0.011864406779661163,
+            "strength": 1,
+            "conditions": [
+              false,
+              false,
+              true
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "code": "601818",
+      "name": "光大银行",
+      "votes": 0,
+      "families": [],
+      "signals": [
+        {
+          "name": "光大银行",
+          "family": "趋势",
+          "route": "top/V3",
+          "rule": "缺口[-5%, +6%]",
+          "reason": "仅观察：沪深300未站上MA20",
+          "rank": 27,
+          "detail": {
+            "code": "601818",
+            "name": "光大银行",
+            "signal_close_raw": 3.28,
+            "status": "ok",
+            "gain": 0.006134969325153339,
+            "strength": 1,
+            "conditions": [
+              false,
+              false,
+              true
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "etfs": {
+    "B0": {
+      "strategy": "B0",
+      "status": "data_error",
+      "asof": "2026-11-25",
+      "exec_day": "2026-11-26",
+      "error": "ETF history coverage 1606/1753 eligible records; 24 verified age-ineligible; unresolved ['159319', '159585', '159756', '159799', '512830', '516170', '517980', '560430', '561270', '159915']",
+      "picks": []
+    },
+    "K3": {
+      "strategy": "K3",
+      "status": "data_error",
+      "asof": "2026-11-25",
+      "exec_day": "2026-11-26",
+      "error": "ETF history coverage 1606/1753 eligible records; 24 verified age-ineligible; unresolved ['159319', '159585', '159756', '159799', '512830', '516170', '517980', '560430', '561270', '159915']",
+      "picks": []
+    },
+    "K5": {
+      "strategy": "K5",
+      "status": "data_error",
+      "asof": "2026-11-25",
+      "exec_day": "2026-11-26",
+      "error": "ETF history coverage 1606/1753 eligible records; 24 verified age-ineligible; unresolved ['159319', '159585', '159756', '159799', '512830', '516170', '517980', '560430', '561270', '159915']",
+      "picks": []
+    },
+    "DUAL55": {
+      "strategy": "DUAL55",
+      "status": "data_error",
+      "asof": "2026-11-25",
+      "exec_day": "2026-11-26",
+      "error": "ETF history coverage 1606/1753 eligible records; 24 verified age-ineligible; unresolved ['159319', '159585', '159756', '159799', '512830', '516170', '517980', '560430', '561270', '159915']",
+      "picks": []
+    }
+  },
+  "systems": {
+    "factor": [
+      {
+        "code": "603887",
+        "name": "城地香江",
+        "anchor": {
+          "name": "城地香江",
+          "family": "首板",
+          "route": "top/FB",
+          "rule": "C2[-2.5%, +5%]，C1[-5%, -2%]",
+          "reason": "",
+          "rank": 9,
+          "detail": {
+            "code": "603887",
+            "name": "城地香江",
+            "close": 8.48,
+            "pos60_med": 0.9408175716900546,
+            "money_t": 536271328.0,
+            "B_MA20": -0.1094469104534892
+          }
+        },
+        "score": 14.158,
+        "parts": {
+          "流动性": 7.62,
+          "换手适度": 6.538
+        }
+      },
+      {
+        "code": "002069",
+        "name": "獐子岛",
+        "anchor": {
+          "name": "獐子岛",
+          "family": "首板",
+          "route": "ceshi/FB_DUAL_K4",
+          "rule": "C2[-2.5%, +5%]，C1[-5%, -2%]",
+          "reason": "",
+          "rank": 4,
+          "detail": {
+            "code": "002069",
+            "name": "獐子岛",
+            "arm": "C1",
+            "pos": 0.8956884561891516,
+            "amount": 144055641.9
+          }
+        },
+        "score": 9.031,
+        "parts": {
+          "流动性": 1.656,
+          "换手适度": 7.375
+        }
+      }
+    ],
+    "confirmation": [
+      {
+        "code": "603887",
+        "name": "城地香江",
+        "anchor": {
+          "name": "城地香江",
+          "family": "首板",
+          "route": "top/FB",
+          "rule": "C2[-2.5%, +5%]，C1[-5%, -2%]",
+          "reason": "",
+          "rank": 9,
+          "detail": {
+            "code": "603887",
+            "name": "城地香江",
+            "close": 8.48,
+            "pos60_med": 0.9408175716900546,
+            "money_t": 536271328.0,
+            "B_MA20": -0.1094469104534892
+          }
+        },
+        "evidence": {
+          "name": "城地香江",
+          "family": "量价转强",
+          "route": "主力捉妖",
+          "rule": "优先[-2%, -1%)，其次[0%, +3%)",
+          "reason": "",
+          "rank": 3,
+          "detail": {
+            "code": "603887",
+            "name": "城地香江",
+            "turnover": 10.77,
+            "volume_lots": 648600.0,
+            "float_cap": 5106896935.933147
+          }
+        },
+        "families": [
+          "反包",
+          "量价转强",
+          "首板"
+        ],
+        "parts": {
+          "主信号": 13,
+          "辅证": 13,
+          "因子分": 4.955
+        },
+        "score": 30.955
+      },
+      {
+        "code": "002069",
+        "name": "獐子岛",
+        "anchor": {
+          "name": "獐子岛",
+          "family": "首板",
+          "route": "ceshi/FB_DUAL_K4",
+          "rule": "C2[-2.5%, +5%]，C1[-5%, -2%]",
+          "reason": "",
+          "rank": 4,
+          "detail": {
+            "code": "002069",
+            "name": "獐子岛",
+            "arm": "C1",
+            "pos": 0.8956884561891516,
+            "amount": 144055641.9
+          }
+        },
+        "evidence": {
+          "name": "獐子岛",
+          "family": "量价转强",
+          "route": "主力捉妖",
+          "rule": "优先[-2%, -1%)，其次[0%, +3%)",
+          "reason": "",
+          "rank": 2,
+          "detail": {
+            "code": "002069",
+            "name": "獐子岛",
+            "turnover": 5.9,
+            "volume_lots": 419043.0,
+            "float_cap": 2514258000.0
+          }
+        },
+        "families": [
+          "反包",
+          "量价转强",
+          "首板"
+        ],
+        "parts": {
+          "主信号": 14,
+          "辅证": 13,
+          "因子分": 3.161
+        },
+        "score": 30.161
+      },
+      {
+        "code": "000593",
+        "name": "德龙汇能",
+        "anchor": {
+          "name": "德龙汇能",
+          "family": "首板",
+          "route": "ceshi/FB_DUAL_K4",
+          "rule": "C2[-2.5%, +5%]，C1[-5%, -2%]",
+          "reason": "",
+          "rank": 1,
+          "detail": {
+            "code": "000593",
+            "name": "德龙汇能",
+            "arm": "C1",
+            "pos": 0.9594039054470709,
+            "amount": 120906272.1
+          }
+        },
+        "evidence": {
+          "name": "德龙汇能",
+          "family": "反包",
+          "route": "ceshi/U4",
+          "rule": "按源策略的分档、开盘缺口和成交约束",
+          "reason": "",
+          "rank": 2,
+          "detail": {
+            "code": "000593",
+            "name": "德龙汇能",
+            "arm": "U4b",
+            "mean": 236978035.61749998
+          }
+        },
+        "families": [
+          "反包",
+          "首板"
+        ],
+        "parts": {
+          "主信号": 17,
+          "辅证": 10,
+          "因子分": 2.488
+        },
+        "score": 29.488
+      }
+    ]
+  },
+  "top5": {
+    "status": "incomplete",
+    "candidates": [],
+    "missing": {
+      "上游来源": "zonghe"
+    },
+    "pool": [
+      {
+        "code": "603887",
+        "name": "城地香江",
+        "votes": 3,
+        "score": 1,
+        "amount": 536271300.0,
+        "close": 8.48,
+        "closed_at_limit": true
+      },
+      {
+        "code": "002069",
+        "name": "獐子岛",
+        "votes": 3,
+        "score": 0,
+        "amount": 144055600.0,
+        "close": 3.54,
+        "closed_at_limit": true
+      },
+      {
+        "code": "603122",
+        "name": "合富中国",
+        "votes": 2,
+        "score": 3,
+        "amount": 502929000.0,
+        "close": 10.09,
+        "closed_at_limit": true
+      },
+      {
+        "code": "000756",
+        "name": "新华制药",
+        "votes": 2,
+        "score": 3,
+        "amount": 406918900.0,
+        "close": 12.16,
+        "closed_at_limit": true
+      },
+      {
+        "code": "002038",
+        "name": "双鹭药业",
+        "votes": 2,
+        "score": 3,
+        "amount": 283267100.0,
+        "close": 4.9,
+        "closed_at_limit": true
+      },
+      {
+        "code": "002144",
+        "name": "宏达高科",
+        "votes": 2,
+        "score": 3,
+        "amount": 101599800.0,
+        "close": 9.08,
+        "closed_at_limit": true
+      },
+      {
+        "code": "600227",
+        "name": "赤天化",
+        "votes": 2,
+        "score": 2,
+        "amount": 856167400.0,
+        "close": 3.23,
+        "closed_at_limit": true
+      },
+      {
+        "code": "002275",
+        "name": "桂林三金",
+        "votes": 2,
+        "score": 2,
+        "amount": 668374200.0,
+        "close": 13.82,
+        "closed_at_limit": true
+      },
+      {
+        "code": "600223",
+        "name": "福瑞达",
+        "votes": 2,
+        "score": 2,
+        "amount": 150897700.0,
+        "close": 5.49,
+        "closed_at_limit": true
+      },
+      {
+        "code": "000702",
+        "name": "正虹科技",
+        "votes": 2,
+        "score": 2,
+        "amount": 62555700.0,
+        "close": 4.88,
+        "closed_at_limit": true
+      },
+      {
+        "code": "600103",
+        "name": "青山纸业",
+        "votes": 2,
+        "score": 1,
+        "amount": 2484117800.0,
+        "close": 3.78,
+        "closed_at_limit": true
+      },
+      {
+        "code": "002197",
+        "name": "证通电子",
+        "votes": 2,
+        "score": 1,
+        "amount": 250111200.0,
+        "close": 6.41,
+        "closed_at_limit": true
+      },
+      {
+        "code": "002861",
+        "name": "瀛通通讯",
+        "votes": 2,
+        "score": 1,
+        "amount": 186800600.0,
+        "close": 13.17,
+        "closed_at_limit": true
+      },
+      {
+        "code": "002145",
+        "name": "钛能化学",
+        "votes": 2,
+        "score": 1,
+        "amount": 173693700.0,
+        "close": 3.72,
+        "closed_at_limit": true
+      },
+      {
+        "code": "002728",
+        "name": "特一药业",
+        "votes": 2,
+        "score": 1,
+        "amount": 114177600.0,
+        "close": 8.35,
+        "closed_at_limit": true
+      },
+      {
+        "code": "002864",
+        "name": "盘龙药业",
+        "votes": 2,
+        "score": 1,
+        "amount": 110140300.0,
+        "close": 19.86,
+        "closed_at_limit": true
+      },
+      {
+        "code": "600467",
+        "name": "好当家",
+        "votes": 2,
+        "score": 0,
+        "amount": 997511500.0,
+        "close": 3.6,
+        "closed_at_limit": true
+      },
+      {
+        "code": "601086",
+        "name": "国芳集团",
+        "votes": 2,
+        "score": 0,
+        "amount": 500975400.0,
+        "close": 10.75,
+        "closed_at_limit": true
+      },
+      {
+        "code": "600829",
+        "name": "人民同泰",
+        "votes": 2,
+        "score": 0,
+        "amount": 382640100.0,
+        "close": 8.39,
+        "closed_at_limit": true
+      },
+      {
+        "code": "600229",
+        "name": "城市传媒",
+        "votes": 2,
+        "score": 0,
+        "amount": 235626300.0,
+        "close": 5.41,
+        "closed_at_limit": true
+      },
+      {
+        "code": "600088",
+        "name": "中视传媒",
+        "votes": 2,
+        "score": 0,
+        "amount": 229127900.0,
+        "close": 12.64,
+        "closed_at_limit": true
+      },
+      {
+        "code": "000593",
+        "name": "德龙汇能",
+        "votes": 2,
+        "score": 0,
+        "amount": 120906299.99999999,
+        "close": 20.54,
+        "closed_at_limit": true
+      },
+      {
+        "code": "002820",
+        "name": "桂发祥",
+        "votes": 2,
+        "score": 0,
+        "amount": 116164800.0,
+        "close": 8.86,
+        "closed_at_limit": true
+      },
+      {
+        "code": "000908",
+        "name": "石药景峰",
+        "votes": 2,
+        "score": 0,
+        "amount": 52139200.0,
+        "close": 4.81,
+        "closed_at_limit": true
+      },
+      {
+        "code": "002642",
+        "name": "荣联科技",
+        "votes": 1,
+        "score": 3,
+        "amount": 1652846200.0,
+        "close": 8.54,
+        "closed_at_limit": true
+      },
+      {
+        "code": "002900",
+        "name": "哈三联",
+        "votes": 1,
+        "score": 2,
+        "amount": 79763700.0,
+        "close": 9.68,
+        "closed_at_limit": true
+      },
+      {
+        "code": "002480",
+        "name": "新筑股份",
+        "votes": 1,
+        "score": 2,
+        "amount": 55265700.0,
+        "close": 5.2,
+        "closed_at_limit": true
+      },
+      {
+        "code": "605577",
+        "name": "龙版传媒",
+        "votes": 1,
+        "score": 1,
+        "amount": 981234100.0,
+        "close": 20.03,
+        "closed_at_limit": true
+      },
+      {
+        "code": "000888",
+        "name": "峨眉山Ａ",
+        "votes": 1,
+        "score": 1,
+        "amount": 334032600.0,
+        "close": 10.65,
+        "closed_at_limit": false
+      },
+      {
+        "code": "603069",
+        "name": "海汽集团",
+        "votes": 1,
+        "score": 1,
+        "amount": 33938400.0,
+        "close": 11.02,
+        "closed_at_limit": true
+      },
+      {
+        "code": "603324",
+        "name": "盛剑科技",
+        "votes": 1,
+        "score": 0,
+        "amount": 996672100.0000001,
+        "close": 32.27,
+        "closed_at_limit": true
+      },
+      {
+        "code": "600280",
+        "name": "中央商场",
+        "votes": 1,
+        "score": 0,
+        "amount": 179943900.0,
+        "close": 2.82,
+        "closed_at_limit": true
+      },
+      {
+        "code": "603708",
+        "name": "家家悦",
+        "votes": 1,
+        "score": 0,
+        "amount": 77849700.0,
+        "close": 9.68,
+        "closed_at_limit": true
+      },
+      {
+        "code": "605136",
+        "name": "丽人丽妆",
+        "votes": 1,
+        "score": 0,
+        "amount": 66478000.0,
+        "close": 7.85,
+        "closed_at_limit": true
+      }
+    ]
+  },
+  "h1": {}
+}
