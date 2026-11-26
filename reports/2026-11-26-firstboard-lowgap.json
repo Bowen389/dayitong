@@ -1,10 +1,8 @@
 {
   "date": "2026-11-26",
-  "status": "partial",
+  "status": "complete",
   "pool_count": 20,
-  "errors": {
-    "002077": "缺少信号日行情; 东方财富 push2 行情服务器断开了连接，通常是短时间内请求过多，当前 IP 被临时限流。首次限流一般约 5 分钟后恢复，反复触发后可能需要 40 分钟以上；等待期间不要重复调用东方财富的行情接口，否则会延长限流。"
-  },
+  "errors": {},
   "rule_version": "ptrade_firstboard_top1.py",
   "candidates": [
     {
@@ -48,6 +46,12 @@
       "name": "北化股份",
       "close": 20.04,
       "amount": 749523200.0000001
+    },
+    {
+      "code": "002077",
+      "name": "大港股份",
+      "close": 12.79,
+      "amount": 726934500.0
     },
     {
       "code": "002141",

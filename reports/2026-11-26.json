@@ -12,7 +12,6 @@
     "s9-duoyinzi/K3: 模块缺失或数据异常",
     "s9-duoyinzi/K5: 模块缺失或数据异常",
     "s9-duoyinzi/DUAL55: 模块缺失或数据异常",
-    "首板最低缺口Top1: 独立扫描行情待补齐",
     "Top5行情未齐，禁止锁榜"
   ],
   "sources": {
@@ -32,9 +31,87 @@
     "s9-duoyinzi/DUAL55": "模块缺失或数据异常",
     "zhulizhuoyao": "已读取",
     "2j3": "已读取",
-    "首板最低缺口Top1": "独立扫描行情待补齐"
+    "首板最低缺口Top1": "已读取"
   },
   "candidates": [
+    {
+      "code": "000158",
+      "name": "常山北明",
+      "votes": 2,
+      "families": [
+        "反包",
+        "首板"
+      ],
+      "signals": [
+        {
+          "name": "常山北明",
+          "family": "反包",
+          "route": "top/BF",
+          "rule": "A优先，同档按20日均额降序，开盘缺口至多+8%",
+          "reason": "市场门控未通过或待核验",
+          "rank": 5,
+          "detail": {
+            "code": "000158",
+            "name": "常山北明",
+            "close": 13.88,
+            "status": "raw",
+            "S": 790714553.192,
+            "prior_limits": 1,
+            "score_bits": [
+              1,
+              1,
+              1
+            ],
+            "score": 3,
+            "category": "A",
+            "previous_broken_limit": false,
+            "bf_static_ok": true
+          }
+        },
+        {
+          "name": "常山北明",
+          "family": "反包",
+          "route": "ceshi/U4",
+          "rule": "按源策略的分档、开盘缺口和成交约束",
+          "reason": "",
+          "rank": 7,
+          "detail": {
+            "code": "000158",
+            "name": "常山北明",
+            "arm": "U4a+U4b",
+            "mean": 790714553.192
+          }
+        },
+        {
+          "name": "常山北明",
+          "family": "反包",
+          "route": "ceshi/V6",
+          "rule": "按源策略的分档、开盘缺口和成交约束",
+          "reason": "",
+          "rank": 14,
+          "detail": {
+            "code": "000158",
+            "name": "常山北明",
+            "arm": "双臂",
+            "mean": 790714553.192
+          }
+        },
+        {
+          "name": "常山北明",
+          "family": "首板",
+          "route": "首板最低缺口Top1（PTrade版）",
+          "rule": "开盘缺口[0%,6%]；缺口升序、信号日成交额降序、代码升序；最多新买1只；次日流通市值10—200亿元、停牌及涨跌停另核验",
+          "reason": "",
+          "rank": 2,
+          "detail": {
+            "code": "000158",
+            "name": "常山北明",
+            "close": 13.88,
+            "amount": 1308900600.0
+          }
+        }
+      ]
+    },
     {
       "code": "000603",
       "name": "盛达资源",
@@ -94,7 +171,7 @@
           "family": "首板",
           "route": "首板最低缺口Top1（PTrade版）",
           "rule": "开盘缺口[0%,6%]；缺口升序、信号日成交额降序、代码升序；最多新买1只；次日流通市值10—200亿元、停牌及涨跌停另核验",
-          "reason": "独立扫描行情待补齐",
+          "reason": "",
           "rank": 3,
           "detail": {
             "code": "000603",
@@ -273,7 +350,7 @@
           "family": "首板",
           "route": "首板最低缺口Top1（PTrade版）",
           "rule": "开盘缺口[0%,6%]；缺口升序、信号日成交额降序、代码升序；最多新买1只；次日流通市值10—200亿元、停牌及涨跌停另核验",
-          "reason": "独立扫描行情待补齐",
+          "reason": "",
           "rank": 6,
           "detail": {
             "code": "000889",
@@ -471,6 +548,20 @@
             "arm": "双臂",
             "mean": 407118725.551
           }
+        },
+        {
+          "name": "大港股份",
+          "family": "首板",
+          "route": "首板最低缺口Top1（PTrade版）",
+          "rule": "开盘缺口[0%,6%]；缺口升序、信号日成交额降序、代码升序；最多新买1只；次日流通市值10—200亿元、停牌及涨跌停另核验",
+          "reason": "",
+          "rank": 8,
+          "detail": {
+            "code": "002077",
+            "name": "大港股份",
+            "close": 12.79,
+            "amount": 726934500.0
+          }
         }
       ]
     },
@@ -547,7 +638,7 @@
           "family": "首板",
           "route": "首板最低缺口Top1（PTrade版）",
           "rule": "开盘缺口[0%,6%]；缺口升序、信号日成交额降序、代码升序；最多新买1只；次日流通市值10—200亿元、停牌及涨跌停另核验",
-          "reason": "独立扫描行情待补齐",
+          "reason": "",
           "rank": 4,
           "detail": {
             "code": "002081",
@@ -684,8 +775,8 @@
           "family": "首板",
           "route": "首板最低缺口Top1（PTrade版）",
           "rule": "开盘缺口[0%,6%]；缺口升序、信号日成交额降序、代码升序；最多新买1只；次日流通市值10—200亿元、停牌及涨跌停另核验",
-          "reason": "独立扫描行情待补齐",
-          "rank": 8,
+          "reason": "",
+          "rank": 9,
           "detail": {
             "code": "002141",
             "name": "贤丰控股",
@@ -747,6 +838,45 @@
             "name": "东晶电子",
             "arm": "深跌",
             "mean": 66527469.72049999
+          }
+        }
+      ]
+    },
+    {
+      "code": "002226",
+      "name": "江南化工",
+      "votes": 2,
+      "families": [
+        "反包",
+        "首板"
+      ],
+      "signals": [
+        {
+          "name": "江南化工",
+          "family": "反包",
+          "route": "ceshi/V6",
+          "rule": "按源策略的分档、开盘缺口和成交约束",
+          "reason": "",
+          "rank": 35,
+          "detail": {
+            "code": "002226",
+            "name": "江南化工",
+            "arm": "深跌",
+            "mean": 187086800.88300002
+          }
+        },
+        {
+          "name": "江南化工",
+          "family": "首板",
+          "route": "首板最低缺口Top1（PTrade版）",
+          "rule": "开盘缺口[0%,6%]；缺口升序、信号日成交额降序、代码升序；最多新买1只；次日流通市值10—200亿元、停牌及涨跌停另核验",
+          "reason": "",
+          "rank": 10,
+          "detail": {
+            "code": "002226",
+            "name": "江南化工",
+            "close": 5.7,
+            "amount": 650880200.0
           }
         }
       ]
@@ -831,7 +961,7 @@
           "family": "首板",
           "route": "首板最低缺口Top1（PTrade版）",
           "rule": "开盘缺口[0%,6%]；缺口升序、信号日成交额降序、代码升序；最多新买1只；次日流通市值10—200亿元、停牌及涨跌停另核验",
-          "reason": "独立扫描行情待补齐",
+          "reason": "",
           "rank": 7,
           "detail": {
             "code": "002246",
@@ -957,8 +1087,8 @@
           "family": "首板",
           "route": "首板最低缺口Top1（PTrade版）",
           "rule": "开盘缺口[0%,6%]；缺口升序、信号日成交额降序、代码升序；最多新买1只；次日流通市值10—200亿元、停牌及涨跌停另核验",
-          "reason": "独立扫描行情待补齐",
-          "rank": 13,
+          "reason": "",
+          "rank": 14,
           "detail": {
             "code": "002298",
             "name": "中电鑫龙",
@@ -1097,7 +1227,7 @@
           "family": "首板",
           "route": "首板最低缺口Top1（PTrade版）",
           "rule": "开盘缺口[0%,6%]；缺口升序、信号日成交额降序、代码升序；最多新买1只；次日流通市值10—200亿元、停牌及涨跌停另核验",
-          "reason": "独立扫描行情待补齐",
+          "reason": "",
           "rank": 5,
           "detail": {
             "code": "002639",
@@ -1301,8 +1431,8 @@
           "family": "首板",
           "route": "首板最低缺口Top1（PTrade版）",
           "rule": "开盘缺口[0%,6%]；缺口升序、信号日成交额降序、代码升序；最多新买1只；次日流通市值10—200亿元、停牌及涨跌停另核验",
-          "reason": "独立扫描行情待补齐",
-          "rank": 12,
+          "reason": "",
+          "rank": 13,
           "detail": {
             "code": "002843",
             "name": "泰嘉股份",
@@ -1476,6 +1606,66 @@
             "name": "金健米业",
             "arm": "深跌",
             "mean": 1591653973.65
+          }
+        }
+      ]
+    },
+    {
+      "code": "600499",
+      "name": "科达制造",
+      "votes": 2,
+      "families": [
+        "反包",
+        "首板"
+      ],
+      "signals": [
+        {
+          "name": "科达制造",
+          "family": "趋势",
+          "route": "top/V3",
+          "rule": "缺口[-5%, +6%]",
+          "reason": "仅观察：沪深300未站上MA20",
+          "rank": 6,
+          "detail": {
+            "code": "600499",
+            "name": "科达制造",
+            "signal_close_raw": 12.73,
+            "status": "ok",
+            "gain": 0.10025929127052713,
+            "strength": 1,
+            "conditions": [
+              true,
+              false,
+              false
+            ]
+          }
+        },
+        {
+          "name": "科达制造",
+          "family": "反包",
+          "route": "ceshi/V6",
+          "rule": "按源策略的分档、开盘缺口和成交约束",
+          "reason": "",
+          "rank": 24,
+          "detail": {
+            "code": "600499",
+            "name": "科达制造",
+            "arm": "深跌",
+            "mean": 331296345.15
+          }
+        },
+        {
+          "name": "科达制造",
+          "family": "首板",
+          "route": "首板最低缺口Top1（PTrade版）",
+          "rule": "开盘缺口[0%,6%]；缺口升序、信号日成交额降序、代码升序；最多新买1只；次日流通市值10—200亿元、停牌及涨跌停另核验",
+          "reason": "",
+          "rank": 11,
+          "detail": {
+            "code": "600499",
+            "name": "科达制造",
+            "close": 12.73,
+            "amount": 649226500.0
           }
         }
       ]
@@ -1665,8 +1855,8 @@
           "family": "首板",
           "route": "首板最低缺口Top1（PTrade版）",
           "rule": "开盘缺口[0%,6%]；缺口升序、信号日成交额降序、代码升序；最多新买1只；次日流通市值10—200亿元、停牌及涨跌停另核验",
-          "reason": "独立扫描行情待补齐",
-          "rank": 14,
+          "reason": "",
+          "rank": 15,
           "detail": {
             "code": "600629",
             "name": "华建集团",
@@ -1970,7 +2160,7 @@
           "family": "首板",
           "route": "首板最低缺口Top1（PTrade版）",
           "rule": "开盘缺口[0%,6%]；缺口升序、信号日成交额降序、代码升序；最多新买1只；次日流通市值10—200亿元、停牌及涨跌停另核验",
-          "reason": "独立扫描行情待补齐",
+          "reason": "",
           "rank": 1,
           "detail": {
             "code": "603118",
@@ -2373,8 +2563,8 @@
           "family": "首板",
           "route": "首板最低缺口Top1（PTrade版）",
           "rule": "开盘缺口[0%,6%]；缺口升序、信号日成交额降序、代码升序；最多新买1只；次日流通市值10—200亿元、停牌及涨跌停另核验",
-          "reason": "独立扫描行情待补齐",
-          "rank": 11,
+          "reason": "",
+          "rank": 12,
           "detail": {
             "code": "603687",
             "name": "大胜达",
@@ -2475,83 +2665,6 @@
             "name": "澳弘电子",
             "arm": "双臂",
             "mean": 853447879.35
-          }
-        }
-      ]
-    },
-    {
-      "code": "000158",
-      "name": "常山北明",
-      "votes": 1,
-      "families": [
-        "反包"
-      ],
-      "signals": [
-        {
-          "name": "常山北明",
-          "family": "反包",
-          "route": "top/BF",
-          "rule": "A优先，同档按20日均额降序，开盘缺口至多+8%",
-          "reason": "市场门控未通过或待核验",
-          "rank": 5,
-          "detail": {
-            "code": "000158",
-            "name": "常山北明",
-            "close": 13.88,
-            "status": "raw",
-            "S": 790714553.192,
-            "prior_limits": 1,
-            "score_bits": [
-              1,
-              1,
-              1
-            ],
-            "score": 3,
-            "category": "A",
-            "previous_broken_limit": false,
-            "bf_static_ok": true
-          }
-        },
-        {
-          "name": "常山北明",
-          "family": "反包",
-          "route": "ceshi/U4",
-          "rule": "按源策略的分档、开盘缺口和成交约束",
-          "reason": "",
-          "rank": 7,
-          "detail": {
-            "code": "000158",
-            "name": "常山北明",
-            "arm": "U4a+U4b",
-            "mean": 790714553.192
-          }
-        },
-        {
-          "name": "常山北明",
-          "family": "反包",
-          "route": "ceshi/V6",
-          "rule": "按源策略的分档、开盘缺口和成交约束",
-          "reason": "",
-          "rank": 14,
-          "detail": {
-            "code": "000158",
-            "name": "常山北明",
-            "arm": "双臂",
-            "mean": 790714553.192
-          }
-        },
-        {
-          "name": "常山北明",
-          "family": "首板",
-          "route": "首板最低缺口Top1（PTrade版）",
-          "rule": "开盘缺口[0%,6%]；缺口升序、信号日成交额降序、代码升序；最多新买1只；次日流通市值10—200亿元、停牌及涨跌停另核验",
-          "reason": "独立扫描行情待补齐",
-          "rank": 2,
-          "detail": {
-            "code": "000158",
-            "name": "常山北明",
-            "close": 13.88,
-            "amount": 1308900600.0
           }
         }
       ]
@@ -2696,44 +2809,6 @@
       ]
     },
     {
-      "code": "002226",
-      "name": "江南化工",
-      "votes": 1,
-      "families": [
-        "反包"
-      ],
-      "signals": [
-        {
-          "name": "江南化工",
-          "family": "反包",
-          "route": "ceshi/V6",
-          "rule": "按源策略的分档、开盘缺口和成交约束",
-          "reason": "",
-          "rank": 35,
-          "detail": {
-            "code": "002226",
-            "name": "江南化工",
-            "arm": "深跌",
-            "mean": 187086800.88300002
-          }
-        },
-        {
-          "name": "江南化工",
-          "family": "首板",
-          "route": "首板最低缺口Top1（PTrade版）",
-          "rule": "开盘缺口[0%,6%]；缺口升序、信号日成交额降序、代码升序；最多新买1只；次日流通市值10—200亿元、停牌及涨跌停另核验",
-          "reason": "独立扫描行情待补齐",
-          "rank": 9,
-          "detail": {
-            "code": "002226",
-            "name": "江南化工",
-            "close": 5.7,
-            "amount": 650880200.0
-          }
-        }
-      ]
-    },
-    {
       "code": "002470",
       "name": "金正大",
       "votes": 1,
@@ -2777,8 +2852,8 @@
           "family": "首板",
           "route": "首板最低缺口Top1（PTrade版）",
           "rule": "开盘缺口[0%,6%]；缺口升序、信号日成交额降序、代码升序；最多新买1只；次日流通市值10—200亿元、停牌及涨跌停另核验",
-          "reason": "独立扫描行情待补齐",
-          "rank": 15,
+          "reason": "",
+          "rank": 16,
           "detail": {
             "code": "002470",
             "name": "金正大",
@@ -2920,65 +2995,6 @@
             "turnover": 8.54,
             "volume_lots": 610868.0,
             "float_cap": 6473484074.941453
-          }
-        }
-      ]
-    },
-    {
-      "code": "600499",
-      "name": "科达制造",
-      "votes": 1,
-      "families": [
-        "反包"
-      ],
-      "signals": [
-        {
-          "name": "科达制造",
-          "family": "趋势",
-          "route": "top/V3",
-          "rule": "缺口[-5%, +6%]",
-          "reason": "仅观察：沪深300未站上MA20",
-          "rank": 6,
-          "detail": {
-            "code": "600499",
-            "name": "科达制造",
-            "signal_close_raw": 12.73,
-            "status": "ok",
-            "gain": 0.10025929127052713,
-            "strength": 1,
-            "conditions": [
-              true,
-              false,
-              false
-            ]
-          }
-        },
-        {
-          "name": "科达制造",
-          "family": "反包",
-          "route": "ceshi/V6",
-          "rule": "按源策略的分档、开盘缺口和成交约束",
-          "reason": "",
-          "rank": 24,
-          "detail": {
-            "code": "600499",
-            "name": "科达制造",
-            "arm": "深跌",
-            "mean": 331296345.15
-          }
-        },
-        {
-          "name": "科达制造",
-          "family": "首板",
-          "route": "首板最低缺口Top1（PTrade版）",
-          "rule": "开盘缺口[0%,6%]；缺口升序、信号日成交额降序、代码升序；最多新买1只；次日流通市值10—200亿元、停牌及涨跌停另核验",
-          "reason": "独立扫描行情待补齐",
-          "rank": 10,
-          "detail": {
-            "code": "600499",
-            "name": "科达制造",
-            "close": 12.73,
-            "amount": 649226500.0
           }
         }
       ]
@@ -3606,7 +3622,7 @@
       "status": "data_error",
       "asof": "2026-11-26",
       "exec_day": "2026-11-27",
-      "error": "ETF history coverage 1594/1754 eligible records; 23 verified age-ineligible; unresolved ['159319', '159585', '159756', '159799', '512830', '516170', '517980', '560430', '561270', '159915']",
+      "error": "ETF history coverage 1671/1754 eligible records; 23 verified age-ineligible; unresolved ['159319', '159585', '159756', '159799', '512830', '516170', '517980', '560430', '561270', '510300']",
       "picks": []
     },
     "K3": {
@@ -3614,7 +3630,7 @@
       "status": "data_error",
       "asof": "2026-11-26",
       "exec_day": "2026-11-27",
-      "error": "ETF history coverage 1594/1754 eligible records; 23 verified age-ineligible; unresolved ['159319', '159585', '159756', '159799', '512830', '516170', '517980', '560430', '561270', '159915']",
+      "error": "ETF history coverage 1671/1754 eligible records; 23 verified age-ineligible; unresolved ['159319', '159585', '159756', '159799', '512830', '516170', '517980', '560430', '561270', '510300']",
       "picks": []
     },
     "K5": {
@@ -3622,7 +3638,7 @@
       "status": "data_error",
       "asof": "2026-11-26",
       "exec_day": "2026-11-27",
-      "error": "ETF history coverage 1594/1754 eligible records; 23 verified age-ineligible; unresolved ['159319', '159585', '159756', '159799', '512830', '516170', '517980', '560430', '561270', '159915']",
+      "error": "ETF history coverage 1671/1754 eligible records; 23 verified age-ineligible; unresolved ['159319', '159585', '159756', '159799', '512830', '516170', '517980', '560430', '561270', '510300']",
       "picks": []
     },
     "DUAL55": {
@@ -3630,7 +3646,7 @@
       "status": "data_error",
       "asof": "2026-11-26",
       "exec_day": "2026-11-27",
-      "error": "ETF history coverage 1594/1754 eligible records; 23 verified age-ineligible; unresolved ['159319', '159585', '159756', '159799', '512830', '516170', '517980', '560430', '561270', '159915']",
+      "error": "ETF history coverage 1671/1754 eligible records; 23 verified age-ineligible; unresolved ['159319', '159585', '159756', '159799', '512830', '516170', '517980', '560430', '561270', '510300']",
       "picks": []
     }
   },
@@ -3773,8 +3789,6 @@
     "status": "incomplete",
     "candidates": [],
     "missing": {
-      "002077": "Remote end closed connection without response; Tencent: target-date history not ready",
-      "002949": "Remote end closed connection without response; Tencent: target-date history not ready",
       "上游来源": "zonghe"
     },
     "pool": [
@@ -3815,6 +3829,15 @@
         "closed_at_limit": true
       },
       {
+        "code": "002226",
+        "name": "江南化工",
+        "votes": 2,
+        "score": 2,
+        "amount": 650880200.0,
+        "close": 5.7,
+        "closed_at_limit": true
+      },
+      {
         "code": "603586",
         "name": "金麒麟",
         "votes": 2,
@@ -3839,6 +3862,15 @@
         "score": 1,
         "amount": 1505511000.0,
         "close": 13.26,
+        "closed_at_limit": true
+      },
+      {
+        "code": "000158",
+        "name": "常山北明",
+        "votes": 2,
+        "score": 1,
+        "amount": 1308900600.0,
+        "close": 13.88,
         "closed_at_limit": true
       },
       {
@@ -3923,6 +3955,15 @@
         "closed_at_limit": true
       },
       {
+        "code": "002949",
+        "name": "华阳国际",
+        "votes": 2,
+        "score": 1,
+        "amount": 192702599.99999997,
+        "close": 10.54,
+        "closed_at_limit": true
+      },
+      {
         "code": "003040",
         "name": "楚天龙",
         "votes": 2,
@@ -3986,12 +4027,30 @@
         "closed_at_limit": true
       },
       {
+        "code": "002077",
+        "name": "大港股份",
+        "votes": 2,
+        "score": 0,
+        "amount": 726934500.0,
+        "close": 12.79,
+        "closed_at_limit": true
+      },
+      {
         "code": "002141",
         "name": "贤丰控股",
         "votes": 2,
         "score": 0,
         "amount": 715496200.0,
         "close": 4.64,
+        "closed_at_limit": true
+      },
+      {
+        "code": "600499",
+        "name": "科达制造",
+        "votes": 2,
+        "score": 0,
+        "amount": 649226500.0,
+        "close": 12.73,
         "closed_at_limit": true
       },
       {
@@ -4067,15 +4126,6 @@
         "closed_at_limit": true
       },
       {
-        "code": "002226",
-        "name": "江南化工",
-        "votes": 1,
-        "score": 2,
-        "amount": 650880200.0,
-        "close": 5.7,
-        "closed_at_limit": true
-      },
-      {
         "code": "002194",
         "name": "武汉凡谷",
         "votes": 1,
@@ -4112,15 +4162,6 @@
         "closed_at_limit": true
       },
       {
-        "code": "000158",
-        "name": "常山北明",
-        "votes": 1,
-        "score": 1,
-        "amount": 1308900600.0,
-        "close": 13.88,
-        "closed_at_limit": true
-      },
-      {
         "code": "600189",
         "name": "泉阳泉",
         "votes": 1,
@@ -4154,15 +4195,6 @@
         "score": 0,
         "amount": 2503414000.0,
         "close": 11.3,
-        "closed_at_limit": true
-      },
-      {
-        "code": "600499",
-        "name": "科达制造",
-        "votes": 1,
-        "score": 0,
-        "amount": 649226500.0,
-        "close": 12.73,
         "closed_at_limit": true
       },
       {
