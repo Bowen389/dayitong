@@ -231,7 +231,7 @@
             "code": "000066",
             "name": "中国长城",
             "close": 11.66,
-            "amount": 1694039408.57
+            "amount": 1694039400.0
           }
         }
       ]
@@ -6296,7 +6296,7 @@
             "code": "600536",
             "name": "中国软件",
             "close": 28.05,
-            "amount": 614930165.0
+            "amount": 614930200.0
           }
         }
       ]
@@ -6660,7 +6660,7 @@
             "code": "600667",
             "name": "太极实业",
             "close": 11.97,
-            "amount": 1638682872.0
+            "amount": 1638682900.0
           }
         }
       ]
@@ -6919,7 +6919,7 @@
             "code": "601519",
             "name": "大智慧",
             "close": 7.56,
-            "amount": 533861620.0
+            "amount": 533861600.00000006
           }
         }
       ]
@@ -7045,7 +7045,7 @@
             "code": "603002",
             "name": "宏昌电子",
             "close": 12.28,
-            "amount": 786462276.0
+            "amount": 786462300.0
           }
         }
       ]
@@ -7115,7 +7115,7 @@
             "code": "603005",
             "name": "晶方科技",
             "close": 20.76,
-            "amount": 797054361.0
+            "amount": 797054400.0
           }
         }
       ]
@@ -7336,7 +7336,7 @@
             "code": "603031",
             "name": "安孚科技",
             "close": 25.36,
-            "amount": 318477144.0
+            "amount": 318477100.0
           }
         }
       ]
@@ -7795,7 +7795,7 @@
             "code": "603067",
             "name": "振华股份",
             "close": 18.82,
-            "amount": 691283517.0
+            "amount": 691283500.0
           }
         }
       ]
@@ -7865,7 +7865,7 @@
             "code": "603068",
             "name": "博通集成",
             "close": 30.69,
-            "amount": 316514764.0
+            "amount": 316514800.0
           }
         }
       ]
@@ -8388,7 +8388,7 @@
             "code": "603236",
             "name": "移远通信",
             "close": 85.65,
-            "amount": 1612157380.0
+            "amount": 1612157400.0
           }
         }
       ]
@@ -8970,7 +8970,7 @@
             "code": "603319",
             "name": "美湖股份",
             "close": 18.46,
-            "amount": 347899843.0
+            "amount": 347899800.00000006
           }
         }
       ]
@@ -9096,7 +9096,7 @@
             "code": "603337",
             "name": "杰克科技",
             "close": 37.73,
-            "amount": 428045330.0
+            "amount": 428045300.0
           }
         }
       ]
@@ -9975,7 +9975,7 @@
             "code": "603688",
             "name": "石英股份",
             "close": 30.78,
-            "amount": 356591206.0
+            "amount": 356591200.0
           }
         }
       ]
@@ -10045,7 +10045,7 @@
             "code": "603738",
             "name": "泰晶科技",
             "close": 21.43,
-            "amount": 501671270.0
+            "amount": 501671300.0
           }
         }
       ]
@@ -11075,7 +11075,7 @@
             "code": "605111",
             "name": "新洁能",
             "close": 34.9,
-            "amount": 601070845.0
+            "amount": 601070800.0
           }
         }
       ]
@@ -11439,7 +11439,7 @@
             "code": "605358",
             "name": "立昂微",
             "close": 27.07,
-            "amount": 900913841.0
+            "amount": 900913800.0
           }
         }
       ]
@@ -11682,7 +11682,7 @@
             "code": "000034",
             "name": "神州数码",
             "close": 21.35,
-            "amount": 920368155.33
+            "amount": 920368200.0000001
           }
         }
       ]
@@ -11737,7 +11737,7 @@
             "code": "000062",
             "name": "深圳华强",
             "close": 18.4,
-            "amount": 584281268.39
+            "amount": 584281300.0
           }
         }
       ]
@@ -12694,7 +12694,7 @@
             "code": "002190",
             "name": "成飞集成",
             "close": 21.36,
-            "amount": 451763985.18
+            "amount": 451764000.0
           }
         }
       ]
@@ -12917,7 +12917,7 @@
             "code": "002335",
             "name": "科华数据",
             "close": 23.07,
-            "amount": 531446679.45
+            "amount": 531446700.0
           }
         }
       ]
@@ -13355,7 +13355,7 @@
             "code": "002642",
             "name": "荣联科技",
             "close": 9.16,
-            "amount": 1058464278.45
+            "amount": 1058464299.9999999
           }
         }
       ]
@@ -14519,7 +14519,7 @@
             "code": "600602",
             "name": "云赛智联",
             "close": 14.27,
-            "amount": 526216258.0
+            "amount": 526216300.0
           }
         }
       ]
@@ -15894,7 +15894,7 @@
             "code": "603690",
             "name": "至纯科技",
             "close": 17.82,
-            "amount": 383527717.0
+            "amount": 383527699.99999994
           }
         }
       ]
@@ -16343,7 +16343,7 @@
       "status": "data_error",
       "asof": "2026-11-27",
       "exec_day": "2026-11-30",
-      "error": "ETF history coverage 1564/1754 eligible records; 23 verified age-ineligible; unresolved ['159319', '159585', '159756', '159799', '512830', '516170', '517980', '560430', '561270', '510300']",
+      "error": "ETF history coverage 1586/1754 eligible records; 23 verified age-ineligible; unresolved ['159319', '159585', '159756', '159799', '512830', '516170', '517980', '560430', '561270', '159300']",
       "picks": []
     },
     "K3": {
@@ -16351,7 +16351,7 @@
       "status": "data_error",
       "asof": "2026-11-27",
       "exec_day": "2026-11-30",
-      "error": "ETF history coverage 1564/1754 eligible records; 23 verified age-ineligible; unresolved ['159319', '159585', '159756', '159799', '512830', '516170', '517980', '560430', '561270', '510300']",
+      "error": "ETF history coverage 1586/1754 eligible records; 23 verified age-ineligible; unresolved ['159319', '159585', '159756', '159799', '512830', '516170', '517980', '560430', '561270', '159300']",
       "picks": []
     },
     "K5": {
@@ -16359,7 +16359,7 @@
       "status": "data_error",
       "asof": "2026-11-27",
       "exec_day": "2026-11-30",
-      "error": "ETF history coverage 1564/1754 eligible records; 23 verified age-ineligible; unresolved ['159319', '159585', '159756', '159799', '512830', '516170', '517980', '560430', '561270', '510300']",
+      "error": "ETF history coverage 1586/1754 eligible records; 23 verified age-ineligible; unresolved ['159319', '159585', '159756', '159799', '512830', '516170', '517980', '560430', '561270', '159300']",
       "picks": []
     },
     "DUAL55": {
@@ -16367,7 +16367,7 @@
       "status": "data_error",
       "asof": "2026-11-27",
       "exec_day": "2026-11-30",
-      "error": "ETF history coverage 1564/1754 eligible records; 23 verified age-ineligible; unresolved ['159319', '159585', '159756', '159799', '512830', '516170', '517980', '560430', '561270', '510300']",
+      "error": "ETF history coverage 1586/1754 eligible records; 23 verified age-ineligible; unresolved ['159319', '159585', '159756', '159799', '512830', '516170', '517980', '560430', '561270', '159300']",
       "picks": []
     }
   },
@@ -16546,7 +16546,7 @@
         "name": "云南锗业",
         "votes": 2,
         "score": 2,
-        "amount": 4714400316.24,
+        "amount": 4714400300.0,
         "close": 68.32,
         "closed_at_limit": true
       },
@@ -16555,7 +16555,7 @@
         "name": "有研新材",
         "votes": 2,
         "score": 2,
-        "amount": 3782275925.0,
+        "amount": 3782275900.0000005,
         "close": 40.58,
         "closed_at_limit": true
       },
@@ -16564,7 +16564,7 @@
         "name": "景旺电子",
         "votes": 2,
         "score": 2,
-        "amount": 3412419988.0,
+        "amount": 3412420000.0,
         "close": 64.53,
         "closed_at_limit": true
       },
@@ -16654,7 +16654,7 @@
         "name": "华工科技",
         "votes": 2,
         "score": 1,
-        "amount": 3680003332.35,
+        "amount": 3680003300.0,
         "close": 64.52,
         "closed_at_limit": true
       },
@@ -16663,7 +16663,7 @@
         "name": "紫光股份",
         "votes": 2,
         "score": 1,
-        "amount": 3186142507.5,
+        "amount": 3186142500.0,
         "close": 23.57,
         "closed_at_limit": true
       },
@@ -16672,7 +16672,7 @@
         "name": "兴森科技",
         "votes": 2,
         "score": 1,
-        "amount": 2976272307.69,
+        "amount": 2976272300.0,
         "close": 26.41,
         "closed_at_limit": true
       },
@@ -16708,7 +16708,7 @@
         "name": "永鼎股份",
         "votes": 2,
         "score": 1,
-        "amount": 2238287947.0,
+        "amount": 2238287900.0,
         "close": 20.98,
         "closed_at_limit": true
       },
@@ -16753,7 +16753,7 @@
         "name": "太极实业",
         "votes": 2,
         "score": 1,
-        "amount": 1638682872.0,
+        "amount": 1638682900.0,
         "close": 11.97,
         "closed_at_limit": true
       },
@@ -16771,7 +16771,7 @@
         "name": "五洲新春",
         "votes": 2,
         "score": 1,
-        "amount": 1305025327.0,
+        "amount": 1305025300.0,
         "close": 48.82,
         "closed_at_limit": true
       },
@@ -16870,7 +16870,7 @@
         "name": "彤程新材",
         "votes": 2,
         "score": 1,
-        "amount": 760299558.0,
+        "amount": 760299600.0000001,
         "close": 48.51,
         "closed_at_limit": true
       },
@@ -16906,7 +16906,7 @@
         "name": "旭升集团",
         "votes": 2,
         "score": 1,
-        "amount": 550062923.0,
+        "amount": 550062900.0,
         "close": 11.42,
         "closed_at_limit": true
       },
@@ -16942,7 +16942,7 @@
         "name": "凯盛科技",
         "votes": 2,
         "score": 1,
-        "amount": 450713408.0,
+        "amount": 450713399.99999994,
         "close": 11.22,
         "closed_at_limit": true
       },
@@ -16978,7 +16978,7 @@
         "name": "三祥新材",
         "votes": 2,
         "score": 1,
-        "amount": 411572808.0,
+        "amount": 411572800.0,
         "close": 26.62,
         "closed_at_limit": true
       },
@@ -17005,7 +17005,7 @@
         "name": "北特科技",
         "votes": 2,
         "score": 1,
-        "amount": 363554799.0,
+        "amount": 363554800.00000006,
         "close": 45.16,
         "closed_at_limit": true
       },
@@ -17041,7 +17041,7 @@
         "name": "艾华集团",
         "votes": 2,
         "score": 1,
-        "amount": 318361559.0,
+        "amount": 318361600.0,
         "close": 20.58,
         "closed_at_limit": true
       },
@@ -17059,7 +17059,7 @@
         "name": "柏诚股份",
         "votes": 2,
         "score": 1,
-        "amount": 257544941.0,
+        "amount": 257544900.00000003,
         "close": 16.69,
         "closed_at_limit": true
       },
@@ -17104,7 +17104,7 @@
         "name": "永创智能",
         "votes": 2,
         "score": 1,
-        "amount": 226047791.0,
+        "amount": 226047800.0,
         "close": 10.02,
         "closed_at_limit": true
       },
@@ -17176,7 +17176,7 @@
         "name": "飞乐音响",
         "votes": 2,
         "score": 1,
-        "amount": 156510443.0,
+        "amount": 156510400.0,
         "close": 4.36,
         "closed_at_limit": true
       },
@@ -17248,7 +17248,7 @@
         "name": "生益科技",
         "votes": 2,
         "score": 0,
-        "amount": 8610174218.0,
+        "amount": 8610174200.0,
         "close": 68.04,
         "closed_at_limit": true
       },
@@ -17284,7 +17284,7 @@
         "name": "通富微电",
         "votes": 2,
         "score": 0,
-        "amount": 3656596944.59,
+        "amount": 3656596900.0,
         "close": 40.13,
         "closed_at_limit": true
       },
@@ -17320,7 +17320,7 @@
         "name": "长飞光纤",
         "votes": 2,
         "score": 0,
-        "amount": 2568154366.0,
+        "amount": 2568154400.0,
         "close": 221.44,
         "closed_at_limit": true
       },
@@ -17329,7 +17329,7 @@
         "name": "中材科技",
         "votes": 2,
         "score": 0,
-        "amount": 2168733994.95,
+        "amount": 2168734000.0,
         "close": 33.07,
         "closed_at_limit": true
       },
@@ -17347,7 +17347,7 @@
         "name": "兴业银锡",
         "votes": 2,
         "score": 0,
-        "amount": 1905183024.67,
+        "amount": 1905183000.0,
         "close": 20.47,
         "closed_at_limit": true
       },
@@ -17401,7 +17401,7 @@
         "name": "士兰微",
         "votes": 2,
         "score": 0,
-        "amount": 1454787218.0,
+        "amount": 1454787200.0,
         "close": 22.29,
         "closed_at_limit": true
       },
@@ -17410,7 +17410,7 @@
         "name": "星网锐捷",
         "votes": 2,
         "score": 0,
-        "amount": 1433455519.41,
+        "amount": 1433455500.0,
         "close": 22.0,
         "closed_at_limit": true
       },
@@ -17419,7 +17419,7 @@
         "name": "东材科技",
         "votes": 2,
         "score": 0,
-        "amount": 1377066790.0,
+        "amount": 1377066800.0,
         "close": 28.33,
         "closed_at_limit": true
       },
@@ -17509,7 +17509,7 @@
         "name": "浙江荣泰",
         "votes": 2,
         "score": 0,
-        "amount": 768322665.0,
+        "amount": 768322700.0,
         "close": 52.99,
         "closed_at_limit": true
       },
@@ -17527,7 +17527,7 @@
         "name": "振华股份",
         "votes": 2,
         "score": 0,
-        "amount": 691283517.0,
+        "amount": 691283500.0,
         "close": 18.82,
         "closed_at_limit": true
       },
@@ -17608,7 +17608,7 @@
         "name": "大智慧",
         "votes": 2,
         "score": 0,
-        "amount": 533861620.0,
+        "amount": 533861600.00000006,
         "close": 7.56,
         "closed_at_limit": true
       },
@@ -17617,7 +17617,7 @@
         "name": "泰晶科技",
         "votes": 2,
         "score": 0,
-        "amount": 501671270.0,
+        "amount": 501671300.0,
         "close": 21.43,
         "closed_at_limit": true
       },
@@ -17644,7 +17644,7 @@
         "name": "合锻智能",
         "votes": 2,
         "score": 0,
-        "amount": 436059793.0,
+        "amount": 436059800.00000006,
         "close": 14.98,
         "closed_at_limit": true
       },
@@ -17662,7 +17662,7 @@
         "name": "通化金马",
         "votes": 2,
         "score": 0,
-        "amount": 410324570.7,
+        "amount": 410324600.0,
         "close": 10.51,
         "closed_at_limit": true
       },
@@ -17689,7 +17689,7 @@
         "name": "禾望电气",
         "votes": 2,
         "score": 0,
-        "amount": 393145396.0,
+        "amount": 393145400.0,
         "close": 18.47,
         "closed_at_limit": true
       },
@@ -17716,7 +17716,7 @@
         "name": "美湖股份",
         "votes": 2,
         "score": 0,
-        "amount": 347899843.0,
+        "amount": 347899800.00000006,
         "close": 18.46,
         "closed_at_limit": true
       },
@@ -17734,7 +17734,7 @@
         "name": "南威软件",
         "votes": 2,
         "score": 0,
-        "amount": 331624652.0,
+        "amount": 331624700.0,
         "close": 7.19,
         "closed_at_limit": true
       },
@@ -17779,7 +17779,7 @@
         "name": "晶华新材",
         "votes": 2,
         "score": 0,
-        "amount": 309400930.0,
+        "amount": 309400900.0,
         "close": 13.29,
         "closed_at_limit": true
       },
@@ -17851,7 +17851,7 @@
         "name": "江南新材",
         "votes": 2,
         "score": 0,
-        "amount": 233696876.0,
+        "amount": 233696900.0,
         "close": 68.02,
         "closed_at_limit": true
       },
@@ -17860,7 +17860,7 @@
         "name": "深圳新星",
         "votes": 2,
         "score": 0,
-        "amount": 231238524.0,
+        "amount": 231238500.0,
         "close": 17.52,
         "closed_at_limit": true
       },
@@ -17896,7 +17896,7 @@
         "name": "罗曼股份",
         "votes": 2,
         "score": 0,
-        "amount": 204181361.0,
+        "amount": 204181400.0,
         "close": 50.71,
         "closed_at_limit": true
       },
@@ -17941,7 +17941,7 @@
         "name": "力鼎光电",
         "votes": 2,
         "score": 0,
-        "amount": 171457228.0,
+        "amount": 171457200.0,
         "close": 23.25,
         "closed_at_limit": true
       },
@@ -17950,7 +17950,7 @@
         "name": "福达合金",
         "votes": 2,
         "score": 0,
-        "amount": 169808327.0,
+        "amount": 169808300.00000003,
         "close": 28.27,
         "closed_at_limit": true
       },
@@ -17977,7 +17977,7 @@
         "name": "诚邦股份",
         "votes": 2,
         "score": 0,
-        "amount": 154165276.0,
+        "amount": 154165300.0,
         "close": 9.35,
         "closed_at_limit": true
       },
@@ -18049,7 +18049,7 @@
         "name": "华立股份",
         "votes": 2,
         "score": 0,
-        "amount": 131782537.0,
+        "amount": 131782500.0,
         "close": 10.91,
         "closed_at_limit": true
       },
@@ -18094,7 +18094,7 @@
         "name": "华体科技",
         "votes": 2,
         "score": 0,
-        "amount": 110047147.0,
+        "amount": 110047099.99999999,
         "close": 15.94,
         "closed_at_limit": true
       },
@@ -18112,7 +18112,7 @@
         "name": "东方中科",
         "votes": 2,
         "score": 0,
-        "amount": 105487194.95,
+        "amount": 105487200.0,
         "close": 17.38,
         "closed_at_limit": true
       },
@@ -18148,7 +18148,7 @@
         "name": "光大证券",
         "votes": 1,
         "score": 3,
-        "amount": 624725852.0,
+        "amount": 624725900.0,
         "close": 13.81,
         "closed_at_limit": false
       },
@@ -18193,7 +18193,7 @@
         "name": "南天信息",
         "votes": 1,
         "score": 3,
-        "amount": 192016229.34,
+        "amount": 192016200.0,
         "close": 12.94,
         "closed_at_limit": true
       },
@@ -18229,7 +18229,7 @@
         "name": "上海电气",
         "votes": 1,
         "score": 2,
-        "amount": 853062990.0,
+        "amount": 853063000.0,
         "close": 6.21,
         "closed_at_limit": false
       },
@@ -18247,7 +18247,7 @@
         "name": "海立股份",
         "votes": 1,
         "score": 2,
-        "amount": 737016580.0,
+        "amount": 737016600.0,
         "close": 14.47,
         "closed_at_limit": true
       },
@@ -18292,7 +18292,7 @@
         "name": "东华软件",
         "votes": 1,
         "score": 2,
-        "amount": 443673508.59,
+        "amount": 443673500.0,
         "close": 5.95,
         "closed_at_limit": true
       },
@@ -18355,7 +18355,7 @@
         "name": "北方华创",
         "votes": 1,
         "score": 1,
-        "amount": 6055526434.4,
+        "amount": 6055526400.0,
         "close": 527.38,
         "closed_at_limit": true
       },
@@ -18391,7 +18391,7 @@
         "name": "科森科技",
         "votes": 1,
         "score": 1,
-        "amount": 1391386279.0,
+        "amount": 1391386300.0,
         "close": 25.88,
         "closed_at_limit": true
       },
@@ -18463,7 +18463,7 @@
         "name": "宁波华翔",
         "votes": 1,
         "score": 1,
-        "amount": 641174585.06,
+        "amount": 641174600.0,
         "close": 17.64,
         "closed_at_limit": true
       },
@@ -18508,7 +18508,7 @@
         "name": "继峰股份",
         "votes": 1,
         "score": 1,
-        "amount": 371409282.0,
+        "amount": 371409300.0,
         "close": 10.11,
         "closed_at_limit": true
       },
@@ -18544,7 +18544,7 @@
         "name": "航锦科技",
         "votes": 1,
         "score": 1,
-        "amount": 296928273.28,
+        "amount": 296928300.0,
         "close": 9.37,
         "closed_at_limit": true
       },
@@ -18589,7 +18589,7 @@
         "name": "奥普光电",
         "votes": 1,
         "score": 1,
-        "amount": 243667910.0,
+        "amount": 243667900.0,
         "close": 35.82,
         "closed_at_limit": true
       },
@@ -18598,7 +18598,7 @@
         "name": "恒为科技",
         "votes": 1,
         "score": 1,
-        "amount": 239509179.0,
+        "amount": 239509199.99999997,
         "close": 18.87,
         "closed_at_limit": true
       },
@@ -18670,7 +18670,7 @@
         "name": "得邦照明",
         "votes": 1,
         "score": 1,
-        "amount": 101999240.0,
+        "amount": 101999200.0,
         "close": 21.84,
         "closed_at_limit": true
       },
@@ -18697,7 +18697,7 @@
         "name": "川大智胜",
         "votes": 1,
         "score": 1,
-        "amount": 93443713.63,
+        "amount": 93443700.00000001,
         "close": 7.02,
         "closed_at_limit": true
       },
@@ -18706,7 +18706,7 @@
         "name": "恒林股份",
         "votes": 1,
         "score": 1,
-        "amount": 82688724.0,
+        "amount": 82688700.00000001,
         "close": 24.31,
         "closed_at_limit": true
       },
@@ -18760,7 +18760,7 @@
         "name": "华胜天成",
         "votes": 1,
         "score": 0,
-        "amount": 5555948436.0,
+        "amount": 5555948400.0,
         "close": 20.9,
         "closed_at_limit": true
       },
@@ -18877,7 +18877,7 @@
         "name": "天风证券",
         "votes": 1,
         "score": 0,
-        "amount": 614230463.0,
+        "amount": 614230500.0,
         "close": 3.12,
         "closed_at_limit": false
       },
@@ -18922,7 +18922,7 @@
         "name": "国风新材",
         "votes": 1,
         "score": 0,
-        "amount": 491925611.8,
+        "amount": 491925600.0,
         "close": 7.74,
         "closed_at_limit": true
       },
@@ -18940,7 +18940,7 @@
         "name": "麦迪科技",
         "votes": 1,
         "score": 0,
-        "amount": 463461358.0,
+        "amount": 463461400.0,
         "close": 18.92,
         "closed_at_limit": true
       },
@@ -19003,7 +19003,7 @@
         "name": "神州信息",
         "votes": 1,
         "score": 0,
-        "amount": 279197593.31,
+        "amount": 279197600.0,
         "close": 8.8,
         "closed_at_limit": true
       },
@@ -19021,7 +19021,7 @@
         "name": "中科软",
         "votes": 1,
         "score": 0,
-        "amount": 257566680.0,
+        "amount": 257566699.99999997,
         "close": 12.91,
         "closed_at_limit": true
       },
@@ -19030,7 +19030,7 @@
         "name": "华映科技",
         "votes": 1,
         "score": 0,
-        "amount": 251430007.36,
+        "amount": 251430000.0,
         "close": 3.02,
         "closed_at_limit": false
       },
@@ -19039,7 +19039,7 @@
         "name": "海量数据",
         "votes": 1,
         "score": 0,
-        "amount": 229544668.0,
+        "amount": 229544700.0,
         "close": 12.88,
         "closed_at_limit": true
       },
@@ -19048,7 +19048,7 @@
         "name": "金证股份",
         "votes": 1,
         "score": 0,
-        "amount": 222420451.0,
+        "amount": 222420500.0,
         "close": 9.1,
         "closed_at_limit": true
       },
@@ -19138,7 +19138,7 @@
         "name": "信通电子",
         "votes": 1,
         "score": 0,
-        "amount": 103062121.93,
+        "amount": 103062099.99999999,
         "close": 18.89,
         "closed_at_limit": true
       },
@@ -19201,7 +19201,7 @@
         "name": "豪尔赛",
         "votes": 1,
         "score": 0,
-        "amount": 81142936.0,
+        "amount": 81142900.0,
         "close": 15.43,
         "closed_at_limit": true
       },
@@ -19210,7 +19210,7 @@
         "name": "易德龙",
         "votes": 1,
         "score": 0,
-        "amount": 77186611.0,
+        "amount": 77186600.0,
         "close": 23.71,
         "closed_at_limit": true
       },
@@ -19237,7 +19237,7 @@
         "name": "朗博科技",
         "votes": 1,
         "score": 0,
-        "amount": 32717794.0,
+        "amount": 32717800.000000004,
         "close": 20.87,
         "closed_at_limit": true
       },
